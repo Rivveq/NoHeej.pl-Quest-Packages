@@ -1,5 +1,52 @@
 conversations:
   Bella:
     NPC_options:
-      test:
-        text: "test test test"
+      
+      # 1.Poczatek
+      bella-1-1:
+        text: "Witaj wnusiu, co się stało?"
+        pointer: player-bella-1-1, player-bella-1-2
+      
+      # 2.Wybor dania
+      bella-1-2:
+        text: "Oczywiście, na co masz ochotę?"
+        pointer: player-bella-1-2a, player-bella-1-2b, player-bella-1-2c, player-bella-1-2d
+      
+      # 3. Bella wysyla po skladniki
+      bella-1-3:
+        text: "Zatem musisz mi przynieść składniki z tej oto listy."
+        events: ifDanie-1
+        pointer: player-bella-1-3
+
+      # 4.Gracz wraca z składnikami
+
+    player_options:
+
+    # 1.Poczatek
+      player-bella-1-1:
+        text: "Mogłabyś przyrządzić coś dla mnie?"
+        pointer: bella-1-2
+      player-bella-1-2:
+        text: "Nic... żegnaj."
+      
+      # 2.Wybor dania
+      player-bella-1-2a:
+        text: "Rybeńka"
+        events: addTagDanie-1
+        pointer: bella-1-3
+      player-bella-1-2b:
+        text: "Zupa ogórkowa"
+        events: addTagDanie-2
+        pointer: bella-1-3
+      player-bella-1-2c:
+        text: "Miodowe co nie co"
+        events: addTagDanie-3
+        pointer: bella-1-3
+      player-bella-1-2d:
+        text: "Chlebek marchewkowy"
+        events: addTagDanie-4
+        pointer: bella-1-3
+
+      # 3.Bella wysyła po składniki
+      player-bella-1-3:
+        text: "Dobrze, za chwilę udam się po składniki."
