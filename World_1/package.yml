@@ -6,7 +6,7 @@ npcs:
   '4': Tony
   '1': Bella
   '7': Agata
-  
+
 items:
   steak: COOKED_BEEF name:&lPieczona_Wołowina lore:Lore_trzeba_zrobić;&2Quest_Reward; #Stek, quest-1 Wes
   potka_leczenia: "potion effects:instant_health:3:69 name:&c&lElixir_Herbanum lore:Lore_trzeba_zrobić;&2Quest_Reward;" #Potka, quest-2 Skrik

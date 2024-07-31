@@ -1,0 +1,5 @@
+conversations:
+  Bella:
+    NPC_options:
+      test:
+        text: "test test test"

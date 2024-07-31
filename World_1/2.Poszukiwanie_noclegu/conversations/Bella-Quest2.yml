@@ -30,7 +30,7 @@ conversations:
       # 5.Po skompletowaniu listy
       q1-bella-5:
         text: "Dziękuje Ci wnusiu, proszę oto Twoje drobne słodkości!"
-        event: giveQuestCompleteCiastka
+        events: giveQuestCompleteCiastka
         pointer: q1-player-5
     
 
@@ -55,10 +55,10 @@ conversations:
       # 3.Gracz wyrusza po składniki
       q1-player-3a:
         text: "Niedługo wrócę i wspólnie zjemy ciasteczka."
-        event: giveListaProduktow, increaseQuest2-Progress
+        events: giveListaProduktow, increaseQuest2-Progress
       q1-player-3b:
         text: "Zajmę się tym, gdy będę mieć czas."
-        event: giveListaProduktow, increaseQuest2-Progress
+        events: giveListaProduktow, increaseQuest2-Progress
       
       # 4,5.Skompletowana Lista
       q1-player-4a:
@@ -70,5 +70,5 @@ conversations:
       
       q1-player-5:
         text: "Mmm, jakie to pyszne!!"
-        event: notifNextStepChris, increaseQuest2-Progress
+        events: notifNextStepChris, increaseQuest2-Progress, hungerPlayerMax
       

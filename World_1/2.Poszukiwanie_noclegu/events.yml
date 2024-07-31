@@ -45,4 +45,5 @@ events:
   takeItemyLista: "take mleko:1,siano:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
 
   giveQuestCompleteCiastka: "give ciastko:3"
+  hungerPlayerMax: "hunger set 20"
   notifNextStepChris: "notify &eChris&r oczekuje twojego powrotu! io:bossbar barColor:green sound:entity.player.levelup"
