@@ -1,0 +1,51 @@
+conditions:
+  # Stage progress coditions
+  isQuest2-Progress-Wes: "stage Quest2-Progress = WesRozmowa"
+  isQuest2-Progress-Rosalie: "stage Quest2-Progress = RozalieRozmowa"
+  isQuest2-Progress-Skrik: "stage Quest2-Progress = SkrikSubQuest"
+  isQuest2-Progress-RosalieZdrowy: "stage Quest2-Progress = RozalieZdrowy"
+  isQuest2-Progress-ChrisRozmowa: "stage Quest2-Progress = ChrisRozmowa"
+  isQuest2-Progress-ChrisZaplata: "stage Quest2-Progress = ChrisZaplata"
+  isQuest2-Progress-TonyList: "stage Quest2-Progress = TonyList"
+  isQuest2-Progress-TonyPrzysluga: "stage Quest2-Progress = TonyPrzysluga"
+  isQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress = ChrisPowrotZListem"
+  isQuest2-Progress-ChrisPrzedZadaniemBella: "stage Quest2-Progress = ChrisPrzedZadaniemBella"
+  isQuest2-Progress-BellaRozmowa: "stage Quest2-Progress = BellaRozmowa"
+  isQuest2-Progress-BellaPoszukujeSkladnikow: "stage Quest2-Progress = BellaPoszukujeSkladnikow"
+  isQuest2-Progress-ChrisZadaniaUkonczone: "stage Quest2-Progress = ChrisZadaniaUkonczone"
+
+  # Chris conversation conditions
+  hasPieniadzeZaNocleg: "money 1000"
+  hasListDoChrisa: "item list_do_chrisa"
+
+  # Tony conversation conditions
+  hasZlotyMiecz: "item zloty_miecz"
+
+  # PKN Game conditions
+  isTonyKamien: "tag tonyKamien"
+  isTonyPapier: "tag tonyPapier"
+  isTonyNozyce: "tag tonyNozyce"
+
+  isPlayerKamien: "tag playerKamien"
+  isPlayerPapier: "tag playerPapier"
+  isPlayerNozyce: "tag playerNozyce"
+
+
+  isWygrana: "or isWygrana-1,isWygrana-2,isWygrana-3"
+  isWygrana-1: "and isPlayerKamien,isTonyNozyce"
+  isWygrana-2: "and isPlayerPapier,isTonyKamien"
+  isWygrana-3: "and isPlayerNozyce,isTonyPapier"
+  
+  isPrzegrana: "or isPrzegrana-1,isPrzegrana-2,isPrzegrana-3"
+  isPrzegrana-1: "and isPlayerKamien,isTonyPapier"
+  isPrzegrana-2: "and isPlayerPapier,isTonyNozyce"
+  isPrzegrana-3: "and isPlayerNozyce,isTonyKamien"
+
+  isRemis: "or isRemis-1,isRemis-2,isRemis-3"
+  isRemis-1: "and isPlayerKamien,isTonyKamien"
+  isRemis-2: "and isPlayerPapier,isTonyPapier"
+  isRemis-3: "and isPlayerNozyce,isTonyNozyce"
+
+  # Bella conversation conditions
+  hasSkladniki: "item mleko:1,siano:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
+  hasTagListaQuestDone: "tag ListaQuestDone"

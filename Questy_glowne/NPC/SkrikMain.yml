@@ -1,0 +1,8 @@
+conversations:
+  Skrik:
+    quester: 'Skrik'
+    first: q2-skrik-1, default
+
+    NPC_options:
+      default:
+        text: "Nie teraz! Mam dużo pacjentów do zbadania."

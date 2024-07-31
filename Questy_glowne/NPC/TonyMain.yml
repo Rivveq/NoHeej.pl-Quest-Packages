@@ -1,0 +1,9 @@
+conversations:
+  Tony:
+    quester: 'Tony'
+    first: q2-tony-1, q2-tony-8, default
+    final_events: clearPKNTags
+
+    NPC_options:
+      default:
+        text: "placeholder"

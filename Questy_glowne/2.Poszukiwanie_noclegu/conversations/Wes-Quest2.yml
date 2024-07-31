@@ -1,0 +1,31 @@
+conversations:
+  Wes: 
+    NPC_options:
+    
+      # 1.Początek kolejnego questa
+      q2-wes-1:
+        condition: Tracking.Quest-1-Done, isQuest2-Progress-Wes
+        text: "Czego jeszcze potrzebujesz chłopcze?"
+        pointer: q2-player-1a, q2-player-1b
+      
+      # 2.Odesłanie do Rozalii
+      q2-wes-2:
+        text: "W zasięgu Twojego wzroku mieści się ratusz, w którym spotkasz Rozalię, ona udzieli Ci odpowiedzi na pytania."
+        events: increaseQuest2-Progress
+        pointer: q2-player-2a, q2-player-2b
+
+
+    player_options:
+    
+      # 1.Początek kolejnego questa
+      q2-player-1a:
+        text: "Wiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
+        pointer: q2-wes-2
+      q2-player-1b:
+        text: "Już nic nie potrzebuję."
+      
+      # 2.Odesłanie do Rozalii
+      q2-player-2a:
+        text: "Dziękuję, już się tam udaję!"
+      q2-player-2b:
+        text: "Nie mam teraz czasu, może później…"

@@ -1,0 +1,8 @@
+conversations:
+  Bella:
+    quester: 'Bella'
+    first: q1-bella-1, q1-bella-4a, q1-bella-4b, default
+    
+    NPC_options:
+      default:
+        text: "placeholder"

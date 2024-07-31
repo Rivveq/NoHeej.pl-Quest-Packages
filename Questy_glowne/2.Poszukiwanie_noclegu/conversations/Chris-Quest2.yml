@@ -1,0 +1,152 @@
+conversations:
+  Chris: 
+    NPC_options:
+      
+      # 1.Pierwsze spotkanie z Chrisem
+      q2-chris-1:
+        condition: isQuest2-Progress-ChrisRozmowa
+        text: "Ahoj kamracie! Czy mogę Ci jakoś pomóc?"
+        pointer: q2-player-1a, q2-player-1b
+      
+      # 2.Kwestia noclegu
+      q2-chris-2a:
+        text: "Z chęcią użyczę ci jednego z moich wolnych pokojów, ale będzie Cię to trochę kosztować."
+        pointer: q2-player-2a, q2-player-2b, q2-player-2c
+      q2-chris-2b: #Gdyby gracz zakonczyl dialog i wrocil do npc
+        condition: isQuest2-Progress-ChrisZaplata
+        text: "Witaj z powrotem! Mogę użyczyć ci jednego z moich wolnych pokojów, ale będzie Cię to troche kosztować."
+        pointer: q2-player-2a, q2-player-2b, q2-player-2c
+      
+      # 3.Koszt noclegu
+      q2-chris-3a: #Gdy gracz chce zapłacić
+        text: "Dobrze, zatem będzie Cię to kosztować &e1000$."
+        pointer: q2-player-3a-a, q2-player-3a-b, q2-player-3a-c, q2-player-3a-d
+      q2-chris-3b: #Gdy gracz chce pracować
+        text: "Rozumiem… Dobrze śmiałku jeżeli wykonasz dla mnie 2 zadania będziesz mógł zostać na parę nocy."
+        pointer: q2-player-3b-a, q2-player-3b-b
+
+      # 4.Wyprawa na zadanie
+      q2-chris-4:
+        text: "Na początku prosiłbym cię abyś udał się do gwardzisty Tonego, ma dla mnie list. Po twoim powrocie dam ci następne zadanie."
+        pointer: q2-player-4
+      
+      # 5.Powrot z listem
+      q2-chris-5:
+        condition: isQuest2-Progress-ChrisPowrotZListem
+        text: "Witaj z powrotem, masz mój list?"
+        pointer: q2-player-5a, q2-player-5b
+
+      # 6.Odpowiedz na list
+      q2-chris-6a:
+        text: "Dziękuje ci dobry człowieku, Chcesz już otrzymać następne zadanie?"
+        events: increaseQuest2-Progress
+        pointer: q2-player-6a, q2-player-6b,
+      q2-chris-6b:
+        text: "W takim razie po co przyszedłeś?"
+      
+      q2-chris-6c: #Powrot do npc po odmowie
+        condition: isQuest2-Progress-ChrisPrzedZadaniemBella
+        text: "Witaj z powrotem! Gotów na następne zadanie?"
+        pointer: q2-player-6a, q2-player-6b
+
+      # 7.Zadanie u Belli
+      q2-chris-7a:
+        text: "W takim razie proszę abyś teraz czym prędzej udał się do naszej kucharki &e&lBelli&r i pomógł jej uzupełnić zapasy."
+        event: increaseQuest2-Progress
+      q2-chris-7b:
+        text: "No dobrze. Ale pamiętaj by do mnie wrócić!"
+      
+      # 8.Zapłata za pokój/Powrot od Belli
+      q2-chris-8a:
+        text: "Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
+        events: setQuest2-Progress-ChrisOplacony
+        pointer: q2-player-8
+      q2-chris-8b:
+        condition: isQuest2-Progress-ChrisZadaniaUkonczone
+        text: "Słyszałem od Belli, że się spisałeś! Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
+        events: setQuest2-Progress-ChrisOplacony
+        pointer: q2-player-8
+      
+      # 9.Pozegnanie z Chrisem
+      q2-chris-9:
+        text: "Jakbyś jeszcze czegoś potrzebował wiesz gdzie mnie znaleźć!"
+        pointer: q2-player-9a, q2-player-9b
+  
+  
+    player_options:
+      
+      # 1.Pierwsze spotkanie z Chrisem
+      q2-player-1a:
+        text: "Witaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rozalia powiedziała mi, że powinienem się udać do Ciebie."
+        events: increaseQuest2-Progress
+        pointer: q2-chris-2a
+      q2-player-1b:
+        text: "Niestety nie, Bywaj."
+      
+      # 2.Kwestia noclegu
+      q2-player-2a: 
+        text: "Dobrze, zapłacę Ci ile chcesz."
+        pointer: q2-chris-3a
+      q2-player-2b:
+        text: "Niestety straciłem cały swój dobytek przez sztorm, mógłbym coś dla ciebie zrobić w zamian za nocleg?"
+        pointer: q2-chris-3b
+      q2-player-2c:
+        text: "Nie ma mowy! Nie dam złamanego grosza za taką ruderę! Bywaj."
+      
+      # 3a.Koszt noclegu - pieniadze
+      q2-player-3a-a:
+        condition: hasPieniadzeZaNocleg
+        text: "&l&aDrożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r!"
+        events: takeZaplataZaNoc
+        pointer: q2-chris-8a
+      q2-player-3a-b:
+        condition: "!hasPieniadzeZaNocleg"
+        text: "&l&cDrożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r!"
+        events: notifBrakPieniedzy
+      q2-player-3a-c:
+        text: "Aż &e1000$&r?! Nie ma opcji, to za wiele! Cofam moje słowa. Opowiedz mi więcej o tych zadaniach!"
+        pointer: q2-chris-4
+      q2-player-3a-d:
+        text: "Wrócę do Ciebie gdy zdobędę pieniądze."
+
+      # 3b.Koszt noclegu - zadania
+      q2-player-3b-a: 
+        text: "Jakie to zadania?"
+        pointer: q2-chris-4
+      q2-player-3b-b: 
+        text: "Nie ma mowy, jestem zmęczony i zapracowany, jeśli czegoś potrzebujesz sam się tym zajmij."
+      
+      # 4.Wyprawa na zadanie
+      q2-player-4: 
+        text: "Dobrze, zajmę się tym natychmiast!"
+        events: increaseQuest2-Progress
+      
+      # 5.Powrot z listem
+      q2-player-5a:
+        condition: hasListDoChrisa
+        text: "&aOczywiście, proszę oto on!"
+        pointer: q2-chris-6a
+      q2-player-5b:
+        text: "&cNiestety nie mam..."
+        pointer: q2-chris-6b
+
+      # 6.Odpowiedz na list/Kolejne zadanie
+      q2-player-6a:
+        text: "Jestem gotów!"
+        pointer: q2-chris-7a
+      q2-player-6b:
+        text: "Mam coś innego do roboty."
+        pointer: q2-chris-7b
+      
+      # 8.Zapłata za pokój/Powrot od Belli
+      q2-player-8:
+        text: "Dziękuję za pomoc, pamiętaj, że zawsze możesz na mnie liczyć!"
+        pointer: q2-chris-9
+      
+      # 9.Pozegnanie z Chrisem
+      q2-player-9a:
+        text: "Do zobaczenia!"
+        events: increaseQuest2-Progress, Quest-2-Done
+      q2-player-9b:
+        text: "Nie sądzę żebym chciał wrócić."
+        events: increaseQuest2-Progress, Quest-2-Done

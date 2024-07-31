@@ -1,0 +1,42 @@
+conversations:
+  Agata:
+    NPC_options:
+      
+      # 1.Recepcja
+      q3-agata-1:
+        condition: Tracking.Quest-2-Done, isQuest3-Progress-AgataRecepcja
+        text: "Dzień dobry, w czym mogę Ci pomóc podróżniku?"
+        pointer: q3-player-1a, q3-player-1b
+      
+      # 2.Prosba o klucz
+      q3-agata-2:
+        text: "Rozumiem… Czy mogłabym prosić o Twój klucz?"
+        pointer: q3-player-2a, q3-player-2b
+      
+      # 3.Przekierowanie do pokoju
+      q3-agata-3:
+        text: "Dobrze, Twój pokój znajduje na pierwszym piętrze pod numerem 3, miłego pobytu."
+        pointer: q3-player-3
+    
+
+    player_options:
+      
+      # 1.Recepcja
+      q3-player-1a:
+        text: "Witaj! Chris mnie do Ciebie przysłał, abym odebrał swój pokój."
+        pointer: q3-agata-2
+      q3-player-1b:
+        text: "Nie chcę o tym rozmawiać."
+      
+      # 2.Prosba o klucz
+      q3-player-2a:
+        text: "Oczywiście!"
+        event: takeKluczDoPokoju
+        pointer: q3-agata-3
+      q3-player-2b:
+        text: "Nie."
+      
+      # 3.Przekierowanie do pokoju
+      q3-player-3:
+        text: "Dziękuję, do zobaczenia."
+        events: increaseQuest3-Progress, addObjectiveSprawdzPokoj-3

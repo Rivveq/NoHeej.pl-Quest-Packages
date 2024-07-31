@@ -1,0 +1,8 @@
+conversations:
+  Agata:
+    quester: 'Agata'
+    first: q3-agata-1, default
+
+    NPC_options:
+      default:
+        text: "placeholder"

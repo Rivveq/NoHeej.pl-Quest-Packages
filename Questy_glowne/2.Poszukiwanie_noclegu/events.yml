@@ -1,0 +1,48 @@
+events:
+  # Objective events
+  addObjectiveQuest2: "objective add Quest2-Progress"
+
+  increaseQuest2-Progress: "stage Quest2-Progress increase 1"
+  setQuest2-Progress-Zdrowy: "stage Quest2-Progress set RozalieZdrowy" #Potrzebne w przypadku gdy gracz skipnie sub-quest skrika
+  setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
+  setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
+
+  Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2"
+
+  # Skrik events
+  givePotkaLeczenia: "give potka_leczenia"
+  SkrikSubQuestDone: "folder givePotkaLeczenia,increaseQuest2-Progress"
+
+  # Chris Events
+  notifBrakPieniedzy: "notify &aNie masz wystarczającej ilości pieniędzy!"
+  takeListDoChrisa: "take list_do_chrisa"
+
+  takeZaplataZaNoc: "money -1000"
+
+  giveNagrodaZaQuest2: "give klucz_do_pokoju,pieczony_kurczak:8,pieczony_schab:8,pieczony_krolik:8"
+
+  # Tonny Events
+  giveListDoChrisa: "give list_do_chrisa"
+  takeZlotyMiecz: "take zloty_miecz"
+
+  # PKN Game Events
+  clearPKNTags: "tag del playerKamien,playerPapier,playerNozyce,tonyKamien,tonyPapier,tonyNozyce" #Usuwanie tagow po skonczeniu konwersacji z przeciwnikiem (Tonym)
+
+  addTagPlayerKamien: "tag add playerKamien"
+  addTagPlayerPapier: "tag add playerPapier"
+  addTagPlayerNozyce: "tag add playerNozyce"
+
+  pickRandomTonyPKN: "pickrandom 33%addTagTonyKamien,33%addTagTonyPapier,34%addTagTonyNozyce" #Randomowe dobranie tagow przeciwnika (Tonego)
+
+  addTagTonyKamien: "tag add tonyKamien"
+  addTagTonyPapier: "tag add tonyPapier"
+  addTagTonyNozyce: "tag add tonyNozyce"
+
+  # Bella Events
+  giveDarmoweCiastko: "give ciastko"
+  giveListaProduktow: "give lista_produktow"
+
+  takeItemyLista: "take mleko:1,siano:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
+
+  giveQuestCompleteCiastka: "give ciastko:3"
+  notifNextStepChris: "notify &eChris&r oczekuje twojego powrotu! io:bossbar barColor:green sound:entity.player.levelup"

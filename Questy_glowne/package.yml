@@ -1,0 +1,34 @@
+npcs:
+  '5': Wes
+  '2': Rosalie
+  '3': Skrik
+  '0': Chris
+  '4': Tony
+  '1': Bella
+  '7': Agata
+  
+items:
+  steak: COOKED_BEEF name:&lPieczona_Wołowina lore:Lore_trzeba_zrobić;&2Quest_Reward; #Stek, quest-1 Wes
+  potka_leczenia: "potion effects:instant_health:3:69 name:&c&lElixir_Herbanum lore:Lore_trzeba_zrobić;&2Quest_Reward;" #Potka, quest-2 Skrik
+  list_do_chrisa: "paper Name:List_Dla_Chrisa"
+  zloty_miecz: "golden_sword"
+  ciastko: COOKIE
+
+  lista_produktow: WRITTEN_BOOK
+    title:Lista_produktów
+    author:Bella
+    text:1x_mleko\n10x_siano\n8x_jajko\n4x_surowy_łosoś\n2x_surowy_kurczak\n1x_cukier\n3x_ziemniak\n4x_marchew
+  
+  mleko: MILK_BUCKET
+  siano: WHEAT
+  jajko: EGG
+  surowy_losos: SALMON
+  surowy_kurczak: CHICKEN
+  cukier: SUGAR
+  ziemniak: POTATO
+  marchew: CARROT
+
+  klucz_do_pokoju: NAME_TAG name:&lKlucz_do_pokoju lore:Klucz_otrzymany_od_karczmarza_Chrisa,;potrzebny_do_otwarcia_pokoju_w_jego_karczmie;&2Quest_Item
+  pieczony_kurczak: COOKED_CHICKEN
+  pieczony_schab: COOKED_PORKCHOP
+  pieczony_krolik: COOKED_RABBIT

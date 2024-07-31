@@ -1,0 +1,58 @@
+conversations:
+  Rosalie:
+    NPC_options:
+
+      # 1.Przywitanie sie z Rozalia
+      q2-rosalie-1:
+        condition: isQuest2-Progress-Rosalie
+        text: "Ojejku, zaskoczyłeś mnie %player% miałam nadzieję, że niedługo się zobaczymy! Czy wszystko u Ciebie w porządku?"
+        pointer: q2-player-1a, q2-player-1b, q2-player-1c
+      
+      # 2.Sub-Quest wyprawa do medyka
+      q2-rosalie-2:
+        text: "Musisz wybrać się do medyka! Ma on na imię Skrik, po wizycie wróć do mnie."
+        events: increaseQuest2-Progress
+        pointer: q2-player-2a, q2-player-2b
+      
+      # 3.Kontynułacja rozmowy/Powrot od Skrika
+      q2-rosalie-3:
+        condition: isQuest2-Progress-RosalieZdrowy
+        text: "Potrzebujesz czegoś jeszcze?"
+        pointer: q2-player-3a, q2-player-3b
+      
+      # 4.Gracz w drodze do gospody
+      q2-rosalie-4:
+        text: "Tuż obok Ratuszu znajduje się ,,Tawerna pod Starym Wielorybem” znajdziesz tam Karczmarza Chrisa który Ci pomoże w dalszych ustaleniach. Bywaj podróżniku."
+        events: increaseQuest2-Progress
+        pointer: q2-player-4
+      
+
+    player_options:
+      
+      # 1.Przywitanie sie z Rozalia
+      q2-player-1a:
+        text: "Tak, czuję się dużo lepiej!"
+        events: "setQuest2-Progress-Zdrowy"
+        pointer: q2-rosalie-3
+      q2-player-1b:
+        text: "Nie czuję się najlepiej…"
+        pointer: q2-rosalie-2
+      q2-player-1c:
+        text: "Czułbym się dużo lepiej bez Ciebie. Żegnaj."
+      
+      # 2.Sub-Quest wyprawa do medyka
+      q2-player-2a:
+        text: "Dobrze… Zatem idę!"
+      q2-player-2b: 
+        text: "Później do niego zajrzę."
+      
+      # 3.Kontynułacja rozmowy/Powrot od Skrika
+      q2-player-3a:
+        text: "Poszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
+        pointer: q2-rosalie-4
+      q2-player-3b:
+        text: "Nie mam teraz czasu, może później…"
+      
+      # 4.Gracz w drodze do gospody
+      q2-player-4:
+        text: "Dziękuje Ci, muszę prędko tam zmierzać"

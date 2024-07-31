@@ -1,0 +1,13 @@
+conditions:
+  Quest-1-Done: "tag Quest-1-Done"
+  Quest-2-Done: "tag Quest-2-Done"
+  Quest-3-Done: "tag Quest-3-Done"
+  Quest-4-Done: "tag Quest-4-Done"
+  Quest-5-Done: "tag Quest-5-Done"
+
+events:
+  AddTagQuest-1-Done: "tag add Quest-1-Done"
+  AddTagQuest-2-Done: "tag add Quest-2-Done"
+  AddTagQuest-3-Done: "tag add Quest-3-Done"
+  AddTagQuest-4-Done: "tag add Quest-4-Done"
+  AddTagQuest-5-Done: "tag add Quest-5-Done"

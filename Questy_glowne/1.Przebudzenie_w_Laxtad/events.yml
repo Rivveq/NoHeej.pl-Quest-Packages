@@ -1,0 +1,7 @@
+events:
+  AddTagPowrotPoJedzenie: "tag add PowrotPoJedzenie"
+  DelTagPowrotPoJedzenie: "tag delete PowrotPoJedzenie"
+
+  GiveJedzenie: "give steak:16"
+
+  Quest-1-Done: "folder DelTagPowrotPoJedzenie,addObjectiveQuest2,GiveJedzenie,Tracking.AddTagQuest-1-Done"

@@ -1,0 +1,8 @@
+conversations:
+  Rosalie:
+    quester: 'Rosalie'
+    first: q2-rosalie-1, q2-rosalie-3, default
+
+    NPC_options:
+      default:
+        text: "placeholder"

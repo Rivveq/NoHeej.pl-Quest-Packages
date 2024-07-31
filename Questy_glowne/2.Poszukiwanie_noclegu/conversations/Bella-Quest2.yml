@@ -1,0 +1,74 @@
+conversations:
+  Bella:
+    NPC_options:
+    
+      # 1.Przywitanie
+      q1-bella-1:
+        condition: isQuest2-Progress-BellaRozmowa
+        text: "♪Na na na♪... Witaj kochaniutki! Co Cię tu przywiodło? Może masz ochotę na coś słodkiego? Chcesz ciastko?"
+        pointer: q1-player-1a, q1-player-1b, q1-player-1c
+      
+      # 2.Ciastko teraz
+      q1-bella-2:
+        text: "Poczekaj no chwilę złociutki."
+        pointer: q1-player-2
+      
+      # 3.Quest lista produktów
+      q1-bella-3:
+        text: "Jaki miły z Ciebie chłopak, już daje Ci listę potrzebnych produktów"
+        pointer: q1-player-3a, q1-player-3b
+      
+      # 4.Kompletowanie Listy
+      q1-bella-4a:
+        condition: hasSkladniki
+        text: "Cieszę się, że już wróciłeś, właśnie upiekłam ciasteczka! Częstuj się!"
+        pointer: q1-player-4a, q1-player-4b
+      q1-bella-4b:
+        condition: isQuest2-Progress-BellaPoszukujeSkladnikow
+        text: "Nie zebrałeś jeszcze wszystkich składników z listy!"
+      
+      # 5.Po skompletowaniu listy
+      q1-bella-5:
+        text: "Dziękuje Ci wnusiu, proszę oto Twoje drobne słodkości!"
+        event: giveQuestCompleteCiastka
+        pointer: q1-player-5
+    
+
+    
+    player_options:
+      # 1.Przywitanie
+      q1-player-1a:
+        text: "Przybywam od Chrisa, aby pomóc Pani z uzupełnieniem zapasów. A co do ciastek z przyjemnością poczęstuję się jednym po wykonaniu zadania."
+        pointer: q1-bella-3
+      q1-player-1b:
+        text: "Dobrego ciasteczka nie odmawiam."
+        pointer: q1-bella-2
+      q1-player-1c:
+        text: "Przepraszam, nie biore słodkości od nieznajomych."
+      
+      # 2.Ciastko teraz
+      q1-player-2:
+        text: "Dobrze!"
+        event: giveDarmoweCiastko
+        pointer: q1-bella-3
+      
+      # 3.Gracz wyrusza po składniki
+      q1-player-3a:
+        text: "Niedługo wrócę i wspólnie zjemy ciasteczka."
+        event: giveListaProduktow, increaseQuest2-Progress
+      q1-player-3b:
+        text: "Zajmę się tym, gdy będę mieć czas."
+        event: giveListaProduktow, increaseQuest2-Progress
+      
+      # 4,5.Skompletowana Lista
+      q1-player-4a:
+        text: "Idealnie bo umieram z głodu! Tutaj mam produkty dla Ciebie!"
+        event: takeItemyLista, increaseQuest2-Progress
+        pointer: q1-bella-5
+      q1-player-4b:
+        text: "Nie będę jadł Twoich ciastek!"
+      
+      q1-player-5:
+        text: "Mmm, jakie to pyszne!!"
+        event: notifNextStepChris, increaseQuest2-Progress
+      

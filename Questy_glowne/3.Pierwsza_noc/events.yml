@@ -1,0 +1,15 @@
+events:
+  # Objective events
+  addObjectiveQuest3: "objective add Quest3-Progress"
+  addObjectiveSprawdzPokoj-3: "objective add SprawdzPokoj-3"
+
+  increaseQuest3-Progress: "stage Quest3-Progress increase 1"
+
+  # Agata Events
+  takeKluczDoPokoju: "take klucz_do_pokoju"
+  
+  # Tajemniczy Mezczyzna Events
+  notifDziwneDzwieki: "folder soundDziwneDzwieki1,soundDziwneDzwieki2,soundDziwneDzwieki1,soundDziwneDzwieki2,notifDziwneDzwiekiChat period:10 ticks"
+  soundDziwneDzwieki1: "notify io:sound sound:entity.zombie.attack_wooden_door soundpitch:0 soundvolume:0.5"
+  soundDziwneDzwieki2: "notify io:sound sound:entity.zombie.attack_iron_door soundpitch:1 soundvolume:0.5"
+  notifDziwneDzwiekiChat: "notify &eCoś dziwnego dzieje się w pokoju obok... Lepiej to sprawdzę."

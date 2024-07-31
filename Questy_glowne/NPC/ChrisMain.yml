@@ -1,0 +1,8 @@
+conversations:
+  Chris:
+    quester: 'Chris'
+    first: q2-chris-1, q2-chris-2b, q2-chris-5, q2-chris-6c, q2-chris-8b, default
+
+    NPC_options:
+      default:
+        text: "placeholder"
