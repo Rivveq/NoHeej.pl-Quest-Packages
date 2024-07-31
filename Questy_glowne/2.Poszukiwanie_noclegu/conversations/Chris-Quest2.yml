@@ -146,7 +146,7 @@ conversations:
       # 9.Pozegnanie z Chrisem
       q2-player-9a:
         text: "Do zobaczenia!"
-        events: increaseQuest2-Progress, Quest-2-Done
+        events: increaseQuest2-Progress
       q2-player-9b:
         text: "Nie sądzę żebym chciał wrócić."
-        events: increaseQuest2-Progress, Quest-2-Done
+        events: increaseQuest2-Progress
