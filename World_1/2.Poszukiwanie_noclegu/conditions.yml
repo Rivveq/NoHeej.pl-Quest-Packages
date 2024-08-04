@@ -47,5 +47,5 @@ conditions:
   isRemis-3: "and isPlayerNozyce,isTonyNozyce"
 
   # Bella conversation conditions
-  hasSkladniki: "item mleko:1,siano:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
+  hasSkladniki: "item mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
   hasTagListaQuestDone: "tag ListaQuestDone"
