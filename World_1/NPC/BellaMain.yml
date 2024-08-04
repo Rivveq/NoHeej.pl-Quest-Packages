@@ -1,7 +1,7 @@
 conversations:
   Bella:
     quester: 'Bella'
-    first: q1-bella-1, q1-bella-4a, q1-bella-4b, bella-1-1, default
+    first: q1-bella-1, q1-bella-4a, q1-bella-4b, bella-1-1, bella-1-4, bella-1-6a, bella-1-6b, default
     
     NPC_options:
       default:

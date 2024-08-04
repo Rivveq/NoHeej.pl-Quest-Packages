@@ -20,3 +20,34 @@ events:
   ifDanie-2: "if Bella-Danie-2 giveListaDanie-2 else ifDanie-3"
   ifDanie-3: "if Bella-Danie-3 giveListaDanie-3 else giveListaDanie-4"
 
+  # =====================================================================
+
+  takeSkladnikiDanie-1: "take cukier:2,surowy_losos:1,marchew:4,butelka_wody:1"
+  takeSkladnikiDanie-2: "take morski_ogor:5,butelka_wody:2,burak:3,miska:1"
+  takeSkladnikiDanie-3: "take butelka_miodu:2,cukier:3,butelka:1,kakao:1"
+  takeSkladnikiDanie-4: "take marchew:10,cukier:1,pszenica:12"
+
+  takeListaDanie: command clear %player% written_book{author:"Bella"} 1
+
+  # =====================================================================
+
+  startObjectiveTime: "objective add has5MinPassed"
+  addTagTimeHasPassed: "tag add time-has-passed"
+  delTagTimeHasPassed: "tag del time-has-passed"
+
+  giveDanie-1: "give rybenka"
+  giveDanie-2: "give zupa_ogorkowa"
+  giveDanie-3: "give miodowe"
+  giveDanie-4: "give chlebek_marchewkowy"
+
+  ifDanie-1-Done: "if Bella-Danie-1 giveDanie-1 else ifDanie-2-Done"
+  ifDanie-2-Done: "if Bella-Danie-2 giveDanie-2 else ifDanie-3-Done"
+  ifDanie-3-Done: "if Bella-Danie-3 giveDanie-3 else giveDanie-4"
+
+  # =====================================================================
+
+  startObjectiveQuestCooldown: "objective add QuestCooldown"
+  addTagNextQuestReady: "tag add NextQuestReady"
+  delTagNextQuestReady: "tag del NextQuestReady"
+
+  folderQuestDone: "folder ifDanie-1-Done,folderDelTagDanie,startObjectiveQuestCooldown,delTagTimeHasPassed"

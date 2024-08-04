@@ -4,6 +4,7 @@ conversations:
       
       # 1.Poczatek
       bella-1-1:
+        conditions: tagNextQuestReady
         text: "Witaj wnusiu, co się stało?"
         pointer: player-bella-1-1, player-bella-1-2
       
@@ -15,10 +16,50 @@ conversations:
       # 3. Bella wysyla po skladniki
       bella-1-3:
         text: "Zatem musisz mi przynieść składniki z tej oto listy."
-        events: ifDanie-1
+        events: ifDanie-1, delTagNextQuestReady
         pointer: player-bella-1-3
 
       # 4.Gracz wraca z składnikami
+      bella-1-4:
+        conditions: "Bella-Danie-Started, !objectiveTimePassed, !tagTimeHasPassed"
+        text: "Wnusiu, masz składniki?"
+        pointer: player-bella-1-4a, player-bella-1-4b
+
+      # 5.Rozmowa po powrocie
+      bella-1-5a:
+        conditions: Bella-Danie-1, hasItems-Danie-1
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-1, takeListaDanie
+        pointer: player-bella-1-5
+      bella-1-5b:
+        conditions: Bella-Danie-2, hasItems-Danie-2
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-2, takeListaDanie
+        pointer: player-bella-1-5
+      bella-1-5c:
+        conditions: Bella-Danie-3, hasItems-Danie-3
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-3, takeListaDanie
+        pointer: player-bella-1-5
+      bella-1-5d:
+        conditions: Bella-Danie-4, hasItems-Danie-4
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-4, takeListaDanie
+        pointer: player-bella-1-5
+      
+      bella-1-5-noitems:
+        text: "Czegoś Ci brakuje złotko. Wróć do mnie z wszystkimi składnikami z listy."
+
+      # 6.Powrót po przerwie
+      bella-1-6a:
+        conditions: tagTimeHasPassed
+        text: "Jesteś na czas, akurat skończyłam, oto twoje danie. Smacznego!"
+        events: folderQuestDone
+        pointer: player-bella-1-6
+      bella-1-6b:
+        conditions: objectiveTimePassed
+        text: "Potrzebuje czasu na przyrządzenie dania! Wróć później."
+
 
     player_options:
 
@@ -50,3 +91,19 @@ conversations:
       # 3.Bella wysyła po składniki
       player-bella-1-3:
         text: "Dobrze, za chwilę udam się po składniki."
+      
+      # 4.Gracz wraca z składnikami
+      player-bella-1-4a:
+        text: "Oczywiście, że tak."
+        pointer: bella-1-5a, bella-1-5b, bella-1-5c, bella-1-5d, bella-1-5-noitems
+      player-bella-1-4b:
+        text: "&x&C&C&0&0&3&3Niestety nie mam..."
+
+      # 5.Rozmowa po powrocie
+      player-bella-1-5:
+        text: "W porządku, zobaczymy się za 5 minut."
+        events: startObjectiveTime
+      
+      # 6.Powrót po przerwie
+      player-bella-1-6:
+        text: "Dziękuję bardzo!"

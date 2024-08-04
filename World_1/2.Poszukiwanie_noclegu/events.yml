@@ -7,7 +7,7 @@ events:
   setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
   setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
 
-  Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2"
+  Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,addTagNextQuestReady"
 
   # Skrik events
   givePotkaLeczenia: "give potka_leczenia"
