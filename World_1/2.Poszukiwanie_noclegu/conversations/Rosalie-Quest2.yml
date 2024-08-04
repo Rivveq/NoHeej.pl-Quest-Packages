@@ -31,28 +31,28 @@ conversations:
       
       # 1.Przywitanie sie z Rozalia
       q2-player-1a:
-        text: "Tak, czuję się dużo lepiej!"
+        text: "&x&3&C&B&3&7&1Tak, czuję się dużo lepiej!"
         events: "setQuest2-Progress-Zdrowy"
         pointer: q2-rosalie-3
       q2-player-1b:
-        text: "Nie czuję się najlepiej…"
+        text: "&x&C&C&C&C&0&0Nie czuję się najlepiej…"
         pointer: q2-rosalie-2
       q2-player-1c:
-        text: "Czułbym się dużo lepiej bez Ciebie. Żegnaj."
+        text: "&x&C&C&0&0&3&3Czułbym się dużo lepiej bez Ciebie. Żegnaj."
       
       # 2.Sub-Quest wyprawa do medyka
       q2-player-2a:
-        text: "Dobrze… Zatem idę!"
+        text: "&x&3&C&B&3&7&1Dobrze… Zatem idę!"
       q2-player-2b: 
-        text: "Później do niego zajrzę."
+        text: "&x&C&C&0&0&3&3óźniej do niego zajrzę."
       
       # 3.Kontynułacja rozmowy/Powrot od Skrika
       q2-player-3a:
-        text: "Poszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
+        text: "&x&3&C&B&3&7&1Poszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
         pointer: q2-rosalie-4
       q2-player-3b:
-        text: "Nie mam teraz czasu, może później…"
+        text: "&x&C&C&0&0&3&3Nie mam teraz czasu, może później…"
       
       # 4.Gracz w drodze do gospody
       q2-player-4:
-        text: "Dziękuje Ci, muszę prędko tam zmierzać"
+        text: "&x&3&C&B&3&7&1Dziękuje Ci, muszę prędko tam zmierzać"

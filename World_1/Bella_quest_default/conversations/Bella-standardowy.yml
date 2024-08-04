@@ -65,45 +65,45 @@ conversations:
 
     # 1.Poczatek
       player-bella-1-1:
-        text: "Mogłabyś przyrządzić coś dla mnie?"
+        text: "&x&C&C&C&C&0&0Mogłabyś przyrządzić coś dla mnie?"
         pointer: bella-1-2
       player-bella-1-2:
-        text: "Nic... żegnaj."
+        text: " &x&C&C&0&0&3&3Nic... żegnaj."
       
       # 2.Wybor dania
       player-bella-1-2a:
-        text: "Rybeńka"
+        text: "&x&C&C&C&C&0&0Rybeńka"
         events: addTagDanie-1
         pointer: bella-1-3
       player-bella-1-2b:
-        text: "Zupa ogórkowa"
+        text: "&x&C&C&C&C&0&0Zupa ogórkowa"
         events: addTagDanie-2
         pointer: bella-1-3
       player-bella-1-2c:
-        text: "Miodowe co nie co"
+        text: "&x&C&C&C&C&0&0Miodowe co nie co"
         events: addTagDanie-3
         pointer: bella-1-3
       player-bella-1-2d:
-        text: "Chlebek marchewkowy"
+        text: "&x&C&C&C&C&0&0Chlebek marchewkowy"
         events: addTagDanie-4
         pointer: bella-1-3
 
       # 3.Bella wysyła po składniki
       player-bella-1-3:
-        text: "Dobrze, za chwilę udam się po składniki."
+        text: "&x&C&C&C&C&0&0Dobrze, za chwilę udam się po składniki."
       
       # 4.Gracz wraca z składnikami
       player-bella-1-4a:
-        text: "Oczywiście, że tak."
+        text: "&x&C&C&C&C&0&0Oczywiście, że tak."
         pointer: bella-1-5a, bella-1-5b, bella-1-5c, bella-1-5d, bella-1-5-noitems
       player-bella-1-4b:
         text: "&x&C&C&0&0&3&3Niestety nie mam..."
 
       # 5.Rozmowa po powrocie
       player-bella-1-5:
-        text: "W porządku, zobaczymy się za 5 minut."
+        text: "&x&C&C&C&C&0&0W porządku, zobaczymy się za 5 minut."
         events: startObjectiveTime
       
       # 6.Powrót po przerwie
       player-bella-1-6:
-        text: "Dziękuję bardzo!"
+        text: "&x&C&C&C&C&0&0Dziękuję bardzo!"
