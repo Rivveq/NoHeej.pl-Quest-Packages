@@ -1,4 +1,4 @@
 objectives:
   Quest3-Progress: "stage AgataRecepcja,Pokoj"
 
-  SprawdzPokoj-3: "region pokoj_3 entry events:notifDziwneDzwieki"
+  SprawdzPokoj-3: "location 360;72;24;world 2 entry events:notifDziwneDzwieki" # XYZ DO ZMIANY !!!!!!!!!!!

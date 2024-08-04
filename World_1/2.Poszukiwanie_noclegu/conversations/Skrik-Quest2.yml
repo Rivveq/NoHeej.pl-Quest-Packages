@@ -17,12 +17,12 @@ conversations:
       
       # 1.Pierwsze spotkanie z Skrikiem
       q2-player-1a:
-        text: "Egh… Wysłała mnie do Ciebie Rozalia, powiedziała, że możesz mi pomóc z moim problemem."
+        text: "&x&3&C&B&3&7&1Egh… Wysłała mnie do Ciebie Rozalia, powiedziała, że możesz mi pomóc z moim problemem."
         pointer: q2-skrik-2
       q2-player-1b:
-        text: "Nie dotykaj mnie!"
+        text: "&x&C&C&0&0&3&3Nie dotykaj mnie!"
       
       # 2.Wreczenie potki leczenia
       q2-player-2:
-        text: "Dziękuję Ci, bywaj."
+        text: "&x&3&C&B&3&7&1Dziękuję Ci, bywaj."
         events: SkrikSubQuestDone

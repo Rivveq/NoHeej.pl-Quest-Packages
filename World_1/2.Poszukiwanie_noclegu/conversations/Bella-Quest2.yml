@@ -38,37 +38,37 @@ conversations:
     player_options:
       # 1.Przywitanie
       q1-player-1a:
-        text: "Przybywam od Chrisa, aby pomóc Pani z uzupełnieniem zapasów. A co do ciastek z przyjemnością poczęstuję się jednym po wykonaniu zadania."
+        text: "&x&3&C&B&3&7&1Przybywam od Chrisa, aby pomóc Pani z uzupełnieniem zapasów. A co do ciastek z przyjemnością poczęstuję się jednym po wykonaniu zadania."
         pointer: q1-bella-3
       q1-player-1b:
-        text: "Dobrego ciasteczka nie odmawiam."
+        text: "&x&3&C&B&3&7&1Dobrego ciasteczka nie odmawiam."
         pointer: q1-bella-2
       q1-player-1c:
-        text: "Przepraszam, nie biore słodkości od nieznajomych."
+        text: "&x&C&C&0&0&3&3Przepraszam, nie biore słodkości od nieznajomych."
       
       # 2.Ciastko teraz
       q1-player-2:
-        text: "Dobrze!"
+        text: "&x&3&C&B&3&7&1Dobrze!"
         event: giveDarmoweCiastko
         pointer: q1-bella-3
       
       # 3.Gracz wyrusza po składniki
       q1-player-3a:
-        text: "Niedługo wrócę i wspólnie zjemy ciasteczka."
+        text: "&x&3&C&B&3&7&1Niedługo wrócę i wspólnie zjemy ciasteczka."
         events: giveListaProduktow, increaseQuest2-Progress
       q1-player-3b:
-        text: "Zajmę się tym, gdy będę mieć czas."
+        text: "&x&C&C&0&0&3&3Zajmę się tym, gdy będę mieć czas."
         events: giveListaProduktow, increaseQuest2-Progress
       
       # 4,5.Skompletowana Lista
       q1-player-4a:
-        text: "Idealnie bo umieram z głodu! Tutaj mam produkty dla Ciebie!"
+        text: "&x&3&C&B&3&7&1Idealnie bo umieram z głodu! Tutaj mam produkty dla Ciebie!"
         event: takeItemyLista, increaseQuest2-Progress
         pointer: q1-bella-5
       q1-player-4b:
-        text: "Nie będę jadł Twoich ciastek!"
+        text: "&x&C&C&0&0&3&3Nie będę jadł Twoich ciastek!"
       
       q1-player-5:
-        text: "Mmm, jakie to pyszne!!"
+        text: "&x&3&C&B&3&7&1Mmm, jakie to pyszne!!"
         events: notifNextStepChris, increaseQuest2-Progress, hungerPlayerMax
       

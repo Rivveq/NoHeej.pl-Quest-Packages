@@ -19,13 +19,13 @@ conversations:
     
       # 1.Początek kolejnego questa
       q2-player-1a:
-        text: "Wiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
+        text: "&x&3&C&B&3&7&1Wiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
         pointer: q2-wes-2
       q2-player-1b:
-        text: "Już nic nie potrzebuję."
+        text: "&x&C&C&0&0&3&3Już nic nie potrzebuję."
       
       # 2.Odesłanie do Rozalii
       q2-player-2a:
-        text: "Dziękuję, już się tam udaję!"
+        text: "&x&3&C&B&3&7&1Dziękuję, już się tam udaję!"
       q2-player-2b:
-        text: "Nie mam teraz czasu, może później…"
+        text: "&x&C&C&0&0&3&3Nie mam teraz czasu, może później…"

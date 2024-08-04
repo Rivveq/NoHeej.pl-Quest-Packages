@@ -74,73 +74,73 @@ conversations:
       
       # 1.Pierwsze spotkanie z Tonym
       q2-player-1:
-        text: "Um… Przychodzę z polecenia Chrisa. Powiedział, że masz dla niego list."
+        text: "&x&3&C&B&3&7&1Um… Przychodzę z polecenia Chrisa. Powiedział, że masz dla niego list."
         pointer: q2-tony-2
 
       # 2.Rozmowa
       q2-player-2a:
-        text: "Jestem mu winny przysługę, musisz mi uwierzyć!"
+        text: "&x&3&C&B&3&7&1Jestem mu winny przysługę, musisz mi uwierzyć!"
         pointer: q2-tony-3
       q2-player-2b: 
-        text: "Żartujesz sobie ze mnie?"
+        text: "&x&3&C&B&3&7&1Żartujesz sobie ze mnie?"
         pointer: q2-tony-4
       q2-player-2c:
-        text: "Już sobie idę. Wybacz."
+        text: "&x&C&C&0&0&3&3Już sobie idę. Wybacz."
       
-      # 3.Droga-1 Tony umierzył
+      # 3.Droga-1 Tony uwierzył
       q2-player-3:
-        text: "Dziękuje Ci, mam nadzieję, że jeszcze kiedyś Cię spotkam!"
+        text: "&x&3&C&B&3&7&1Dziękuje Ci, mam nadzieję, że jeszcze kiedyś Cię spotkam!"
       
       # 4.Droga-2 Gra w PKN
       q2-player-4a:
-        text: "Kamień!"
+        text: "&x&F&F&F&0&F&5Kamień!"
         pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerKamien, pickRandomTonyPKN
       q2-player-4b:
-        text: "Papier!"
+        text: "&x&F&F&F&0&F&5Papier!"
         pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerPapier, pickRandomTonyPKN
       q2-player-4c:
-        text: "Nożyczki!"
+        text: "&x&F&F&F&0&F&5Nożyczki!"
         pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerNozyce, pickRandomTonyPKN
       q2-player-4d:
-        text: "Może pobawimy się innym razem, obowiązki mnie wzywają."
+        text: "&x&C&C&0&0&3&3Może pobawimy się innym razem, obowiązki mnie wzywają."
       
       # 5.Droga-2 Kontynułacja gry
       q2-player-5-wygrana:
         condition: isWygrana
-        text: "Wygrywam!"
+        text: "&x&F&F&F&0&F&5Wygrywam!"
         pointer: q2-tony-6-wygrana
       q2-player-5-przegrana: 
         condition: isPrzegrana
-        text: "Przegrywam!"
+        text: "&x&F&F&F&0&F&5Przegrywam!"
         pointer: q2-tony-6-przegrana
       q2-player-5-remis:
         condition: isRemis
-        text: "Remis."
+        text: "&x&F&F&F&0&F&5Remis."
         pointer: q2-tony-6-remis
       
       # 6.Droga-2 Rezultat gry
       q2-player-6-wygrana:
-        text: "Hah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"
+        text: "&x&3&C&B&3&7&1Hah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"
         events: setQuest2-Progress-ChrisPowrotZListem, giveListDoChrisa
       q2-player-6-przegrana:
-        text: "Ah... przegrałem, więc co mogę dla ciebie zrobić?"
+        text: "&x&3&C&B&3&7&1Ah... przegrałem, więc co mogę dla ciebie zrobić?"
         events: increaseQuest2-Progress
         pointer: q2-tony-7
 
       # 7.Przysługa:
       q2-player-7:
-        text: "Wyruszam w drogę, spotkamy się niedługo!"
+        text: "&x&3&C&B&3&7&1Wyruszam w drogę, spotkamy się niedługo!"
   
       # 8.Przysluga w trakcie 
       q2-player-8a:
         condition: hasZlotyMiecz
-        text: "Tak oczywiście proszę weż go sobie i daj mi mój list!"
+        text: "&x&3&C&B&3&7&1Tak oczywiście proszę weż go sobie i daj mi mój list!"
         pointer: q2-tony-9a
       q2-player-8b:
         condition: "!hasZlotyMiecz"
-        text: "Niestety nie mam..."
+        text: "&x&C&C&0&0&3&3Niestety nie mam..."
         pointer: q2-tony-9b
         
