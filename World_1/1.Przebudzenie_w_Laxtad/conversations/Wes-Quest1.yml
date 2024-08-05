@@ -43,6 +43,7 @@ conversations:
       q1-wes-7:
         text: "Trzymaj i najedz się do syta."
         events: Quest-1-Done
+        pointer: q2-wes-1
 
 
     player_options:
