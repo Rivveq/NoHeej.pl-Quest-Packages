@@ -64,7 +64,7 @@ conversations:
       # 9.Koniec
       q2-tony-9a:
         text: "Masz twój list i dziękuje za miecz!"
-        events: giveListDoChrisa, setQuest2-Progress-ChrisPowrotZListem, takeZlotyMiecz
+        events: giveListDoChrisa, setQuest2-Progress-ChrisPowrotZListem, takeZlotyMiecz, notifNextLocation-Chris
       q2-tony-9b:
         text: "W takim razie po co przyszedłeś? Nie oddam ci listu bez miecza!"
       
@@ -90,6 +90,7 @@ conversations:
       # 3.Droga-1 Tony uwierzył
       q2-player-3:
         text: "&x&3&C&B&3&7&1Dziękuje Ci, mam nadzieję, że jeszcze kiedyś Cię spotkam!"
+        events: notifNextLocation-Chris
       
       # 4.Droga-2 Gra w PKN
       q2-player-4a:

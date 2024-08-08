@@ -25,4 +25,4 @@ conversations:
       # 2.Wreczenie potki leczenia
       q2-player-2:
         text: "&x&3&C&B&3&7&1Dziękuję Ci, bywaj."
-        events: SkrikSubQuestDone
+        events: SkrikSubQuestDone, notifNextLocation-Rosalia

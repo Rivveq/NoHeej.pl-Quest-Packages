@@ -51,8 +51,9 @@ conversations:
 
       # 7.Zadanie u Belli
       q2-chris-7a:
-        text: "W takim razie proszę abyś teraz czym prędzej udał się do naszej kucharki &e&lBelli&r i pomógł jej uzupełnić zapasy."
+        text: "W takim razie proszę abyś teraz czym prędzej udał się do naszej kucharki Belli i pomógł jej uzupełnić zapasy."
         event: increaseQuest2-Progress
+        pointer: q2-player-7
       q2-chris-7b:
         text: "No dobrze. Ale pamiętaj by do mnie wrócić!"
       
@@ -119,12 +120,13 @@ conversations:
       # 4.Wyprawa na zadanie
       q2-player-4: 
         text: "&x&3&C&B&3&7&1Dobrze, zajmę się tym natychmiast!"
-        events: increaseQuest2-Progress
+        events: increaseQuest2-Progress, notifNextLocation-Tony
       
       # 5.Powrot z listem
       q2-player-5a:
         condition: hasListDoChrisa
         text: "&x&3&C&B&3&7&1Oczywiście, proszę oto on!"
+        events: takeListDoChrisa
         pointer: q2-chris-6a
       q2-player-5b:
         text: "&x&C&C&0&0&3&3Niestety nie mam..."
@@ -138,6 +140,11 @@ conversations:
         text: "&x&C&C&0&0&3&3Mam coś innego do roboty."
         pointer: q2-chris-7b
       
+      # 7.Zadanie u Belli
+      q2-player-7:
+        text: "&x&3&C&B&3&7&1Już lecę!"
+        events: notifNextLocation-Bella
+      
       # 8.Zapłata za pokój/Powrot od Belli
       q2-player-8:
         text: "&x&3&C&B&3&7&1Dziękuję za pomoc, pamiętaj, że zawsze możesz na mnie liczyć!"
@@ -146,7 +153,7 @@ conversations:
       # 9.Pozegnanie z Chrisem
       q2-player-9a:
         text: "&x&3&C&B&3&7&1Do zobaczenia!"
-        events: increaseQuest2-Progress
+        events: increaseQuest2-Progress, notifNextLocation-Agata
       q2-player-9b:
         text: "&x&C&C&0&0&3&3Nie sądzę żebym chciał wrócić."
-        events: increaseQuest2-Progress
+        events: increaseQuest2-Progress, notifNextLocation-Agata

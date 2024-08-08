@@ -43,34 +43,35 @@ conversations:
       q1-wes-7:
         text: "Trzymaj i najedz się do syta."
         events: Quest-1-Done
+        pointer: "q2-player-1a"
 
 
     player_options:
 
       # 1.Przebudzenie
       q1-player-1a:
-        text: "&x&F&F&F&0&F&5Gdzie jestem?"
+        text: "&x&3&C&B&3&7&1Gdzie jestem?"
         pointer: "q1-wes-2"
       q1-player-1b:
         text: "&x&C&C&0&0&3&3Zostaw mnie..."
 
       # 2.Rozmowa
       q1-player-2a:
-        text: "&x&F&F&F&0&F&5Tak myślę... Kim jesteś?"
+        text: "&x&3&C&B&3&7&1Tak myślę... Kim jesteś?"
         pointer: q1-wes-3
       q1-player-2b:
         text: "&x&C&C&0&0&3&3Sam sobie poradzę!"
       
       # 3.Rozmowa
       q1-player-3a:
-        text: "&x&F&F&F&0&F&5W takim razie… kim ja jestem?"
+        text: "&x&3&C&B&3&7&1W takim razie… kim ja jestem?"
         pointer: q1-wes-4
       q1-player-3b:
         text: "&x&C&C&0&0&3&3Haha…! Chłopiec na posyłki! Ha..."
       
       # 4.Rozmowa
       q1-player-4a:
-        text: "&x&F&F&F&0&F&5Pamiętam sztorm… Chciałem dostać się do centrum Velorii, gdy zalało moją łajbę."
+        text: "&x&3&C&B&3&7&1Pamiętam sztorm… Chciałem dostać się do centrum Velorii, gdy zalało moją łajbę."
         pointer: q1-wes-5
       q1-player-4b:
         text: "&x&C&C&0&0&3&3Nie zamierzam o tym z Tobą rozmawiać."
