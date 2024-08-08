@@ -42,8 +42,17 @@ events:
   giveDarmoweCiastko: "give ciastko"
   giveListaProduktow: "give lista_produktow"
 
+  takeListaSkladnikow: command clear %player% written_book{author:"Bella"} 1
   takeItemyLista: "take mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
 
   giveQuestCompleteCiastka: "give ciastko:3"
   hungerPlayerMax: "hunger set 20"
-  notifNextStepChris: "notify &eChris&r oczekuje twojego powrotu! io:bossbar barColor:green sound:entity.player.levelup"
+
+  # Next Location Notifs
+  
+  notifNextLocation-Rosalia: "notify &x&3&C&B&3&7&1Spotkaj się z &eRosalią &x&3&C&B&3&7&1w ratuszu."
+  notifNextLocation-Skrik: "notify &x&3&C&B&3&7&1Spotkaj się z &eSkrikiem &x&3&C&B&3&7&1w szpitalu."
+  notifNextLocation-Chris: "notify &x&3&C&B&3&7&1Spotkaj się z &eChrisem &x&3&C&B&3&7&1w karczmie."
+  notifNextLocation-Tony: "notify &x&3&C&B&3&7&1Spotkaj się z &eTonym &x&3&C&B&3&7&1w jego domu na &epółnocy &x&3&C&B&3&7&1miasta."
+  notifNextLocation-Bella: "notify &x&3&C&B&3&7&1Spotkaj się z &eBellą &x&3&C&B&3&7&1w karczmie."
+  notifNextLocation-Agata: "notify &x&3&C&B&3&7&1Spotkaj się z &eAgatą &x&3&C&B&3&7&1w gospodzie."

@@ -43,8 +43,10 @@ conversations:
       # 2.Sub-Quest wyprawa do medyka
       q2-player-2a:
         text: "&x&3&C&B&3&7&1Dobrze… Zatem idę!"
+        events: notifNextLocation-Skrik
       q2-player-2b: 
-        text: "&x&C&C&0&0&3&3óźniej do niego zajrzę."
+        text: "&x&C&C&0&0&3&3Później do niego zajrzę."
+        events: notifNextLocation-Skrik
       
       # 3.Kontynułacja rozmowy/Powrot od Skrika
       q2-player-3a:
@@ -56,3 +58,4 @@ conversations:
       # 4.Gracz w drodze do gospody
       q2-player-4:
         text: "&x&3&C&B&3&7&1Dziękuje Ci, muszę prędko tam zmierzać"
+        events: notifNextLocation-Chris

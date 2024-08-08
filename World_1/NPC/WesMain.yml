@@ -1,7 +1,7 @@
 conversations:
   Wes:
     quester: 'Wes'
-    first: q2-wes-1, q1-wes-6a, q1-wes-1, default
+    first: q2-wes-2, q1-wes-6a, q1-wes-1, default
 
     NPC_options:
       default:

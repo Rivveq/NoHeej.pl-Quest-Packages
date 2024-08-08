@@ -68,7 +68,7 @@ conversations:
         text: "&x&C&C&C&C&0&0Mogłabyś przyrządzić coś dla mnie?"
         pointer: bella-1-2
       player-bella-1-2:
-        text: " &x&C&C&0&0&3&3Nic... żegnaj."
+        text: "&x&C&C&0&0&3&3Nic... żegnaj."
       
       # 2.Wybor dania
       player-bella-1-2a:
