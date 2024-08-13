@@ -1,0 +1,118 @@
+conversations:
+  Paulina:
+    
+    quester: Paulina
+    first: paulina-1-1, paulina-1-4, paulina-1-6a, paulina-1-6b, default
+
+    NPC_options:
+
+      default:
+        text: "Jestem teraz zajęta! Wróć do mnie później."
+      
+      # 1.Poczatek
+      paulina-1-1:
+        conditions: tagNextQuestReady
+        text: "Witaj wnusiu, co się stało?"
+        pointer: player-paulina-1-1, player-paulina-1-2
+      
+      # 2.Wybor dania
+      paulina-1-2:
+        text: "Oczywiście, na co masz ochotę?"
+        pointer: player-paulina-1-2a, player-paulina-1-2b, player-paulina-1-2c, player-paulina-1-2d, player-paulina-2exit
+      
+      # 3. paulina wysyla po skladniki
+      paulina-1-3:
+        text: "Zatem musisz mi przynieść składniki z tej oto listy."
+        events: ifDanie-1, delTagNextQuestReady
+        pointer: player-paulina-1-3
+
+      # 4.Gracz wraca z składnikami
+      paulina-1-4:
+        conditions: "Paulina-Danie-Started, !objectiveTimePassed, !tagTimeHasPassed"
+        text: "Wnusiu, masz składniki?"
+        pointer: player-paulina-1-4a, player-paulina-1-4b
+
+      # 5.Rozmowa po powrocie
+      paulina-1-5a:
+        conditions: Paulina-Danie-1, hasItems-Danie-1
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-1, takeListaDanie
+        pointer: player-paulina-1-5
+      paulina-1-5b:
+        conditions: Paulina-Danie-2, hasItems-Danie-2
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-2, takeListaDanie
+        pointer: player-paulina-1-5
+      paulina-1-5c:
+        conditions: Paulina-Danie-3, hasItems-Danie-3
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-3, takeListaDanie
+        pointer: player-paulina-1-5
+      paulina-1-5d:
+        conditions: Paulina-Danie-4, hasItems-Danie-4
+        text: "Świetnie! Wróć do mnie za 5 min by odebrać gotowe danie."
+        events: takeSkladnikiDanie-4, takeListaDanie
+        pointer: player-paulina-1-5
+      
+      paulina-1-5-noitems:
+        text: "Czegoś Ci brakuje złotko. Wróć do mnie z wszystkimi składnikami z listy."
+
+      # 6.Powrót po przerwie
+      paulina-1-6a:
+        conditions: tagTimeHasPassed
+        text: "Jesteś na czas, akurat skończyłam, oto twoje danie. Smacznego!"
+        events: folderQuestDone
+        pointer: player-paulina-1-6
+      paulina-1-6b:
+        conditions: objectiveTimePassed
+        text: "Potrzebuje czasu na przyrządzenie dania! Wróć później."
+
+
+    player_options:
+
+    # 1.Poczatek
+      player-paulina-1-1:
+        text: "&x&f&d&f&d&9&6Mogłabyś przyrządzić coś dla mnie?"
+        pointer: paulina-1-2
+      player-paulina-1-2:
+        text: "&x&f&f&6&9&6&1Nic... żegnaj."
+      
+      # 2.Wybor dania
+      player-paulina-1-2a:
+        text: "&x&f&d&f&d&9&6Rybeńka"
+        events: addTagDanie-1
+        pointer: paulina-1-3
+      player-paulina-1-2b:
+        text: "&x&f&d&f&d&9&6Zupa ogórkowa"
+        events: addTagDanie-2
+        pointer: paulina-1-3
+      player-paulina-1-2c:
+        text: "&x&f&d&f&d&9&6Miodowe co nie co"
+        events: addTagDanie-3
+        pointer: paulina-1-3
+      player-paulina-1-2d:
+        text: "&x&f&d&f&d&9&6Chlebek marchewkowy"
+        events: addTagDanie-4
+        pointer: paulina-1-3
+      player-paulina-2exit:
+        text: "&x&f&f&6&9&6&1Rozmyśliłem się..."
+
+      # 3.paulina wysyła po składniki
+      player-paulina-1-3:
+        text: "&x&f&f&6&9&6&1Dobrze, za chwilę udam się po składniki."
+      
+      # 4.Gracz wraca z składnikami
+      player-paulina-1-4a:
+        text: "&x&f&d&f&d&9&6Oczywiście, że tak."
+        pointer: paulina-1-5a, paulina-1-5b, paulina-1-5c, paulina-1-5d, paulina-1-5-noitems
+      player-paulina-1-4b:
+        text: "&x&f&f&6&9&6&1Niestety nie mam..."
+
+      # 5.Rozmowa po powrocie
+      player-paulina-1-5:
+        text: "&x&f&d&f&d&9&6W porządku, zobaczymy się za 5 minut."
+        events: startObjectiveTime
+      
+      # 6.Powrót po przerwie
+      player-paulina-1-6:
+        text: "&x&f&f&6&9&6&1Dziękuję bardzo!"

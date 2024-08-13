@@ -13,13 +13,13 @@ conversations:
     
       # 1.Początek kolejnego questa
       q2-player-1a:
-        text: "&x&3&C&B&3&7&1Wiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
+        text: "&x&9&3&d&3&8&eWiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
         events: increaseQuest2-Progress
         pointer: q2-wes-2
       
       # 2.Odesłanie do Rozalii
       q2-player-2a:
-        text: "&x&3&C&B&3&7&1Dziękuję, już się tam udaję!"
+        text: "&x&9&3&d&3&8&eDziękuję, już się tam udaję!"
         events: notifNextLocation-Rosalia
       q2-player-2b:
-        text: "&x&C&C&0&0&3&3Nie mam teraz czasu, może później…"
+        text: "&x&f&f&6&9&6&1Nie mam teraz czasu, może później…"

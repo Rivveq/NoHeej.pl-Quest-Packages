@@ -78,82 +78,82 @@ conversations:
       
       # 1.Pierwsze spotkanie z Chrisem
       q2-player-1a:
-        text: "&x&3&C&B&3&7&1Witaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rozalia powiedziała mi, że powinienem się udać do Ciebie."
+        text: "&x&9&3&d&3&8&eWitaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rozalia powiedziała mi, że powinienem się udać do Ciebie."
         events: increaseQuest2-Progress
         pointer: q2-chris-2a
       q2-player-1b:
-        text: "&x&C&C&0&0&3&3Niestety nie, Bywaj."
+        text: " &x&f&f&6&9&6&1Niestety nie, Bywaj."
       
       # 2.Kwestia noclegu
       q2-player-2a: 
-        text: "&x&3&C&B&3&7&1Dobrze, zapłacę Ci ile chcesz."
+        text: "&x&9&3&d&3&8&eDobrze, zapłacę Ci ile chcesz."
         pointer: q2-chris-3a
       q2-player-2b:
-        text: "&x&3&C&B&3&7&1Niestety straciłem cały swój dobytek przez sztorm, mógłbym coś dla ciebie zrobić w zamian za nocleg?"
+        text: "&x&9&3&d&3&8&eNiestety straciłem cały swój dobytek przez sztorm, mógłbym coś dla ciebie zrobić w zamian za nocleg?"
         pointer: q2-chris-3b
       q2-player-2c:
-        text: "&x&C&C&0&0&3&3Nie ma mowy! Nie dam złamanego grosza za taką ruderę! Bywaj."
+        text: " &x&f&f&6&9&6&1Nie ma mowy! Nie dam złamanego grosza za taką ruderę! Bywaj."
       
       # 3a.Koszt noclegu - pieniadze
       q2-player-3a-a:
         condition: hasPieniadzeZaNocleg
-        text: "&x&3&C&B&3&7&1Drożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r!"
+        text: "&x&9&3&d&3&8&eDrożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r!"
         events: takeZaplataZaNoc
         pointer: q2-chris-8a
       q2-player-3a-b:
         condition: "!hasPieniadzeZaNocleg"
-        text: "&x&f&f&6&9&6&9Drożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r&x&f&f&6&9&6&9!"
+        text: "&x&a&a&a&8&a&8Drożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r&x&a&a&a&8&a&8!"
         events: notifBrakPieniedzy
       q2-player-3a-c:
-        text: "&x&3&C&B&3&7&1Aż &e1000$&r&x&3&C&B&3&7&1?! Nie ma opcji, to za wiele! Cofam moje słowa. Opowiedz mi więcej o tych zadaniach!"
+        text: "&x&9&3&d&3&8&eAż &e1000$&r&x&9&3&d&3&8&e?! Nie ma opcji, to za wiele! Cofam moje słowa. Opowiedz mi więcej o tych zadaniach!"
         pointer: q2-chris-4
       q2-player-3a-d:
-        text: "&x&C&C&0&0&3&3Wrócę do Ciebie gdy zdobędę pieniądze."
+        text: " &x&f&f&6&9&6&1Wrócę do Ciebie gdy zdobędę pieniądze."
 
       # 3b.Koszt noclegu - zadania
       q2-player-3b-a: 
-        text: "&x&3&C&B&3&7&1Jakie to zadania?"
+        text: "&x&9&3&d&3&8&eJakie to zadania?"
         pointer: q2-chris-4
       q2-player-3b-b: 
-        text: "&x&C&C&0&0&3&3Nie ma mowy, jestem zmęczony i zapracowany, jeśli czegoś potrzebujesz sam się tym zajmij."
+        text: " &x&f&f&6&9&6&1Nie ma mowy, jestem zmęczony i zapracowany, jeśli czegoś potrzebujesz sam się tym zajmij."
       
       # 4.Wyprawa na zadanie
       q2-player-4: 
-        text: "&x&3&C&B&3&7&1Dobrze, zajmę się tym natychmiast!"
+        text: "&x&9&3&d&3&8&eDobrze, zajmę się tym natychmiast!"
         events: increaseQuest2-Progress, notifNextLocation-Tony
       
       # 5.Powrot z listem
       q2-player-5a:
         condition: hasListDoChrisa
-        text: "&x&3&C&B&3&7&1Oczywiście, proszę oto on!"
+        text: "&x&9&3&d&3&8&eOczywiście, proszę oto on!"
         events: takeListDoChrisa
         pointer: q2-chris-6a
       q2-player-5b:
-        text: "&x&C&C&0&0&3&3Niestety nie mam..."
+        text: " &x&f&f&6&9&6&1Niestety nie mam..."
         pointer: q2-chris-6b
 
       # 6.Odpowiedz na list/Kolejne zadanie
       q2-player-6a:
-        text: "&x&3&C&B&3&7&1Jestem gotów!"
+        text: "&x&9&3&d&3&8&eJestem gotów!"
         pointer: q2-chris-7a
       q2-player-6b:
-        text: "&x&C&C&0&0&3&3Mam coś innego do roboty."
+        text: " &x&f&f&6&9&6&1Mam coś innego do roboty."
         pointer: q2-chris-7b
       
       # 7.Zadanie u Belli
       q2-player-7:
-        text: "&x&3&C&B&3&7&1Już lecę!"
+        text: "&x&9&3&d&3&8&eJuż lecę!"
         events: notifNextLocation-Bella
       
       # 8.Zapłata za pokój/Powrot od Belli
       q2-player-8:
-        text: "&x&3&C&B&3&7&1Dziękuję za pomoc, pamiętaj, że zawsze możesz na mnie liczyć!"
+        text: "&x&9&3&d&3&8&eDziękuję za pomoc, pamiętaj, że zawsze możesz na mnie liczyć!"
         pointer: q2-chris-9
       
       # 9.Pozegnanie z Chrisem
       q2-player-9a:
-        text: "&x&3&C&B&3&7&1Do zobaczenia!"
+        text: "&x&9&3&d&3&8&eDo zobaczenia!"
         events: increaseQuest2-Progress, notifNextLocation-Agata
       q2-player-9b:
-        text: "&x&C&C&0&0&3&3Nie sądzę żebym chciał wrócić."
+        text: "&x&f&f&6&9&6&1Nie sądzę żebym chciał wrócić."
         events: increaseQuest2-Progress, notifNextLocation-Agata
