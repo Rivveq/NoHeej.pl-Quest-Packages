@@ -74,22 +74,22 @@ conversations:
       
       # 1.Pierwsze spotkanie z Tonym
       q2-player-1:
-        text: "&x&3&C&B&3&7&1Um… Przychodzę z polecenia Chrisa. Powiedział, że masz dla niego list."
+        text: "&x&9&3&d&3&8&eUm… Przychodzę z polecenia Chrisa. Powiedział, że masz dla niego list."
         pointer: q2-tony-2
 
       # 2.Rozmowa
       q2-player-2a:
-        text: "&x&3&C&B&3&7&1Jestem mu winny przysługę, musisz mi uwierzyć!"
+        text: "&x&9&3&d&3&8&eJestem mu winny przysługę, musisz mi uwierzyć!"
         pointer: q2-tony-3
       q2-player-2b: 
-        text: "&x&3&C&B&3&7&1Żartujesz sobie ze mnie?"
+        text: "&x&9&3&d&3&8&eŻartujesz sobie ze mnie?"
         pointer: q2-tony-4
       q2-player-2c:
-        text: "&x&C&C&0&0&3&3Już sobie idę. Wybacz."
+        text: "&x&f&f&6&9&6&1Już sobie idę. Wybacz."
       
       # 3.Droga-1 Tony uwierzył
       q2-player-3:
-        text: "&x&3&C&B&3&7&1Dziękuje Ci, mam nadzieję, że jeszcze kiedyś Cię spotkam!"
+        text: "&x&9&3&d&3&8&eDziękuje Ci, mam nadzieję, że jeszcze kiedyś Cię spotkam!"
         events: notifNextLocation-Chris
       
       # 4.Droga-2 Gra w PKN
@@ -106,7 +106,7 @@ conversations:
         pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerNozyce, pickRandomTonyPKN
       q2-player-4d:
-        text: "&x&C&C&0&0&3&3Może pobawimy się innym razem, obowiązki mnie wzywają."
+        text: "&x&f&f&6&9&6&1Może pobawimy się innym razem, obowiązki mnie wzywają."
       
       # 5.Droga-2 Kontynułacja gry
       q2-player-5-wygrana:
@@ -124,24 +124,24 @@ conversations:
       
       # 6.Droga-2 Rezultat gry
       q2-player-6-wygrana:
-        text: "&x&3&C&B&3&7&1Hah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"
+        text: "&x&9&3&d&3&8&eHah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"
         events: setQuest2-Progress-ChrisPowrotZListem, giveListDoChrisa
       q2-player-6-przegrana:
-        text: "&x&3&C&B&3&7&1Ah... przegrałem, więc co mogę dla ciebie zrobić?"
+        text: "&x&9&3&d&3&8&eAh... przegrałem, więc co mogę dla ciebie zrobić?"
         events: increaseQuest2-Progress
         pointer: q2-tony-7
 
       # 7.Przysługa:
       q2-player-7:
-        text: "&x&3&C&B&3&7&1Wyruszam w drogę, spotkamy się niedługo!"
+        text: "&x&9&3&d&3&8&eWyruszam w drogę, spotkamy się niedługo!"
   
       # 8.Przysluga w trakcie 
       q2-player-8a:
         condition: hasZlotyMiecz
-        text: "&x&3&C&B&3&7&1Tak oczywiście proszę weż go sobie i daj mi mój list!"
+        text: "&x&9&3&d&3&8&eTak oczywiście proszę weż go sobie i daj mi mój list!"
         pointer: q2-tony-9a
       q2-player-8b:
         condition: "!hasZlotyMiecz"
-        text: "&x&C&C&0&0&3&3Niestety nie mam..."
+        text: "&x&f&f&6&9&6&1Niestety nie mam..."
         pointer: q2-tony-9b
         

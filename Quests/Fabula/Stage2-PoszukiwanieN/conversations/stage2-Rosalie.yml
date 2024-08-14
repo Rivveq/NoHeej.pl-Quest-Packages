@@ -31,31 +31,31 @@ conversations:
       
       # 1.Przywitanie sie z Rozalia
       q2-player-1a:
-        text: "&x&3&C&B&3&7&1Tak, czuję się dużo lepiej!"
+        text: "&x&9&3&d&3&8&eTak, czuję się dużo lepiej!"
         events: "setQuest2-Progress-Zdrowy"
         pointer: q2-rosalie-3
       q2-player-1b:
-        text: "&x&C&C&C&C&0&0Nie czuję się najlepiej…"
+        text: "&x&9&3&d&3&8&eNie czuję się najlepiej…"
         pointer: q2-rosalie-2
       q2-player-1c:
-        text: "&x&C&C&0&0&3&3Czułbym się dużo lepiej bez Ciebie. Żegnaj."
+        text: "&x&f&f&6&9&6&1Czułbym się dużo lepiej bez Ciebie. Żegnaj."
       
       # 2.Sub-Quest wyprawa do medyka
       q2-player-2a:
-        text: "&x&3&C&B&3&7&1Dobrze… Zatem idę!"
+        text: "&x&9&3&d&3&8&eDobrze… Zatem idę!"
         events: notifNextLocation-Skrik
       q2-player-2b: 
-        text: "&x&C&C&0&0&3&3Później do niego zajrzę."
+        text: "&x&f&f&6&9&6&1Później do niego zajrzę."
         events: notifNextLocation-Skrik
       
       # 3.Kontynułacja rozmowy/Powrot od Skrika
       q2-player-3a:
-        text: "&x&3&C&B&3&7&1Poszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
+        text: "&x&9&3&d&3&8&ePoszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
         pointer: q2-rosalie-4
       q2-player-3b:
-        text: "&x&C&C&0&0&3&3Nie mam teraz czasu, może później…"
+        text: "&x&f&f&6&9&6&1Nie mam teraz czasu, może później…"
       
       # 4.Gracz w drodze do gospody
       q2-player-4:
-        text: "&x&3&C&B&3&7&1Dziękuje Ci, muszę prędko tam zmierzać"
+        text: "&x&9&3&d&3&8&eDziękuje Ci, muszę prędko tam zmierzać"
         events: notifNextLocation-Chris

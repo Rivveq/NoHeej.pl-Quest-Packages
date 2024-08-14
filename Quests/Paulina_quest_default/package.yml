@@ -1,42 +1,7 @@
 npcs:
-  '5': Wes
-  '2': Rosalie
-  '3': Skrik
-  '0': Chris
-  '4': Tony
-  '1': Bella
-  '7': Agata
+  '8': Paulina
 
 items:
-  steak: COOKED_BEEF name:&lPieczona_Wołowina lore:Lore_trzeba_zrobić;&2Quest_Reward; #Stek, quest-1 Wes
-  
-  potka_leczenia: "potion effects:instant_health:3:69 name:&c&lElixir_Herbanum lore:Lore_trzeba_zrobić;&2Quest_Reward;" #Potka, quest-2 Skrik
-  list_do_chrisa: "paper Name:List_Dla_Chrisa"
-  zloty_miecz: "golden_sword"
-  ciastko: COOKIE
-
-  # Lista produktow main quest 2 - Bella
-  lista_produktow: WRITTEN_BOOK
-    title:Lista_produktów
-    author:Bella
-    text:&2&lLista_produktów&r\n1x_mleko\n10x_pszenica\n8x_jajko\n4x_surowy_łosoś\n2x_surowy_kurczak\n1x_cukier\n3x_ziemniak\n4x_marchew
-    lore:&2Quest_Item
-  
-  mleko: MILK_BUCKET
-  pszenica: WHEAT
-  jajko: EGG
-  surowy_losos: SALMON
-  surowy_kurczak: CHICKEN
-  cukier: SUGAR
-  ziemniak: POTATO
-  marchew: CARROT
-
-  # Main quest 2 - nagrody
-  klucz_do_pokoju: NAME_TAG name:&lKlucz_do_pokoju lore:Klucz_otrzymany_od_karczmarza_Chrisa,;potrzebny_do_otwarcia_pokoju_w_jego_karczmie;&2Quest_Item
-  pieczony_kurczak: COOKED_CHICKEN
-  pieczony_schab: COOKED_PORKCHOP
-  pieczony_krolik: COOKED_RABBIT
-
   # Bella default quest - listy produktow i dania
   lista_produktow_rybenka: WRITTEN_BOOK
     title:Lista_produktów_na_Rybeńkę
@@ -56,9 +21,12 @@ items:
   lista_produktow_chleb_marchewkowy: WRITTEN_BOOK
     title:Lista_produktów_na_Chlebek
     author:Bella
-    text:&2&lLista_produktów&r\n10x_marchewek\n1x_cukier\n12x_pszenica
+    text:&2&lLista_produktów&r\n10x_marchew\n1x_cukier\n12x_pszenica
     lore:&2Quest_Item
   
+  surowy_losos: SALMON
+  marchew: CARROT
+  cukier: SUGAR
   butelka_wody: POTION
   morski_ogor: SEA_PICKLE
   burak: BEETROOT
@@ -66,6 +34,7 @@ items:
   butelka_miodu: HONEY_BOTTLE
   butelka: GLASS_BOTTLE
   kakao: COCOA_BEANS
+  pszenica: WHEAT
 
   rybenka: SWEET_BERRIES name:&lRybeńka lore:Łosoś_tak_soczysty,_że_aż_ślinka_cieknie!
   zupa_ogorkowa: SWEET_BERRIES name:&lZupa_Ogórkowa lore:Nic_dodać,_nic_ująć.
