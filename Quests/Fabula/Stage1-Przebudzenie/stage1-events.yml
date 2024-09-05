@@ -1,4 +1,12 @@
 events:
+  Awakening_notif_folder: "folder notifAwakening1,notifAwakening2,Awakening_notif_chat_folder period:4"
+  notifAwakening1: "notify &f&l[Otwierasz powoli oczy, czujesz jak promienie słońca muskają lekko Twoje policzki.] io:actionbar sound:minecraft:entity.villager.celebrate"
+  notifAwakening2: "notify &f&l[Rozglądasz się po nieznanym Ci jak dotąd miejscu. Twoje ciało jest obolałe, a powieki ciężkie.] io:actionbar"
+  Awakening_notif_chat_folder: "folder notifAwakeningchat1,notifAwakeningchat2,notifAwakeningchat3 period:1"
+  notifAwakeningchat1: "notify &x&3&C&B&3&7&1[Otwierasz powoli oczy, czujesz jak promienie słońca muskają lekko Twoje policzki.] io:chat"
+  notifAwakeningchat2: "notify &x&3&C&B&3&7&1[Rozglądasz się po nieznanym Ci jak dotąd miejscu. Twoje ciało jest obolałe, a powieki ciężkie.] io:chat"
+  notifAwakeningchat3: "notify &x&3&C&B&3&7&1[Dostrzegasz chodzącego po pomoście młodzieńca, wasze oczy się spotykają, &epowinieneś się do niego udać&x&3&C&B&3&7&1.] io:chat"
+
   AddTagPowrotPoJedzenie: "tag add PowrotPoJedzenie"
   DelTagPowrotPoJedzenie: "tag delete PowrotPoJedzenie"
 
