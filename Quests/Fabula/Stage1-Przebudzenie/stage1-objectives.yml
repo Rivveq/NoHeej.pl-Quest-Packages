@@ -1,2 +1,2 @@
 objectives:
-  Awakening: 'location 112;65;-54;world 2 events:Awakening_notif_folder global'
+  Awakening: 'location 112;65;-54;spawnSeed 2 events:Awakening_notif_folder global'
