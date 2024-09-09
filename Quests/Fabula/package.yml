@@ -1,11 +1,11 @@
 npcs:
-  '5': Wes
-  '2': Rosalie
-  '3': Skrik
-  '0': Chris
-  '4': Tony
-  '1': Bella
-  '7': Agata
+  '54': Wes
+  '3': Rosalie
+  '71': Skrik
+  '22': Chris
+  '52': Tony
+  '53': Bella
+  '72': Agata
 
 items:
   steak: COOKED_BEEF #Stek, quest-1 Wes
