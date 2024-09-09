@@ -11,3 +11,6 @@ events:
   AddTagQuest-3-Done: "tag add Quest-3-Done"
   AddTagQuest-4-Done: "tag add Quest-4-Done"
   AddTagQuest-5-Done: "tag add Quest-5-Done"
+
+  SetInitialPointsMain: "point quest_done_main 0 action:set"
+  SetInitialPointsSub: "point quest_done_sub 0 action:set"
