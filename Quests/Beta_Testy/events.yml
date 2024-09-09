@@ -1,0 +1,2 @@
+events:
+  BQPurge: "command betonquest purge %player%"

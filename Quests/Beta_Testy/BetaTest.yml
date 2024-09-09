@@ -1,0 +1,14 @@
+conversations:
+  BetaTester:
+    quester: "BetaTester"
+    first: npc
+    NPC_options:
+      npc:
+        text: 'Wyczyścić ci dane dotyczące zadań/objectivów czy innych danych dotyczacych &cBetonQuesta'
+        pointers: player1, player2
+    player_options:
+      player1:
+        text: 'Usuń moje dane dotyczące questów'
+        events: 'BQPurge'
+      player2:
+        text: 'Zostaw to tak jak jest'
