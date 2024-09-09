@@ -7,10 +7,22 @@ conversations:
         condition: "!Tracking.Quest-1-Done"
         text: "… Obudziłeś się! …"
         pointer: q1-player-1a, q1-player-1b
+
+      q1-wes-narr1:
+        text: "&7[Mówiąc to podnosisz się z ziemi, czujesz pulsowanie każdego z Twoich mięśni, każdy najmniejszy nerw. Przysparza Ci to ogromny ból, na Twoich ustach rysuje się grymas wywołany cierpieniem.]"
+        pointer: q1-player-narr1
       
       # 2.Rozmowa
-      q1-wes-2:
-        text: "Wszystko w porządku?! Jesteś w Laxstad, a dokładniej w porcie rybackim."
+      q1-wes-2a:
+        text: "Wszystko w porządku?!"
+        pointer: q1-player-narr2a
+      
+      q1-wes-narr2:
+        text: "&7[Na twarzy młodzieńca widać troskę i zaciekawienie, nie spuszcza Cię z oczu.]"
+        pointer: q1-player-narr2b
+      
+      q1-wes-2b:
+        text: "Jesteś w Laxstad, a dokładniej w Północno-Wschodnim Porcie."
         pointer: q1-player-2a, q1-player-2b
       
       # 3.Rozmowa
@@ -20,7 +32,11 @@ conversations:
       
       # 4.Rozmowa
       q1-wes-4:
-        text: "Nazywasz się %player%. Odnaleźliśmy Cię z Jonathanem w łodzi. Czy coś sobie przypominasz?"
+        text: "Nazywasz się %player%. Odnaleźliśmy Cię z Jonathanem w łodzi, myślę, że nie nada się do dalszych podróży. Niestety nie jestem w stanie powiedzieć Ci nic więcej. Przykro mi."
+        pointer: q1-player-narr4
+      
+      q1-wes-narr4:
+        text: "&7[Posyłając Ci pocieszający uśmiech.]&r Może coś sobie przypominasz?"
         pointer: q1-player-4a, q1-player-4b
       
       # 5.Rozmowa, propozycja jedzenia
@@ -51,30 +67,45 @@ conversations:
       # 1.Przebudzenie
       q1-player-1a:
         text: "&x&9&3&d&3&8&eGdzie jestem?"
-        pointer: "q1-wes-2"
+        pointer: "q1-wes-narr1"
       q1-player-1b:
         text: "&x&f&f&6&9&6&1Zostaw mnie..."
+      
+      q1-player-narr1:
+        text: "..."
+        pointer: "q1-wes-2a"
 
       # 2.Rozmowa
       q1-player-2a:
-        text: "&x&9&3&d&3&8&eTak myślę... Kim jesteś?"
+        text: "&x&9&3&d&3&8&eTak myślę… Kim Ty właściwie jesteś?"
         pointer: q1-wes-3
       q1-player-2b:
-        text: "&x&f&f&6&9&6&1Sam sobie poradzę!"
+        text: "&x&f&f&6&9&6&1Sam sobie poradzę! Odejdź ode mnie…"
+      
+      q1-player-narr2a:
+        text: "..."
+        pointer: q1-wes-narr2
+      q1-player-narr2b:
+        text: "..."
+        pointer: q1-wes-2b
       
       # 3.Rozmowa
       q1-player-3a:
         text: "&x&9&3&d&3&8&eW takim razie… kim ja jestem?"
         pointer: q1-wes-4
       q1-player-3b:
-        text: "&x&f&f&6&9&6&1Haha…! Chłopiec na posyłki! Ha..."
+        text: "&x&f&f&6&9&6&1Haha…! Chłopiec na posyłki! Ha… Dobre sobie!"
       
       # 4.Rozmowa
       q1-player-4a:
-        text: "&x&9&3&d&3&8&ePamiętam sztorm… Chciałem dostać się do centrum Velorii, gdy zalało moją łajbę."
+        text: "&x&9&3&d&3&8&ePamiętam sztorm… Chciałem dostać się do centrum Velorii, gdy zalało moją łajbę. Najwidoczniej się udało."
         pointer: q1-wes-5
       q1-player-4b:
         text: "&x&f&f&6&9&6&1Nie zamierzam o tym z Tobą rozmawiać."
+      
+      q1-player-narr4:
+        text: "..."
+        pointer: q1-wes-narr4
       
       # 5.Odpowiedz na pytanie o jedzenie
       q1-player-5a: 
