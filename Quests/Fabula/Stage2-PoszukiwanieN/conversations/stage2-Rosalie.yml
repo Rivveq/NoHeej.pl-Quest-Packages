@@ -2,45 +2,79 @@ conversations:
   Rosalie:
     NPC_options:
 
+      # Narr. Gracz przychodzi do biura
+      q2-rosalie-narr1:
+        conditions: con_tag_2Wes_Done, !con_tag_2Rosalie_Zdrowy, !con_tag_2Rosalie_Medyk
+        text: "&7[Widzisz kobietę siedzącą za biurkiem, wydaje się być czymś zajęta.]"
+        pointer: q2-player-narr1
+      q2-rosalie-narr2:
+        text: "&7[Po chwili Rozalia odrywa się od swojego zajęcia. Wydaje się być szczerze zadowolona widząc Cię tutaj]"
+        pointer: q2-player-narr2
+
       # 1.Przywitanie sie z Rozalia
       q2-rosalie-1:
-        condition: isQuest2-Progress-Rosalie
-        text: "Ojejku, zaskoczyłeś mnie %player% miałam nadzieję, że niedługo się zobaczymy! Czy wszystko u Ciebie w porządku?"
+        text: "Ojejku, zaskoczyłeś mnie %player% miałam nadzieję, że niedługo się zobaczymy! Czy wszystko u Ciebie w porządku? Nie wyglądałeś najlepiej, gdy do nas trafiłeś."
         pointer: q2-player-1a, q2-player-1b, q2-player-1c
-      
+
       # 2.Sub-Quest wyprawa do medyka
+      q2-rosalie-narr3:
+        text: "&7[Mimo zjedzonego posiłku wciąż czujesz jak nogi się pod Tobą uginają, a ciało zdaje się odmawiać posłuszeństwa. Zdecydowanie nie jesteś w pełni sił, potrzebujesz odpoczynku i medykamentów.]"
+        pointer: q2-player-2-narr1
+      q2-rosalie-narr4:
+        text: "&7[Widzisz współczucie w oczach Rosalie. Zdaje się, że jest naprawdę troskliwą kobietą. Mimo, że Cię nie zna dostrzegasz jak wielkie bije od niej ciepło. Postanawiasz obdarzyć ją nieśmiałym uśmiechem, który ta od razu odwzajemnia.]"
+        pointer: q2-player-2-narr2
+
       q2-rosalie-2:
-        text: "Musisz wybrać się do medyka! Ma on na imię Skrik, po wizycie wróć do mnie."
-        events: increaseQuest2-Progress
+        text: "W takim razie musisz czym prędzej wybrać się do medyka! Jego siedziba jest oznaczona. Na pewno do niego trafisz!"
+        events: add_tag_2Rosalie_Medyk, add_obj_proximity_skrik
         pointer: q2-player-2a, q2-player-2b
+      
+      q2-rosalie-2-back:
+        conditions: con_tag_2Rosalie_Medyk
+        text: "Dalej nie wyglądasz najlepiej, wróć do mnie po wizycie u medyka."
       
       # 3.Kontynułacja rozmowy/Powrot od Skrika
       q2-rosalie-3:
-        condition: isQuest2-Progress-RosalieZdrowy
+        condition: con_tag_2Rosalie_Zdrowy
         text: "Potrzebujesz czegoś jeszcze?"
         pointer: q2-player-3a, q2-player-3b
       
       # 4.Gracz w drodze do gospody
       q2-rosalie-4:
-        text: "Tuż obok Ratuszu znajduje się ,,Tawerna pod Starym Wielorybem” znajdziesz tam Karczmarza Chrisa który Ci pomoże w dalszych ustaleniach. Bywaj podróżniku."
-        events: increaseQuest2-Progress
+        text: "Tuż obok Ratuszu znajduje się ,,Tawerna pod Starym Wielorybem” znajdziesz tam Karczmarza Chrisa który pomoże Ci w dalszych ustaleniach. Jeśli będziesz czegoś potrzebował, możesz na mnie liczyć. Do zobaczenia %player%."
+        events: add_tag_2Rosalie_Done, del_tag_2Rosalie_Zdrowy
         pointer: q2-player-4
       
 
     player_options:
       
+      # Narr. Gracz przychodzi do biura
+      q2-player-narr1:
+        text: "..."
+        pointer: q2-rosalie-narr2
+      q2-player-narr2:
+        text: "..."
+        pointer: q2-rosalie-1
+
       # 1.Przywitanie sie z Rozalia
       q2-player-1a:
         text: "&x&9&3&d&3&8&eTak, czuję się dużo lepiej!"
-        events: "setQuest2-Progress-Zdrowy"
+        events: add_tag_2Rosalie_Zdrowy
         pointer: q2-rosalie-3
       q2-player-1b:
-        text: "&x&9&3&d&3&8&eNie czuję się najlepiej…"
+        text: "&x&9&3&d&3&8&eSzczerze, wciąż nie wróciłem do siebie…"
         pointer: q2-rosalie-2
       q2-player-1c:
         text: "&x&f&f&6&9&6&1Czułbym się dużo lepiej bez Ciebie. Żegnaj."
       
       # 2.Sub-Quest wyprawa do medyka
+      q2-player-2-narr1:
+        text: "..."
+        pointer: q2-rosalie-narr4
+      q2-player-2-narr2:
+        text: "..."
+        pointer: q2-rosalie-2
+
       q2-player-2a:
         text: "&x&9&3&d&3&8&eDobrze… Zatem idę!"
         events: notifNextLocation-Skrik
@@ -50,7 +84,7 @@ conversations:
       
       # 3.Kontynułacja rozmowy/Powrot od Skrika
       q2-player-3a:
-        text: "&x&9&3&d&3&8&ePoszukuję gospody, potrzebuję miejsca do noclegu i posilenia się."
+        text: "&x&9&3&d&3&8&ePoszukuję gospody w której mógłbym się przespać i posilić, więcej do szczęścia mi nie trzeba"
         pointer: q2-rosalie-4
       q2-player-3b:
         text: "&x&f&f&6&9&6&1Nie mam teraz czasu, może później…"

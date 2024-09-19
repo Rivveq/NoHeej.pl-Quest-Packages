@@ -1,7 +1,7 @@
 conversations:
   Rosalie:
     quester: 'Rosalie'
-    first: q2-rosalie-1, q2-rosalie-3, default
+    first: q2-rosalie-narr1, q2-rosalie-2-back, q2-rosalie-3, default
 
     NPC_options:
       default:

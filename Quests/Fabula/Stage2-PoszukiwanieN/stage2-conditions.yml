@@ -1,5 +1,13 @@
 conditions:
   # Stage progress coditions
+  con_tag_2Wes_Done: "tag 2Wes_Done"
+  con_tag_2Rosalie_Zdrowy: "tag 2Rosalie_Zdrowy"
+  con_tag_2Rosalie_Medyk: "tag 2Rosalie_Medyk"
+
+
+
+
+
   isQuest2-Progress-Wes: "stage Quest2-Progress = WesRozmowa"
   isQuest2-Progress-Rosalie: "stage Quest2-Progress = RozalieRozmowa"
   isQuest2-Progress-Skrik: "stage Quest2-Progress = SkrikSubQuest"

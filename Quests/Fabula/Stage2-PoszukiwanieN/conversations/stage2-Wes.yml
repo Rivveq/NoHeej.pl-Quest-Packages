@@ -2,10 +2,15 @@ conversations:
   Wes: 
     NPC_options:
       
+      # 1.Conversation canncel
+      q2-wes-1:
+        conditions: Tracking.Quest-1-Done, !con_tag_2Wes_Done
+        text: "Czego jeszcze potrzebujesz chłopcze?"
+        pointer: q2-player-1a, q2-player-1b
+
       # 2.Odesłanie do Rozalii
       q2-wes-2:
-        conditions: Tracking.Quest-1-Done
-        text: "W zasięgu Twojego wzroku mieści się ratusz, w którym spotkasz Rozalię, ona udzieli Ci odpowiedzi na pytania."
+        text: "Nieopodal mieści się ratusz. To największy z budynków, więc bez problemu go znajdziesz. Na piętrze spotkasz Burmistrzynię Rozalię, ona udzieli Ci odpowiedzi na pytania"
         pointer: q2-player-2a, q2-player-2b
 
 
@@ -13,13 +18,14 @@ conversations:
     
       # 1.Początek kolejnego questa
       q2-player-1a:
-        text: "&x&9&3&d&3&8&eWiesz może gdzie znajdę gospodę, potrzebuje się przespać parę nocy."
-        events: increaseQuest2-Progress
+        text: "&x&9&3&d&3&8&eWiesz może gdzie znajdę gospodę, potrzebuje się gdzieś przespać chociaż parę nocy"
         pointer: q2-wes-2
+      q2-player-1b:
+        text: "&x&f&f&6&9&6&1Już nic nie potrzebuję. Bywaj"
       
       # 2.Odesłanie do Rozalii
       q2-player-2a:
         text: "&x&9&3&d&3&8&eDziękuję, już się tam udaję!"
-        events: notifNextLocation-Rosalia
+        events: notifNextLocation-Rosalia, add_tag_2Wes_Done
       q2-player-2b:
         text: "&x&f&f&6&9&6&1Nie mam teraz czasu, może później…"

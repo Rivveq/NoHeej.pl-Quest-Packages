@@ -1,17 +1,37 @@
 events:
   # Objective events
-  addObjectiveQuest2: "objective add Quest2-Progress"
+  
+  add_tag_2Wes_Done: "tag add 2Wes_Done"
+  add_tag_2Rosalie_Medyk: "tag add 2Rosalie_Medyk"
+  add_tag_2Rosalie_Zdrowy: "tag add 2Rosalie_Zdrowy"
+  add_tag_2Rosalie_Done: "tag add 2Rosalie_Done"
 
-  increaseQuest2-Progress: "stage Quest2-Progress increase 1"
-  setQuest2-Progress-Zdrowy: "stage Quest2-Progress set RozalieZdrowy" #Potrzebne w przypadku gdy gracz skipnie sub-quest skrika
-  setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
-  setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
+  del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
+  del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
 
-  Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady"
+
+
+  # addObjectiveQuest2: "objective add Quest2-Progress"
+
+  # increaseQuest2-Progress: "stage Quest2-Progress increase 1"
+  # setQuest2-Progress-Zdrowy: "stage Quest2-Progress set RozalieZdrowy" #Potrzebne w przypadku gdy gracz skipnie sub-quest skrika
+  # setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
+  # setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
+
+  # Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady"
 
   # Skrik events
-  givePotkaLeczenia: "give potka_leczenia"
-  SkrikSubQuestDone: "folder givePotkaLeczenia,increaseQuest2-Progress"
+  add_obj_proximity_skrik: "objective add obj_proximity_skrik"
+
+  notif_skrik_crackhouse_folder: "folder notif_skrik_crackhouse_1,notif_skrik_crackhouse_2 period:1"
+  notif_skrik_crackhouse_1: "notify &f&l[Wraz z chwilą przekroczenia progu Twoje nozdrza uderza intensywny zapach ziół i kurzu. Mijasz korytarz wypełniony niesamowitymi obrazami, ktokolwiek je stworzył musiał być wspaniałym rzemieślnikiem.] io:chat"
+  notif_skrik_crackhouse_2: "notify &f&l[Kiedy docierasz do gabinetu dostrzegasz młodego mężczyznę, to zapewne medyk o którym wspominała Ci Rosalie.] io:chat"
+
+  give_PotkaLeczenia: "give potka_leczenia"
+
+  add_obj_delay_skrik: "objective add obj_delay_skrik"
+  notif_skrik_exit_folder: "folder notif_skrik_exit,notifNextLocation-Rosalia period:2"
+  notif_skrik_exit: "notify &f&l[Wciąż nie wiem gdzie mogę się zatrzymać na noc… Powinienem wrócić do Rosalie.] io:chat"
 
   # Chris Events
   notifBrakPieniedzy: "notify &aNie masz wystarczającej ilości pieniędzy!"
