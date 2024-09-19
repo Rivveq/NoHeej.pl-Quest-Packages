@@ -4,35 +4,41 @@ conversations:
       
       # 1.Pierwsze spotkanie z Chrisem
       q2-chris-1:
-        condition: isQuest2-Progress-ChrisRozmowa
+        condition: con_tag_2Rosalie_Done, !con_tag_2Chris_nocleg
         text: "Ahoj kamracie! Czy mogę Ci jakoś pomóc?"
         pointer: q2-player-1a, q2-player-1b
       
       # 2.Kwestia noclegu
       q2-chris-2a:
-        text: "Z chęcią użyczę ci jednego z moich wolnych pokojów, ale będzie Cię to trochę kosztować."
+        text: "Z chęcią użyczę Ci jednego z moich wolnych pokojów, ale będzie Cię to trochę kosztować."
+        pointer: q2-player-2-narr
+      q2-chris-2-narr:
+        text: "&7[Wzdychasz ciężko, bo wiesz, że Twój budżet nie jest zbyt wysoki, ale może uda Ci się to jakoś ugrać.]"
+        event: add_tag_2Chris_nocleg
         pointer: q2-player-2a, q2-player-2b, q2-player-2c
+      
       q2-chris-2b: #Gdyby gracz zakonczyl dialog i wrocil do npc
-        condition: isQuest2-Progress-ChrisZaplata
+        condition: con_tag_2Chris_nocleg
         text: "Witaj z powrotem! Mogę użyczyć ci jednego z moich wolnych pokojów, ale będzie Cię to troche kosztować."
         pointer: q2-player-2a, q2-player-2b, q2-player-2c
       
       # 3.Koszt noclegu
       q2-chris-3a: #Gdy gracz chce zapłacić
-        text: "Dobrze, zatem będzie Cię to kosztować &e1000$."
+        text: "W porządku! Zatem będzie Cię to kosztować &e1000$&r."
         pointer: q2-player-3a-a, q2-player-3a-b, q2-player-3a-c, q2-player-3a-d
       q2-chris-3b: #Gdy gracz chce pracować
-        text: "Rozumiem… Dobrze śmiałku jeżeli wykonasz dla mnie 2 zadania będziesz mógł zostać na parę nocy."
+        text: "Rozumiem… Dobrze śmiałku jeżeli wykonasz dla mnie 2 zadania będziesz mógł zostać na parę nocy!"
         pointer: q2-player-3b-a, q2-player-3b-b
 
       # 4.Wyprawa na zadanie
       q2-chris-4:
-        text: "Na początku prosiłbym cię abyś udał się do gwardzisty Tonego, ma dla mnie list. Po twoim powrocie dam ci następne zadanie."
+        text: "Na początku prosiłbym cię abyś udał się do gwardzisty Tonego, ma dla mnie list. Po Twoim powrocie porozmawiamy o reszcie."
+        events: notifNextLocation-Tony, add_tag_2Chris_zadanie1, del_tag_2Chris_nocleg
         pointer: q2-player-4
       
       # 5.Powrot z listem
       q2-chris-5:
-        condition: isQuest2-Progress-ChrisPowrotZListem
+        condition: con_tag_2Chris_zadanie1
         text: "Witaj z powrotem, masz mój list?"
         pointer: q2-player-5a, q2-player-5b
 
@@ -78,13 +84,16 @@ conversations:
       
       # 1.Pierwsze spotkanie z Chrisem
       q2-player-1a:
-        text: "&x&9&3&d&3&8&eWitaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rozalia powiedziała mi, że powinienem się udać do Ciebie."
-        events: increaseQuest2-Progress
+        text: "&x&9&3&d&3&8&eWitaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rosalie powiedziała mi, że powinienem się udać do Ciebie"
         pointer: q2-chris-2a
       q2-player-1b:
         text: " &x&f&f&6&9&6&1Niestety nie, Bywaj."
       
       # 2.Kwestia noclegu
+      q2-player-2-narr:
+        text: "..."
+        pointer: q2-chris-2-narr
+
       q2-player-2a: 
         text: "&x&9&3&d&3&8&eDobrze, zapłacę Ci ile chcesz."
         pointer: q2-chris-3a
@@ -97,8 +106,8 @@ conversations:
       # 3a.Koszt noclegu - pieniadze
       q2-player-3a-a:
         condition: hasPieniadzeZaNocleg
-        text: "&x&9&3&d&3&8&eDrożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r!"
-        events: takeZaplataZaNoc
+        text: "&x&9&3&d&3&8&eDrożyzna! Ale dobrze, raz danego słowa dotrzymam oto Twoje &e1000$&r&x&9&3&d&3&8&e!"
+        events: takeZaplataZaNoc, del_tag_2Chris_nocleg
         pointer: q2-chris-8a
       q2-player-3a-b:
         condition: "!hasPieniadzeZaNocleg"
@@ -120,7 +129,6 @@ conversations:
       # 4.Wyprawa na zadanie
       q2-player-4: 
         text: "&x&9&3&d&3&8&eDobrze, zajmę się tym natychmiast!"
-        events: increaseQuest2-Progress, notifNextLocation-Tony
       
       # 5.Powrot z listem
       q2-player-5a:

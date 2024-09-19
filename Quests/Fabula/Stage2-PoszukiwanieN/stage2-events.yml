@@ -5,9 +5,13 @@ events:
   add_tag_2Rosalie_Medyk: "tag add 2Rosalie_Medyk"
   add_tag_2Rosalie_Zdrowy: "tag add 2Rosalie_Zdrowy"
   add_tag_2Rosalie_Done: "tag add 2Rosalie_Done"
+  add_tag_2Chris_nocleg: "tag add 2Chris_nocleg"
+  add_tag_2Chris_zadanie1: "tag add 2Chris_zadanie1"
+  
 
   del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
   del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
+  del_tag_2Chris_nocleg: "tag del 2Chris_nocleg"
 
 
 
@@ -25,7 +29,7 @@ events:
 
   notif_skrik_crackhouse_folder: "folder notif_skrik_crackhouse_1,notif_skrik_crackhouse_2 period:1"
   notif_skrik_crackhouse_1: "notify &f&l[Wraz z chwilą przekroczenia progu Twoje nozdrza uderza intensywny zapach ziół i kurzu. Mijasz korytarz wypełniony niesamowitymi obrazami, ktokolwiek je stworzył musiał być wspaniałym rzemieślnikiem.] io:chat"
-  notif_skrik_crackhouse_2: "notify &f&l[Kiedy docierasz do gabinetu dostrzegasz młodego mężczyznę, to zapewne medyk o którym wspominała Ci Rosalie.] io:chat"
+  notif_skrik_crackhouse_2: "notify &f&l[Kiedy docierasz do gabinetu dostrzegasz podstarzałego mężczyznę, to zapewne medyk o którym wspominała Ci Rosalie.] io:chat"
 
   give_PotkaLeczenia: "give potka_leczenia"
 
