@@ -21,6 +21,8 @@ events:
   add_tag_2Bella_lista: "tag add 2Bella_lista"
   add_tag_2Bella_Done: "tag add 2Bella_Done"
 
+  add_tag_2Chris_oplacony: "tag add 2Chris_oplacony"
+
   del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
   del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
   del_tag_2Chris_nocleg: "tag del 2Chris_nocleg"
@@ -33,16 +35,7 @@ events:
   del_tag_2Bella_start: "tag del 2Bella_start"
   del_tag_2Bella_lista: "tag del 2Bella_lista"
 
-
-
-  # addObjectiveQuest2: "objective add Quest2-Progress"
-
-  # increaseQuest2-Progress: "stage Quest2-Progress increase 1"
-  # setQuest2-Progress-Zdrowy: "stage Quest2-Progress set RozalieZdrowy" #Potrzebne w przypadku gdy gracz skipnie sub-quest skrika
-  # setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
-  # setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
-
-  # Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady"
+  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady"
 
   # Skrik events
   add_obj_proximity_skrik: "objective add obj_proximity_skrik"

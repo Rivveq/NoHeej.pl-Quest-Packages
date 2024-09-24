@@ -13,15 +13,7 @@ conditions:
   con_tag_2Chris_zadanie2: "tag 2Chris_zadanie2"
   con_tag_2Bella_start: "tag 2Bella_start"
   con_tag_2Bella_lista: "tag 2Bella_lista"
-
-
-
-  isQuest2-Progress-TonyPrzysluga: "stage Quest2-Progress = TonyPrzysluga"
-  isQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress = ChrisPowrotZListem"
-  isQuest2-Progress-ChrisPrzedZadaniemBella: "stage Quest2-Progress = ChrisPrzedZadaniemBella"
-  isQuest2-Progress-BellaRozmowa: "stage Quest2-Progress = BellaRozmowa"
-  isQuest2-Progress-BellaPoszukujeSkladnikow: "stage Quest2-Progress = BellaPoszukujeSkladnikow"
-  isQuest2-Progress-ChrisZadaniaUkonczone: "stage Quest2-Progress = ChrisZadaniaUkonczone"
+  con_tag_2Bella_Done: "tag 2Bella_Done"
 
   # Chris conversation conditions
   hasPieniadzeZaNocleg: "money 1000"

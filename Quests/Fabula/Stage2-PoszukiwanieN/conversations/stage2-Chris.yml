@@ -63,12 +63,12 @@ conversations:
       # ================ 8.Zapłata za pokój/Powrot od Belli
       q2-chris-8a:
         text: "Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
-        events: setQuest2-Progress-ChrisOplacony
+        events: add_tag_2Chris_oplacony
         pointer: q2-player-8
       q2-chris-8b:
-        condition: isQuest2-Progress-ChrisZadaniaUkonczone
+        condition: con_tag_2Bella_Done
         text: "Słyszałem od Belli, że się spisałeś! Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
-        events: setQuest2-Progress-ChrisOplacony
+        events: add_tag_2Chris_oplacony
         pointer: q2-player-8
       
       # 9.Pozegnanie z Chrisem
@@ -153,7 +153,7 @@ conversations:
       # 9.Pozegnanie z Chrisem
       q2-player-9a:
         text: "&x&9&3&d&3&8&eDo zobaczenia!"
-        events: increaseQuest2-Progress, notifNextLocation-Agata
+        events: Quest-2-Done, notifNextLocation-Agata
       q2-player-9b:
         text: "&x&f&f&6&9&6&1Nie sądzę żebym chciał wrócić."
-        events: increaseQuest2-Progress, notifNextLocation-Agata
+        events: Quest-2-Done, notifNextLocation-Agata
