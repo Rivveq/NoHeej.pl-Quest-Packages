@@ -6,10 +6,13 @@ conditions:
   con_tag_2Rosalie_Done: "tag 2Rosalie_Done"
   con_tag_2Chris_nocleg: "tag 2Chris_nocleg"
   con_tag_2Chris_zadanie1: "tag 2Chris_zadanie1"
+  con_tag_2Tony_list: "tag 2Tony_list"
+  con_tag_2Tony_back: "tag 2Tony_back"
+  con_tag_2Tony_przegrana: "tag 2Tony_przegrana"
+  con_tag_2Tony_miecz: "tag 2Tony_miecz"
 
 
 
-  isQuest2-Progress-TonyList: "stage Quest2-Progress = TonyList"
   isQuest2-Progress-TonyPrzysluga: "stage Quest2-Progress = TonyPrzysluga"
   isQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress = ChrisPowrotZListem"
   isQuest2-Progress-ChrisPrzedZadaniemBella: "stage Quest2-Progress = ChrisPrzedZadaniemBella"

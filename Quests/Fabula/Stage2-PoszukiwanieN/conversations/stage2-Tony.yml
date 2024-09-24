@@ -3,10 +3,14 @@ conversations:
     NPC_options:
 
       # 1.Pierwsze spotkanie z Tonym
-      q2-tony-1:
-        condition: isQuest2-Progress-TonyList
-        text: "Jak śmiesz odrywać mnie od moich zajęć? Czego chcesz?!"
-        pointer: q2-player-1
+      q2-tony-1-narr:
+        condition: con_tag_2Chris_zadanie1, !con_tag_2Tony_back, !con_tag_2tony_przegrana, !con_tag_2Tony_miecz
+        text: "&7[Podchodząc do Tonego od razu czujesz zapach tytoniu i potu. Mężczyzna nie wygląda na przyjaznego, ale nie dziwi Cię to, w końcu musi się użerać z tutejszymi degeneratami i przestępcami.]"
+        pointer: q2-player-1-narr
+      
+      q2-tony-1a:
+        text: "Jak śmiesz odrywać mnie od mojej pracy? Czego chcesz?!"
+        pointer: q2-player-1a, q2-player-1b
    
       # 2.Rozmowa
       q2-tony-2:
@@ -16,12 +20,17 @@ conversations:
       # 3.Droga-1 Tony umierzył
       q2-tony-3:
         text: "No dobrze, dobrze… Proszę oto list, przysługa to ważna sprawa!"
-        events: giveListDoChrisa, setQuest2-Progress-ChrisPowrotZListem
+        events: giveListDoChrisa, add_tag_2Tony_list
         pointer: q2-player-3
 
       # 4.Droga-2 Gra w PKN
       q2-tony-4:
-        text: "Niemiło chłopcze… Jeśli chcesz otrzymać ten list musisz zagrać ze mną w kamień, papier i nożyce. Jednak miej się na baczności, jeśli przegrasz będziesz winny mi przysługę, bez której nie otrzymasz listu. Zaczynajmy!"
+        text: "Niemiło chłopcze… Jeśli chcesz otrzymać ten list musisz zagrać ze mną w kamień, papier, nożyce. Jednak miej się na baczności, jeśli przegrasz będziesz winny mi przysługę, bez której nie otrzymasz listu. Zaczynajmy!"
+        pointer: q2-player-4a, q2-player-4b, q2-player-4c, q2-player-4d
+      
+      q2-tony-4-back:
+        condition: con_tag_2Tony_back, !con_tag_2tony_przegrana, !con_tag_2Tony_miecz
+        text: "Wróciłeś! Jeśli chesz zdobyć swój list, musisz zagrać ze mną w kamień, papier, norzyce."
         pointer: q2-player-4a, q2-player-4b, q2-player-4c, q2-player-4d
       
       # 5.Droga-2 Kontynułacja gry
@@ -39,12 +48,23 @@ conversations:
         pointer: q2-player-5-wygrana, q2-player-5-przegrana, q2-player-5-remis
 
       # 6.Droga-2 Rezultat gry
+      q2-tony-6-wygrana-narr:
+        text: "&7[Mężczyzna zdaje się być zszokowany swoją porażką, jednak jest gwardzistą więc wierzysz w jego honorowość.]"
+        pointer: q2-player-6-wygrana-narr
+
       q2-tony-6-wygrana:
-        text: "Tym razem Ci się poszczęściło, oto list dla Chrisa."
+        text: "Tym razem Ci się poszczęściło, oto list dla Chrisa. Pozdrów go ode mnie."
         pointer: q2-player-6-wygrana
+      
       q2-tony-6-przegrana:
-        text: "Wygrałem, więc teraz musisz wyświadczyć mi przysługę."
-        pointer: q2-player-6-przegrana
+        text: "Ha! Wygrałem, więc teraz musisz wyświadczyć mi przysługę."
+        events: add_tag_2Tony_przegrana, del_tag_2Tony_back
+        pointer: q2-player-6-przegrana, q2-player-6-przegrana-exit
+      q2-tony-6-przegrana-back:
+        condition: con_tag_2Tony_przegrana
+        text: "Ha Jednak wróciłeś, zatem wracając do tematu przysługi..."
+        pointer: q2-player-6-przegrana, q2-player-6-przegrana-exit
+      
       q2-tony-6-remis:
         text: "W takim razie gramy ponownie!"
         events: clearPKNTags
@@ -53,18 +73,19 @@ conversations:
       # 7.Przysługa
       q2-tony-7:
         text: "Potrzebny mi nowy miecz. Nie przyjmę jednak byle czego, to musi być prawdziwy złoty miecz! Kiedy już mi go przyniesiesz otrzymasz list."
+        events: del_tag_2Tony_przegrana
         pointer: q2-player-7
 
       # 8.Przysluga w trakcie
       q2-tony-8:
-        condition: isQuest2-Progress-TonyPrzysluga
+        condition: con_tag_2Tony_miecz
         text: "%player% masz już mój miecz?"
         pointer: q2-player-8a, q2-player-8b
       
       # 9.Koniec
       q2-tony-9a:
         text: "Masz twój list i dziękuje za miecz!"
-        events: giveListDoChrisa, setQuest2-Progress-ChrisPowrotZListem, takeZlotyMiecz, notifNextLocation-Chris
+        events: giveListDoChrisa, add_tag_2Tony_list, takeZlotyMiecz, notifNextLocation-Chris
       q2-tony-9b:
         text: "W takim razie po co przyszedłeś? Nie oddam ci listu bez miecza!"
       
@@ -73,9 +94,15 @@ conversations:
     player_options:
       
       # 1.Pierwsze spotkanie z Tonym
-      q2-player-1:
+      q2-player-1-narr:
+        text: "..."
+        pointer: q2-tony-1
+      
+      q2-player-1a:
         text: "&x&9&3&d&3&8&eUm… Przychodzę z polecenia Chrisa. Powiedział, że masz dla niego list."
         pointer: q2-tony-2
+      q2-player-1b:
+        text: "&x&f&f&6&9&6&1Już sobie idę. Wybacz…"
 
       # 2.Rozmowa
       q2-player-2a:
@@ -85,7 +112,7 @@ conversations:
         text: "&x&9&3&d&3&8&eŻartujesz sobie ze mnie?"
         pointer: q2-tony-4
       q2-player-2c:
-        text: "&x&f&f&6&9&6&1Już sobie idę. Wybacz."
+        text: "&x&f&f&6&9&6&1W takim razie niech sam się tym zajmie."
       
       # 3.Droga-1 Tony uwierzył
       q2-player-3:
@@ -95,18 +122,19 @@ conversations:
       # 4.Droga-2 Gra w PKN
       q2-player-4a:
         text: "&x&F&F&F&0&F&5Kamień!"
-        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerKamien, pickRandomTonyPKN
+        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
       q2-player-4b:
         text: "&x&F&F&F&0&F&5Papier!"
-        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerPapier, pickRandomTonyPKN
+        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
       q2-player-4c:
         text: "&x&F&F&F&0&F&5Nożyczki!"
-        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
         events: addTagPlayerNozyce, pickRandomTonyPKN
+        pointer: q2-tony-5-kamien, q2-tony-5-papier, q2-tony-5-nozyce
       q2-player-4d:
         text: "&x&f&f&6&9&6&1Może pobawimy się innym razem, obowiązki mnie wzywają."
+        events: add_tag_2Tony_back
       
       # 5.Droga-2 Kontynułacja gry
       q2-player-5-wygrana:
@@ -123,13 +151,19 @@ conversations:
         pointer: q2-tony-6-remis
       
       # 6.Droga-2 Rezultat gry
+      q2-player-6-wygrana-narr:
+        text: "..."
+        pointer: "q2-tony-6-wygrana"
       q2-player-6-wygrana:
         text: "&x&9&3&d&3&8&eHah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"
-        events: setQuest2-Progress-ChrisPowrotZListem, giveListDoChrisa
+        events: add_tag_2Tony_list, giveListDoChrisa
+      
       q2-player-6-przegrana:
-        text: "&x&9&3&d&3&8&eAh... przegrałem, więc co mogę dla ciebie zrobić?"
-        events: increaseQuest2-Progress
+        text: "&x&9&3&d&3&8&eAh, więc co mogę dla ciebie zrobić?"
+        events: add_tag_2Tony_miecz, del_tag_2Tony_przegrana
         pointer: q2-tony-7
+      q2-player-6-przegrana-exit:
+        text: "&x&f&f&6&9&6&1Pewnym jest, że oszukiwałeś, nie zamierzam nic dla Ciebie robić."
 
       # 7.Przysługa:
       q2-player-7:

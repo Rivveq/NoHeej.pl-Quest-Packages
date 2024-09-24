@@ -42,7 +42,7 @@ conversations:
         text: "Witaj z powrotem, masz mój list?"
         pointer: q2-player-5a, q2-player-5b
 
-      # 6.Odpowiedz na list
+      # ============== 6.Odpowiedz na list
       q2-chris-6a:
         text: "Dziękuje ci dobry człowieku, Chcesz już otrzymać następne zadanie?"
         events: increaseQuest2-Progress
@@ -130,7 +130,7 @@ conversations:
       q2-player-4: 
         text: "&x&9&3&d&3&8&eDobrze, zajmę się tym natychmiast!"
       
-      # 5.Powrot z listem
+      # ================== 5.Powrot z listem
       q2-player-5a:
         condition: hasListDoChrisa
         text: "&x&9&3&d&3&8&eOczywiście, proszę oto on!"

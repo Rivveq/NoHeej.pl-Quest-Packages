@@ -7,11 +7,19 @@ events:
   add_tag_2Rosalie_Done: "tag add 2Rosalie_Done"
   add_tag_2Chris_nocleg: "tag add 2Chris_nocleg"
   add_tag_2Chris_zadanie1: "tag add 2Chris_zadanie1"
+  add_tag_2Tony_list: "tag add 2Tony_list"
+  add_tag_2Tony_back: "tag add 2Tony_back"
+  add_tag_2Tony_przegrana: "add tag 2Tony_przegrana"
+  add_tag_2Tony_miecz: "tag add 2Tony_miecz"
   
 
   del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
   del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
   del_tag_2Chris_nocleg: "tag del 2Chris_nocleg"
+  del_tag_2Chris_zadanie1: "tag del 2Chris_zadanie1"
+  del_tag_2Tony_back: "tag del 2Tony_back"
+  del_tag_2Tony_przegrana: "add del 2Tony_przegrana"
+  del_tag_2Tony_miecz: "tag del 2Tony_miecz"
 
 
 
