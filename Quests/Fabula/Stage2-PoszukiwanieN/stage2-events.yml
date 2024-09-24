@@ -18,6 +18,8 @@ events:
   add_tag_2Chris_zadanie2: "tag add 2Chris_zadanie2"
 
   add_tag_2Bella_start: "tag add 2Bella_start"
+  add_tag_2Bella_lista: "tag add 2Bella_lista"
+  add_tag_2Bella_Done: "tag add 2Bella_Done"
 
   del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
   del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
@@ -27,7 +29,9 @@ events:
   del_tag_2Tony_back: "tag del 2Tony_back"
   del_tag_2Tony_przegrana: "add del 2Tony_przegrana"
   del_tag_2Tony_miecz: "tag del 2Tony_miecz"
-  del_tag_2chris_zadanie2: "tag del 2Chris_zadanie2"
+  del_tag_2Chris_zadanie2: "tag del 2Chris_zadanie2"
+  del_tag_2Bella_start: "tag del 2Bella_start"
+  del_tag_2Bella_lista: "tag del 2Bella_lista"
 
 
 
