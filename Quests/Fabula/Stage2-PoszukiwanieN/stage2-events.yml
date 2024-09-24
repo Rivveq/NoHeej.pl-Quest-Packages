@@ -2,24 +2,32 @@ events:
   # Objective events
   
   add_tag_2Wes_Done: "tag add 2Wes_Done"
+  
   add_tag_2Rosalie_Medyk: "tag add 2Rosalie_Medyk"
   add_tag_2Rosalie_Zdrowy: "tag add 2Rosalie_Zdrowy"
   add_tag_2Rosalie_Done: "tag add 2Rosalie_Done"
+  
   add_tag_2Chris_nocleg: "tag add 2Chris_nocleg"
   add_tag_2Chris_zadanie1: "tag add 2Chris_zadanie1"
+  
   add_tag_2Tony_list: "tag add 2Tony_list"
   add_tag_2Tony_back: "tag add 2Tony_back"
   add_tag_2Tony_przegrana: "add tag 2Tony_przegrana"
   add_tag_2Tony_miecz: "tag add 2Tony_miecz"
   
+  add_tag_2Chris_zadanie2: "tag add 2Chris_zadanie2"
+
+  add_tag_2Bella_start: "tag add 2Bella_start"
 
   del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
   del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
   del_tag_2Chris_nocleg: "tag del 2Chris_nocleg"
   del_tag_2Chris_zadanie1: "tag del 2Chris_zadanie1"
+  del_tag_2Tony_list: "tag del 2Tony_list"
   del_tag_2Tony_back: "tag del 2Tony_back"
   del_tag_2Tony_przegrana: "add del 2Tony_przegrana"
   del_tag_2Tony_miecz: "tag del 2Tony_miecz"
+  del_tag_2chris_zadanie2: "tag del 2Chris_zadanie2"
 
 
 
@@ -53,10 +61,14 @@ events:
 
   giveNagrodaZaQuest2: "give klucz_do_pokoju,pieczony_kurczak:8,pieczony_schab:8,pieczony_krolik:8"
 
+  mass_2Chris_quest1_clean: "folder del_tag_2Chris_zadanie1,del_tag_2Tony_list,add_tag_2Chris_zadanie2"
+
   # Tonny Events
   giveListDoChrisa: "give list_do_chrisa"
   takeZlotyMiecz: "take zloty_miecz"
 
+  mass_del_tag_2Tony: "folder del_tag_2Tony_back,del_tag_2Tony_przegrana,del_tag_2Tony_miecz"
+  
   # PKN Game Events
   clearPKNTags: "tag del playerKamien,playerPapier,playerNozyce,tonyKamien,tonyPapier,tonyNozyce" #Usuwanie tagow po skonczeniu konwersacji z przeciwnikiem (Tonym)
 
