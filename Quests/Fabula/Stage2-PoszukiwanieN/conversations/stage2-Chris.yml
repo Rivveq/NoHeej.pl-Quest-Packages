@@ -60,7 +60,7 @@ conversations:
         text: "Dobrze. Pamiętaj by wrócić do mnie po wykonaniu zadania!"
         events: notifNextLocation-Bella
       
-      # ================ 8.Zapłata za pokój/Powrot od Belli
+      # 8.Zapłata za pokój/Powrot od Belli
       q2-chris-8a:
         text: "Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
         events: add_tag_2Chris_oplacony
@@ -145,7 +145,7 @@ conversations:
       q2-player-6b:
         text: " &x&f&f&6&9&6&1Belli?! Nie mam czasu by pomagać jakiejś babci. Żegnaj."
       
-      # ============= 8.Zapłata za pokój/Powrot od Belli
+      # 8.Zapłata za pokój/Powrot od Belli
       q2-player-8:
         text: "&x&9&3&d&3&8&eDziękuję za pomoc, pamiętaj, że zawsze możesz na mnie liczyć!"
         pointer: q2-chris-9

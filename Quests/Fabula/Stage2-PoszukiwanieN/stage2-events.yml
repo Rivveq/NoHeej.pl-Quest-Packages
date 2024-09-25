@@ -12,7 +12,7 @@ events:
   
   add_tag_2Tony_list: "tag add 2Tony_list"
   add_tag_2Tony_back: "tag add 2Tony_back"
-  add_tag_2Tony_przegrana: "add tag 2Tony_przegrana"
+  add_tag_2Tony_przegrana: "tag add 2Tony_przegrana"
   add_tag_2Tony_miecz: "tag add 2Tony_miecz"
   
   add_tag_2Chris_zadanie2: "tag add 2Chris_zadanie2"
@@ -29,7 +29,7 @@ events:
   del_tag_2Chris_zadanie1: "tag del 2Chris_zadanie1"
   del_tag_2Tony_list: "tag del 2Tony_list"
   del_tag_2Tony_back: "tag del 2Tony_back"
-  del_tag_2Tony_przegrana: "add del 2Tony_przegrana"
+  del_tag_2Tony_przegrana: "tag del 2Tony_przegrana"
   del_tag_2Tony_miecz: "tag del 2Tony_miecz"
   del_tag_2Chris_zadanie2: "tag del 2Chris_zadanie2"
   del_tag_2Bella_start: "tag del 2Bella_start"

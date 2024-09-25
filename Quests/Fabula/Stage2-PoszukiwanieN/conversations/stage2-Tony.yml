@@ -29,7 +29,7 @@ conversations:
         pointer: q2-player-4a, q2-player-4b, q2-player-4c, q2-player-4d
       
       q2-tony-4-back:
-        condition: con_tag_2Tony_back, !con_tag_2tony_przegrana, !con_tag_2Tony_miecz
+        condition: con_tag_2Tony_back, !con_tag_2Tony_przegrana, !con_tag_2Tony_miecz
         text: "Wróciłeś! Jeśli chesz zdobyć swój list, musisz zagrać ze mną w kamień, papier, norzyce."
         pointer: q2-player-4a, q2-player-4b, q2-player-4c, q2-player-4d
       
