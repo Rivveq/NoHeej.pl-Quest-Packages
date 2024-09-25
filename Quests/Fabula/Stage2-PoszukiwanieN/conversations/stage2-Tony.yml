@@ -4,11 +4,11 @@ conversations:
 
       # 1.Pierwsze spotkanie z Tonym
       q2-tony-1-narr:
-        condition: con_tag_2Chris_zadanie1, !con_tag_2Tony_back, !con_tag_2tony_przegrana, !con_tag_2Tony_miecz, !con_tag_2Tony_list
+        condition: con_tag_2Chris_zadanie1, !con_tag_2Tony_back, !con_tag_2Tony_przegrana, !con_tag_2Tony_miecz, !con_tag_2Tony_list
         text: "&7[Podchodząc do Tonego od razu czujesz zapach tytoniu i potu. Mężczyzna nie wygląda na przyjaznego, ale nie dziwi Cię to, w końcu musi się użerać z tutejszymi degeneratami i przestępcami.]"
         pointer: q2-player-1-narr
       
-      q2-tony-1a:
+      q2-tony-1:
         text: "Jak śmiesz odrywać mnie od mojej pracy? Czego chcesz?!"
         pointer: q2-player-1a, q2-player-1b
    
