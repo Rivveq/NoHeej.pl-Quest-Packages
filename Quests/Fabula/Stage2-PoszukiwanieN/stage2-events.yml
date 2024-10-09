@@ -87,6 +87,8 @@ events:
   giveDarmoweCiastko: "give ciastko"
   giveListaProduktow: "give lista_produktow"
 
+  adm_give_itemy_lista_Bella: "give mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
+
   takeListaSkladnikow: command clear %player% written_book{author:"Bella"} 1
   takeItemyLista: "take mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
 
