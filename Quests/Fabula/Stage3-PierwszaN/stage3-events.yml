@@ -1,9 +1,7 @@
 events:
   # Objective events
-  addObjectiveQuest3: "objective add Quest3-Progress"
   addObjectiveSprawdzPokoj-3: "objective add SprawdzPokoj-3"
 
-  increaseQuest3-Progress: "stage Quest3-Progress increase 1"
 
   # Agata Events
   takeKluczDoPokoju: "take klucz_do_pokoju"

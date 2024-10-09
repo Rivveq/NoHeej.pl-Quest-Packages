@@ -4,7 +4,7 @@ conversations:
       
       # 1.Recepcja
       q3-agata-1:
-        condition: Tracking.Quest-2-Done, isQuest3-Progress-AgataRecepcja
+        condition: Tracking.Quest-2-Done
         text: "Dzień dobry, w czym mogę Ci pomóc podróżniku?"
         pointer: q3-player-1a, q3-player-1b
       
