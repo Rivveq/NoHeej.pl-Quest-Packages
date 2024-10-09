@@ -33,7 +33,7 @@ conversations:
       # 4.Wyprawa na zadanie
       q2-chris-4:
         text: "Na początku prosiłbym cię abyś udał się do gwardzisty Tonego, ma dla mnie list. Po Twoim powrocie porozmawiamy o reszcie."
-        events: del_tag_2Chris_nocleg, chris_list_start_folder
+        events: del_tag_2Chris_nocleg, add_tag_2Chris_zadanie1
         pointer: q2-player-4
       
       # 5.Powrot z listem
@@ -126,6 +126,7 @@ conversations:
       # 4.Wyprawa na zadanie
       q2-player-4: 
         text: "&x&9&3&d&3&8&eDobrze, zajmę się tym natychmiast!"
+        events: notifNextLocation-Tony
       
       # 5.Powrot z listem
       q2-player-5a:
