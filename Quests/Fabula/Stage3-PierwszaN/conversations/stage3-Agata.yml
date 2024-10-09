@@ -4,8 +4,8 @@ conversations:
       
       # 1.Recepcja
       q3-agata-1:
-        condition: Tracking.Quest-2-Done
-        text: "Dzień dobry, w czym mogę Ci pomóc podróżniku?"
+        condition: Tracking.Quest-2-Done, !con_tag_3Agata_Done
+        text: "Dzień dobry, czy mogę Ci pomóc podróżniku?"
         pointer: q3-player-1a, q3-player-1b
       
       # 2.Prosba o klucz
@@ -15,7 +15,7 @@ conversations:
       
       # 3.Przekierowanie do pokoju
       q3-agata-3:
-        text: "Dobrze, Twój pokój znajduje na pierwszym piętrze pod numerem 3, miłego pobytu."
+        text: "Dobrze, Twój pokój znajduje na pierwszym piętrze pod numerem 3. Miłego pobytu!"
         pointer: q3-player-3
     
 
@@ -23,10 +23,10 @@ conversations:
       
       # 1.Recepcja
       q3-player-1a:
-        text: "Witaj! Chris mnie do Ciebie przysłał, abym odebrał swój pokój."
+        text: "Witaj! Chris mnie do Ciebie przysłał, abym odebrał klucze do swojego pokoju."
         pointer: q3-agata-2
       q3-player-1b:
-        text: "Nie chcę o tym rozmawiać."
+        text: "Nie wydaje mi się."
       
       # 2.Prosba o klucz
       q3-player-2a:
@@ -39,4 +39,4 @@ conversations:
       # 3.Przekierowanie do pokoju
       q3-player-3:
         text: "Dziękuję, do zobaczenia."
-        events: increaseQuest3-Progress, addObjectiveSprawdzPokoj-3
+        events: addObjectiveSprawdzPokoj3, add_tag_3Agata_Done

@@ -1,0 +1,17 @@
+conversations:
+  Narrator:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "[Rozglądasz się po swojej izdebce, nie jest zbyt duża ale za to nie była też tania. Uśmiechasz się pod nosem.]"
+        pointer: player-1
+      narr-2:
+        text: "[Zza ściany dobiegają Cię dziwne odgłosy, a włos jeży Ci się na karku. Powinieneś to sprawdzić.]"
+        events: notifDziwneDzwieki
+
+      player_options:
+        player-1:
+          text: "..."
+          pointer: narr-2

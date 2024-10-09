@@ -1,2 +1,2 @@
 objectives:
-  SprawdzPokoj-3: "location 360;72;24;world 2 entry events:notifDziwneDzwieki" # XYZ DO ZMIANY !!!!!!!!!!!
+  SprawdzPokoj3: "location -82;72;57;spawnSeed 3 entry events:conv_room3_entry" # XYZ DO ZMIANY !!!!!!!!!!!

@@ -1,13 +1,17 @@
 events:
+  # Tag events
+  add_tag_3Agata_Done: "tag add 3Agata_Done"
+
   # Objective events
-  addObjectiveSprawdzPokoj-3: "objective add SprawdzPokoj-3"
+  addObjectiveSprawdzPokoj3: "objective add SprawdzPokoj3"
 
+  # Conversation events
+  conv_room3_entry: "conversation Narrator"
 
-  # Agata Events
+  # Agata events
   takeKluczDoPokoju: "take klucz_do_pokoju"
   
-  # Tajemniczy Mezczyzna Events
-  notifDziwneDzwieki: "folder soundDziwneDzwieki1,soundDziwneDzwieki2,soundDziwneDzwieki1,soundDziwneDzwieki2,notifDziwneDzwiekiChat period:10 ticks"
+  # Dziwne dzwieki events
+  notifDziwneDzwieki: "folder soundDziwneDzwieki1,soundDziwneDzwieki2,soundDziwneDzwieki1,soundDziwneDzwieki2 period:10 ticks"
   soundDziwneDzwieki1: "notify io:sound sound:entity.zombie.attack_wooden_door soundpitch:0 soundvolume:0.5"
   soundDziwneDzwieki2: "notify io:sound sound:entity.zombie.attack_iron_door soundpitch:1 soundvolume:0.5"
-  notifDziwneDzwiekiChat: "notify &eCoś dziwnego dzieje się w pokoju obok... Lepiej to sprawdzę."
