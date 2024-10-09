@@ -4,7 +4,7 @@ conversations:
 
       # Narr. Gracz przychodzi do biura
       q2-rosalie-narr1:
-        conditions: con_tag_2Wes_Done, !con_tag_2Rosalie_Zdrowy, !con_tag_2Rosalie_Medyk
+        conditions: con_tag_2Wes_Done, !con_tag_2Rosalie_Zdrowy, !con_tag_2Rosalie_Medyk, !con_tag_2Rosalie_Done
         text: "&7[Widzisz kobietę siedzącą za biurkiem, wydaje się być czymś zajęta.]"
         pointer: q2-player-narr1
       q2-rosalie-narr2:

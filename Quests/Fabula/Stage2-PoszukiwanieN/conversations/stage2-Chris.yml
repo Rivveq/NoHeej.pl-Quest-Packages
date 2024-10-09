@@ -4,7 +4,7 @@ conversations:
       
       # 1.Pierwsze spotkanie z Chrisem
       q2-chris-1:
-        condition: con_tag_2Rosalie_Done, !con_tag_2Chris_nocleg, !con_tag_2Chris_zadanie1, !con_tag_2Bella_start
+        condition: con_tag_2Rosalie_Done, !con_tag_2Chris_nocleg, !con_tag_2Chris_zadanie1, !con_tag_2Bella_start, !con_tag_2Bella_Done
         text: "Ahoj kamracie! Czy mogę Ci jakoś pomóc?"
         pointer: q2-player-1a, q2-player-1b
       
@@ -18,7 +18,7 @@ conversations:
         pointer: q2-player-2a, q2-player-2b, q2-player-2c
       
       q2-chris-2b: #Gdyby gracz zakonczyl dialog i wrocil do npc
-        condition: con_tag_2Chris_nocleg, !con_tag_2Bella_start
+        condition: con_tag_2Chris_nocleg
         text: "Witaj z powrotem! Mogę użyczyć ci jednego z moich wolnych pokojów, ale będzie Cię to troche kosztować."
         pointer: q2-player-2a, q2-player-2b, q2-player-2c
       
