@@ -25,15 +25,16 @@ conversations:
         text: "[Ledwo otwierasz drzwi sąsiedniego pokoju, kiedy wyskakuje do Ciebie podejrzanie wyglądający mężczyzna. Wyczuwasz, że nie jest pozytywnie nastawiony. Zaczynasz żałować swojej decyzji o wejściu do tego pomieszczenia.]"
         pointer: player-1
       
+    player_options:
       player-1:
-        text: "..."
         events: conv_tm
+        text: "..."
     
-    Narrator_roomTM:
-      quester: Narrator
-      first: narr-1
+  Narrator_roomTM:
+    quester: Narrator
+    first: narr-1
 
-      NPC_options:
-        narr-1:
-          text: "[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.]"
-          events: #event na bol glowy
+    NPC_options:
+      narr-1:
+        events: folderTMhit
+        text: "[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.]"

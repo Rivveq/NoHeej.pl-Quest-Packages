@@ -22,9 +22,8 @@ events:
   
   # TM events
   folderTMhit: "folder tp_skycage,eff_blindness,eff_invisibility,folderTMtpback" #event na narr dialog po powrocie
-  folderTMtpback: "folder tp_TMback,eff_clear delay:10"
+  folderTMtpback: "folder tp_TMback delay:9"
   tp_skycage: "teleport -85;196;61;spawnSeed"
   tp_TMback: "teleport -85;73;61;spawnSeed"
-  eff_blindness: "effect BLINDNESS 100 255 hidden noicon"
-  eff_invisibility: "effect INVISIBILITY 100 255 hidden noicon"
-  eff_clear: "effect CLEAR"
+  eff_blindness: "effect BLINDNESS 10 255 hidden noicon"
+  eff_invisibility: "effect INVISIBILITY 10 255 hidden noicon"

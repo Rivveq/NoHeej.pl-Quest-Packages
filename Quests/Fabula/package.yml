@@ -6,6 +6,7 @@ npcs:
   '50': Tony
   '51': Bella
   '70': Agata
+  '72': TM
 
 items:
   steak: COOKED_BEEF #Stek, quest-1 Wes
