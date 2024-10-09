@@ -4,7 +4,7 @@ conversations:
       
       # 1.Conversation canncel
       q2-wes-1:
-        conditions: Tracking.Quest-1-Done, !con_tag_2Wes_Done
+        conditions: Tracking.Quest-1-Done, !Tracking.Quest-2-Done !con_tag_2Wes_Done
         text: "Czego jeszcze potrzebujesz chłopcze?"
         pointer: q2-player-1a, q2-player-1b
 

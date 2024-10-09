@@ -63,12 +63,11 @@ conversations:
       # 8.Zapłata za pokój/Powrot od Belli
       q2-chris-8a:
         text: "Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
-        events: add_tag_2Chris_oplacony
         pointer: q2-player-8
       q2-chris-8b:
         condition: con_tag_2Bella_Done
         text: "Słyszałem od Belli, że się spisałeś! Pokój jest Twój, udaj się do recepcjonistki Agaty, pomoże Ci z dostępem do pokoju. Część sypialniana znajduje się w sąsiednim budynku."
-        events: add_tag_2Chris_oplacony
+        events: del_tag_2Bella
         pointer: q2-player-8
       
       # 9.Pozegnanie z Chrisem
