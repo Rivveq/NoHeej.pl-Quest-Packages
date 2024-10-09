@@ -1,4 +1,1 @@
 conditions:
-  # Stage progress coditions
-  isQuest3-Progress-AgataRecepcja: "stage Quest3-Progress = AgataRecepcja"
-  isQuest3-Progress-Pokoj: "stage Quest3-Progress = Pokoj"

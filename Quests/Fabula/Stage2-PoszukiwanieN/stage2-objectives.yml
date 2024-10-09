@@ -1,2 +1,3 @@
 objectives:
-  Quest2-Progress: "stage WesRozmowa,RozalieRozmowa,SkrikSubQuest,RozalieZdrowy,ChrisRozmowa,ChrisZaplata,TonyList,TonyPrzysluga,ChrisPowrotZListem,ChrisPrzedZadaniemBella,BellaRozmowa,BellaPoszukujeSkladnikow,BellaListaSkompletowana,ChrisZadaniaUkonczone,ChrisOplacony events:Quest-2-Done"
+  obj_proximity_skrik: "location 64;66;-7;spawnSeed 4 entry conditions:con_tag_2Rosalie_Medyk event:notif_skrik_crackhouse_folder"
+  obj_delay_skrik: "delay 5 seconds interval:600 events:notif_skrik_exit_folder"

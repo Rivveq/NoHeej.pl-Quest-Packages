@@ -11,6 +11,5 @@ events:
   DelTagPowrotPoJedzenie: "tag delete PowrotPoJedzenie"
 
   GiveJedzenie: "give steak:16"
-  AddQuestDonePoint: "point quest_done_main 1 action:add"
 
-  Quest-1-Done: "folder DelTagPowrotPoJedzenie,addObjectiveQuest2,GiveJedzenie,Tracking.AddTagQuest-1-Done,AddQuestDonePoint"
+  Quest-1-Done: "folder DelTagPowrotPoJedzenie,GiveJedzenie,Tracking.AddTagQuest-1-Done,Tracking.add_quest_point_main"

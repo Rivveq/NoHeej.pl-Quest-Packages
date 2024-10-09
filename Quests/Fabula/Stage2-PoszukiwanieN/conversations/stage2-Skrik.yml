@@ -4,20 +4,21 @@ conversations:
       
       # 1.Pierwsze spotkanie z Skrikiem
       q2-skrik-1:
-        condition: isQuest2-Progress-Skrik
+        condition: con_tag_2Rosalie_Medyk
         text: "Witaj podróżniku, czyżbyś potrzebował opatrzenia ran? Pokaż no się!"
         pointer: q2-player-1a, q2-player-1b
       
       # 2.Wreczenie potki leczenia
       q2-skrik-2:
-        text: "Rozalia..? Ah tak! Zapewne jesteś %player% miałem Ci to dać."
+        text: "Rosalie…? Ah tak! Zapewne jesteś %player%, mówiła, że prędzej czy później do mnie przybędziesz, miałem Ci to dać"
+        events: del_tag_2Rosalie_Medyk, add_tag_2Rosalie_Zdrowy, give_PotkaLeczenia, add_obj_delay_skrik
         pointer: q2-player-2  
      
     player_options:
       
       # 1.Pierwsze spotkanie z Skrikiem
       q2-player-1a:
-        text: "&x&9&3&d&3&8&eEgh… Wysłała mnie do Ciebie Rozalia, powiedziała, że możesz mi pomóc z moim problemem."
+        text: "&x&9&3&d&3&8&eEgh… Wysłała mnie do Ciebie Rosalie, powiedziała, że możesz mi pomóc z moim problemem."
         pointer: q2-skrik-2
       q2-player-1b:
         text: "&x&f&f&6&9&6&1Nie dotykaj mnie!"
@@ -25,4 +26,3 @@ conversations:
       # 2.Wreczenie potki leczenia
       q2-player-2:
         text: "&x&9&3&d&3&8&eDziękuję Ci, bywaj."
-        events: SkrikSubQuestDone, notifNextLocation-Rosalia

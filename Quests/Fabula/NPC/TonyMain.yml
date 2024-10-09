@@ -1,7 +1,7 @@
 conversations:
   Tony:
     quester: 'Tony'
-    first: q2-tony-1, q2-tony-8, default
+    first: q2-tony-1-narr, q2-tony-4-back, q2-tony-6-przegrana-back, q2-tony-8, default
     final_events: clearPKNTags
 
     NPC_options:

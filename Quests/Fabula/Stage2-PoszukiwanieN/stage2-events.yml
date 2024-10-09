@@ -1,17 +1,56 @@
 events:
   # Objective events
-  addObjectiveQuest2: "objective add Quest2-Progress"
+  
+  add_tag_2Wes_Done: "tag add 2Wes_Done"
+  
+  add_tag_2Rosalie_Medyk: "tag add 2Rosalie_Medyk"
+  add_tag_2Rosalie_Zdrowy: "tag add 2Rosalie_Zdrowy"
+  add_tag_2Rosalie_Done: "tag add 2Rosalie_Done"
+  
+  add_tag_2Chris_nocleg: "tag add 2Chris_nocleg"
+  add_tag_2Chris_zadanie1: "tag add 2Chris_zadanie1"
+  
+  add_tag_2Tony_list: "tag add 2Tony_list"
+  add_tag_2Tony_back: "tag add 2Tony_back"
+  add_tag_2Tony_przegrana: "tag add 2Tony_przegrana"
+  add_tag_2Tony_miecz: "tag add 2Tony_miecz"
+  
+  add_tag_2Chris_zadanie2: "tag add 2Chris_zadanie2"
 
-  increaseQuest2-Progress: "stage Quest2-Progress increase 1"
-  setQuest2-Progress-Zdrowy: "stage Quest2-Progress set RozalieZdrowy" #Potrzebne w przypadku gdy gracz skipnie sub-quest skrika
-  setQuest2-Progress-ChrisPowrotZListem: "stage Quest2-Progress set ChrisPowrotZListem" #Potrzebne do questa Tonego w przypadku gdy gracz ominie subquesta z mieczem
-  setQuest2-Progress-ChrisOplacony: "stage Quest2-Progress set ChrisOplacony" #Potrzebne gdy gracz zaplacil za pokój skipujac wszystkie subquesty
+  add_tag_2Bella_start: "tag add 2Bella_start"
+  add_tag_2Bella_lista: "tag add 2Bella_lista"
+  add_tag_2Bella_Done: "tag add 2Bella_Done"
 
-  Quest-2-Done: "folder addObjectiveQuest3,Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady"
+  del_tag_2Rosalie_Medyk: "tag del 2Rosalie_Medyk"
+  del_tag_2Rosalie_Zdrowy: "tag del 2Rosalie_Zdrowy"
+  del_tag_2Chris_nocleg: "tag del 2Chris_nocleg"
+  del_tag_2Chris_zadanie1: "tag del 2Chris_zadanie1"
+  del_tag_2Tony_list: "tag del 2Tony_list"
+  del_tag_2Tony_back: "tag del 2Tony_back"
+  del_tag_2Tony_przegrana: "tag del 2Tony_przegrana"
+  del_tag_2Tony_miecz: "tag del 2Tony_miecz"
+  del_tag_2Chris_zadanie2: "tag del 2Chris_zadanie2"
+  del_tag_2Bella_start: "tag del 2Bella_start"
+  del_tag_2Bella_lista: "tag del 2Bella_lista"
+
+  del_tag_2Bella_Done: "tag del 2Bella_Done"
+  del_tag_2Rosalie_Done: "tag del 2Rosalie_Done"
+  del_tag_2Wes_Done: "tag del 2Wes_Done"
+
+  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady,del_tag_2Bella_Done,del_tag_2Rosalie_Done,del_tag_2Wes_Done"
 
   # Skrik events
-  givePotkaLeczenia: "give potka_leczenia"
-  SkrikSubQuestDone: "folder givePotkaLeczenia,increaseQuest2-Progress"
+  add_obj_proximity_skrik: "objective add obj_proximity_skrik"
+
+  notif_skrik_crackhouse_folder: "folder notif_skrik_crackhouse_1,notif_skrik_crackhouse_2 period:1"
+  notif_skrik_crackhouse_1: "notify &f&l[Wraz z chwilą przekroczenia progu Twoje nozdrza uderza intensywny zapach ziół i kurzu. Mijasz korytarz wypełniony niesamowitymi obrazami, ktokolwiek je stworzył musiał być wspaniałym rzemieślnikiem.] io:chat"
+  notif_skrik_crackhouse_2: "notify &f&l[Kiedy docierasz do gabinetu dostrzegasz podstarzałego mężczyznę, to zapewne medyk o którym wspominała Ci Rosalie.] io:chat"
+
+  give_PotkaLeczenia: "give potka_leczenia"
+
+  add_obj_delay_skrik: "objective add obj_delay_skrik"
+  notif_skrik_exit_folder: "folder notif_skrik_exit,notifNextLocation-Rosalia period:2"
+  notif_skrik_exit: "notify &f&l[Wciąż nie wiem gdzie mogę się zatrzymać na noc… Powinienem wrócić do Rosalie.] io:chat"
 
   # Chris Events
   notifBrakPieniedzy: "notify &aNie masz wystarczającej ilości pieniędzy!"
@@ -19,12 +58,20 @@ events:
 
   takeZaplataZaNoc: "money -1000"
 
+  chris_bella_start_folder: "folder notifNextLocation-Bella delay:1"
+
   giveNagrodaZaQuest2: "give klucz_do_pokoju,pieczony_kurczak:8,pieczony_schab:8,pieczony_krolik:8"
+
+  mass_2Chris_quest1_clean: "folder del_tag_2Chris_zadanie1,del_tag_2Tony_list,add_tag_2Chris_zadanie2"
 
   # Tonny Events
   giveListDoChrisa: "give list_do_chrisa"
   takeZlotyMiecz: "take zloty_miecz"
 
+  tony_przysluga_done_folder: "folder giveListDoChrisa,notifNextLocation-Chris period 2"
+
+  mass_del_tag_2Tony: "folder del_tag_2Tony_back,del_tag_2Tony_przegrana,del_tag_2Tony_miecz"
+  
   # PKN Game Events
   clearPKNTags: "tag del playerKamien,playerPapier,playerNozyce,tonyKamien,tonyPapier,tonyNozyce" #Usuwanie tagow po skonczeniu konwersacji z przeciwnikiem (Tonym)
 
@@ -41,6 +88,8 @@ events:
   # Bella Events
   giveDarmoweCiastko: "give ciastko"
   giveListaProduktow: "give lista_produktow"
+
+  adm_give_itemy_lista_Bella: "give mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
 
   takeListaSkladnikow: command clear %player% written_book{author:"Bella"} 1
   takeItemyLista: "take mleko:1,pszenica:10,jajko:8,surowy_losos:4,surowy_kurczak:2,cukier:1,ziemniak:3,marchew:4"
