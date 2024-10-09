@@ -28,7 +28,7 @@ conversations:
       q1-bella-4a-narr:
         condition: hasSkladniki, con_tag_2Bella_lista
         text: "&7[Kiedy wracasz do kuchni Twoje nozdrza uderza słodka woń czekolady. Widzisz, że podłoga i pobliskie blaty usłane są cienką warstwą mąki. Kucharka zapewne upiekła Ci obiecane słodkości.]"
-        pointer: 
+        pointer: q1-player-4a-narr
       q1-bella-4a:
         text: "Cieszę się, że już wróciłeś, właśnie upiekłam ciasteczka! Częstuj się!"
         pointer: q1-player-4a, q1-player-4b

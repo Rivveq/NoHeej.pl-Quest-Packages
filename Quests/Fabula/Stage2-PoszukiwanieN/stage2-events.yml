@@ -57,6 +57,7 @@ events:
   takeZaplataZaNoc: "money -1000"
 
   chris_list_start_folder: "folder add_tag_2Chris_zadanie1,notifNextLocation-Tony period 2"
+  chris_bella_start_folder: "folder notifNextLocation-Bella delay:1"
 
   giveNagrodaZaQuest2: "give klucz_do_pokoju,pieczony_kurczak:8,pieczony_schab:8,pieczony_krolik:8"
 

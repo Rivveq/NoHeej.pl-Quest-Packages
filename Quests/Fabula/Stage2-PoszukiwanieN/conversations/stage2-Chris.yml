@@ -58,7 +58,7 @@ conversations:
       # 7.Zadanie u Belli
       q2-chris-7:
         text: "Dobrze. Pamiętaj by wrócić do mnie po wykonaniu zadania!"
-        events: notifNextLocation-Bella !!!!!
+        events: chris_bella_start_folder
       
       # 8.Zapłata za pokój/Powrot od Belli
       q2-chris-8a:
