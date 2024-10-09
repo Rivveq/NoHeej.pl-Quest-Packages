@@ -56,6 +56,8 @@ events:
 
   takeZaplataZaNoc: "money -1000"
 
+  chris_list_start_folder: "folder add_tag_2Chris_zadanie1,notifNextLocation-Tony period 2"
+
   giveNagrodaZaQuest2: "give klucz_do_pokoju,pieczony_kurczak:8,pieczony_schab:8,pieczony_krolik:8"
 
   mass_2Chris_quest1_clean: "folder del_tag_2Chris_zadanie1,del_tag_2Tony_list,add_tag_2Chris_zadanie2"
@@ -63,6 +65,8 @@ events:
   # Tonny Events
   giveListDoChrisa: "give list_do_chrisa"
   takeZlotyMiecz: "take zloty_miecz"
+
+  tony_przysluga_done_folder: "folder giveListDoChrisa,notifNextLocation-Chris period 2"
 
   mass_del_tag_2Tony: "folder del_tag_2Tony_back,del_tag_2Tony_przegrana,del_tag_2Tony_miecz"
   

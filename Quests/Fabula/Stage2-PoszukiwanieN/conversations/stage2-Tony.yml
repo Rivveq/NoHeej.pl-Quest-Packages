@@ -85,7 +85,7 @@ conversations:
       # 9.Koniec
       q2-tony-9a:
         text: "Masz twój list i dziękuje za miecz!"
-        events: giveListDoChrisa, add_tag_2Tony_list, takeZlotyMiecz, notifNextLocation-Chris
+        events: add_tag_2Tony_list, takeZlotyMiecz, tony_przysluga_done_folder
       q2-tony-9b:
         text: "W takim razie po co przyszedłeś? Nie oddam ci listu bez miecza!"
       

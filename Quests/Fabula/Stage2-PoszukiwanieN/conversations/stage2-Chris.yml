@@ -4,7 +4,7 @@ conversations:
       
       # 1.Pierwsze spotkanie z Chrisem
       q2-chris-1:
-        condition: con_tag_2Rosalie_Done, !con_tag_2Chris_nocleg
+        condition: con_tag_2Rosalie_Done, !con_tag_2Chris_nocleg, !con_tag_2Chris_zadanie1
         text: "Ahoj kamracie! Czy mogę Ci jakoś pomóc?"
         pointer: q2-player-1a, q2-player-1b
       
@@ -33,7 +33,7 @@ conversations:
       # 4.Wyprawa na zadanie
       q2-chris-4:
         text: "Na początku prosiłbym cię abyś udał się do gwardzisty Tonego, ma dla mnie list. Po Twoim powrocie porozmawiamy o reszcie."
-        events: notifNextLocation-Tony, add_tag_2Chris_zadanie1, del_tag_2Chris_nocleg
+        events: del_tag_2Chris_nocleg, chris_list_start_folder
         pointer: q2-player-4
       
       # 5.Powrot z listem
@@ -84,7 +84,7 @@ conversations:
         text: "&x&9&3&d&3&8&eWitaj, poszukuję miejsca w którym mógłbym się przespać i coś zjeść. Rosalie powiedziała mi, że powinienem się udać do Ciebie"
         pointer: q2-chris-2a
       q2-player-1b:
-        text: " &x&f&f&6&9&6&1Niestety nie, Bywaj."
+        text: "&x&f&f&6&9&6&1Niestety nie, Bywaj."
       
       # 2.Kwestia noclegu
       q2-player-2-narr:
@@ -98,7 +98,7 @@ conversations:
         text: "&x&9&3&d&3&8&eNiestety straciłem cały swój dobytek przez sztorm, mógłbym coś dla ciebie zrobić w zamian za nocleg?"
         pointer: q2-chris-3b
       q2-player-2c:
-        text: " &x&f&f&6&9&6&1Nie ma mowy! Nie dam złamanego grosza za taką ruderę! Bywaj."
+        text: "&x&f&f&6&9&6&1Nie ma mowy! Nie dam złamanego grosza za taką ruderę! Bywaj."
       
       # 3a.Koszt noclegu - pieniadze
       q2-player-3a-a:
@@ -114,14 +114,14 @@ conversations:
         text: "&x&9&3&d&3&8&eAż &e1000$&r&x&9&3&d&3&8&e?! Nie ma opcji, to za wiele! Cofam moje słowa. Opowiedz mi więcej o tych zadaniach!"
         pointer: q2-chris-4
       q2-player-3a-d:
-        text: " &x&f&f&6&9&6&1Wrócę do Ciebie gdy zdobędę pieniądze."
+        text: "&x&f&f&6&9&6&1Wrócę do Ciebie gdy zdobędę pieniądze."
 
       # 3b.Koszt noclegu - zadania
       q2-player-3b-a: 
         text: "&x&9&3&d&3&8&eJakie to zadania?"
         pointer: q2-chris-4
       q2-player-3b-b: 
-        text: " &x&f&f&6&9&6&1Nie ma mowy, jestem zmęczony i zapracowany, jeśli czegoś potrzebujesz sam się tym zajmij."
+        text: "&x&f&f&6&9&6&1Nie ma mowy, jestem zmęczony i zapracowany, jeśli czegoś potrzebujesz sam się tym zajmij."
       
       # 4.Wyprawa na zadanie
       q2-player-4: 
@@ -134,7 +134,7 @@ conversations:
         events: takeListDoChrisa, mass_del_tag_2Tony
         pointer: q2-chris-6a
       q2-player-5b:
-        text: " &x&f&f&6&9&6&1Niestety nie mam..."
+        text: "&x&f&f&6&9&6&1Niestety nie mam..."
         pointer: q2-chris-6b
 
       # 6.Odpowiedz na list/Kolejne zadanie
@@ -143,7 +143,7 @@ conversations:
         events: add_tag_2Bella_start, del_tag_2Chris_zadanie2
         pointer: q2-chris-7
       q2-player-6b:
-        text: " &x&f&f&6&9&6&1Belli?! Nie mam czasu by pomagać jakiejś babci. Żegnaj."
+        text: "&x&f&f&6&9&6&1Belli?! Nie mam czasu by pomagać jakiejś babci. Żegnaj."
       
       # 8.Zapłata za pokój/Powrot od Belli
       q2-player-8:
