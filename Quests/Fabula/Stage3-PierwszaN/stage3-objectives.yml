@@ -1,2 +1,3 @@
 objectives:
-  SprawdzPokoj3: "location -82;72;57;spawnSeed 3 entry events:conv_room3_entry" # XYZ DO ZMIANY !!!!!!!!!!!
+  SprawdzPokoj3: "location -82;72;57;spawnSeed 2 entry events:conv_room3_entry"
+  SprawdzPokojDzwieki: "location -85;73;61;spawnSeed 1 entry events:conv_roomDzwieki_entry"

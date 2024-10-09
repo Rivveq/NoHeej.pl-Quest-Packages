@@ -1,5 +1,5 @@
 conversations:
-  Narrator:
+  Narrator_room3:
     quester: Narrator
     first: narr-1
 
@@ -9,9 +9,31 @@ conversations:
         pointer: player-1
       narr-2:
         text: "[Zza ściany dobiegają Cię dziwne odgłosy, a włos jeży Ci się na karku. Powinieneś to sprawdzić.]"
-        events: notifDziwneDzwieki
+        events: notifDziwneDzwieki, 
 
-      player_options:
-        player-1:
-          text: "..."
-          pointer: narr-2
+    player_options:
+      player-1:
+        text: "..."
+        pointer: narr-2
+  
+  Narrator_roomDzwieki:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "[Ledwo otwierasz drzwi sąsiedniego pokoju, kiedy wyskakuje do Ciebie podejrzanie wyglądający mężczyzna. Wyczuwasz, że nie jest pozytywnie nastawiony. Zaczynasz żałować swojej decyzji o wejściu do tego pomieszczenia.]"
+        pointer: player-1
+      
+      player-1:
+        text: "..."
+        events: conv_tm
+    
+    Narrator_roomTM:
+      quester: Narrator
+      first: narr-1
+
+      NPC_options:
+        narr-1:
+          text: "[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.]"
+          events: #event na bol glowy
