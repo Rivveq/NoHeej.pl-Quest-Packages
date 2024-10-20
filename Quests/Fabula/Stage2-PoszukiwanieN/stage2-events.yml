@@ -96,12 +96,3 @@ events:
 
   giveQuestCompleteCiastka: "give ciastko:3"
   hungerPlayerMax: "hunger set 20"
-
-  # Next Location Notifs
-  
-  notifNextLocation-Rosalia: "notify &x&3&C&B&3&7&1Spotkaj się z &eRosalią &x&3&C&B&3&7&1w ratuszu."
-  notifNextLocation-Skrik: "notify &x&3&C&B&3&7&1Spotkaj się z &eSkrikiem &x&3&C&B&3&7&1w szpitalu."
-  notifNextLocation-Chris: "notify &x&3&C&B&3&7&1Spotkaj się z &eChrisem &x&3&C&B&3&7&1w karczmie."
-  notifNextLocation-Tony: "notify &x&3&C&B&3&7&1Spotkaj się z &eTonym &x&3&C&B&3&7&1w jego domu na &epółnocy &x&3&C&B&3&7&1miasta."
-  notifNextLocation-Bella: "notify &x&3&C&B&3&7&1Spotkaj się z &eBellą &x&3&C&B&3&7&1w karczmie."
-  notifNextLocation-Agata: "notify &x&3&C&B&3&7&1Spotkaj się z &eAgatą &x&3&C&B&3&7&1w gospodzie."

@@ -5,11 +5,11 @@ conversations:
 
     NPC_options:
       narr-1:
-        text: "[Rozglądasz się po swojej izdebce, nie jest zbyt duża ale za to nie była też tania. Uśmiechasz się pod nosem.]"
+        text: "&7[Rozglądasz się po swojej izdebce, nie jest zbyt duża ale za to nie była też tania. Uśmiechasz się pod nosem.]"
         pointer: player-1
       narr-2:
-        text: "[Zza ściany dobiegają Cię dziwne odgłosy, a włos jeży Ci się na karku. Powinieneś to sprawdzić.]"
-        events: notifDziwneDzwieki, 
+        text: "&7[Zza ściany dobiegają Cię dziwne odgłosy, a włos jeży Ci się na karku. Powinieneś to sprawdzić.]"
+        events: notifDziwneDzwieki,addObjectiveSprawdzPokojDzwieki
 
     player_options:
       player-1:
@@ -22,19 +22,23 @@ conversations:
 
     NPC_options:
       narr-1:
-        text: "[Ledwo otwierasz drzwi sąsiedniego pokoju, kiedy wyskakuje do Ciebie podejrzanie wyglądający mężczyzna. Wyczuwasz, że nie jest pozytywnie nastawiony. Zaczynasz żałować swojej decyzji o wejściu do tego pomieszczenia.]"
+        text: "&7[Ledwo otwierasz drzwi sąsiedniego pokoju, kiedy wyskakuje do Ciebie podejrzanie wyglądający mężczyzna. Wyczuwasz, że nie jest pozytywnie nastawiony. Zaczynasz żałować swojej decyzji o wejściu do tego pomieszczenia.]"
         pointer: player-1
       
     player_options:
       player-1:
-        events: conv_tm
+        events: conv_cancel, conv_tm
         text: "..."
-    
-  Narrator_roomTM:
+  Narrator_TM_gone:
     quester: Narrator
     first: narr-1
 
     NPC_options:
       narr-1:
-        events: folderTMhit
-        text: "[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.]"
+        text: "&7[Straciłeś przytomność… Kiedy już wracasz do siebie ponownie znajdujesz się na korytarzu tawerny. Musisz czym prędzej coś zjeść i udać się do recepcjonistki Agaty, może Ci udzieli informacji na temat agresywnego jegomościa.]"
+        pointer: player-1
+    
+    player_options:
+      player-1:
+        text: "..."
+        events: notifNextLocation-Agata

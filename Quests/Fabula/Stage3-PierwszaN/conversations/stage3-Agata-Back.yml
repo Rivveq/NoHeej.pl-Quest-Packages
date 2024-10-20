@@ -1,0 +1,39 @@
+conversations:
+  Agata:
+    NPC_options:
+      q3-agata-4:
+        condition: con_tag_3TM_Done
+        text: "Witaj z powrotem! Co cię do mnie sprowadza %player%?"
+        pointer: q3-player-4a, q3-player-4b
+
+      q3-agata-5:
+        text: "Hm… W jakim pokoju miało to miejsce?"
+        pointer: q3-player-5a, q3-player-5b
+      
+      q3-agata-6:
+        text: "Według moich notatek nie powinno tam nikogo być… Przestań zmyślać i nie zawracaj mi głowy!"
+        pointer: q3-player-6a, q3-player-6b, q3-player-6c
+
+    player_options:
+      q3-player-4a:
+        text: "Egh… W moim pokoju było słychać jakieś podejrzane dźwięki. Poszedłem do sąsiedniego pokoju by to sprawdzić…  był tam jakiś podejrzany mężczyzna w ciemnej szacie!"
+        pointer: q3-agata-5
+      q3-player-4b:
+        text: "Musiałem cię z kimś pomylić"
+
+      q3-player-5a:
+        text: "To był pokój numer 2, tuż obok mojego!"
+        pointer: q3-agata-6
+      q3-player-5b:
+        text: "Nie interesuj się!"
+      
+      q3-player-6a:
+        text: "On naprawdę tam był! To poważna sprawa, inaczej bym tu nie przychodził!"
+        events: add_tag_3Agata_path1
+        pointer: q3-agata-path1-1
+      q3-player-6b:
+        text: "To czysta prawda, musisz mi uwierzyć!"
+        events: add_tag_3Agata_path2
+        pointer: q3-agata-path2-1
+      q3-player-6c:
+        text: "Głupstw?! Jeszcze mnie popamiętasz!"

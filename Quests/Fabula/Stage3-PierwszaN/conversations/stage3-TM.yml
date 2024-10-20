@@ -23,4 +23,4 @@ conversations:
       
       player-3:
         text: "..."
-        events: conv_tm_narr
+        events: folderTMhit

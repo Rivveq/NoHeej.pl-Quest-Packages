@@ -1,0 +1,7 @@
+conversations:
+  Agata:
+    NPC_options:
+      q3-agata-path2-1:
+        conditions: con_tag_3Agata_path2
+        text: "Posłuchaj mnie, nie mamy tu żadnych niebezpiecznych osób, to porządny pensjonat!"
+        pointer:

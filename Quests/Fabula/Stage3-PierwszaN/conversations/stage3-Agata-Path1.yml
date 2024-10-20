@@ -1,0 +1,33 @@
+conversations:
+  Agata:
+    NPC_options:
+      q3-agata-path1-1:
+        conditions: con_tag_3Agata_path1
+        text: "Ostatni czas był dla Ciebie ciężki, więc pewnie Ci się coś przywidziało…"
+        pointer: q3-player-path1-1a, q3-player-path1-1b
+      
+      q3-agata-path1-2:
+        text: "Nie mam zamiaru Cię słuchać, jeśli tak Cię świerzbi by opuszczać swoją izbę mam dla Ciebie zajęcie!"
+        pointer: q3-player-path1-2a, q3-player-path1-2b
+      
+      q3-agata-path1-3:
+        text: "Słyszałam od Chrisa, że jesteś skuteczny… Proszę Cię, abyś udał się do naszego miejscowego złotnika i dowiedział się kiedy przyjeżdża ważna osobistość."
+        pointer: q3-player-path1-3
+    
+    
+    player_options:
+      q3-player-path1-1a:
+        text: "Mówię jak było, więc mnie wysłuchaj!"
+        pointer: q3-agata-path1-2
+      q3-player-path1-1b:
+        text: " Nie obrażaj mnie, bo popamiętasz!"
+      
+      q3-player-path1-2a:
+        text: "W takim razie co mogę dla Ciebie zrobić?"
+        pointer: q3-agata-path1-3
+      q3-player-path1-2b:
+        text: "Mam Ci pomóc po tym wszystkim co powiedziałaś?!"
+      
+      q3-player-path1-3:
+        text: "Dobrze, już wyruszam…"
+        events: add_tag_3Agata_path1_Done

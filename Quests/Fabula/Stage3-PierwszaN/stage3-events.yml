@@ -1,16 +1,24 @@
 events:
   # Tag events
   add_tag_3Agata_Done: "tag add 3Agata_Done"
+  add_tag_3TM_Done: "tag add 3TM_Done"
+
+  add_tag_3Agata_path1: "tag add 3Agata_path1"
+  add_tag_3Agata_path2: "tag add 3Agata_path2"
+
+  add_tag_3Agata_path1_Done: "tag add 3Agata_path1_Done"
 
   # Objective events
   addObjectiveSprawdzPokoj3: "objective add SprawdzPokoj3"
   addObjectiveSprawdzPokojDzwieki: "objective add SprawdzPokojDzwieki"
 
   # Conversation events
+  conv_cancel: "cancelconversation"
+  
   conv_room3_entry: "conversation Narrator_room3"
   conv_roomDzwieki_entry: "conversation Narrator_roomDzwieki"
   conv_tm: "conversation TM"
-  conv_tm_narr: "conversation Narrator_roomTM"
+  conv_tm_gone: "conversation Narrator_TM_gone"
 
   # Agata events
   takeKluczDoPokoju: "take klucz_do_pokoju"
@@ -21,9 +29,12 @@ events:
   soundDziwneDzwieki2: "notify io:sound sound:entity.zombie.attack_iron_door soundpitch:1 soundvolume:0.5"
   
   # TM events
-  folderTMhit: "folder tp_skycage,eff_blindness,eff_invisibility,folderTMtpback" #event na narr dialog po powrocie
-  folderTMtpback: "folder tp_TMback delay:9"
+  folderTMhit: "folder add_tag_3TM_Done,notif_Hit,tp_skycage,eff_blindness,eff_invisibility,notif_Hit_sound,folderTMtpback" #event na narr dialog po powrocie
+  notif_Hit: "notify &f&l[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.] io:chat"
+  notif_Hit_sound: "notify io:sound sound:entity.player.hurt"
   tp_skycage: "teleport -85;196;61;spawnSeed"
-  tp_TMback: "teleport -85;73;61;spawnSeed"
   eff_blindness: "effect BLINDNESS 10 255 hidden noicon"
   eff_invisibility: "effect INVISIBILITY 10 255 hidden noicon"
+  
+  folderTMtpback: "folder tp_TMback,conv_tm_gone delay:9"
+  tp_TMback: "teleport -86;73;59;spawnSeed"

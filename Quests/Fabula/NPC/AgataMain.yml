@@ -1,7 +1,7 @@
 conversations:
   Agata:
     quester: Agata
-    first: q3-agata-1, default
+    first: q3-agata-1, q3-agata-4, default
 
     NPC_options:
       default:

@@ -8,6 +8,9 @@ npcs:
   '70': Agata
   '72': TM
 
+hide_npcs:
+  '72': add_tag_3TM_Done
+
 items:
   steak: COOKED_BEEF #Stek, quest-1 Wes
   
