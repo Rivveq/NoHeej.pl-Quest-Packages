@@ -1,0 +1,35 @@
+conversations:
+  Anna:
+    NPC_options:
+      
+      Przyneta4;1:
+        text: "%player% super, że jesteś! Ziarna kakao działają świetnie, jednak słyszałam o jeszcze innej ciekawej przynęcie! Chcesz się dowiedzieć więcej i mi pomóc?"
+        pointer: "PrzynetaGracz4;1,PrzynetaGracz4;2"
+        condition: "QuestPrzyneta3Done,!QuestPrzyneta4TagStarted,!QuestPrzyneta4Done"
+        event: "QuestPrzyneta3TagStartedRemove"
+      Przyneta4;2:
+        text: "Cieszę się, że chcesz dowiedzieć się więcej, a więc mój nowy pomysł to plastry miodu, ponoć jego słodkość bardzo przyciąga rybki, a ja chętnie to sprawdzę. Chciałbyś mi dostarczyć trochę plastrów?"
+        pointer: "PrzynetaGracz4;4"
+      Przyneta4;3ZItemami:
+        text: "Moje plastry! Bardzo szybko się uwinąłeś, aż jestem w szoku. Proszę to twoja nagroda!"
+        condition: "Przyneta4ItemCheck,QuestPrzyneta4TagStarted,!QuestPrzyneta4Done"
+        pointer: "PrzynetaGracz4;5"
+      Przyneta4;3BezItemow:
+        text: "Dobrze, że cię już widzę, ale nie widzę moich plastrów miodu. Wróć, jak już je zdobędziesz."
+        condition: "!Przyneta4ItemCheck,QuestPrzyneta4TagStarted,!QuestPrzyneta4Done"
+
+    player_options:    
+      PrzynetaGracz4;1:
+        text: "&x&F&8&F&F&A&1Mhm? Co to za przynęta i jak mogę ci pomóc?"
+        pointer: "Przyneta4;2"
+      PrzynetaGracz4;2:
+        text: "&x&F&8&F&F&A&1Nowa przynęta? Chętnie dowiem się o co chodzi i pomogę, jeśli zdołam."
+        pointer: "Przyneta4;2"
+      PrzynetaGracz4;3:
+        text: "&x&f&f&6&9&6&1Niestety nie mogę teraz, przyjdę później."
+      PrzynetaGracz4;4:
+        text: "&x&F&8&F&F&A&1Chętnie, wyruszam już teraz, więc oczekuj mnie! "
+        event: "PrzynetaWiadomosc4,QuestPrzyneta4TagStartedEvent"
+      PrzynetaGracz4;5:
+        text: "&x&F&8&F&F&A&1Dzięuje i pamiętaj, że możesz na mnie liczyć!"
+        event: "QuestPrzyneta4TagDone,Przyneta4ZabierzItem,QuestPrzyneta4TagStartedRemove,QuestPrzyneta4RewardFolder"

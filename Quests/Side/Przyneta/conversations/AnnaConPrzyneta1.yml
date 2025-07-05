@@ -1,0 +1,36 @@
+conversations:
+  Anna:
+    NPC_options:
+#SIDE QUEST Przynęta 1
+      Przyneta1-1:
+        text: "O witaj, to ty jesteś tym dobrym chłopcem, który pomaga wszystkim w naszej cudownej wiosce! Zechciałbyś mi pomóc?"
+        pointer: "PrzynetaGracz1;1,PrzynetaGracz1;2,PrzynetaGracz1;3"
+        condition: "!QuestPrzyneta1TagStarted,!QuestPrzyneta1Done"
+      Przyneta1;2:
+        text: "Ostatnimi czasy ryby tutaj stały się bardziej wymagające, więc potrzebuje dobrej przynęty. Słyszałam, że najlepsze są ziarna, więc czy chciałbyś mi ich trochę przynieść?"
+        pointer: "PrzynetaGraczAkceptacjaZadania"
+      Przyneta1;3BezItemów:
+        text: "Mhm, wróciłeś, a ziaren brak… Co ja zrobię jak ryby nie biorą… Muszę wykarmić rodzinę, więc proszę pośpiesz się!"
+        conditions: "!QuestPrzyneta1Done,QuestPrzyneta1TagStarted,!Przyneta1ItemCheck,"
+      Przyneta1;3ZItemami:
+        text: "To ty! Wiedziałam, że sobie poradzisz! Dziękuję ci bardzo, to twoja zapłata!"
+        condition: "QuestPrzyneta1TagStarted,Przyneta1ItemCheck,!QuestPrzyneta1Done"
+        pointer: "Przyneta1GraczKoniec"
+        
+        
+    player_options:
+# Side Quest Przyneta 1
+      PrzynetaGracz1;1:
+        text: "&x&F&8&F&F&A&1Witaj Anno, z chęcią ci pomogę o co chodzi?"
+        pointer: "Przyneta1;2"
+      PrzynetaGracz1;2:
+        text: "&x&F&8&F&F&A&1Haha, cieszę się, że mam taką dobrą opinie. Powiedz o co chodzi, a zobaczymy co da się zrobić."
+        pointer: "Przyneta1;2"
+      PrzynetaGracz1;3:
+        text: "&x&f&f&6&9&6&1Wybacz, aktualnie nie mam czasu."
+      PrzynetaGraczAkceptacjaZadania:
+        text: "&x&F&8&F&F&A&1Z przyjemnoscią ci pomogę!"
+        event: "PrzynetaWiadomosc1,QuestPrzyneta1TagStartedEvent"
+      Przyneta1GraczKoniec:
+        text: "&x&F&8&F&F&A&1Dziękuje!"
+        event: "Przyneta1ZabierzItemy,QuestPrzyneta1Done,QuestPrzyneta1RewardFolder,QuestPrzyneta1TagStartedRemove"

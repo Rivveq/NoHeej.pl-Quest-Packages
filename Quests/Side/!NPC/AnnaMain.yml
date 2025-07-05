@@ -1,0 +1,9 @@
+conversations:
+  Anna:
+    quester: 'Anna'
+    first: "Przyneta4;1,Przyneta4;3ZItemami,Przyneta4;3BezItemow,Przyneta3;1,Przyneta3;3ZItemami,Przyneta3;3BezItemow,Przyneta2-1,Przyneta2;3ZItemami,Przyneta2;3BezItemow,Przyneta1-1,Przyneta1;3ZItemami,Przyneta1;3BezItemów,default"
+    
+    NPC_options:
+      default:
+        text: "%player% bądź ciszej, bo straszysz mój obiad!"
+        

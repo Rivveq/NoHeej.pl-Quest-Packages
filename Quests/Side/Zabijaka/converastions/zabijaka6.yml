@@ -1,0 +1,44 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka6;1:
+        text: "Hej, młokosie, co powiesz na powrót do akcji?"
+        pointer: "ZabijakaGracz6;1, ZabijakaGracz6;2, ZabijakaGracz6;3"
+        condition: "Zabijaka5TagDone,!Zabijaka6TagStarted,!Zabijaka6TagDone"
+        
+      Zabijaka6;2:
+        text: "Dobrze się spisałeś podczas poprzednich zadań. Sądzę, że możemy teraz przejść do rzeczy trudniejszych. Nasi ludzie zauważyli, że w drogach brakuje coraz więcej ziemi. Sądzimy, że to wina endermanów. Czy dasz radę pozbyć się ich?"
+        pointer: "ZabijakaGracz6;4, ZabijakaGracz6;5, ZabijakaGracz6;6"
+        
+      Zabijaka6;3:
+        text: "Cieszy mnie twoja gotowość!"
+        events: "Zabijaka6TagStartedEvent,Zabijaka6QuestInfo,Zabijaka6RunMob"
+        
+      Zabijaka6;4:
+        text: "Dobra robota, %player% mój ulubiony zółtodzióbku!"
+        condition: "Zabijaka6TagMobKilled,!Zabijaka6TagDone"
+        pointer: "ZabijakaGracz6;7"
+        
+    player_options:
+      ZabijakaGracz6;1:
+        text: "&x&F&8&F&F&A&1Powrót? Kto powiedział, że mam jakąś przerwę?"
+        pointer: "Zabijaka6;2"
+      ZabijakaGracz6;2:
+        text: "&x&F&8&F&F&A&1Jasne, możesz na mnie liczyć."
+        pointer: "Zabijaka6;2"
+      ZabijakaGracz6;3:
+        text: "&x&f&f&6&9&6&1Muszę jeszcze trochę odpocząć"
+        
+      ZabijakaGracz6;4:
+        text: "&x&F&8&F&F&A&1Jasne, już biorę się do roboty."
+        pointer: "Zabijaka6;3"
+      ZabijakaGracz6;5:
+        text: "&x&F&8&F&F&A&1Te stwory poznają moje ostrze."
+        pointer: "Zabijaka6;3"
+      ZabijakaGracz6;6:
+        text: "&x&f&f&6&9&6&1Endermany? Nie ma mowy, nie wchodzę w to."
+        
+      ZabijakaGracz6;7:
+        text: "&x&F&8&F&F&A&1Polecam się na przyszłość szefie!"
+        event: "Zabijaka6TagDone,Zabijaka6RewardFolder"

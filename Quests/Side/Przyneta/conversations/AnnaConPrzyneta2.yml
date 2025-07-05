@@ -1,0 +1,35 @@
+conversations:
+  Anna:
+    NPC_options:
+      
+      Przyneta2-1:
+        text: "Świetnie, że jesteś ostatnim razem bardzo mi pomogłeś, ale niestety przynęta się nie sprawdziła… Ryby dalej słabo biorą… Postanowiłam, więc zapytać o lepszą przynęte i okazało się, że kawałki chleba to świetny wybór… Chciałbyś mi więc pomóc?"
+        pointer: "PrzynetaGracz2;1,PrzynetaGracz2;2,PrzynetaGracz2;3"
+        condition: "QuestPrzyneta1Done,!QuestPrzyneta2TagStarted,!QuestPrzyneta2Done"
+        event: "QuestPrzyneta1TagStartedRemove"
+      Przyneta2;2:
+        text: "Wiedziałam, że mi pomożesz! Myślę, że 32 sztuk wystarczy na pierwszy połów. "
+        pointer: "PrzynetaGracz2;4"
+      Przyneta2;3ZItemami:
+        text: "Mój chleb! Naprawdę dobrze sobie radzisz z zadaniami! Proszę to twoja nagroda!"
+        condition: "Przyneta2ItemCheck,QuestPrzyneta2TagStarted,!QuestPrzyneta2Done"
+        pointer: "PrzynetaGracz2;5"
+      Przyneta2;3BezItemow:
+        text: "A gdzie mój chleb? Płoszysz ryby, a chleba nie przynosisz!"
+        condition: "!Przyneta2ItemCheck,QuestPrzyneta2TagStarted,!QuestPrzyneta2Done"
+
+    player_options:    
+      PrzynetaGracz2;1:
+        text: "&x&F&8&F&F&A&1Ciekawy pomysł z tym chlebem. Ile go potrzebujesz?"
+        pointer: "Przyneta2;2"
+      PrzynetaGracz2;2:
+        text: "&x&F&8&F&F&A&1Chleb na ryby? Słyszałem jedynie, że jest dobry na kaczki… Mimo to ci pomogę"
+        pointer: "Przyneta2;2"
+      PrzynetaGracz2;3:
+        text: "&x&f&f&6&9&6&1Nie mam teraz czasu, wrócę później."
+      PrzynetaGracz2;4:
+        text: "&x&F&8&F&F&A&1Dobrze, już wyruszam!"
+        event: "PrzynetaWiadomosc2,QuestPrzyneta2TagStartedEvent"
+      PrzynetaGracz2;5:
+        text: "&x&F&8&F&F&A&1Dziękuje ci bardzo!"
+        event: "QuestPrzyneta2TagDone,Przyneta2ZabierzItem,QuestPrzyneta2TagStartedRemove,QuestPrzyneta2RewardFolder"

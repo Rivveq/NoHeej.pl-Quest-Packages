@@ -1,0 +1,56 @@
+conversations:
+  Cedric:
+  
+    NPC_options:
+      Archanim1Quest1:
+        text: "Widzę %player%, że masz już &e%ph.cmi_user_level%&f poziom. Zerknij jakie nagrody możesz odebrać!"
+        pointer: "PlayerLevel30Have, PlayerLevel30Not, PlayerLevel60Have, PlayerLevel60Not, PlayerLevel90Have, PlayerLevel90Not, PlayerLevel120Have, PlayerLevel120Not, PlayerLevel150Have, PlayerLevel150Not"
+
+        
+    player_options:
+    # Level 30
+      PlayerLevel30Have:
+        text: "&x&F&8&F&F&A&1Level &e30 &x&F&8&F&F&A&1-> &aNagroda"
+        condition: "Level30, !Level30TagDoneC"
+        events: "Level30RewardFolder, Level30TagDone"
+      PlayerLevel30Not:
+        text: "&x&F&8&F&F&A&1Level &e30 &x&F&8&F&F&A&1-> &cNagroda"
+        condition: "!Level30, !Level30TagDoneC"
+        events: "NoRequiredLevelNotify"
+    # Level 60
+      PlayerLevel60Have:
+        text: "&x&F&8&F&F&A&1Level &e60 &x&F&8&F&F&A&1-> &aNagroda"
+        condition: "Level60, !Level60TagDoneC"
+        events: "Level60RewardFolder, Level60TagDone"
+      PlayerLevel60Not:
+        text: "&x&F&8&F&F&A&1Level &e60 &x&F&8&F&F&A&1-> &cNagroda"
+        condition: "!Level60, !Level60TagDoneC"
+        events: "NoRequiredLevelNotify"
+    # Level 90
+      PlayerLevel90Have:
+        text: "&x&F&8&F&F&A&1Level &e90 &x&F&8&F&F&A&1-> &aNagroda"
+        condition: "Level90, !Level90TagDoneC"
+        events: "Level90RewardFolder, Level90TagDone"
+      PlayerLevel90Not:
+        text: "&x&F&8&F&F&A&1Level &e90 &x&F&8&F&F&A&1-> &cNagroda"
+        condition: "!Level90, !Level90TagDoneC"
+        events: "NoRequiredLevelNotify"
+    # Level 120
+      PlayerLevel120Have:
+        text: "&x&F&8&F&F&A&1Level &e120 &x&F&8&F&F&A&1-> &aNagroda"
+        condition: "Level120, !Level120TagDoneC"
+        events: "Level120RewardFolder, Level120TagDone"
+      PlayerLevel120Not:
+        text: "&x&F&8&F&F&A&1Level &e120 &x&F&8&F&F&A&1-> &cNagroda"
+        condition: "!Level120, !Level120TagDoneC"
+        events: "NoRequiredLevelNotify"
+    # Level 150
+      PlayerLevel150Have:
+        text: "&x&F&8&F&F&A&1Level &e150 &x&F&8&F&F&A&1-> &aNagroda"
+        condition: "Level150, !Level150TagDoneC"
+        events: "Level150RewardFolder, Level150TagDone"
+      PlayerLevel150Not:
+        text: "&x&F&8&F&F&A&1Level &e150 &x&F&8&F&F&A&1-> &cNagroda"
+        condition: "!Level150, !Level150TagDoneC"
+        events: "NoRequiredLevelNotify"
+        

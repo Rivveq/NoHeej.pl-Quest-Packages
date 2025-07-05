@@ -1,0 +1,34 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka8;1:
+        text: "Młodzieńcze, mam dla Ciebie kolejne zadanie."
+        pointer: "ZabijakaGracz8;1, ZabijakaGracz8;2"
+        condition: "Zabijaka7TagDone,!Zabijaka8TagStarted,!Zabijaka8TagDone"
+        
+      Zabijaka8;2:
+        text: "Jak zawsze gotowy. W takim razie przejdźmy do biznesu. Nasi producenci stali się ofiarami regularnych napadów pewnej grupy bandytów. Jeśli ten trend się utrzyma, handel w naszym mieście bardzo ucierpi. Pozbądź się najeźdźców, a problem zostanie rozwiązany. Wchodzisz w to?"
+        pointer: "ZabijakaGracz8;3, ZabijakaGracz8;4"
+        
+      Zabijaka8;4:
+        text: "Dziękuję, młody. Nie wiem, co byśmy bez Ciebie zrobili."
+        condition: "Zabijaka8TagMobKilled,!Zabijaka8TagDone"
+        pointer: "ZabijakaGracz8;5"
+        
+    player_options:
+      ZabijakaGracz8;1:
+        text: "&x&F&8&F&F&A&1Świetnie! Liczyłem, że znajdę u Ciebie coś do roboty."
+        pointer: "Zabijaka8;2"
+      ZabijakaGracz8;2:
+        text: "&x&f&f&6&9&6&1Wybacz, nie mogę teraz podjąć się nowych zleceń."
+        
+      ZabijakaGracz8;3:
+        text: "&x&F&8&F&F&A&1Oczywiście, nie pozwolę, aby Laxstad ucierpiało."
+        events: "Zabijaka8TagStartedEvent,Zabijaka8QuestInfo,Zabijaka8RunMob"
+      ZabijakaGracz8;4:
+        text: "&x&f&f&6&9&6&1Przepraszam, nie jestem w stanie podjąć się tego zadania."
+        
+      ZabijakaGracz8;5:
+        text: "&x&F&8&F&F&A&1Nie jestem taki młody, ale poza tym nie ma sprawa, póki hajs się zgadza!"
+        event: "Zabijaka8TagDone,Zabijaka8RewardFolder"

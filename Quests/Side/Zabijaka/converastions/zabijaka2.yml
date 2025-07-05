@@ -1,0 +1,41 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka2;1:
+        text: "Hej szczeniaku, gotowy na rundę drugą?"
+        pointer: "ZabijakaGracz2;1, ZabijakaGracz2;2, ZabijakaGracz2;3"
+        condition: "Zabijaka1TagDone,!Zabijaka2TagStarted,!Zabijaka2TagDone"
+      Zabijaka2;2:
+        text: "Lubię twój entuzjazm młody! Nasze karawany są napadane przez zgraje łuczników, kryjących się w lasach. Niektórzy mówią, że tuż przed atakiem słychać charakterystyczne klekotanie. Pozbądź się ich, a wynagrodzę Cię sowicie. Zainteresowany?"
+        pointer: "ZabijakaGracz2;4, ZabijakaGracz2;5"
+      Zabijaka2;3:
+        text: "Świetnie, sprawa wygląda następująco. Nasze karawany są napadane przez zgraje łuczników, kryjących się w lasach. Niektórzy mówią, że tuż przed atakiem słychać charakterystyczne klekotanie. Pozbądź się ich, a wynagrodzę Cię sowicie. Zainteresowany?"
+        pointer: "ZabijakaGracz2;4, ZabijakaGracz2;5"
+      Zabijaka2;4:
+        text: "Nieźle, nieźle jak na nowicjusza. Tak trzymaj. Oto Twoja nagroda."
+        condition: "Zabijaka2TagMobKilled,!Zabijaka2TagDone"
+        pointer: "ZabijakaGracz2;6"
+        
+        
+    player_options:
+      ZabijakaGracz2;1:
+        text: "&x&F&8&F&F&A&1Urodziłem się gotowy!"
+        pointer: "Zabijaka2;2"
+      ZabijakaGracz2;2:
+        text: "&x&F&8&F&F&A&1Oczywiście!"
+        pointer: "Zabijaka2;3"
+      ZabijakaGracz2;3:
+        text: "&x&f&f&6&9&6&1Chyba sobie odpuszczę..."
+      ZabijakaGracz2;4:
+        text: "&x&F&8&F&F&A&1Kości zostały rzucone. Ci tchórze pożałują swoich ataków."
+        pointer: "Zabijaka2;4"
+        events: "Zabijaka2TagStartedEvent,Zabijaka2QuestInfo,Zabijaka2RunMob"
+      ZabijakaGracz2;5:
+        text: "&x&f&f&6&9&6&1Może kiedy indziej..."
+        
+      ZabijakaGracz2;6:
+        text: "&x&F&8&F&F&A&1Mówiłem ci! I bardzo dziękuje za zlecenie!"
+        event: "Zabijaka2TagDone,Zabijaka2RewardFolder"
+        
+      

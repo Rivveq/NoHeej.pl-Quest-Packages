@@ -1,0 +1,17 @@
+conversations:
+  Cedric:
+    quester: 'Cedric'
+    first: "default"
+    
+    NPC_options:
+      default:
+        text: "Witaj %player%, akutalnie medytuje. Przybywasz w jakiejś konkretnej sprawie?"
+        pointer: "PlayerSideQuestOption, PlayerDefaultAnswer"
+        
+    player_options:
+      PlayerSideQuestOption:
+        text: "&x&F&8&F&F&A&1Słyszałem, że po osiągnięciu odpowiedniego poziomu dajesz nagrody. Chciałbyś sprawdzić mój poziom?"
+        pointer: "Archanim1Quest1"
+      PlayerDefaultAnswer:
+        text: "&x&f&f&6&9&6&1Wybacz, tylko się rozglądam."
+        

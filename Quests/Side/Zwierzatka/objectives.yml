@@ -1,0 +1,7 @@
+objectives:
+  Malpa1Interact: "npcinteract 33 interaction:any event:ZwierzatkaQuest1CaughtFolder1,ZwierzatkaQuest1DoneFolder"
+  Malpa2Interact: "npcinteract 34 interaction:any event:ZwierzatkaQuest1CaughtFolder2,ZwierzatkaQuest1DoneFolder"
+  Malpa3Interact: "npcinteract 35 interaction:any event:ZwierzatkaQuest1CaughtFolder3,ZwierzatkaQuest1DoneFolder"
+  Malpa4Interact: "npcinteract 36 interaction:any event:ZwierzatkaQuest1CaughtFolder4,ZwierzatkaQuest1DoneFolder"
+  Malpa5Interact: "npcinteract 37 interaction:any event:ZwierzatkaQuest1CaughtFolder5,ZwierzatkaQuest1DoneFolder"
+  Malpa6Interact: "npcinteract 38 interaction:any event:ZwierzatkaQuest1CaughtFolder6,ZwierzatkaQuest1DoneFolder"

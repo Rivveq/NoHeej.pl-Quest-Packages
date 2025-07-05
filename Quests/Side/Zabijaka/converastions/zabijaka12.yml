@@ -1,0 +1,38 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka12;1:
+        text: "Wojowniku… tym razem to nie będzie tylko „zwykła misja”. To prawdziwa wojna! Nadciąga coś wielkiego i wszystko wskazuje na to, że jesteś jedyną osobą, która może coś z tym zrobić..."
+        pointer: "ZabijakaGracz12;1, ZabijakaGracz12;2, ZabijakaGracz12;3"
+        condition: "Zabijaka11TagDone,!Zabijaka12TagStarted,!Zabijaka12TagDone"
+        
+      Zabijaka12;2:
+        text: "To już nie są drobne incydenty... Hordy nieumarłych, pajęczych pomiotów i czegoś znacznie gorszego zmierzają w stronę miasta. Zombie, szkielety, pająki… Nawet przeklęte creepery i wiedźmy. To nie przypadek musimy być gotowi stawić im czoła! Albo czeka nas smierć..."
+        pointer: "ZabijakaGracz12;4, ZabijakaGracz12;5"
+        
+        
+      Zabijaka12;3:
+        text: " Ty… ty to zrobiłeś. Sam jeden pokonałeś całą horde! Gdyby nie Ty, wolę nawet nie myśleć co mogłoby się stać... Pamiętaj ten dzień. I pamiętaj tę nagrodę. Zasłużyłeś!!!"
+        condition: "Zabijaka12TagMobKilled,!Zabijaka12TagDone"
+        pointer: "ZabijakaGracz12;6"
+        
+    player_options:
+      ZabijakaGracz12;1:
+        text: "&x&F&8&F&F&A&1Zawsze wiedziałem, że ten dzień nadejdzie! Wyruszam natychmiast!"
+        pointer: "Zabijaka12;2"
+      ZabijakaGracz12;2:
+        text: "&x&F&8&F&F&A&1Brzmi poważnie. Co się dzieje?"
+        pointer: "Zabijaka12;2"
+      ZabijakaGracz12;3:
+        text: "&x&f&f&6&9&6&1Może lepiej, żebyś znalazł armię. Ja jestem tylko sam jeden."
+        
+      ZabijakaGracz12;4:
+        text: "&x&F&8&F&F&A&1Nic się nie bój! Będę walczyć do ostatniej kropli krwi!"
+        events: "Zabijaka12TagStartedEvent,Zabijaka12QuestInfo,Zabijaka12RunMob"
+      ZabijakaGracz12;5:
+        text: "&x&f&f&6&9&6&1Tym razem to dla mnie za dużo..."
+        
+      ZabijakaGracz12;6:
+        text: "&x&F&8&F&F&A&1To zadanie było najcięższym jakie kiedykolwiek otrzymałem, więc na pewno zapamiętam ten dzień!"
+        event: "Zabijaka12TagDone,Zabijaka12RewardFolder"

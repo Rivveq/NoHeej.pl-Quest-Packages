@@ -1,0 +1,18 @@
+conditions:
+
+# Przyneta 1 
+  QuestPrzyneta1TagStarted: "tag Przyneta1TagStarted"
+  Przyneta1ItemCheck: "item melon_seeds:32,pumpkin_seeds:32,wheat_seeds:64"
+  QuestPrzyneta1Done: "tag Przyneta1TagDone"
+# Przyneta 2
+  QuestPrzyneta2TagStarted: "tag Przyneta2TagStarted"
+  Przyneta2ItemCheck: "item bread:32"
+  QuestPrzyneta2Done: "tag Przyneta2TagDone"
+# Przyneta 3
+  QuestPrzyneta3TagStarted: "tag Przyneta3TagStarted"
+  Przyneta3ItemCheck: "item kakao:64"
+  QuestPrzyneta3Done: "tag Przyneta3TagDone"
+# Przyneta 4
+  QuestPrzyneta4TagStarted: "tag Przyneta4TagStarted"
+  Przyneta4ItemCheck: "item miod:32"
+  QuestPrzyneta4Done: "tag Przyneta4TagDone"

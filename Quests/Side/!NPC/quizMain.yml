@@ -1,0 +1,9 @@
+conversations:
+  Quiz:
+    quester: 'Quiz'
+    first: "5QuizOption, 5LastQuizCanceld, 4QuizOption, 4LastQuizCanceld, 3QuizOption, 3LastQuizCanceld, 2QuizOption, 2LastQuizCanceld, QuizOption, LastQuizCanceld, default"
+    
+    NPC_options:
+      default:
+        text: "%player% pamiętaj, że wiedza to najlepsza super moc!"
+        

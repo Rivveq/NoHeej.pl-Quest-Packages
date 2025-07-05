@@ -1,0 +1,27 @@
+npcs:
+  '55': Anna
+  '217': Sigmund
+  '260': Quiz
+  '259': Cedric
+  '5': Victor
+hide_npcs:
+  '33': ZwierzatkaQuest1Malpa1CaughtConHide
+  '34': ZwierzatkaQuest1Malpa2CaughtConHide
+  '35': ZwierzatkaQuest1Malpa3CaughtConHide
+  '36': ZwierzatkaQuest1Malpa4CaughtConHide
+  '37': ZwierzatkaQuest1Malpa5CaughtConHide
+  '38': ZwierzatkaQuest1Malpa6CaughtConHide
+items:
+  # Przyneta 1
+  melon_seeds: MELON_SEEDS
+  pumpkin_seeds: PUMPKIN_SEEDS
+  wheat_seeds: WHEAT_SEEDS
+  # Przyneta 2
+  bread: BREAD
+  # Przyneta 3
+  kakao: COCOA_BEANS
+  # Przyneta 4
+  miod: HONEYCOMB
+  zylka: STRING custom-model-data:7002 lore:&2Quest_Item
+  zwoj: PAPER name:§b§lZWÓJ_TELEPORTACJI lore:&7Teleportuj_się_do_dowolnego;&7miasta_używając_tego_zwoju;;&8Kliknij_by_użyć
+  antycznywzor: COPPER_INGOT custom-model-data:7004 lore:&2Quest_Item

@@ -1,0 +1,8 @@
+conversations:
+  Yahir:
+    quester: 'Yahir'
+    first: "default"
+   
+    NPC_options:
+      default:
+        text: "Nie lubie nieznajomych, więc lepiej się odsuń!"

@@ -1,0 +1,37 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka7;1:
+        text: "Podróżniku! Mam dla Ciebie nowe zadanie! Spisz się dobrze, a zostaniesz sowicie nagrodzony."
+        pointer: "ZabijakaGracz7;1, ZabijakaGracz7;2, ZabijakaGracz7;3"
+        condition: "Zabijaka6TagDone,!Zabijaka7TagStarted,!Zabijaka7TagDone"
+        
+      Zabijaka7;2:
+        text: "Nasi informatorzy donoszą, że w okolicy pojawiły się nowe warianty znanych nam już przeciwników. Nie jesteśmy w stanie stwierdzić, czy są silniejsze od tych poprzednich. Zabij je i przynieś trochę materiałów do badań naszemu doktorowi, Skrikowi, on zajmie się resztą. Oczywiście, zostaniesz opłacony."
+        pointer: "ZabijakaGracz7;4, ZabijakaGracz7;5"
+        
+      Zabijaka7;4:
+        text: "Robi się z Ciebie niezły zabijaka. Dobra robota."
+        condition: "Zabijaka7TagMobKilled,!Zabijaka7TagDone"
+        pointer: "ZabijakaGracz7;6"
+        
+    player_options:
+      ZabijakaGracz7;1:
+        text: "&x&F&8&F&F&A&1Jakie zadanie przygotowałeś dla mnie tym razem?"
+        pointer: "Zabijaka7;2"
+      ZabijakaGracz7;2:
+        text: "&x&F&8&F&F&A&1Jasne, możesz na mnie liczyć."
+        pointer: "Zabijaka7;2"
+      ZabijakaGracz7;3:
+        text: "&x&f&f&6&9&6&1Innym razem, Sigmundzie."
+        
+      ZabijakaGracz7;4:
+        text: "&x&F&8&F&F&A&1Już biorę się do zabijania."
+        events: "Zabijaka7TagStartedEvent,Zabijaka7RunMob,Zabijaka7QuestInfo"
+      ZabijakaGracz7;5:
+        text: "&x&f&f&6&9&6&1Eee… Sorki, muszę lecieć, zostawiłem pranie na gazie."
+        
+      ZabijakaGracz7;6:
+        text: "&x&F&8&F&F&A&1Polecam się na przyszłość szefie!"
+        event: "Zabijaka7TagDone,Zabijaka7RewardFolder"

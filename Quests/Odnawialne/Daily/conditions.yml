@@ -1,0 +1,366 @@
+conditions:
+  EasyQuestTag: "tag EasyDaily"
+  MediumQuestTag: "tag MediumDaily"
+  HardQuestTag: "tag HardDaily"
+  
+  
+  EasyQuestStartedTag: "tag EasyDailyStarted"
+  MediumQuestStartedTag: "tag MediumDailyStarted"
+  HardQuestStartedTag: "tag HardDailyStarted"
+  
+  EasyQuestDone: "tag EasyDailyQuestDone"
+  MediumQuestDone: "tag MediumDailyQuestDone"
+  HardQuestDone: "tag HardDailyQuestDone"
+  
+  DailyTaskCompleted: "tag DailyTaskCompleted"
+  
+# Easy Chcek Item  
+  EasyDailyQuest1CheckItem: "item OAK_LOG:64"
+  EasyDailyQuest1Started: "tag DailyQuestStartedEasy1"
+  
+  EasyDailyQuest2CheckItem: "item SPRUCE_LOG:64"
+  EasyDailyQuest2Started: "tag DailyQuestStartedEasy2"
+  
+  EasyDailyQuest3CheckItem: "item BIRCH_LOG:64"
+  EasyDailyQuest3Started: "tag DailyQuestStartedEasy3"
+  
+  EasyDailyQuest4CheckItem: "item JUNGLE_LOG:64"
+  EasyDailyQuest4Started: "tag DailyQuestStartedEasy4"
+  
+  EasyDailyQuest5CheckItem: "item ACACIA_LOG:64"
+  EasyDailyQuest5Started: "tag DailyQuestStartedEasy5"
+  
+  EasyDailyQuest6CheckItem: "item DARK_OAK_LOG:64"
+  EasyDailyQuest6Started: "tag DailyQuestStartedEasy6"
+  
+  EasyDailyQuest7CheckItem: "item CHERRY_LOG:64"
+  EasyDailyQuest7Started: "tag DailyQuestStartedEasy7"
+  
+  EasyDailyQuest8CheckItem: "item COBBLESTONE:320"
+  EasyDailyQuest8Started: "tag DailyQuestStartedEasy8"
+  
+  EasyDailyQuest9CheckItem: "item DANDELION:32"
+  EasyDailyQuest9Started: "tag DailyQuestStartedEasy9"
+  
+  EasyDailyQuest10CheckItem: "item POPPY:32"
+  EasyDailyQuest10Started: "tag DailyQuestStartedEasy10"
+  
+  EasyDailyQuest11CheckItem: "item RED_TULIP:16"
+  EasyDailyQuest11Started: "tag DailyQuestStartedEasy11"
+
+  EasyDailyQuest12CheckItem: "item ORANGE_TULIP:16"
+  EasyDailyQuest12Started: "tag DailyQuestStartedEasy12"
+  
+  EasyDailyQuest13CheckItem: "item WHITE_TULIP:16"
+  EasyDailyQuest13Started: "tag DailyQuestStartedEasy13"
+  
+  EasyDailyQuest14CheckItem: "item PINK_TULIP:16"
+  EasyDailyQuest14Started: "tag DailyQuestStartedEasy14"
+  
+  EasyDailyQuest15CheckItem: "item LILAC:16"
+  EasyDailyQuest15Started: "tag DailyQuestStartedEasy15"
+  
+  EasyDailyQuest16CheckItem: "item ROSE_BUSH:16"
+  EasyDailyQuest16Started: "tag DailyQuestStartedEasy16"
+  
+  EasyDailyQuest17CheckItem: "item SUNFLOWER:16"
+  EasyDailyQuest17Started: "tag DailyQuestStartedEasy17"
+  
+  EasyDailyQuest18CheckItem: "item SAND:320"
+  EasyDailyQuest18Started: "tag DailyQuestStartedEasy18"
+  
+  EasyDailyQuest19CheckItem: "item GRAVEL:32"
+  EasyDailyQuest19Started: "tag DailyQuestStartedEasy19"
+  
+  EasyDailyQuest20CheckItem: "item COAL:64"
+  EasyDailyQuest20Started: "tag DailyQuestStartedEasy20"
+  
+  EasyDailyQuest21CheckItem: "item RAW_IRON:16"
+  EasyDailyQuest21Started: "tag DailyQuestStartedEasy21"
+  
+  EasyDailyQuest22CheckItem: "item CHARCOAL:32"
+  EasyDailyQuest22Started: "tag DailyQuestStartedEasy22"
+  
+  EasyDailyQuest23CheckItem: "item INK_SAC:8"
+  EasyDailyQuest23Started: "tag DailyQuestStartedEasy23"
+  
+  EasyDailyQuest24CheckItem: "item SUGAR_CANE:16"
+  EasyDailyQuest24Started: "tag DailyQuestStartedEasy24"
+  
+  EasyDailyQuest25CheckItem: "item REDSTONE:32"
+  EasyDailyQuest25Started: "tag DailyQuestStartedEasy25"
+  
+  EasyDailyQuest26CheckItem: "item DIRT:320"
+  EasyDailyQuest26Started: "tag DailyQuestStartedEasy26"
+  
+  EasyDailyQuest27CheckItem: "item CLAY_BALL:32"
+  EasyDailyQuest27Started: "tag DailyQuestStartedEasy27"
+  
+  EasyDailyQuest28CheckItem: "item POTATO:16"
+  EasyDailyQuest28Started: "tag DailyQuestStartedEasy28"
+  
+  EasyDailyQuest29CheckItem: "item CARROT:16"
+  EasyDailyQuest29Started: "tag DailyQuestStartedEasy29"
+  
+  EasyDailyQuest30CheckItem: "item BEETROOT:16"
+  EasyDailyQuest30Started: "tag DailyQuestStartedEasy30"
+  
+  EasyDailyQuest31CheckItem: "item RAW_COPPER:64"
+  EasyDailyQuest31Started: "tag DailyQuestStartedEasy31"
+  
+  EasyDailyQuest32CheckItem: "item LEATHER:16"
+  EasyDailyQuest32Started: "tag DailyQuestStartedEasy32"
+  
+  EasyDailyQuest33CheckItem: "item BEEF:16"
+  EasyDailyQuest33Started: "tag DailyQuestStartedEasy33"
+  
+  EasyDailyQuest34CheckItem: "item CHICKEN:16"
+  EasyDailyQuest34Started: "tag DailyQuestStartedEasy34"
+  
+  EasyDailyQuest35CheckItem: "item PORKCHOP:16"
+  EasyDailyQuest35Started: "tag DailyQuestStartedEasy35"
+  
+  EasyDailyQuest36CheckItem: "item MUTTON:16"
+  EasyDailyQuest36Started: "tag DailyQuestStartedEasy36"
+  
+  EasyDailyQuest37CheckItem: "item WHEAT_SEEDS:64"
+  EasyDailyQuest37Started: "tag DailyQuestStartedEasy37"
+  
+  EasyDailyQuest38CheckItem: "item BEETROOT_SEEDS:16"
+  EasyDailyQuest38Started: "tag DailyQuestStartedEasy38"
+  
+  EasyDailyQuest39CheckItem: "item WHEAT:32"
+  EasyDailyQuest39Started: "tag DailyQuestStartedEasy39"
+  
+  EasyDailyQuest40CheckItem: "item CAKE:1"
+  EasyDailyQuest40Started: "tag DailyQuestStartedEasy40"
+  
+  EasyDailyQuest41CheckItem: "item TUFF:64"
+  EasyDailyQuest41Started: "tag DailyQuestStartedEasy41"
+  
+  EasyDailyQuest42CheckItem: "item BRICK:32"
+  EasyDailyQuest42Started: "tag DailyQuestStartedEasy42"
+ 
+  EasyDailyQuest43Started: "tag DailyQuestStartedEasy43"
+  EasyDailyQuest44Started: "tag DailyQuestStartedEasy44"
+  EasyDailyQuest45Started: "tag DailyQuestStartedEasy45"
+  EasyDailyQuest46Started: "tag DailyQuestStartedEasy46"
+  EasyDailyQuest47Started: "tag DailyQuestStartedEasy47"
+  EasyDailyQuest48Started: "tag DailyQuestStartedEasy48"
+  EasyDailyQuest49Started: "tag DailyQuestStartedEasy49"
+  EasyDailyQuest50Started: "tag DailyQuestStartedEasy50"
+  EasyDailyQuest51Started: "tag DailyQuestStartedEasy51"
+  EasyDailyQuest52Started: "tag DailyQuestStartedEasy52"
+  EasyDailyQuest53Started: "tag DailyQuestStartedEasy53"
+  EasyDailyQuest54Started: "tag DailyQuestStartedEasy54"
+  EasyDailyQuest55Started: "tag DailyQuestStartedEasy55"
+  EasyDailyQuest56Started: "tag DailyQuestStartedEasy56"
+  EasyDailyQuest57Started: "tag DailyQuestStartedEasy57"
+  EasyDailyQuest58Started: "tag DailyQuestStartedEasy58"
+  EasyDailyQuest59Started: "tag DailyQuestStartedEasy59"
+  EasyDailyQuest60Started: "tag DailyQuestStartedEasy60"
+  EasyDailyQuest61Started: "tag DailyQuestStartedEasy61"
+  EasyDailyQuest62Started: "tag DailyQuestStartedEasy62"
+  EasyDailyQuest63Started: "tag DailyQuestStartedEasy63"
+  EasyDailyQuest64Started: "tag DailyQuestStartedEasy64"
+  EasyDailyQuest65Started: "tag DailyQuestStartedEasy65"
+  EasyDailyQuest66Started: "tag DailyQuestStartedEasy66"
+  EasyDailyQuest67Started: "tag DailyQuestStartedEasy67"
+  EasyDailyQuest68Started: "tag DailyQuestStartedEasy68"
+  EasyDailyQuest69Started: "tag DailyQuestStartedEasy69"
+  EasyDailyQuest70Started: "tag DailyQuestStartedEasy70"
+  EasyDailyQuest71Started: "tag DailyQuestStartedEasy71"
+  EasyDailyQuest72Started: "tag DailyQuestStartedEasy72"
+  EasyDailyQuest73Started: "tag DailyQuestStartedEasy73"
+  EasyDailyQuest74Started: "tag DailyQuestStartedEasy74"
+  EasyDailyQuest75Started: "tag DailyQuestStartedEasy75"
+  EasyDailyQuest76Started: "tag DailyQuestStartedEasy76"
+  EasyDailyQuest77Started: "tag DailyQuestStartedEasy77"
+  EasyDailyQuest78Started: "tag DailyQuestStartedEasy78"
+  EasyDailyQuest79Started: "tag DailyQuestStartedEasy79"
+  EasyDailyQuest80Started: "tag DailyQuestStartedEasy80"
+  EasyDailyQuest81Started: "tag DailyQuestStartedEasy81"
+  EasyDailyQuest82Started: "tag DailyQuestStartedEasy82"
+  EasyDailyQuest83Started: "tag DailyQuestStartedEasy83"
+  EasyDailyQuest84Started: "tag DailyQuestStartedEasy84"
+  EasyDailyQuest85Started: "tag DailyQuestStartedEasy85"
+  EasyDailyQuest86Started: "tag DailyQuestStartedEasy86"
+  EasyDailyQuest87Started: "tag DailyQuestStartedEasy87"
+  EasyDailyQuest88Started: "tag DailyQuestStartedEasy88"
+  EasyDailyQuest89Started: "tag DailyQuestStartedEasy89"
+  EasyDailyQuest90Started: "tag DailyQuestStartedEasy90"
+ 
+  EasyDailyQuest91CheckItem: "item SNOWBALL:32"
+  EasyDailyQuest91Started: "tag DailyQuestStartedEasy91"
+  
+  EasyDailyQuest92Started: "tag DailyQuestStartedEasy92"
+  EasyDailyQuest93Started: "tag DailyQuestStartedEasy93"
+  EasyDailyQuest94Started: "tag DailyQuestStartedEasy94"
+  EasyDailyQuest95Started: "tag DailyQuestStartedEasy95"
+  EasyDailyQuest96Started: "tag DailyQuestStartedEasy96"
+  EasyDailyQuest97Started: "tag DailyQuestStartedEasy97"
+  
+  
+  
+  MediumDailyQuest1CheckItem: "item SAND:640"
+  MediumDailyQuest1Started: "tag DailyQuestStartedMedium1"
+
+  MediumDailyQuest2CheckItem: "item DEEPSLATE:320"
+  MediumDailyQuest2Started: "tag DailyQuestStartedMedium2"
+
+  MediumDailyQuest3CheckItem: "item VINE:64"
+  MediumDailyQuest3Started: "tag DailyQuestStartedMedium3"
+
+  MediumDailyQuest4CheckItem: "item COCOA_BEANS:32"
+  MediumDailyQuest4Started: "tag DailyQuestStartedMedium4"
+
+  MediumDailyQuest5CheckItem: "item MELON_SLICE:64"
+  MediumDailyQuest5Started: "tag DailyQuestStartedMedium5"
+
+  MediumDailyQuest6CheckItem: "item PUMPKIN:16"
+  MediumDailyQuest6Started: "tag DailyQuestStartedMedium6"
+
+  MediumDailyQuest7CheckItem: "item POTATO:64"
+  MediumDailyQuest7Started: "tag DailyQuestStartedMedium7"
+
+  MediumDailyQuest8CheckItem: "item CARROT:64"
+  MediumDailyQuest8Started: "tag DailyQuestStartedMedium8"
+
+  MediumDailyQuest9CheckItem: "item RABBIT:8"
+  MediumDailyQuest9Started: "tag DailyQuestStartedMedium9"
+
+  MediumDailyQuest10CheckItem: "item SWEET_BERRIES:64"
+  MediumDailyQuest10Started: "tag DailyQuestStartedMedium10"
+
+  MediumDailyQuest11CheckItem: "item APPLE:16"
+  MediumDailyQuest11Started: "tag DailyQuestStartedMedium11"
+
+  MediumDailyQuest12CheckItem: "item PUMPKIN_SEEDS:16"
+  MediumDailyQuest12Started: "tag DailyQuestStartedMedium12"
+  
+  MediumDailyQuest13CheckItem: "item MELON_SEEDS:64"
+  MediumDailyQuest13Started: "tag DailyQuestStartedMedium13"
+  
+  MediumDailyQuest14CheckItem: "item BREAD:64"
+  MediumDailyQuest14Started: "tag DailyQuestStartedMedium14"
+  
+  MediumDailyQuest15CheckItem: "item MOSSY_COBBLESTONE:64"
+  MediumDailyQuest15Started: "tag DailyQuestStartedMedium15"
+  
+  MediumDailyQuest16CheckItem: "item LILY_PAD:16"
+  MediumDailyQuest16Started: "tag DailyQuestStartedMedium16"
+
+  MediumDailyQuest17CheckItem: "item BROWN_MUSHROOM:16"
+  MediumDailyQuest17Started: "tag DailyQuestStartedMedium17"
+
+  MediumDailyQuest18CheckItem: "item RED_MUSHROOM:16"
+  MediumDailyQuest18Started: "tag DailyQuestStartedMedium18"
+  
+  MediumDailyQuest19Started: "tag DailyQuestStartedMedium19"
+  MediumDailyQuest20Started: "tag DailyQuestStartedMedium20"
+  MediumDailyQuest21Started: "tag DailyQuestStartedMedium21"
+  MediumDailyQuest22Started: "tag DailyQuestStartedMedium22"
+  MediumDailyQuest23Started: "tag DailyQuestStartedMedium23"
+  MediumDailyQuest24Started: "tag DailyQuestStartedMedium24"
+  MediumDailyQuest25Started: "tag DailyQuestStartedMedium25"
+  MediumDailyQuest26Started: "tag DailyQuestStartedMedium26"
+  MediumDailyQuest27Started: "tag DailyQuestStartedMedium27"
+  MediumDailyQuest28Started: "tag DailyQuestStartedMedium28"
+  MediumDailyQuest29Started: "tag DailyQuestStartedMedium29"
+  MediumDailyQuest30Started: "tag DailyQuestStartedMedium30"
+  MediumDailyQuest31Started: "tag DailyQuestStartedMedium31"
+  MediumDailyQuest32Started: "tag DailyQuestStartedMedium32"
+  MediumDailyQuest33Started: "tag DailyQuestStartedMedium33"
+  MediumDailyQuest34Started: "tag DailyQuestStartedMedium34"
+  MediumDailyQuest35Started: "tag DailyQuestStartedMedium35"
+  MediumDailyQuest36Started: "tag DailyQuestStartedMedium36"
+  MediumDailyQuest37Started: "tag DailyQuestStartedMedium37"
+  MediumDailyQuest38Started: "tag DailyQuestStartedMedium38"
+  MediumDailyQuest39Started: "tag DailyQuestStartedMedium39"
+  MediumDailyQuest40Started: "tag DailyQuestStartedMedium40"
+  MediumDailyQuest41Started: "tag DailyQuestStartedMedium41"
+  MediumDailyQuest42Started: "tag DailyQuestStartedMedium42"
+  
+  
+  HardDailyQuest1CheckItem: "item IRON_INGOT:64"
+  HardDailyQuest1Started: "tag DailyQuestStartedHard1"
+  
+  HardDailyQuest2CheckItem: "item GOLD_INGOT:64"
+  HardDailyQuest2Started: "tag DailyQuestStartedHard2"
+  
+  HardDailyQuest3CheckItem: "item RED_SAND:320"
+  HardDailyQuest3Started: "tag DailyQuestStartedHard3"
+  
+  HardDailyQuest4CheckItem: "item SMALL_AMETHYST_BUD:16"
+  HardDailyQuest4Started: "tag DailyQuestStartedHard4"
+  
+  HardDailyQuest5CheckItem: "item SLIME_BLOCK:1"
+  HardDailyQuest5Started: "tag DailyQuestStartedHard5"
+  
+  HardDailyQuest6CheckItem: "item ENDER_PEARL:4"
+  HardDailyQuest6Started: "tag DailyQuestStartedHard6"
+  
+  HardDailyQuest7CheckItem: "item TERRACOTTA:320"
+  HardDailyQuest7Started: "tag DailyQuestStartedHard7"
+  
+  HardDailyQuest8CheckItem: "item ROTTEN_FLESH:64"
+  HardDailyQuest8Started: "tag DailyQuestStartedHard8"
+  
+  HardDailyQuest9CheckItem: "item STRING:64"
+  HardDailyQuest9Started: "tag DailyQuestStartedHard9"
+  
+  HardDailyQuest10CheckItem: "item BONE:64"
+  HardDailyQuest10Started: "tag DailyQuestStartedHard10"
+  
+  HardDailyQuest11CheckItem: "item SPIDER_EYE:48"
+  HardDailyQuest11Started: "tag DailyQuestStartedHard11"
+  
+  HardDailyQuest12CheckItem: "item GUNPOWDER:16"
+  HardDailyQuest12Started: "tag DailyQuestStartedHard12"
+  
+  HardDailyQuest13CheckItem: "item POISONOUS_POTATO:8"
+  HardDailyQuest13Started: "tag DailyQuestStartedHard13"
+  
+  HardDailyQuest14CheckItem: "item GOLDEN_CARROT:128"
+  HardDailyQuest14Started: "tag DailyQuestStartedHard14"
+  
+  HardDailyQuest15CheckItem: "item HONEYCOMB:32"
+  HardDailyQuest15Started: "tag DailyQuestStartedHard15"
+  
+  HardDailyQuest16CheckItem: "item HONEY_BOTTLE:32"
+  HardDailyQuest16Started: "tag DailyQuestStartedHard16"
+  
+  HardDailyQuest17CheckItem: "item GLOW_INK_SAC:32"
+  HardDailyQuest17Started: "tag DailyQuestStartedHard17"
+  
+  HardDailyQuest18CheckItem: "item OBSIDIAN:64"
+  HardDailyQuest18Started: "tag DailyQuestStartedHard18"
+  
+  HardDailyQuest19CheckItem: "item GOAT_HORN:1"
+  HardDailyQuest19Started: "tag DailyQuestStartedHard19"
+  
+  HardDailyQuest20CheckItem: "item CALCITE:64"
+  HardDailyQuest20Started: "tag DailyQuestStartedHard20"
+  
+  HardDailyQuest21CheckItem: "item COBWEB:32"
+  HardDailyQuest21Started: "tag DailyQuestStartedHard21"
+  
+  HardDailyQuest22Started: "tag DailyQuestStartedHard22"
+  HardDailyQuest23Started: "tag DailyQuestStartedHard23"
+  HardDailyQuest24Started: "tag DailyQuestStartedHard24"
+  HardDailyQuest25Started: "tag DailyQuestStartedHard25"
+  HardDailyQuest26Started: "tag DailyQuestStartedHard26"
+  HardDailyQuest27Started: "tag DailyQuestStartedHard27"
+  HardDailyQuest28Started: "tag DailyQuestStartedHard28"
+  HardDailyQuest29Started: "tag DailyQuestStartedHard29"
+  HardDailyQuest30Started: "tag DailyQuestStartedHard30"
+  HardDailyQuest31Started: "tag DailyQuestStartedHard31"
+  HardDailyQuest32Started: "tag DailyQuestStartedHard32"
+  HardDailyQuest33Started: "tag DailyQuestStartedHard33"
+  HardDailyQuest34Started: "tag DailyQuestStartedHard34"
+  HardDailyQuest35Started: "tag DailyQuestStartedHard35"
+  HardDailyQuest36Started: "tag DailyQuestStartedHard36"
+  HardDailyQuest37Started: "tag DailyQuestStartedHard37"
+  HardDailyQuest38Started: "tag DailyQuestStartedHard38"
+  HardDailyQuest39Started: "tag DailyQuestStartedHard39"
+  HardDailyQuest40Started: "tag DailyQuestStartedHard40"

@@ -1,0 +1,29 @@
+conditions:
+  ZwierzatkaQuest1StartedCon: "tag ZwierzatkaQuest1Started"
+  ZwierzatkaQuest1DoneCon:  "tag ZwierzatkaQuest1Done"
+  
+  # Hide NPCS
+  ZwierzatkaQuest1Malpa1CaughtCon: "tag Malpa1Caught"
+  ZwierzatkaQuest1Malpa2CaughtCon: "tag Malpa2Caught"
+  ZwierzatkaQuest1Malpa3CaughtCon: "tag Malpa3Caught"
+  ZwierzatkaQuest1Malpa4CaughtCon: "tag Malpa4Caught"
+  ZwierzatkaQuest1Malpa5CaughtCon: "tag Malpa5Caught"
+  ZwierzatkaQuest1Malpa6CaughtCon: "tag Malpa6Caught"
+  
+  ZwierzatkaQuest1noObjectives: "and !ZwierzatkaQuest1Malpa1,!ZwierzatkaQuest1Malpa2,!ZwierzatkaQuest1Malpa3,!ZwierzatkaQuest1Malpa4,!ZwierzatkaQuest1Malpa5,!ZwierzatkaQuest1Malpa6"
+  
+  ZwierzatkaQuest1Malpa1: "objective Malpa1Interact"
+  ZwierzatkaQuest1Malpa2: "objective Malpa2Interact"
+  ZwierzatkaQuest1Malpa3: "objective Malpa3Interact"
+  ZwierzatkaQuest1Malpa4: "objective Malpa4Interact"
+  ZwierzatkaQuest1Malpa5: "objective Malpa5Interact"
+  ZwierzatkaQuest1Malpa6: "objective Malpa6Interact"
+  
+  ZwierzatkaQuest1MalpkiCaughtCon: "tag MalpkiCaught"
+  
+  ZwierzatkaQuest1Malpa1CaughtConHide: "or ZwierzatkaQuest1Malpa1CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"
+  ZwierzatkaQuest1Malpa2CaughtConHide: "or ZwierzatkaQuest1Malpa2CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"
+  ZwierzatkaQuest1Malpa3CaughtConHide: "or ZwierzatkaQuest1Malpa3CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"
+  ZwierzatkaQuest1Malpa4CaughtConHide: "or ZwierzatkaQuest1Malpa4CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"
+  ZwierzatkaQuest1Malpa5CaughtConHide: "or ZwierzatkaQuest1Malpa5CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"
+  ZwierzatkaQuest1Malpa6CaughtConHide: "or ZwierzatkaQuest1Malpa6CaughtCon,ZwierzatkaQuest1MalpkiCaughtCon"

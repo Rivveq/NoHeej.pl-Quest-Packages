@@ -1,0 +1,41 @@
+conditions:
+  QuizStartedTagCondition1: "tag QuizStartedTag1"
+  QuizDoneTagCondition1: "tag QuizDone1"
+  
+  
+  PointGradeB1: "point quiz_score1 10"
+  PointGradeA1: "point quiz_score1 15"
+  PointGradeS1: "point quiz_score1 20"
+  
+  
+  QuizStartedTagCondition2: "tag QuizStartedTag2"
+  QuizDoneTagCondition2: "tag QuizDone2"
+  
+  
+  PointGradeB2: "point quiz_score2 10"
+  PointGradeA2: "point quiz_score2 15"
+  PointGradeS2: "point quiz_score2 20"
+  
+  QuizStartedTagCondition3: "tag QuizStartedTag3"
+  QuizDoneTagCondition3: "tag QuizDone3"
+  
+  
+  PointGradeB3: "point quiz_score3 10"
+  PointGradeA3: "point quiz_score3 15"
+  PointGradeS3: "point quiz_score3 20"
+  
+  QuizStartedTagCondition4: "tag QuizStartedTag4"
+  QuizDoneTagCondition4: "tag QuizDone4"
+  
+  
+  PointGradeB4: "point quiz_score4 10"
+  PointGradeA4: "point quiz_score4 15"
+  PointGradeS4: "point quiz_score4 20"
+  
+  QuizStartedTagCondition5: "tag QuizStartedTag5"
+  QuizDoneTagCondition5: "tag QuizDone5"
+  
+  
+  PointGradeB5: "point quiz_score5 10"
+  PointGradeA5: "point quiz_score5 15"
+  PointGradeS5: "point quiz_score5 20"

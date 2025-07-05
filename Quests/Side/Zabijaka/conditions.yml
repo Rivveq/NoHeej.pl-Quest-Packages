@@ -1,0 +1,87 @@
+conditions:
+# Zabijaka Main
+  ZabijakaQuestNotMobKilled: "and Zabijaka1TagMobKilled,Zabijaka2TagMobKilled,Zabijaka3TagMobKilled"
+# Zabijaka 1
+  Zabijaka1TagStarted: "tag Zabijaka1TagStarted"
+  Zabijaka1TagMobKilled: "tag Zabijaka1TagMobKilled"
+  Zabijaka1TagDone: "tag Zabijaka1TagDone"
+# Zabijaka 2
+  Zabijaka2TagStarted: "tag Zabijaka2TagStarted"
+  Zabijaka2TagMobKilled: "tag Zabijaka2TagMobKilled"
+  Zabijaka2TagDone: "tag Zabijaka2TagDone"
+# Zabijaka 3
+  Zabijaka3TagStarted: "tag Zabijaka3TagStarted"
+  Zabijaka3TagMobKilled: "tag Zabijaka3TagMobKilled"
+  Zabijaka3TagDone: "tag Zabijaka3TagDone"
+# Zabijaka 4
+  Zabijaka4TagStarted: "tag Zabijaka4TagStarted"
+  Zabijaka4TagMobKilled: "tag Zabijaka4TagMobKilled"
+  Zabijaka4TagDone: "tag Zabijaka4TagDone"
+# Zabijaka 5
+  Zabijaka5TagStarted: "tag Zabijaka5TagStarted"
+  Zabijaka5TagMobKilled: "tag Zabijaka5TagMobKilled"
+  Zabijaka5TagDone: "tag Zabijaka5TagDone"
+# Zabijaka 6
+  Zabijaka6TagStarted: "tag Zabijaka6TagStarted"
+  Zabijaka6TagMobKilled: "tag Zabijaka6TagMobKilled"
+  Zabijaka6TagDone: "tag Zabijaka6TagDone"
+# Zabijaka 7
+  Zabijaka7TagStarted: "tag Zabijaka7TagStarted"
+  Zabijaka7TagMobKilled: "tag Zabijaka7TagMobKilled"
+  Zabijaka7TagDone: "tag Zabijaka7TagDone"
+  
+  Zabijaka7noObjectives: "and !Zabijaka7Objective1,!Zabijaka7Objective2,!Zabijaka7Objective3,!Zabijaka7Objective4,!Zabijaka7Objective5,!Zabijaka7Objective6,!Zabijaka7Objective7"
+  Zabijaka7Objective1: "objective Zabijaka7MobKillSpider"
+  Zabijaka7Objective2: "objective Zabijaka7MobKillCave"
+  Zabijaka7Objective3: "objective Zabijaka7MobKillZombie"
+  Zabijaka7Objective4: "objective Zabijaka7MobKillDrowned"
+  Zabijaka7Objective5: "objective Zabijaka7MobKillHusk"
+  Zabijaka7Objective6: "objective Zabijaka7MobKillStray"
+  Zabijaka7Objective7: "objective Zabijaka7MobKillBogged"
+  
+# Zabijaka 8
+  Zabijaka8TagStarted: "tag Zabijaka8TagStarted"
+  Zabijaka8TagMobKilled: "tag Zabijaka8TagMobKilled"
+  Zabijaka8TagDone: "tag Zabijaka8TagDone"
+# Zabijaka 9
+  Zabijaka9TagStarted: "tag Zabijaka9TagStarted"
+  Zabijaka9TagMobKilled: "tag Zabijaka9TagMobKilled"
+  Zabijaka9TagDone: "tag Zabijaka9TagDone"
+  
+  Zabijaka9noObjectives: "and !Zabijaka9Objective1,!Zabijaka9Objective2"
+  Zabijaka9Objective1: "objective Zabijaka9MobKillSlime"
+  Zabijaka9Objective2: "objective Zabijaka9MobKillBogged"
+  
+  # Zabijaka 10
+  Zabijaka10TagStarted: "tag Zabijaka10TagStarted"
+  Zabijaka10TagMobKilled: "tag Zabijaka10TagMobKilled"
+  Zabijaka10TagDone: "tag Zabijaka10TagDone"
+  
+  Zabijaka10noObjectives: "and !Zabijaka10Objective1,!Zabijaka10Objective2,!Zabijaka10Objective3"
+  Zabijaka10Objective1: "objective Zabijaka10MobKillSkeleton"
+  Zabijaka10Objective2: "objective Zabijaka10MobKillStray"
+  Zabijaka10Objective3: "objective Zabijaka10MobKillBogged"
+  
+    # Zabijaka 11
+  Zabijaka11TagStarted: "tag Zabijaka11TagStarted"
+  Zabijaka11TagMobKilled: "tag Zabijaka11TagMobKilled"
+  Zabijaka11TagDone: "tag Zabijaka11TagDone"
+  
+  Zabijaka11noObjectives: "and !Zabijaka11Objective1,!Zabijaka11Objective2,!Zabijaka11Objective3, !Zabijaka11Objective4"
+  Zabijaka11Objective1: "objective Zabijaka11MobKillSpider"
+  Zabijaka11Objective2: "objective Zabijaka11MobKillCave"
+  Zabijaka11Objective3: "objective Zabijaka11MobKillBat"
+  Zabijaka11Objective4: "objective Zabijaka11MobKillSilver"
+  
+    # Zabijaka 12
+  Zabijaka12TagStarted: "tag Zabijaka12TagStarted"
+  Zabijaka12TagMobKilled: "tag Zabijaka12TagMobKilled"
+  Zabijaka12TagDone: "tag Zabijaka12TagDone"
+  
+  Zabijaka12noObjectives: "and !Zabijaka12Objective1,!Zabijaka12Objective2,!Zabijaka12Objective3, !Zabijaka12Objective4, !Zabijaka12Objective5"
+  Zabijaka12Objective1: "objective Zabijaka12MobKillSpider"
+  Zabijaka12Objective2: "objective Zabijaka12MobKillSkeleton"
+  Zabijaka12Objective3: "objective Zabijaka12MobKillZombie"
+  Zabijaka12Objective4: "objective Zabijaka12MobKillCreeper"
+  Zabijaka12Objective5: "objective Zabijaka12MobKillWitch"
+  
