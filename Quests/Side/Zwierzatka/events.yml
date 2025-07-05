@@ -1,0 +1,39 @@
+events:
+  # licznik
+  ZwierzatkaQuest1PointAdd: "point Malpy 1 action:add"
+  # Track
+  ZwierzatkaQuest1Started: "tag add ZwierzatkaQuest1Started"
+  ZwierzatkaQuest1Done:  "tag add ZwierzatkaQuest1Done"
+  
+  # Hide NPCS
+  ZwierzatkaQuest1Malpa1Caught: "tag add Malpa1Caught"
+  ZwierzatkaQuest1Malpa2Caught: "tag add Malpa2Caught"
+  ZwierzatkaQuest1Malpa3Caught: "tag add Malpa3Caught"
+  ZwierzatkaQuest1Malpa4Caught: "tag add Malpa4Caught"
+  ZwierzatkaQuest1Malpa5Caught: "tag add Malpa5Caught"
+  ZwierzatkaQuest1Malpa6Caught: "tag add Malpa6Caught"
+  # notify
+  ZwierzatkaQuest1CaughtNotify: "notify &7[&aUdało ci się złapać: &eZaginioną małpke!&7] io:title"
+  # Event Złapania
+  ZwierzatkaQuest1CaughtFolder1: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa1Caught,ZwierzatkaQuest1CaughtNotify"
+  ZwierzatkaQuest1CaughtFolder2: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa2Caught,ZwierzatkaQuest1CaughtNotify"
+  ZwierzatkaQuest1CaughtFolder3: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa3Caught,ZwierzatkaQuest1CaughtNotify"
+  ZwierzatkaQuest1CaughtFolder4: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa4Caught,ZwierzatkaQuest1CaughtNotify"
+  ZwierzatkaQuest1CaughtFolder5: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa5Caught,ZwierzatkaQuest1CaughtNotify"
+  ZwierzatkaQuest1CaughtFolder6: "folder ZwierzatkaQuest1PointAdd,ZwierzatkaQuest1Malpa6Caught,ZwierzatkaQuest1CaughtNotify"
+  
+  ZwierzatkaQuest1MalpaObjective: "objective add Malpa1Interact,Malpa2Interact,Malpa3Interact,Malpa4Interact,Malpa5Interact,Malpa6Interact"
+  
+  ZwierzatkaQuest1DoneFolder: "folder ZwierzatkaQuest1MalpkiCaught,ZwierzatkaQust1MalpkiCaughtNotify conditions:ZwierzatkaQuest1noObjectives"
+  ZwierzatkaQuest1MalpkiCaught: "tag add MalpkiCaught"
+  ZwierzatkaQust1MalpkiCaughtNotify: "notify &7[&aZłapałeś wszystkie małpki! Wróć do Victora, aby odebrać nagrodę!&7]"
+  
+  # del tags
+  ZwierzatkaQuest1Malpa1CaughtDel: "tag del Malpa1Caught"
+  ZwierzatkaQuest1Malpa2CaughtDel: "tag del Malpa2Caught"
+  ZwierzatkaQuest1Malpa3CaughtDel: "tag del Malpa3Caught"
+  ZwierzatkaQuest1Malpa4CaughtDel: "tag del Malpa4Caught"
+  ZwierzatkaQuest1Malpa5CaughtDel: "tag del Malpa5Caught"
+  ZwierzatkaQuest1Malpa6CaughtDel: "tag del Malpa6Caught"
+  ZwierzatkaQuest1StartedDel: "tag del ZwierzatkaQuest1Started"
+  ZwierzatkaQuest1TagsDelete: "folder ZwierzatkaQuest1StartedDel,ZwierzatkaQuest1Malpa1CaughtDel,ZwierzatkaQuest1Malpa2CaughtDel,ZwierzatkaQuest1Malpa3CaughtDel,ZwierzatkaQuest1Malpa4CaughtDel,ZwierzatkaQuest1Malpa5CaughtDel,ZwierzatkaQuest1Malpa6CaughtDel"

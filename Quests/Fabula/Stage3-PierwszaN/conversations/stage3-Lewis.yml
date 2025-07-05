@@ -1,0 +1,31 @@
+conversations:
+  Lewis:
+    NPC_options:
+     q3-Lewis-1:
+       text: "Dzień dobry, potrzebujesz czegoś? Mam do zaoferowania naszyjniki, pierścienie…"
+       condition: "con_tag_3AgataPowrótDone+Lewis"
+       pointer: q3-player-1
+       condition: "!con_tag_3LewisDone"
+       
+     q3-Lewis-1Narration:
+       text: "&7[Czym prędzej wtrącasz się w wypowiedź starca nim postanowisz coś pochopnie kupić.]"
+       pointer: q3-player-2a, q3-player-2b
+       
+     q3-Lewis-2:
+       text: "Ah tak, zapewne chodzi ci o  Madamee Cressedie. Zamówiła u mnie przepiękną tiarę, obiecała ją odebrać gdy tylko przybędzie… Na  moim biurku powinna leżeć książka wraz z datą odbioru na jej nazwisko, znajdź ją proszę."
+       pointer: q3-player-3
+       
+    player_options:
+     q3-player-1:
+       text: "..."
+       pointer: q3-Lewis-1Narration
+       
+     q3-player-2a:
+       text: "Egh…Przysłała mnie Agata, ponoć masz informację dotyczące jakiejś ważnej osobistości."
+       pointer: q3-Lewis-2
+     q3-player-2b:
+       text: "Musiałem cię z kimś pomylić. Żegnaj."
+       
+     q3-player-3:
+       text: "Dobrze, dziękuje ci!"
+       events: "add_tag_3LewisDone,FindInformationLewis,addObjectiveSprawdzPracownieLewisa,del_tag_3AgataPowrótDone+Lewis"

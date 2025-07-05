@@ -1,0 +1,45 @@
+objectives:
+# Zabijaka 1
+  Zabijaka1MobKill: "mobkill ZOMBIE 100 events:Zabijaka1DoneFolder"
+# Zabijaka 2
+  Zabijaka2MobKill: "mobkill SKELETON 100 events:Zabijaka2DoneFolder"
+# Zabijaka 3
+  Zabijaka3MobKill: "mobkill SPIDER 100 events:Zabijaka3DoneFolder"
+# Zabijaka 4
+  Zabijaka4MobKill: "mobkill SILVERFISH 100 events:Zabijaka4DoneFolder"
+# Zabijaka 5
+  Zabijaka5MobKill: "mobkill CREEPER 100 events:Zabijaka5DoneFolder"
+# Zabijaka 6
+  Zabijaka6MobKill: "mobkill ENDERMAN 25 events:Zabijaka6DoneFolder"
+# Zabijaka 7
+  Zabijaka7MobKillSpider: "mobkill SPIDER 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillCave: "mobkill CAVE_SPIDER 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillZombie: "mobkill ZOMBIE 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillDrowned: "mobkill DROWNED 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillHusk: "mobkill HUSK 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillSkeleton: "mobkill SKELETON 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillStray: "mobkill STRAY 50 events:Zabijaka7DoneFolder"
+  Zabijaka7MobKillBogged: "mobkill BOGGED 50 events:Zabijaka7DoneFolder"
+# Zabijaka 8
+  Zabijaka8MobKill: "mobkill WITCH 100 events:Zabijaka8DoneFolder"
+# Zabijaka 9
+  Zabijaka9MobKillSlime: "mobkill SLIME 250 events:Zabijaka9DoneFolder"
+  Zabijaka9MobKillBogged: "mobkill BOGGED 100 events:Zabijaka9DoneFolder"
+  
+ # Zabijaka 10
+  Zabijaka10MobKillSkeleton: "mobkill SKELETON 250 events:Zabijaka10DoneFolder"
+  Zabijaka10MobKillStray: "mobkill STRAY 150 events:Zabijaka10DoneFolder"
+  Zabijaka10MobKillBogged: "mobkill BOGGED 100 events:Zabijaka10DoneFolder"
+  
+ # Zabijaka 11
+  Zabijaka11MobKillSpider: "mobkill SPIDER 250 events:Zabijaka11DoneFolder"
+  Zabijaka11MobKillCave: "mobkill CAVE_SPIDER 100 events:Zabijaka11DoneFolder"
+  Zabijaka11MobKillBat: "mobkill BAT 25 events:Zabijaka11DoneFolder"
+  Zabijaka11MobKillSilver: "mobkill SILVERFISH 100 events:Zabijaka11DoneFolder"
+  
+ # Zabijaka 12
+  Zabijaka12MobKillZombie: "mobkill ZOMBIE 500 events:Zabijaka12DoneFolder"
+  Zabijaka12MobKillSkeleton: "mobkill SKELETON 500 events:Zabijaka12DoneFolder"
+  Zabijaka12MobKillSpider: "mobkill SPIDER 500 events:Zabijaka12DoneFolder"
+  Zabijaka12MobKillCreeper: "mobkill CREEPER 100 events:Zabijaka12DoneFolder"
+  Zabijaka12MobKillWitch: "mobkill WITCH 50 events:Zabijaka12DoneFolder"

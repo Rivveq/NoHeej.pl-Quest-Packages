@@ -1,0 +1,27 @@
+conversations:
+  SamouczekZapros:
+    quester: Samouczek "Zaproś Znajomego"
+    first: 1r-samzap
+
+     #Samouczek Teleporty
+
+    NPC_options:
+
+
+      1r-samzap:
+        text: "Witaj, oto jak zaprosić kogoś na serwer! (więcej pod &e&l/zapros&r) \n \nAby wysłać zaproszenie musisz spędzić na serwerze &lprzynajmniej 6 godzin&r. Po tym czasie możesz wpisać &e&l/zapros&r."
+        pointer: 2o-samzap-a
+      2r-samzap-a:
+        text: "To wygeneruje kod, który może zostać użyty wpisując &e&l/zaproszenie&r przez gracza posiadającego &lmniej niż 6 godzin online&r. Gdy 2 gracz użyje Twojego kodu oboje dostaniecie nagrody."
+        pointer: 1o-samzap-end
+
+
+
+    player_options:
+
+
+      2o-samzap-a:
+        text: "&F..."
+        pointer: 2r-samzap-a
+      1o-samzap-end:
+        text: "&x&f&f&6&9&6&1Nie dziękuję."

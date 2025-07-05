@@ -1,0 +1,17 @@
+conditions:
+  Level30: "experience 30"
+  Level60: "experience 60"
+  Level90: "experience 90"
+  Level120: "experience 120"
+  Level150: "experience 150"
+  
+  Level30TagDoneC: "tag Level30TagDone"
+  Level60TagDoneC: "tag Level60TagDone"
+  Level90TagDoneC: "tag Level90TagDone"
+  Level120TagDoneC: "tag Level120TagDone"
+  Level150TagDoneC: "tag Level150TagDone"
+  
+  
+
+variable:
+  player_level: "%ph.cmi_user_level%"

@@ -1,0 +1,35 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka3;1:
+        text: "Hej, %player%! Masz może chwilę?"
+        pointer: "ZabijakaGracz3;1, ZabijakaGracz3;2, ZabijakaGracz3;3"
+        condition: "Zabijaka2TagDone,!Zabijaka3TagStarted,!Zabijaka3TagDone"
+      Zabijaka3;2:
+        text: "Dobra robota z tymi szkieletami. Dzięki Tobie szlaki są bezpieczniejsze. *Błeeerp!* -niejsze, nie bezpieczne. Rozwiążesz jeden problem, pojawiają się następne. Podobno jakieś włochate pokraki panoszą się po drogach. Weź się ich pozbądź, bla bla bla, dam nagrodę. Kapisz?"
+        pointer: "ZabijakaGracz3;4, ZabijakaGracz3;5,ZabijakaGracz3;6"
+      Zabijaka3;4:
+        text: "Stajesz się coraz lepszy. Oby tak dalej! Weź to jako dowód naszej wdzięczności"
+        condition: "Zabijaka3TagMobKilled,!Zabijaka3TagDone"
+        pointer: "ZabijakaGracz3;7"
+    player_options:
+      ZabijakaGracz3;1:
+        text: "&x&F&8&F&F&A&1Dla Ciebie? Zawsze."
+        pointer: "Zabijaka3;2"
+      ZabijakaGracz3;2:
+        text: "&x&F&8&F&F&A&1Jasne, o co chodzi?"
+        pointer: "Zabijaka3;2"
+      ZabijakaGracz3;3:
+        text: "&x&f&f&6&9&6&1Niestety, teraz jestem zajęty..."
+      ZabijakaGracz3;4:
+        text: "&x&F&8&F&F&A&1Nie ma problemu."
+        events: "Zabijaka3TagStartedEvent,Zabijaka3QuestInfo,Zabijaka3RunMob"
+      ZabijakaGracz3;5:
+        text: "&x&F&8&F&F&A&1Już się biorę do roboty!"
+        events: "Zabijaka3TagStartedEvent,Zabijaka3QuestInfo,Zabijaka3RunMob"
+      ZabijakaGracz3;6:
+        text: "&x&f&f&6&9&6&1Musisz mi wybaczyć, ale nie jestem zainteresowany..."
+      ZabijakaGracz3;7:
+        text: "&x&F&8&F&F&A&1Dziękuje za twe szczodre słowa, mam nadzieję, że się przyda!"
+        event: "Zabijaka3TagDone,Zabijaka3RewardFolder"

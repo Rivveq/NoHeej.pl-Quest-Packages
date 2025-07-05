@@ -1,0 +1,29 @@
+events:
+  Level30TagDone: "tag add Level30TagDone"
+  Level60TagDone: "tag add Level60TagDone"
+  Level90TagDone: "tag add Level90TagDone"
+  Level120TagDone: "tag add Level120TagDone"
+  Level150TagDone: "tag add Level150TagDone"
+  
+  Level30RewardFolder: "folder Level30Reward, Level30RewardNotify, Tracking.add_quest_point_sub"
+  Level30Reward: "money +100"
+  Level30RewardNotify: "notify &7&l-> [&aOtrzymałeś &e55$&7&l]"
+  
+  Level60RewardFolder: "folder Level60Reward, Level60RewardNotify, Tracking.add_quest_point_sub"
+  Level60Reward: "money +100"
+  Level60RewardNotify: "notify &7&l-> [&aOtrzymałeś &e55$&7&l]"
+  
+  Level90RewardFolder: "folder Level90Reward, Level90RewardNotify, Tracking.add_quest_point_sub"
+  Level90Reward: "money +100"
+  Level90RewardNotify: "notify &7&l-> [&aOtrzymałeś &e55$&7&l]"
+  
+  Level120RewardFolder: "folder Level120Reward, Level120RewardNotify, Tracking.add_quest_point_sub"
+  Level120Reward: "money +100"
+  Level120RewardNotify: "notify &7&l-> [&aOtrzymałeś &e55$&7&l]"
+  
+  Level150RewardFolder: "folder Level150Reward, Level150RewardNotify, Tracking.add_quest_point_sub"
+  Level150Reward: "money +100"
+  Level150RewardNotify: "notify &7&l-> [&aOtrzymałeś &e55$&7&l]"
+  
+  
+  NoRequiredLevelNotify: "notify &7&l-> [&aNie posiadasz wymaganego poziomu, aby odebrać nagrodę.&7&l] "

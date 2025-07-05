@@ -1,0 +1,95 @@
+events:
+  QuizStartedTag1: "tag add QuizStartedTag1"
+  QuizStartedTagRemove1: "tag del QuizStartedTag1"
+  QuizDoneTag1: "tag add QuizDone1"
+  point1: "point quiz_score1 1 action:add"
+  resetPoint1: "point quiz_score1 0 action:set"
+  
+  RewardFolderGradeB1: "folder RewardGradeB1,RewardNotifyGradeB1, Tracking.add_quest_point_sub"
+  RewardGradeB1: "money +100"
+  RewardNotifyGradeB1: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeA1: "folder RewardGradeA1,RewardNotifyGradeA1, Tracking.add_quest_point_sub"
+  RewardGradeA1: "money +100"
+  RewardNotifyGradeA1: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeS1: "folder RewardGradeS1,RewardNotifyGradeS1, Tracking.add_quest_point_sub"
+  RewardGradeS1: "money +100"
+  RewardNotifyGradeS1: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  # Quiz 2
+  QuizStartedTag2: "tag add QuizStartedTag2"
+  QuizStartedTagRemove2: "tag del QuizStartedTag2"
+  QuizDoneTag2: "tag add QuizDone2"
+  point2: "point quiz_score2 1 action:add"
+  resetPoint2: "point quiz_score2 0 action:set"
+  
+  RewardFolderGradeB2: "folder RewardGradeB2,RewardNotifyGradeB2, Tracking.add_quest_point_sub"
+  RewardGradeB2: "money +100"
+  RewardNotifyGradeB2: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeA2: "folder RewardGradeA2,RewardNotifyGradeA2, Tracking.add_quest_point_sub"
+  RewardGradeA2: "money +100"
+  RewardNotifyGradeA2: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeS2: "folder RewardGradeS2,RewardNotifyGradeS2, Tracking.add_quest_point_sub"
+  RewardGradeS2: "money +100"
+  RewardNotifyGradeS2: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  
+# Quiz 3
+  QuizStartedTag3: "tag add QuizStartedTag3"
+  QuizStartedTagRemove3: "tag del QuizStartedTag3"
+  QuizDoneTag3: "tag add QuizDone3"
+  point3: "point quiz_score3 1 action:add"
+  resetPoint3: "point quiz_score3 0 action:set"
+  
+  RewardFolderGradeB3: "folder RewardGradeB3,RewardNotifyGradeB3, Tracking.add_quest_point_sub"
+  RewardGradeB3: "money +100"
+  RewardNotifyGradeB3: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeA3: "folder RewardGradeA3,RewardNotifyGradeA3, Tracking.add_quest_point_sub"
+  RewardGradeA3: "money +100"
+  RewardNotifyGradeA3: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeS3: "folder RewardGradeS3,RewardNotifyGradeS3, Tracking.add_quest_point_sub"
+  RewardGradeS3: "money +100"
+  RewardNotifyGradeS3: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+ 
+ # Quiz 4
+  QuizStartedTag4: "tag add QuizStartedTag4"
+  QuizStartedTagRemove4: "tag del QuizStartedTag4"
+  QuizDoneTag4: "tag add QuizDone4"
+  point4: "point quiz_score4 1 action:add"
+  resetPoint4: "point quiz_score4 0 action:set"
+  
+  RewardFolderGradeB4: "folder RewardGradeB4,RewardNotifyGradeB4, Tracking.add_quest_point_sub"
+  RewardGradeB4: "money +100"
+  RewardNotifyGradeB4: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeA4: "folder RewardGradeA4,RewardNotifyGradeA4, Tracking.add_quest_point_sub"
+  RewardGradeA4: "money +100"
+  RewardNotifyGradeA4: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeS4: "folder RewardGradeS4,RewardNotifyGradeS4, Tracking.add_quest_point_sub"
+  RewardGradeS4: "money +100"
+  RewardNotifyGradeS4: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+ # Quiz 5
+  QuizStartedTag5: "tag add QuizStartedTag5"
+  QuizStartedTagRemove5: "tag del QuizStartedTag5"
+  QuizDoneTag5: "tag add QuizDone5"
+  point5: "point quiz_score5 1 action:add"
+  resetPoint5: "point quiz_score5 0 action:set"
+  
+  RewardFolderGradeB5: "folder RewardGradeB5,RewardNotifyGradeB5, Tracking.add_quest_point_sub"
+  RewardGradeB5: "money +100"
+  RewardNotifyGradeB5: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeA5: "folder RewardGradeA5,RewardNotifyGradeA5, Tracking.add_quest_point_sub"
+  RewardGradeA5: "money +100"
+  RewardNotifyGradeA5: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"
+  
+  RewardFolderGradeS5: "folder RewardGradeS5,RewardNotifyGradeS5, Tracking.add_quest_point_sub"
+  RewardGradeS5: "money +100"
+  RewardNotifyGradeS5: "notify &7&l-> [&aOtrzymałeś &e100$&7&l]"

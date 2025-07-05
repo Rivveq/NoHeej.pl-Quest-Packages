@@ -1,0 +1,4 @@
+  events:
+  #kasyno
+    DoKasynaLaxstad: "teleport 27;55;74;spawnSeed;240;0"
+    DoKasynaSkogmork: "teleport 2999;59;-2995;spawnSeed;60;0"

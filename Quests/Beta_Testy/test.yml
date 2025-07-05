@@ -1,0 +1,11 @@
+conversations:
+  test:
+    quester: "test"
+    first: npc
+    NPC_options:
+      npc:
+        text: "test"
+        pointer: "test"
+    player_options:
+      test:
+        text: "test"

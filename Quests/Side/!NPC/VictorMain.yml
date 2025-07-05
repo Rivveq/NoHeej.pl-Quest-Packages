@@ -1,0 +1,8 @@
+conversations:
+  Victor:
+    quester: 'Victor'
+    first: "ZwierzatkaQuest1Reward,ZwierzatkaQuest1,default"
+   
+    NPC_options:
+      default:
+        text: "Kocham wszystkie potwory i zwierzątka!"

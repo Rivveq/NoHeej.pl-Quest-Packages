@@ -1,0 +1,32 @@
+conversations:
+  Anna:
+    NPC_options:
+      
+      Przyneta3;1:
+        text: "Dobrze, że jesteś! Chleb był całkiem niezły, ale słyszałam o ziarnach, które są jeszcze lepsze. Chciałbyś je dla mnie zdobyć?"
+        pointer: "PrzynetaGracz3;1,PrzynetaGracz3;2"
+        condition: "QuestPrzyneta2Done,!QuestPrzyneta3TagStarted,!QuestPrzyneta3Done"
+        event: "QuestPrzyneta2TagStartedRemove"
+      Przyneta3;2:
+        text: "Ach tak oczywiście! Potrzebuje ziaren kakao, ich właściwości ponoć przyciągają wielkie ryby. Myślisz, że dasz radę? Słyszałam, że są dość rzadkie."
+        pointer: "PrzynetaGracz3;3"
+      Przyneta3;3ZItemami:
+        text: "Jestem pod wrażeniem, że udało ci się je załatwić. Proszę to twoja nagroda!"
+        condition: "Przyneta3ItemCheck,QuestPrzyneta3TagStarted,!QuestPrzyneta3Done"
+        pointer: "PrzynetaGracz3;4"
+      Przyneta3;3BezItemow:
+        text: "Gdzie moje ziarna! Halo! Nie wracaj bez nich!"
+        condition: "!Przyneta3ItemCheck,QuestPrzyneta3TagStarted,!QuestPrzyneta3Done"
+
+    player_options:    
+      PrzynetaGracz3;1:
+        text: "&x&F&8&F&F&A&1Anno zaskakujesz mnie, oczywiście ci pomogę tylko powiedz o jakie ziarna chodzi."
+        pointer: "Przyneta3;2"
+      PrzynetaGracz3;2:
+        text: "&x&f&f&6&9&6&1Nie chce mi się…"
+      PrzynetaGracz3;3:
+        text: "&x&F&8&F&F&A&1Jasne, że sobie poradzę! Wyruszam natychmiast"
+        event: "PrzynetaWiadomosc3,QuestPrzyneta3TagStartedEvent"
+      PrzynetaGracz3;4:
+        text: "&x&F&8&F&F&A&1Dzięuje i pamiętaj, że możesz na mnie liczyć!"
+        event: "QuestPrzyneta3TagDone,Przyneta3ZabierzItem,QuestPrzyneta3TagStartedRemove,QuestPrzyneta3RewardFolder"

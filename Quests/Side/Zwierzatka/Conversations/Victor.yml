@@ -1,0 +1,30 @@
+conversations:
+  Victor:
+   
+    NPC_options:
+      ZwierzatkaQuest1:
+        text: "Ach, podróżniku… dobrze, że cię widzę. Straszne rzeczy się stały! Moje małpki zniknęły! Wszystkie sześć! Bawiły się na zewnątrz i nie wróciły. Czy… czy pomożesz mi je odnaleźć? Obiecuję nagrodę za pomoc!"
+        condition: "!ZwierzatkaQuest1StartedCon,!ZwierzatkaQuest1DoneCon"
+        pointer: "PlayerAcceptZwierzatkaQuest1,PlayerAcceptZwierzatkaQuest1withAddition,PlayerRejectZwierzatkaQuest1"
+        
+     # Gracz wraca po ukonczeniu objective:
+      ZwierzatkaQuest1Reward:
+        text: "Witaj z powrotem, bardzo dziękuję ci za pomoc w odnalezieniu i złapaniu moich uciekinierów! Proszę przyjmij tą nagrodę!"
+        pointer: "PlayerCollectRewardZwierzatkaQuest1"
+        conditions: "ZwierzatkaQuest1MalpkiCaughtCon"
+      
+        
+    player_options:
+      PlayerAcceptZwierzatkaQuest1:
+        text: "Witaj Victorze, z chęcią ci pomogę, w końcu jesteś moim ulubionym handlarzem!"
+        event: "ZwierzatkaQuest1Started,ZwierzatkaQuest1MalpaObjective"
+      PlayerAcceptZwierzatkaQuest1withAddition:
+        text: "Twoje małpki? To nie może być prawda! Natychmiast wyruszam aby je odnaleźć!"
+        event: "ZwierzatkaQuest1Started,ZwierzatkaQuest1MalpaObjective"
+      PlayerRejectZwierzatkaQuest1:
+        text: "Tym razem mam coś innego do załatwienia!"
+        
+      PlayerCollectRewardZwierzatkaQuest1:
+        text: "Victorze, pamiętaj, że dla mnie to żaden kłopot! Polecam się na przyszłość! I dziękuje za nagrodę!"
+        events: "ZwierzatkaQuest1TagsDelete,ZwierzatkaQuest1Done"
+      

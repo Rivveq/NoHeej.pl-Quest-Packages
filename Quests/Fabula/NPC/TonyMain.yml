@@ -6,4 +6,4 @@ conversations:
 
     NPC_options:
       default:
-        text: "placeholder"
+        text: "Twoje odzienie nie pokazuje że powinieneś podługiwać się tymi narzędziami."

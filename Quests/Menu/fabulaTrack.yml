@@ -1,0 +1,77 @@
+menus:
+  test:
+    height: 3
+    title: "Fabuła"
+    command: "/fabula"
+    slots:
+     '13': FabulaQuest4,FabulaQuest3,FabulaQuest3Zadanie2Done,FabulaQuest3Zadanie2Lista,FabulaQuest3Zadanie2,FabulaQuest3Zadanie1Done,FabulaQuest3Zadanie1,FabulaQuest2,FabulaQuest2Medyk,FabulaQuest1,FabulaMain
+      
+    items:
+    # Daily
+      FabulaMain:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&esth&7]"
+      FabulaQuest1:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do Rozali.&7]"
+        condition: "Tracking.Quest-1-Done"
+      FabulaQuest2:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do Chrisa, aby znaleźć nocleg.&7]"
+        condition: "Quests-Fabula.con_tag_2Rosalie_Done"
+      FabulaQuest2Medyk:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do Skrika w szpitalu.&7]"
+        condition: "Quests-Fabula.con_tag_2Rosalie_Medyk"
+      FabulaQuest3:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do swojego pokoju oraz daj klucz Agacie.&7]"
+        condition: "Tracking.Quest-2-Done"
+      FabulaQuest3Zadanie1:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do Tonego&7]"
+        condition: "Quests-Fabula.con_tag_2Chris_zadanie1"
+      FabulaQuest3Zadanie1Done:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eWróć do Chrisa i przekaż mu list.&7]"
+        condition: "Quests-Fabula.con_tag_2Tony_list"
+      FabulaQuest3Zadanie2:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do kucharki Belli i jej pomóż.&7]"
+        condition: "Quests-Fabula.con_tag_2Bella_start"
+      FabulaQuest3Zadanie2Lista:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&ePrzynieś kucharce Belli produkty z listy.&7]"
+        condition: "Quests-Fabula.con_tag_2Bella_lista" 
+      FabulaQuest3Zadanie2Done:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eWróć do Chrisa.&7]"
+        condition: "Quests-Fabula.con_tag_2Bella_Done" 
+      FabulaQuest4:
+        item: "fabula"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Fabularne&7&l]"
+          - " &l&7» &aCel: &7[&eUdaj się do swojego pokoju nr 3.&7]"
+        condition: "Quests-Fabula.con_tag_3Agata_Done" 
+Items:
+  fabula: PAPER custom-model-data:6017

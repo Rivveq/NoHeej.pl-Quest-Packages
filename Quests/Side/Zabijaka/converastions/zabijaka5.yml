@@ -1,0 +1,32 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka5;1:
+        text: "Ej, młodziaku! Chodź no tu!"
+        pointer: "ZabijakaGracz5;1, ZabijakaGracz5;2"
+        condition: "Zabijaka4TagDone,!Zabijaka5TagStarted,!Zabijaka5TagDone"
+        
+      Zabijaka5;2:
+        text: "Mamy problem. Główne gościńce ucierpiały w wyniku ostatnich ataków. Te nieszczęsne creepery nie dają nam w spokoju prowadzić handlu. Nasze regularne dostawy prochu zostały przez nie przerwane, a nasza flota potrzebuje zaopatrzenia. Nie wiem co teraz zrobić."
+        pointer: "ZabijakaGracz5;3, ZabijakaGracz5;4"
+        
+      Zabijaka5;3:
+        text: "Jesteś geniuszem! Nie wiem, co byśmy bez ciebie zrobili młody! Muszę Ci powiedzieć, jesteś moim ulubionym żółtodziobem."
+        condition: "Zabijaka5TagMobKilled,!Zabijaka5TagDone"
+        pointer: "ZabijakaGracz5;5"
+        
+    player_options:
+      ZabijakaGracz5;1:
+        text: "&x&F&8&F&F&A&1Już idę. O co chodzi, Sigmundzie?"
+        pointer: "Zabijaka5;2"
+      ZabijakaGracz5;2:
+        text: "&x&f&f&6&9&6&1Wybacz, jestem zajęty"
+      ZabijakaGracz5;3:
+        text: "&x&F&8&F&F&A&1Mam pomysł. Te zielone pokraki składają się z prochu. Pozbędę się zagrożenia."
+        events: "Zabijaka5TagStartedEvent,Zabijaka5QuestInfo,Zabijaka5RunMob"
+      ZabijakaGracz5;4:
+        text: "&x&f&f&6&9&6&1Nie jestem w stanie pomóc. Daj znać jak coś wymyślisz."
+      ZabijakaGracz5;5:
+        text: "&x&F&8&F&F&A&1*hah*! Dobrze mi to słyszeć!"
+        event: "Zabijaka5TagDone,Zabijaka5RewardFolder"

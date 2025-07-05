@@ -1,0 +1,323 @@
+conversations:
+  Quiz:
+    NPC_options:
+      QuizOption:
+        text: "Witaj %player% chcesz wziąc udział w moim quizie?"
+        pointer: "PlayerAcceptQuiz, PlayerRejectQuiz"
+        condition: "!QuizStartedTagCondition1, !QuizDoneTagCondition1"
+      LastQuizCanceld:
+        text: "Ostatnio przerwałeś swój udział w quizie, chcesz spróbować ponownie?"
+        condition: "QuizStartedTagCondition1, !QuizDoneTagCondition1"
+        pointer: "PlayerSecondTry, PlayerRejectQuiz"
+      QuizQuestion1:
+        text: "Pytanie 1: Jak nazywa się największy kraj na świecie?"
+        pointer: "QuizQ1Answer1, QuizQ1Answer2, QuizQ1Answer3"
+      QuizQuestion2:
+        text: "Pytanie 2: Jaki pierwiastek jest najbardziej rozpowszechniony we wszechświecie?"
+        pointer: "QuizQ2Answer1, QuizQ2Answer2, QuizQ2Answer3"
+      QuizQuestion3:
+        text: "Pytanie 3: Jak nazywał się pierwszy prezydent USA?"
+        pointer: "QuizQ3Answer1, QuizQ3Answer2, QuizQ3Answer3"
+      QuizQuestion4:
+        text: "Pytanie 4: Jaki jest wynik działania “2 + 2 * 2”?"
+        pointer: "QuizQ4Answer1, QuizQ4Answer2, QuizQ4Answer3"
+      QuizQuestion5:
+        text: "Pytanie 5: Jaka była najwyższa góra na świecie zanim odkryto Mount Everest?"
+        pointer: "QuizQ5Answer1, QuizQ5Answer2, QuizQ5Answer3"
+      QuizQuestion6:
+        text: "Pytanie 6: Które słowo oznacza w języku angielskim “zegarek na rękę”?"
+        pointer: "QuizQ6Answer1, QuizQ6Answer2, QuizQ6Answer3"
+      QuizQuestion7:
+        text: "Pytanie 7: W którym roku powstał Youtube?"
+        pointer: "QuizQ7Answer1, QuizQ7Answer2, QuizQ7Answer3"
+      QuizQuestion8:
+        text: "Pytanie 8: Jak brzmi nazwa zwyczajowa tego związku chemicznego: monotlenek diwodoru?"
+        pointer: "QuizQ8Answer1, QuizQ8Answer2, QuizQ8Answer3"
+      QuizQuestion9:
+        text: "Pytanie 9: Do jakiej organizacji nie należy Polska?"
+        pointer: "QuizQ9Answer1, QuizQ9Answer2, QuizQ9Answer3"
+      QuizQuestion10:
+        text: "Pytanie 10: Jakiego koloru jest chlorofil?"
+        pointer: "QuizQ10Answer1, QuizQ10Answer2, QuizQ10Answer3"
+      QuizQuestion11:
+        text: "Pytanie 11: Które zwierzę jest największe na świecie?"
+        pointer: "QuizQ11Answer1, QuizQ11Answer2, QuizQ11Answer3"
+      QuizQuestion12:
+        text: "Pytanie 12: Kto był pierwszym człowiekiem w kosmosie?"
+        pointer: "QuizQ12Answer1, QuizQ12Answer2, QuizQ12Answer3"
+      QuizQuestion13:
+        text: "Pytanie 13: W którym roku wybuchła I wojna światowa?"
+        pointer: "QuizQ13Answer1, QuizQ13Answer2, QuizQ13Answer3"
+      QuizQuestion14:
+        text: "Pytanie 14: Jaki symbol chemiczny ma tlen?"
+        pointer: "QuizQ14Answer1, QuizQ14Answer2, QuizQ14Answer3"
+      QuizQuestion15:
+        text: "Pytanie 15: W którym roku Polska przystąpiła do Unii Europejskiej?"
+        pointer: "QuizQ15Answer1, QuizQ15Answer2, QuizQ15Answer3"
+      QuizQuestion16:
+        text: "Pytanie 16: Skąd wywodzi się popularny rodzaj animacji znany jako “anime”?"
+        pointer: "QuizQ16Answer1, QuizQ16Answer2, QuizQ16Answer3"
+      QuizQuestion17:
+        text: "Pytanie 17: W którym odbył się chrzest Polski?"
+        pointer: "QuizQ17Answer1, QuizQ17Answer2, QuizQ17Answer3"
+      QuizQuestion18:
+        text: "Pytanie 18: Co oznacza skrót „www”?"
+        pointer: "QuizQ18Answer1, QuizQ18Answer2, QuizQ18Answer3"
+      QuizQuestion19:
+        text: "Pytanie 19: Który z tych krajów nie graniczy z Polską?"
+        pointer: "QuizQ19Answer1, QuizQ19Answer2, QuizQ19Answer3"
+      QuizQuestion20:
+        text: "Pytanie 20: Którego pierwiastka jest najwięcej w powietrzu?"
+        pointer: "QuizQ20Answer1, QuizQ20Answer2, QuizQ20Answer3"
+        
+        
+      QuizWynik:
+        text: "Twój wynik w quizie to %point.Quests-Side.quiz_score1.amount%/20. Gratulacje!"
+        pointer: "QuizRewardGradeB, QuizRewardGradeA, QuizRewardGradeS"
+        events: "QuizDoneTag1,QuizStartedTagRemove1"
+        
+    player_options:
+      PlayerAcceptQuiz:
+        text: "&x&F&8&F&F&A&1Chętnie wezmę udział w twoim quizie."
+        events: "QuizStartedTag1"
+        pointer: "QuizQuestion1"
+      PlayerRejectQuiz:
+        text: "&x&f&f&6&9&6&1Tym razem sobie odpuszczę..."
+      PlayerSecondTry:
+        text: "&x&F&8&F&F&A&1Z checią spróbuje ponownie!"
+        pointer: "QuizQuestion1"
+        events: "resetPoint1"
+      QuizRewardGradeB:
+        text: "&x&F&8&F&F&A&1Odbierz prostą nagrode!"
+        condition: "PointGradeB1,!PointGradeA1,!PointGradeS1"
+        events: "RewardFolderGradeB1,QuizDoneTag1,QuizStartedTagRemove1"
+      QuizRewardGradeA:
+        text: "&x&F&8&F&F&A&1Odbierz dobrą nagrode!"
+        condition: "PointGradeA1,!PointGradeS1"
+        events: "RewardFolderGradeA1,QuizDoneTag1,QuizStartedTagRemove1"
+      QuizRewardGradeS:
+        text: "&x&F&8&F&F&A&1Odbierz najlepszą nagrode!"
+        condition: "PointGradeS1"
+        events: "RewardFolderGradeS1,QuizDoneTag1,QuizStartedTagRemove1"
+
+        
+      # Question 1
+      QuizQ1Answer1:
+        text: "&x&F&8&F&F&A&1Chiny"
+        pointer: "QuizQuestion2"
+      QuizQ1Answer2:
+        text: "&x&F&8&F&F&A&1Rosja"
+        pointer: "QuizQuestion2"
+        event: "point1" # poprawna
+      QuizQ1Answer3:
+        text: "&x&F&8&F&F&A&1USA"
+        pointer: "QuizQuestion2"
+
+      QuizQ2Answer1:
+        text: "&x&F&8&F&F&A&1Wodór"
+        pointer: "QuizQuestion3"
+        event: "point1" # poprawna
+      QuizQ2Answer2:
+        text: "&x&F&8&F&F&A&1Hel"
+        pointer: "QuizQuestion3"
+      QuizQ2Answer3:
+        text: "&x&F&8&F&F&A&1Węgiel"
+        pointer: "QuizQuestion3"
+
+      QuizQ3Answer1:
+        text: "&x&F&8&F&F&A&1Gregory Waszyngton"
+        pointer: "QuizQuestion4"
+      QuizQ3Answer2:
+        text: "&x&F&8&F&F&A&1Grzegorz Waszyngton"
+        pointer: "QuizQuestion4"
+      QuizQ3Answer3:
+        text: "&x&F&8&F&F&A&1Jerzy Waszyngton"
+        pointer: "QuizQuestion4"
+        event: "point1" # poprawna
+
+      QuizQ4Answer1:
+        text: "&x&F&8&F&F&A&18"
+        pointer: "QuizQuestion5"
+      QuizQ4Answer2:
+        text: "&x&F&8&F&F&A&16"
+        pointer: "QuizQuestion5"
+        event: "point1" # poprawna
+      QuizQ4Answer3:
+        text: "&x&F&8&F&F&A&14"
+        pointer: "QuizQuestion5"
+
+      QuizQ5Answer1:
+        text: "&x&F&8&F&F&A&1K2"
+        pointer: "QuizQuestion6"
+      QuizQ5Answer2:
+        text: "&x&F&8&F&F&A&1Mount Everest"
+        pointer: "QuizQuestion6"
+        event: "point1" # poprawna
+      QuizQ5Answer3:
+        text: "&x&F&8&F&F&A&1Annapurna"
+        pointer: "QuizQuestion6"
+
+      QuizQ6Answer1:
+        text: "&x&F&8&F&F&A&1watch"
+        pointer: "QuizQuestion7"
+        event: "point1" # poprawna
+      QuizQ6Answer2:
+        text: "&x&F&8&F&F&A&1clock"
+        pointer: "QuizQuestion7"
+      QuizQ6Answer3:
+        text: "&x&F&8&F&F&A&1cock"
+        pointer: "QuizQuestion7"
+
+      QuizQ7Answer1:
+        text: "&x&F&8&F&F&A&12008"
+        pointer: "QuizQuestion8"
+      QuizQ7Answer2:
+        text: "&x&F&8&F&F&A&12003"
+        pointer: "QuizQuestion8"
+      QuizQ7Answer3:
+        text: "&x&F&8&F&F&A&12005"
+        pointer: "QuizQuestion8"
+        event: "point1" # poprawna
+
+      QuizQ8Answer1:
+        text: "&x&F&8&F&F&A&1woda"
+        pointer: "QuizQuestion9"
+        event: "point1" # poprawna
+      QuizQ8Answer2:
+        text: "&x&F&8&F&F&A&1stal"
+        pointer: "QuizQuestion9"
+      QuizQ8Answer3:
+        text: "&x&F&8&F&F&A&1smog"
+        pointer: "QuizQuestion9"
+
+      QuizQ9Answer1:
+        text: "&x&F&8&F&F&A&1BRICS"
+        pointer: "QuizQuestion10"
+        event: "point1" # poprawna
+      QuizQ9Answer2:
+        text: "&x&F&8&F&F&A&1EU"
+        pointer: "QuizQuestion10"
+      QuizQ9Answer3:
+        text: "&x&F&8&F&F&A&1NATO"
+        pointer: "QuizQuestion10"
+
+      QuizQ10Answer1:
+        text: "&x&F&8&F&F&A&1niebieski"
+        pointer: "QuizQuestion11"
+      QuizQ10Answer2:
+        text: "&x&F&8&F&F&A&1zielony"
+        pointer: "QuizQuestion11"
+        event: "point1" # poprawna
+      QuizQ10Answer3:
+        text: "&x&F&8&F&F&A&1czerwony"
+        pointer: "QuizQuestion11"
+
+      QuizQ11Answer1:
+        text: "&x&F&8&F&F&A&1Rekin biały"
+        pointer: "QuizQuestion12"
+      QuizQ11Answer2:
+        text: "&x&F&8&F&F&A&1Słoń afrykański"
+        pointer: "QuizQuestion12"
+      QuizQ11Answer3:
+        text: "&x&F&8&F&F&A&1Wieloryb błękitny"
+        pointer: "QuizQuestion12"
+        event: "point1" # poprawna
+
+      QuizQ12Answer1:
+        text: "&x&F&8&F&F&A&1Jurij Gagarin"
+        pointer: "QuizQuestion13"
+        event: "point1" # poprawna
+      QuizQ12Answer2:
+        text: "&x&F&8&F&F&A&1Neil Armstrong"
+        pointer: "QuizQuestion13"
+      QuizQ12Answer3:
+        text: "&x&F&8&F&F&A&1Buzz Aldrin"
+        pointer: "QuizQuestion13"
+
+      QuizQ13Answer1:
+        text: "&x&F&8&F&F&A&11920"
+        pointer: "QuizQuestion14"
+      QuizQ13Answer2:
+        text: "&x&F&8&F&F&A&11939"
+        pointer: "QuizQuestion14"
+      QuizQ13Answer3:
+        text: "&x&F&8&F&F&A&11914"
+        pointer: "QuizQuestion14"
+        event: "point1" # poprawna
+
+      QuizQ14Answer1:
+        text: "&x&F&8&F&F&A&1H2O"
+        pointer: "QuizQuestion15"
+      QuizQ14Answer2:
+        text: "&x&F&8&F&F&A&1O"
+        pointer: "QuizQuestion15"
+        event: "point1" # poprawna
+      QuizQ14Answer3:
+        text: "&x&F&8&F&F&A&1T"
+        pointer: "QuizQuestion15"
+
+      QuizQ15Answer1:
+        text: "&x&F&8&F&F&A&12001"
+        pointer: "QuizQuestion16"
+      QuizQ15Answer2:
+        text: "&x&F&8&F&F&A&12004"
+        pointer: "QuizQuestion16"
+        event: "point1" # poprawna
+      QuizQ15Answer3:
+        text: "&x&F&8&F&F&A&12007"
+        pointer: "QuizQuestion16"
+
+      QuizQ16Answer1:
+        text: "&x&F&8&F&F&A&1Japonia"
+        pointer: "QuizQuestion17"
+        event: "point1" # poprawna
+      QuizQ16Answer2:
+        text: "&x&F&8&F&F&A&1Chiny"
+        pointer: "QuizQuestion17"
+      QuizQ16Answer3:
+        text: "&x&F&8&F&F&A&1Korea Południowa"
+        pointer: "QuizQuestion17"
+
+      QuizQ17Answer1:
+        text: "&x&F&8&F&F&A&11000"
+        pointer: "QuizQuestion18"
+      QuizQ17Answer2:
+        text: "&x&F&8&F&F&A&1996"
+        pointer: "QuizQuestion18"
+      QuizQ17Answer3:
+        text: "&x&F&8&F&F&A&1966"
+        pointer: "QuizQuestion18"
+        event: "point1" # poprawna
+
+      QuizQ18Answer1:
+        text: "&x&F&8&F&F&A&1Wide Web World"
+        pointer: "QuizQuestion19"
+      QuizQ18Answer2:
+        text: "&x&F&8&F&F&A&1Web World Wide"
+        pointer: "QuizQuestion19"
+      QuizQ18Answer3:
+        text: "&x&F&8&F&F&A&1World Wide Web"
+        pointer: "QuizQuestion19"
+        event: "point1" # poprawna
+
+      QuizQ19Answer1:
+        text: "&x&F&8&F&F&A&1Słowacja"
+        pointer: "QuizQuestion20"
+      QuizQ19Answer2:
+        text: "&x&F&8&F&F&A&1Słowenia"
+        pointer: "QuizQuestion20"
+        event: "point1" # poprawna
+      QuizQ19Answer3:
+        text: "&x&F&8&F&F&A&1Litwa"
+        pointer: "QuizQuestion20"
+
+      QuizQ20Answer1:
+        text: "&x&F&8&F&F&A&1Azot"
+        pointer: "QuizWynik"
+        event: "point1" # poprawna
+      QuizQ20Answer2:
+        text: "&x&F&8&F&F&A&1Tlen"
+        pointer: "QuizWynik"
+      QuizQ20Answer3:
+        text: "&x&F&8&F&F&A&1Wodór"
+        pointer: "QuizWynik"

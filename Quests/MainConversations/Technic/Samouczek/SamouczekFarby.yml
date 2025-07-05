@@ -1,0 +1,47 @@
+conversations:
+  SamouczekFarby:
+    quester: Samouczek "Farby"
+    first: 1r-samfar
+
+    # Wejscie na samouczek farby
+
+    NPC_options:
+
+      # pierwsze dialogi z wyborem
+      1r-samfar:
+        text: "Witaj %player%, objaśnię Ci jak działają farby."
+        pointer: 1o-samfar-a, 1o-samfar-b, 1o-samfar-c, 1o-samfar-d
+      2r-samfar-a:
+        text: "Farby można uzyskać w kasynie. Jak się dostać do kasyna, pytasz? Każde miasto ma swoje Kasyno. Są to budynki, które odróżniają się swoim czarno-czerwonym odcieniem. Ale spokojnie jak ich nie znajdziesz w centralnej części każdego miasta znajdziesz &e&lWłaściciele Kasyna&r, który zaprowadzi cię prosto do nich."
+        pointer: 1o-samfar-a2
+      2r-samfar-a2:
+        text: "W środku znajdziesz skrzynie, w których możesz spróbować szczęscia i wylosować swoją ulubionę farbę. Koszt losowania wynosi &e&l4 waluty premium&r."
+        pointer: 1o-samfar-e
+      2r-samfar-b:
+        text: "Farby mają swoją rzadkość od tych &lpospolitych&r do &llegendarnych&r. W zależności od jakości farby zmienia się się szansa na ich wylosowanie. Im rzadszy barnik tym mniejsza szansa na jego zdobycie. Aby poznać ich listę oraz konkretne procenty co do ich otrzymania kliknij &e&lSHIFT&r + &e&lPPM&r na &r&lskrzynię&r, która chcesz otworzyć."
+        pointer: 1o-samfar-e
+      2r-samfar-c:
+        text: 'Farby możesz nakładać wyłącznie na &lNetherytowy&r lub &lDiamentowy&r przedmiot. Aby to zrobić, kliknij farbę w ekwipunku, a następnie, trzymając ją na kursorsie, użyj PPM &rna&f &lmieczu&f, który chcesz zabarwić. Każdy barwnik można wykorzystać &ltrzykrotnie&r – po trzecim użyciu znika z ekwipunku.'
+        pointer: 1o-samfar-e
+
+    # odpowiedzi gracza
+    player_options:
+
+      # wybor tematu
+      1o-samfar-a:
+        text: "&FJak je zdobyć?"
+        pointer: 2r-samfar-a
+      1o-samfar-a2:
+        text: "&f..."
+        pointer: 2r-samfar-a2
+      1o-samfar-b:
+        text: "&FRodzaje Farb."
+        pointer: 2r-samfar-b
+      1o-samfar-c:
+        text: "&fJak je nałożyć?"
+        pointer: 2r-samfar-c
+      1o-samfar-d:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."
+      1o-samfar-e:
+        text: "&fRozumiem."
+        pointer: 1r-samfar

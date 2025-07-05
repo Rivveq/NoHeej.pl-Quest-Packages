@@ -1,0 +1,59 @@
+conversations:
+  Winston:
+    quester: Winston
+    first: default
+
+    NPC_options:
+      default:
+        text: "Witaj przybyszu, coś do picia?"
+        pointers: "polej,oferta,nic"
+      polewanie:
+        text: "Daj 100$ i już polewam"
+        pointer: "Akceptacja,AkceptacjaBrakPieniedzy"
+      BarmanOferta:
+        text: "W  mojej dzisiejszej ofercie jest ambrozja, napitek, kufel piwa krzemowego oraz płynne złoto."
+        pointer: "Ambrozja,Napitek,KufelPiwa,PlynneZloto,AmbrozjaBrak,NapitekBrak,KufelPiwaBrak,PlynneZlotoBrak"
+    player_options:
+      polej:
+        text: "Polej jakiś trunek"
+        pointer: "polewanie"
+      oferta:
+        text: "Co masz w swojej ofercie?"
+        pointer: "BarmanOferta"
+      nic:
+        text: "Tylko sobie siedzę"
+      Akceptacja:
+        text: "Płacę, lej"
+        events: "OplataZaTrunek,DajTrunek"
+        conditions: "MaPieniadze"
+      AkceptacjaBrakPieniedzy:
+        text: "Nie mam tyle pieniędzy"
+        conditions: "!MaPieniadze"
+      Ambrozja:
+        text: "&aAmbrozja - 130$"
+        condition: "MaPieniadzeAmbrozja"
+        event: "DajAmbrozja"
+      Napitek:
+        text: "&aNapitek - 110$"
+        condition: "MaPieniadzeNapitek"
+        event: "DajNapitek"
+      KufelPiwa:
+        text: "&aKufel Piwa Krzemowego - 139$"
+        conditions: "MaPieniadzePiwo"
+        event: "DajPiwo"
+      PlynneZloto:
+        text: "&aPłynne złoto - 250$"
+        conditions: "MaPieniadzePlynneZloto"
+        event: "DajPlynneZloto"
+      AmbrozjaBrak:
+        text: "&cAmbrozja - 130$"
+        condition: "!MaPieniadzeAmbrozja"
+      NapitekBrak:
+        text: "&cNapitek - 110$"
+        condition: "!MaPieniadzeNapitek"
+      KufelPiwaBrak:
+        text: "&cKufel Piwa Krzemowego - 139$"
+        conditions: "!MaPieniadzePiwo"
+      PlynneZlotoBrak:
+        text: "&cPłynne złoto - 250$"
+        conditions: "!MaPieniadzePlynneZloto"

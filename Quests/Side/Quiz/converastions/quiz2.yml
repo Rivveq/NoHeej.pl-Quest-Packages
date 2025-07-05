@@ -1,0 +1,320 @@
+conversations:
+  Quiz:
+    NPC_options:
+      2QuizOption:
+        text: "Witaj %player% chcesz wziąc udział w moim quizie?"
+        pointer: "2PlayerAcceptQuiz, 2PlayerRejectQuiz"
+        condition: "!QuizStartedTagCondition2, QuizDoneTagCondition1, !QuizDoneTagCondition2 "
+      2LastQuizCanceld:
+        text: "Ostatnio przerwałeś swój udział w quizie, chcesz spróbować ponownie?"
+        condition: "QuizStartedTagCondition2, !QuizDoneTagCondition2"
+        pointer: "2PlayerSecondTry, 2PlayerRejectQuiz"
+      2QuizQuestion1:
+        text: "Pytanie 1"
+        pointer: "2QuizQ1Answer1, 2QuizQ1Answer2, 2QuizQ1Answer3"
+      2QuizQuestion2:
+        text: "Pytanie 2"
+        pointer: "2QuizQ2Answer1, 2QuizQ2Answer2, 2QuizQ2Answer3"
+      2QuizQuestion3:
+        text: "Pytanie 3"
+        pointer: "2QuizQ3Answer1, 2QuizQ3Answer2, 2QuizQ3Answer3"
+      2QuizQuestion4:
+        text: "Pytanie 4"
+        pointer: "2QuizQ4Answer1, 2QuizQ4Answer2, 2QuizQ4Answer3"
+      2QuizQuestion5:
+        text: "Pytanie 5"
+        pointer: "2QuizQ5Answer1, 2QuizQ5Answer2, 2QuizQ5Answer3"
+      2QuizQuestion6:
+        text: "Pytanie 6"
+        pointer: "2QuizQ6Answer1, 2QuizQ6Answer2, 2QuizQ6Answer3"
+      2QuizQuestion7:
+        text: "Pytanie 7"
+        pointer: "2QuizQ7Answer1, 2QuizQ7Answer2, 2QuizQ7Answer3"
+      2QuizQuestion8:
+        text: "Pytanie 8"
+        pointer: "2QuizQ8Answer1, 2QuizQ8Answer2, 2QuizQ8Answer3"
+      2QuizQuestion9:
+        text: "Pytanie 9"
+        pointer: "2QuizQ9Answer1, 2QuizQ9Answer2, 2QuizQ9Answer3"
+      2QuizQuestion10:
+        text: "Pytanie 10"
+        pointer: "2QuizQ10Answer1, 2QuizQ10Answer2, 2QuizQ10Answer3"
+      2QuizQuestion11:
+        text: "Pytanie 11"
+        pointer: "2QuizQ11Answer1, 2QuizQ11Answer2, 2QuizQ11Answer3"
+      2QuizQuestion12:
+        text: "Pytanie 12"
+        pointer: "2QuizQ12Answer1, 2QuizQ12Answer2, 2QuizQ12Answer3"
+      2QuizQuestion13:
+        text: "Pytanie 13"
+        pointer: "2QuizQ13Answer1, 2QuizQ13Answer2, 2QuizQ13Answer3"
+      2QuizQuestion14:
+        text: "Pytanie 14"
+        pointer: "2QuizQ14Answer1, 2QuizQ14Answer2, 2QuizQ14Answer3"
+      2QuizQuestion15:
+        text: "Pytanie 15"
+        pointer: "2QuizQ15Answer1, 2QuizQ15Answer2, 2QuizQ15Answer3"
+      2QuizQuestion16:
+        text: "Pytanie 16"
+        pointer: "2QuizQ16Answer1, 2QuizQ16Answer2, 2QuizQ16Answer3"
+      2QuizQuestion17:
+        text: "Pytanie 17"
+        pointer: "2QuizQ17Answer1, 2QuizQ17Answer2, 2QuizQ17Answer3"
+      2QuizQuestion18:
+        text: "Pytanie 18"
+        pointer: "2QuizQ18Answer1, 2QuizQ18Answer2, 2QuizQ18Answer3"
+      2QuizQuestion19:
+        text: "Pytanie 19"
+        pointer: "2QuizQ19Answer1, 2QuizQ19Answer2, 2QuizQ19Answer3"
+      2QuizQuestion20:
+        text: "Pytanie 20"
+        pointer: "2QuizQ20Answer1, 2QuizQ20Answer2, 2QuizQ20Answer3"
+      2QuizWynik:
+        text: "Twój wynik w quizie to %point.Quests-Side.quiz_score2.amount%/20. Gratulacje!"
+        pointer: "2QuizRewardGradeB, 2QuizRewardGradeA, 2QuizRewardGradeS"
+        events: "QuizDoneTag2,QuizStartedTagRemove2"
+
+    player_options:
+      2PlayerAcceptQuiz:
+        text: "Chętnie wezmę udział w twoim quizie."
+        events: "QuizStartedTag1"
+        pointer: "2QuizQuestion2"
+      2PlayerRejectQuiz:
+        text: "Tym razem sobie odpuszczę..."
+      2PlayerSecondTry:
+        text: "Z checią spróbuje ponownie!"
+        pointer: "2QuizQuestion1"
+        events: "resetPoint2"
+      2QuizRewardGradeB:
+        text: "Odbierz prostą nagrode!"
+        condition: "PointGradeB2,!PointGradeA2,!PointGradeS2"
+        events: "RewardFolderGradeB2,QuizDoneTag2,QuizStartedTagRemove2"
+      2QuizRewardGradeA:
+        text: "Odbierz dobrą nagrode!"
+        condition: "PointGradeA2,!PointGradeS2"
+        events: "RewardFolderGradeA2,QuizDoneTag2,QuizStartedTagRemove2"
+      2QuizRewardGradeS:
+        text: "Odbierz najlepszą nagrode!"
+        condition: "PointGradeS2"
+        events: "RewardFolderGradeS2,QuizDoneTag2,QuizStartedTagRemove2"
+
+      # Question 1
+      2QuizQ1Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion2"
+      2QuizQ1Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion2"
+        event: "point2"
+      2QuizQ1Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion2"
+
+      2QuizQ2Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion3"
+        event: "point2"
+      2QuizQ2Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion3"
+      2QuizQ2Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion3"
+
+      2QuizQ3Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion4"
+      2QuizQ3Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion4"
+      2QuizQ3Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion4"
+        event: "point2"
+
+      2QuizQ4Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion5"
+      2QuizQ4Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion5"
+        event: "point2"
+      2QuizQ4Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion5"
+
+      2QuizQ5Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion6"
+      2QuizQ5Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion6"
+        event: "point2"
+      2QuizQ5Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion6"
+
+      2QuizQ6Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion7"
+        event: "point2"
+      2QuizQ6Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion7"
+      2QuizQ6Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion7"
+
+      2QuizQ7Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion8"
+      2QuizQ7Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion8"
+      2QuizQ7Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion8"
+        event: "point2"
+
+      2QuizQ8Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion9"
+        event: "point2"
+      2QuizQ8Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion9"
+      2QuizQ8Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion9"
+
+      2QuizQ9Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion10"
+        event: "point2"
+      2QuizQ9Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion10"
+      2QuizQ9Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion10"
+
+      2QuizQ10Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion11"
+      2QuizQ10Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion11"
+        event: "point2"
+      2QuizQ10Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion11"
+
+      2QuizQ11Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion12"
+      2QuizQ11Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion12"
+      2QuizQ11Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion12"
+        event: "point2"
+
+      2QuizQ12Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion13"
+        event: "point2"
+      2QuizQ12Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion13"
+      2QuizQ12Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion13"
+
+      2QuizQ13Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion14"
+      2QuizQ13Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion14"
+      2QuizQ13Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion14"
+        event: "point2"
+
+      2QuizQ14Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion15"
+      2QuizQ14Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion15"
+        event: "point2"
+      2QuizQ14Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion15"
+
+      2QuizQ15Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion16"
+      2QuizQ15Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion16"
+        event: "point2"
+      2QuizQ15Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion16"
+
+      2QuizQ16Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion17"
+        event: "point2"
+      2QuizQ16Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion17"
+      2QuizQ16Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion17"
+
+      2QuizQ17Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion18"
+      2QuizQ17Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion18"
+      2QuizQ17Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion18"
+        event: "point2"
+
+      2QuizQ18Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion19"
+      2QuizQ18Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion19"
+      2QuizQ18Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion19"
+        event: "point2"
+
+      2QuizQ19Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizQuestion20"
+      2QuizQ19Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizQuestion20"
+        event: "point2"
+      2QuizQ19Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizQuestion20"
+
+      2QuizQ20Answer1:
+        text: "Odpowiedz 1"
+        pointer: "2QuizWynik"
+        event: "point2"
+      2QuizQ20Answer2:
+        text: "Odpowiedz 2"
+        pointer: "2QuizWynik"
+      2QuizQ20Answer3:
+        text: "Odpowiedz 3"
+        pointer: "2QuizWynik"

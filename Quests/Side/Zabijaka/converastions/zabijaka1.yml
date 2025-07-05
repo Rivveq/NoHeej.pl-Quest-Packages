@@ -1,0 +1,55 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka1;1:
+        text: "Hej młody, to ty jesteś tym, no, eee… podróżnikiem co o nim ludzie w mieście gadają?"
+        pointer: "ZabijakaGracz1;1, ZabijakaGracz1;2, ZabijakaGracz1;3"
+        condition: "!Zabijaka1TagStarted,!Zabijaka1TagDone"
+      Zabijaka1;2:
+        text: "Hmm, myślałem, że będziesz trochę większy. No cóż, musisz wystarczyć. Mam dla Ciebie zadanie. Zainteresowany?"
+        pointer: "ZabijakaGracz1;4, ZabijakaGracz1;5, ZabijakaGracz1;6, ZabijakaGracz1;7"
+      Zabijaka1;3:
+        text: "Nazywam się Sigmund i jestem żołnierzem w miejskiej gwardii. Szukam ostrza do pomocy. Sądzisz, że nadajesz się do roboty żółtodziobie?"
+        pointer: "ZabijakaGracz1;4, ZabijakaGracz1;5, ZabijakaGracz1;6, ZabijakaGracz1;7"
+      Zabijaka1;4:
+        text: "Od jakiegoś czasu nasi kupcy są napastowani przez te zgniłe, rozkładające się pokraki. Niby nieporęczne martwe mięso, ale jest ich wystarczająco dużo by sprawiali kłopoty na szlakach handlowych. Zabij ich trochę, a wynagrodzę Cię. Chętny?"    
+        pointer: "ZabijakaGracz1;8, ZabijakaGracz1;9"
+      Zabijaka1;5:
+        text: "Dobra robota młody! Jeszcze będzie z Ciebie zabijaka! Oto Twoja nagroda."
+        condition: "Zabijaka1TagMobKilled,!Zabijaka1TagDone"
+        pointer: "ZabijakaGracz1;10"
+        
+        
+    player_options:
+    
+      ZabijakaGracz1;1:
+        text: "&x&F&8&F&F&A&1Tak, to ja."
+        pointer: "Zabijaka1;2"
+      ZabijakaGracz1;2:
+        text: "&x&F&8&F&F&A&1Zależy, kto pyta?"
+        pointer: "Zabijaka1;3"
+      ZabijakaGracz1;3:
+        text: "Nie, to chyba pomyłka."
+        
+      ZabijakaGracz1;4:
+        text: "&x&F&8&F&F&A&1Zapewniam Cię, że jestem WYBITNYM wojownikiem, i żadne zadanie nie jest dla mnie “zbyt trudne”."
+        pointer: "Zabijaka1;4"
+      ZabijakaGracz1;5:
+        text: "&x&F&8&F&F&A&1Jasne, żaden problem."
+        pointer: "Zabijaka1;4"
+      ZabijakaGracz1;6:
+        text: "&x&F&8&F&F&A&1A jakie to zadanie, Sigmund?"
+        pointer: "Zabijaka1;4"
+      ZabijakaGracz1;7:
+        text: "&x&f&f&6&9&6&1Nie jestem zainteresowany."
+      ZabijakaGracz1;8:
+        text: "&x&F&8&F&F&A&1Już biorę się do roboty!" 
+        event: "Zabijaka1TagStartedEvent,Zabijaka1QuestInfo,Zabijaka1RunZombie"
+      ZabijakaGracz1;9:
+        text: "&x&f&f&6&9&6&1Innym razem."
+      ZabijakaGracz1;10:
+        text: "&x&F&8&F&F&A&1Mówiłem ci! I bardzo dziękuje za zlecenie!"
+        event: "Zabijaka1TagDone,Zabijaka1RewardFolder"
+        
+      

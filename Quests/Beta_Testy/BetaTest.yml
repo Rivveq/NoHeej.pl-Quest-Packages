@@ -3,6 +3,8 @@ conversations:
     quester: "BetaTester"
     first: npc
     NPC_options:
+      test:
+        text: "test"
       npc:
         text: 'Wyczyścić ci dane dotyczące zadań/objectivów czy innych danych dotyczacych &cBetonQuesta'
         pointers: player1, player2

@@ -1,0 +1,42 @@
+conversations:
+  SamouczekWstep:
+    quester: Samouczek
+    first: 1-roz
+
+    NPC_options:
+    
+    # 1 Poruszanie
+    
+      1-roz:
+        text: "Hej, %player%! Masz trudność z odpowiadaniem na zadawane Ci pytania? Nie możesz wydobyć z siebie żadnego słowa? Pozwól, że dam Ci radę. Aby wybrać poszczególne opcje dialogowe poruszasz się góra dół za pomocą &e&lW &r5oraz &e&lS&r. Zatwierdzasz wybraną opcję kilkając &e&lSPACJĘ &x&F&F&F&0&F&5lub &e&lPPM&x&F&F&F&0&F&5. Wybierz &e&ldrugą&r opcję żeby kontynuować."
+        pointer: 1-odp-a, 1-odp-b
+        
+    # 2 Powtorka
+        
+      2-roz-a:
+        text: "Błąd! Spróbuj użyć &e&lW &roraz &e&lS &raby wybrać drugą opcję"
+        pointer: 1-odp-a, 1-odp-b
+        
+     # 2 Anulowanie
+      
+      2-roz-b:
+        text: "Możesz zawsze przerwać rozmowę kilkając &e&lSHIFT&r lub wybrać &x&f&f&6&9&6&1czerwoną&r opcje dialogową, jednak wiąże się to z &nutratą&r postępów danej konwersacji i zaczęcie jej od początku. Jeżeli potrzebujesz pomocy z czymś jeszcze popytaj ludzi tutaj na statku."
+        pointer: 2-odp
+
+    # Odpowiedzi
+
+    player_options:
+    
+    # 1 Odpowiedz
+    
+      1-odp-a:
+        text: "&fOpcja pierwsza."
+        pointer: 2-roz-a
+      1-odp-b:
+        text: "&e&lOpcja druga."
+        pointer: 2-roz-b
+        
+      # 2 Odpowiedz
+        
+      2-odp:
+        text: "&x&f&f&6&9&6&1Dobrze, dziekuję."

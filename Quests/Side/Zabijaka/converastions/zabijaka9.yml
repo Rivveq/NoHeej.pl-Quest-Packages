@@ -1,0 +1,35 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka9;1:
+        text: "%player%, mam dla Ciebie ostatnie zlecenie."
+        pointer: "ZabijakaGracz9;1, ZabijakaGracz9;2"
+        condition: "Zabijaka8TagDone,!Zabijaka9TagStarted,!Zabijaka9TagDone"
+        
+      Zabijaka9;2:
+        text: "Pamiętasz bagniaki? Cóż, okazuje się, że współpracują one z pewnymi, dosyć elastycznymi potworkami. Zagrażają one bezpieczeństwu wielu szlaków handlowych. Pozbywając się ich, pozbędziesz się ryzyka."
+        pointer: "ZabijakaGracz9;3, ZabijakaGracz9;4"
+        
+        
+      Zabijaka9;4:
+        text: "Gratuluję, %player%. Teraz nikt nie zaprzeczy, że jesteś prawdziwym zabijaką."
+        condition: "Zabijaka9TagMobKilled,!Zabijaka9TagDone"
+        pointer: "ZabijakaGracz9;5"
+        
+    player_options:
+      ZabijakaGracz9;1:
+        text: "&x&F&8&F&F&A&1Ostatnie? Szkoda, bardzo dobrze mi się z Tobą współpracowało. Jakie to zadanie?"
+        pointer: "Zabijaka9;2"
+      ZabijakaGracz9;2:
+        text: "&x&f&f&6&9&6&1Jestem teraz zajęty."
+        
+      ZabijakaGracz9;3:
+        text: "&x&F&8&F&F&A&1Rozumiem, niezwłocznie się tym zajmę."
+        events: "Zabijaka9TagStartedEvent,Zabijaka9QuestInfo,Zabijaka9RunMob"
+      ZabijakaGracz9;4:
+        text: "&x&f&f&6&9&6&1Bagna? Eww, może innym razem."
+        
+      ZabijakaGracz9;5:
+        text: "&x&F&8&F&F&A&1Sie wie, ma sie to coś! W przyszłości mam nadzieję, że jeszcze wpadnie mi jakieś zadanie od ciebie!"
+        event: "Zabijaka9TagDone,Zabijaka9RewardFolder"

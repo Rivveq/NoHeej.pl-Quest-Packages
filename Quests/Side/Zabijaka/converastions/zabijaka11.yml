@@ -1,0 +1,38 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka11;1:
+        text: "Młody, chyba przyciągasz kłopoty. Właśnie dotarła do nas wieść z południowych kopalni — i nie brzmi dobrze."
+        pointer: "ZabijakaGracz11;1, ZabijakaGracz11;2, ZabijakaGracz11;3"
+        condition: "Zabijaka10TagDone,!Zabijaka11TagStarted,!Zabijaka11TagDone"
+        
+      Zabijaka11;2:
+        text: "Górnicy przerwali jakieś stare przejście. Od tamtej pory nikt się z nich nie odezwał. Z kopalni wypełzły chmary robactwa — nietoperze, pająki, jakieś ogromne jaskiniowe wersje… i coś jeszcze! Coś, co gnieździ się w skałach, Srebro-błyski czy jakoś tak!"
+        pointer: "ZabijakaGracz11;4, ZabijakaGracz11;5"
+        
+        
+      Zabijaka11;3:
+        text: "No patrzcie go… Jak ty to robisz! Świetna robota, teraz górnicy mogą wracać do pracy, a Ty zasłużyłeś na konkretną nagrodę."
+        condition: "Zabijaka11TagMobKilled,!Zabijaka11TagDone"
+        pointer: "ZabijakaGracz11;6"
+        
+    player_options:
+      ZabijakaGracz11;1:
+        text: "&x&F&8&F&F&A&1Znowu coś się dzieje?"
+        pointer: "Zabijaka11;2"
+      ZabijakaGracz11;2:
+        text: "&x&F&8&F&F&A&1Tym razem kopalnie? No dobra, mów."
+        pointer: "Zabijaka11;2"
+      ZabijakaGracz11;3:
+        text: "&x&f&f&6&9&6&1Może tym razem poradzicie sobie sami?"
+        
+      ZabijakaGracz11;4:
+        text: "&x&F&8&F&F&A&1Brzmi paskudnie, ale możesz na mnie polegać!"
+        events: "Zabijaka11TagStartedEvent,Zabijaka11QuestInfo,Zabijaka11RunMob"
+      ZabijakaGracz11;5:
+        text: "&x&f&f&6&9&6&1Nie mam zamiaru ginąć pod gruzami."
+        
+      ZabijakaGracz11;6:
+        text: "&x&F&8&F&F&A&1Nie zrobiłem nic nadzywczajnego, to górnicy odwalają kawał roboty, ja tam tylko posprzątałem, hah!"
+        event: "Zabijaka11TagDone,Zabijaka11RewardFolder"

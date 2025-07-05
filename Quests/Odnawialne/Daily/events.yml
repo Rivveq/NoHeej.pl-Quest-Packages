@@ -1,0 +1,1258 @@
+events:
+# Losowanie questa  
+  PickRandomDailyRarity: "pickrandom 1%EasyQuestTagAdd,1%MediumQuestTagAdd,1%HardQuestTagAdd random:1" 
+  EasyQuestTagAdd: "tag add EasyDaily"
+  MediumQuestTagAdd: "tag add MediumDaily"
+  HardQuestTagAdd: "tag add HardDaily"
+  
+
+  EasyRandomDailyQuest: "folder EasyDailyQuest1,EasyDailyQuest2,EasyDailyQuest3,EasyDailyQuest4,EasyDailyQuest5,EasyDailyQuest6,EasyDailyQuest7,EasyDailyQuest8,EasyDailyQuest9,EasyDailyQuest10,EasyDailyQuest11,EasyDailyQuest12,EasyDailyQuest13,EasyDailyQuest14,EasyDailyQuest15,EasyDailyQuest16,EasyDailyQuest17,EasyDailyQuest18,EasyDailyQuest19,EasyDailyQuest20,EasyDailyQuest21,EasyDailyQuest22,EasyDailyQuest23,EasyDailyQuest24,EasyDailyQuest25,EasyDailyQuest26,EasyDailyQuest27,EasyDailyQuest28,EasyDailyQuest29,EasyDailyQuest30,EasyDailyQuest31,EasyDailyQuest32,EasyDailyQuest33,EasyDailyQuest34,EasyDailyQuest35,EasyDailyQuest36,EasyDailyQuest37,EasyDailyQuest38,EasyDailyQuest39,EasyDailyQuest40,EasyDailyQuest41,EasyDailyQuest42,EasyDailyQuest43,EasyDailyQuest44,EasyDailyQuest45,EasyDailyQuest46,EasyDailyQuest47,EasyDailyQuest48,EasyDailyQuest49,EasyDailyQuest50,EasyDailyQuest51,EasyDailyQuest52,EasyDailyQuest53,EasyDailyQuest54,EasyDailyQuest55,EasyDailyQuest56,EasyDailyQuest57,EasyDailyQuest58,EasyDailyQuest59,EasyDailyQuest60,EasyDailyQuest61,EasyDailyQuest62,EasyDailyQuest63,EasyDailyQuest64,EasyDailyQuest65,EasyDailyQuest66,EasyDailyQuest67,EasyDailyQuest68,EasyDailyQuest69,EasyDailyQuest70,EasyDailyQuest71,EasyDailyQuest72,EasyDailyQuest73,EasyDailyQuest74,EasyDailyQuest75,EasyDailyQuest76,EasyDailyQuest77,EasyDailyQuest78,EasyDailyQuest79,EasyDailyQuest80,EasyDailyQuest81,EasyDailyQuest82,EasyDailyQuest83,EasyDailyQuest84,EasyDailyQuest85,EasyDailyQuest86,EasyDailyQuest87,EasyDailyQuest88,EasyDailyQuest89,EasyDailyQuest90,EasyDailyQuest91,EasyDailyQuest92,EasyDailyQuest93,EasyDailyQuest94,EasyDailyQuest95,EasyDailyQuest96,EasyDailyQuest97 random:1"
+  
+  MediumRandomDailyQuest: "folder MediumDailyQuest1,MediumDailyQuest2,MediumDailyQuest3,MediumDailyQuest4,MediumDailyQuest5,MediumDailyQuest6,MediumDailyQuest7,MediumDailyQuest8,MediumDailyQuest9,MediumDailyQuest10,MediumDailyQuest11,MediumDailyQuest12,MediumDailyQuest13,MediumDailyQuest14,MediumDailyQuest15,MediumDailyQuest16,MediumDailyQuest17,MediumDailyQuest18,MediumDailyQuest19,MediumDailyQuest20,MediumDailyQuest21,MediumDailyQuest22,MediumDailyQuest23,MediumDailyQuest24,MediumDailyQuest25,MediumDailyQuest26,MediumDailyQuest27,MediumDailyQuest28,MediumDailyQuest29,MediumDailyQuest30,MediumDailyQuest31,MediumDailyQuest32,MediumDailyQuest33,MediumDailyQuest34,MediumDailyQuest35,MediumDailyQuest36,MediumDailyQuest37,MediumDailyQuest38,MediumDailyQuest39,MediumDailyQuest40,MediumDailyQuest41,MediumDailyQuest42 random:1"
+  
+  HardRandomDailyQuest: "folder HardDailyQuest1,HardDailyQuest2,HardDailyQuest3,HardDailyQuest4,HardDailyQuest5,HardDailyQuest6,HardDailyQuest7,HardDailyQuest8,HardDailyQuest9,HardDailyQuest10,HardDailyQuest11,HardDailyQuest12,HardDailyQuest13,HardDailyQuest14,HardDailyQuest15,HardDailyQuest16,HardDailyQuest17,HardDailyQuest18,HardDailyQuest19,HardDailyQuest20,HardDailyQuest21,HardDailyQuest22,HardDailyQuest23,HardDailyQuest24,HardDailyQuest25,HardDailyQuest26,HardDailyQuest27,HardDailyQuest28,HardDailyQuest29,HardDailyQuest30,HardDailyQuest31,HardDailyQuest32,HardDailyQuest33,HardDailyQuest34,HardDailyQuest35,HardDailyQuest36,HardDailyQuest37,HardDailyQuest38,HardDailyQuest39,HardDailyQuest40 random:1"
+  
+  EasyQuestTagDel: "tag del EasyDaily"
+  MediumQuestTagDel: "tag del MediumDaily"
+  HardQuestTagDel: "tag del HardDaily"
+  
+  
+# Quest Started Tag
+  EasyQuestStartedTagAdd: "tag add EasyDailyStarted"
+  MediumQuestStartedTagAdd: "tag add MediumDailyStarted"
+  HardQuestStartedTagAdd: "tag add HardDailyStarted"
+  
+  QuestStartedTagRemove: "folder EasyQuestStartedTagRemove,MediumQuestStartedTagRemove,HardQuestStartedTagRemove"
+  EasyQuestStartedTagRemove: "tag del EasyDailyStarted"
+  MediumQuestStartedTagRemove: "tag del MediumDailyStarted"
+  HardQuestStartedTagRemove: "tag del HardDailyStarted"
+ 
+# Quest Done Tag and Notify
+  EasyQuestDoneFolder: "folder EasyQuestDone,QuestDoneNotify,QuestStartedTagRemove"
+  MediumQuestDoneFolder: "folder MediumQuestDone,QuestDoneNotify,QuestStartedTagRemove"
+  HardQuestDoneFolder: "folder HardQuestDone,QuestDoneNotify,QuestStartedTagRemove"
+  
+# Tag Quest Done
+  EasyQuestDone: "tag add EasyDailyQuestDone"
+  MediumQuestDone: "tag add MediumDailyQuestDone"
+  HardQuestDone: "tag add HardDailyQuestDone"
+# Tag Quest Done Remove
+  EasyQuestDoneRemove: "tag del EasyDailyQuestDone"
+  MediumQuestDoneRemove: "tag del MediumDailyQuestDone"
+  HardQuestDoneRemove: "tag del HardDailyQuestDone"
+  
+# Daily Task Completed
+  DailyTaskCompletedAdd: "tag add DailyTaskCompleted"
+  DailyTaskCompletedDel: "tag del DailyTaskCompleted"
+  
+# Notify Quest Done
+  QuestDoneNotify: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Daily","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:7 y:65 z:29"}},{"text":", aby otrzymać nagrodę","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+# Quest rewards folder
+  EasyQuestRewardFolder: "folder EasyQuestReward,EasyQuestRewardNotify,DailyTaskCompletedAdd"
+  MediumQuestRewardFolder: "folder MediumQuestReward,MediumQuestRewardNotify,DailyTaskCompletedAdd"
+  HardQuestRewardFolder: "folder HardQuestReward,HardQuestRewardNotify,DailyTaskCompletedAdd"
+# Quest rewards  
+  EasyQuestReward: "money +100"
+  MediumQuestReward: "money +100"
+  HardQuestReward: "money +100"
+# Quest reward notify
+  EasyQuestRewardNotify: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Otrzymujesz","color":"#3CB371"},{"text":" 100","color":"#AEAEAE"},{"text":" ㅈ","color":"white"},{"text":"  nagrody za zadanie dzienne","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  MediumQuestRewardNotify: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Otrzymujesz","color":"#3CB371"},{"text":" 1000","color":"#AEAEAE"},{"text":" ㅈ","color":"white"},{"text":"  nagrody za zadanie dzienne","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  HardQuestRewardNotify: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Otrzymujesz","color":"#3CB371"},{"text":" 10000","color":"#AEAEAE"},{"text":" ㅈ","color":"white"},{"text":"  nagrody za zadanie dzienne","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  
+  
+# Reset
+  ResetQuestsFolder: "folder ResetEasyQuest,ResetMediumQuest,ResetHardQuest,QuestStartedTagRemove"
+  
+  ResetEasyQuest: "folder EasyQuestTagDel,EasyQuestStartedTagRemove,EasyQuestDoneRemove,EasyDailyQuestObjRemove43,EasyDailyQuestObjRemove44,EasyDailyQuestObjRemove45, EasyDailyQuestObjRemove46,EasyDailyQuestObjRemove47,EasyDailyQuestObjRemove48,EasyDailyQuestObjRemove49,EasyDailyQuestObjRemove50,EasyDailyQuestObjRemove51,EasyDailyQuestObjRemove52,EasyDailyQuestObjRemove53,EasyDailyQuestObjRemove54,EasyDailyQuestObjRemove55,EasyDailyQuestObjRemove56,EasyDailyQuestObjRemove57,EasyDailyQuestObjRemove58,EasyDailyQuestObjRemove59,EasyDailyQuestObjRemove60,EasyDailyQuestObjRemove61,EasyDailyQuestObjRemove62,EasyDailyQuestObjRemove63,EasyDailyQuestObjRemove64,EasyDailyQuestObjRemove65,EasyDailyQuestObjRemove66,EasyDailyQuestObjRemove67,EasyDailyQuestObjRemove68,EasyDailyQuestObjRemove69,EasyDailyQuestObjRemove70,EasyDailyQuestObjRemove71,EasyDailyQuestObjRemove72,EasyDailyQuestObjRemove73,EasyDailyQuestObjRemove74,EasyDailyQuestObjRemove75,EasyDailyQuestObjRemove76,EasyDailyQuestObjRemove77,EasyDailyQuestObjRemove78,EasyDailyQuestObjRemove79,EasyDailyQuestObjRemove80,EasyDailyQuestObjRemove81,EasyDailyQuestObjRemove82,EasyDailyQuestObjRemove83,EasyDailyQuestObjRemove84,EasyDailyQuestObjRemove85,EasyDailyQuestObjRemove86,EasyDailyQuestObjRemove87,EasyDailyQuestObjRemove88,EasyDailyQuestObjRemove89,EasyDailyQuestObjRemove90,EasyDailyQuestObjRemove92,EasyDailyQuestObjRemove93,EasyDailyQuestObjRemove94,EasyDailyQuestObjRemove95,EasyDailyQuestObjRemove96,EasyDailyQuestObjRemove97"
+  ResetMediumQuest: "folder MediumQuestTagDel,MediumQuestStartedTagRemove,MediumQuestDoneRemove,MediumDailyQuestObjRemove19,MediumDailyQuestObjRemove20,MediumDailyQuestObjRemove21,MediumDailyQuestObjRemove22,MediumDailyQuestObjRemove23,MediumDailyQuestObjRemove24,MediumDailyQuestObjRemove25,MediumDailyQuestObjRemove26,MediumDailyQuestObjRemove27,MediumDailyQuestObjRemove28,MediumDailyQuestObjRemove29,MediumDailyQuestObjRemove30,MediumDailyQuestObjRemove31,MediumDailyQuestObjRemove32,MediumDailyQuestObjRemove33,MediumDailyQuestObjRemove34,MediumDailyQuestObjRemove35,MediumDailyQuestObjRemove36,MediumDailyQuestObjRemove37,MediumDailyQuestObjRemove38,MediumDailyQuestObjRemove39, MediumDailyQuestObjRemove40,MediumDailyQuestObjRemove41,MediumDailyQuestObjRemove42"
+  ResetHardQuest: "folder HardQuestTagDel,HardQuestStartedTagRemove,HardQuestDoneRemove,HardDailyQuestObjRemove22,HardDailyQuestObjRemove23,HardDailyQuestObjRemove24,HardDailyQuestObjRemove25,HardDailyQuestObjRemove26,HardDailyQuestObjRemove27,HardDailyQuestObjRemove28,HardDailyQuestObjRemove29,HardDailyQuestObjRemove30,HardDailyQuestObjRemove31,HardDailyQuestObjRemove32,HardDailyQuestObjRemove33,HardDailyQuestObjRemove34,HardDailyQuestObjRemove35,HardDailyQuestObjRemove36,HardDailyQuestObjRemove37,HardDailyQuestObjRemove38,HardDailyQuestObjRemove39,HardDailyQuestObjRemove40"
+
+  # reset tags
+  
+  ResetDailyStartedTags: "folder EasyDailyQuest1StartedTagDel,EasyDailyQuest2StartedTagDel,EasyDailyQuest3StartedTagDel,EasyDailyQuest4StartedTagDel,EasyDailyQuest5StartedTagDel,EasyDailyQuest6StartedTagDel,EasyDailyQuest7StartedTagDel,EasyDailyQuest8StartedTagDel,EasyDailyQuest9StartedTagDel,EasyDailyQuest10StartedTagDel,EasyDailyQuest11StartedTagDel,EasyDailyQuest12StartedTagDel,EasyDailyQuest13StartedTagDel,EasyDailyQuest14StartedTagDel,EasyDailyQuest15StartedTagDel,EasyDailyQuest16StartedTagDel,EasyDailyQuest17StartedTagDel,EasyDailyQuest18StartedTagDel,EasyDailyQuest19StartedTagDel,EasyDailyQuest20StartedTagDel,EasyDailyQuest21StartedTagDel,EasyDailyQuest22StartedTagDel,EasyDailyQuest23StartedTagDel,EasyDailyQuest24StartedTagDel,EasyDailyQuest25StartedTagDel,EasyDailyQuest26StartedTagDel,EasyDailyQuest27StartedTagDel,EasyDailyQuest28StartedTagDel,EasyDailyQuest29StartedTagDel,EasyDailyQuest30StartedTagDel,EasyDailyQuest31StartedTagDel,EasyDailyQuest32StartedTagDel,EasyDailyQuest33StartedTagDel,EasyDailyQuest34StartedTagDel,EasyDailyQuest35StartedTagDel,EasyDailyQuest36StartedTagDel,EasyDailyQuest37StartedTagDel,EasyDailyQuest38StartedTagDel,EasyDailyQuest39StartedTagDel,EasyDailyQuest40StartedTagDel,EasyDailyQuest41StartedTagDel,EasyDailyQuest42StartedTagDel,EasyDailyQuest43StartedTagDel,EasyDailyQuest44StartedTagDel,EasyDailyQuest45StartedTagDel,EasyDailyQuest46StartedTagDel,EasyDailyQuest47StartedTagDel,EasyDailyQuest48StartedTagDel,EasyDailyQuest49StartedTagDel,EasyDailyQuest50StartedTagDel,EasyDailyQuest51StartedTagDel,EasyDailyQuest52StartedTagDel,EasyDailyQuest53StartedTagDel,EasyDailyQuest54StartedTagDel,EasyDailyQuest55StartedTagDel,EasyDailyQuest56StartedTagDel,EasyDailyQuest57StartedTagDel,EasyDailyQuest58StartedTagDel,EasyDailyQuest59StartedTagDel,EasyDailyQuest60StartedTagDel,EasyDailyQuest61StartedTagDel,EasyDailyQuest62StartedTagDel,EasyDailyQuest63StartedTagDel,EasyDailyQuest64StartedTagDel,EasyDailyQuest65StartedTagDel,EasyDailyQuest66StartedTagDel,EasyDailyQuest67StartedTagDel,EasyDailyQuest68StartedTagDel,EasyDailyQuest69StartedTagDel,EasyDailyQuest70StartedTagDel,EasyDailyQuest71StartedTagDel,EasyDailyQuest72StartedTagDel,EasyDailyQuest73StartedTagDel,EasyDailyQuest74StartedTagDel,EasyDailyQuest75StartedTagDel,EasyDailyQuest76StartedTagDel,EasyDailyQuest77StartedTagDel,EasyDailyQuest78StartedTagDel,EasyDailyQuest79StartedTagDel,EasyDailyQuest80StartedTagDel,EasyDailyQuest81StartedTagDel,EasyDailyQuest82StartedTagDel,EasyDailyQuest83StartedTagDel,EasyDailyQuest84StartedTagDel,EasyDailyQuest85StartedTagDel,EasyDailyQuest86StartedTagDel,EasyDailyQuest87StartedTagDel,EasyDailyQuest88StartedTagDel,EasyDailyQuest89StartedTagDel,EasyDailyQuest90StartedTagDel,EasyDailyQuest91StartedTagDel,EasyDailyQuest92StartedTagDel,EasyDailyQuest93StartedTagDel,EasyDailyQuest94StartedTagDel,EasyDailyQuest95StartedTagDel,EasyDailyQuest96StartedTagDel,EasyDailyQuest97StartedTagDel,MediumDailyQuest1StartedTagDel,MediumDailyQuest2StartedTagDel,MediumDailyQuest3StartedTagDel,MediumDailyQuest4StartedTagDel,MediumDailyQuest5StartedTagDel,MediumDailyQuest6StartedTagDel,MediumDailyQuest7StartedTagDel,MediumDailyQuest8StartedTagDel,MediumDailyQuest9StartedTagDel,MediumDailyQuest10StartedTagDel,MediumDailyQuest11StartedTagDel,MediumDailyQuest12StartedTagDel,MediumDailyQuest13StartedTagDel,MediumDailyQuest14StartedTagDel,MediumDailyQuest15StartedTagDel,MediumDailyQuest16StartedTagDel,MediumDailyQuest17StartedTagDel,MediumDailyQuest18StartedTagDel,MediumDailyQuest19StartedTagDel,MediumDailyQuest20StartedTagDel,MediumDailyQuest21StartedTagDel,MediumDailyQuest22StartedTagDel,MediumDailyQuest23StartedTagDel,MediumDailyQuest24StartedTagDel,MediumDailyQuest25StartedTagDel,MediumDailyQuest26StartedTagDel,MediumDailyQuest27StartedTagDel,MediumDailyQuest28StartedTagDel,MediumDailyQuest29StartedTagDel,MediumDailyQuest30StartedTagDel,MediumDailyQuest31StartedTagDel,MediumDailyQuest32StartedTagDel,MediumDailyQuest33StartedTagDel,MediumDailyQuest34StartedTagDel,MediumDailyQuest35StartedTagDel,MediumDailyQuest36StartedTagDel,MediumDailyQuest37StartedTagDel,MediumDailyQuest38StartedTagDel,MediumDailyQuest39StartedTagDel,MediumDailyQuest40StartedTagDel,MediumDailyQuest41StartedTagDel,MediumDailyQuest42StartedTagDel,HardDailyQuest1StartedTagDel,HardDailyQuest2StartedTagDel,HardDailyQuest3StartedTagDel,HardDailyQuest4StartedTagDel,HardDailyQuest5StartedTagDel,HardDailyQuest6StartedTagDel,HardDailyQuest7StartedTagDel,HardDailyQuest8StartedTagDel,HardDailyQuest9StartedTagDel,HardDailyQuest10StartedTagDel,HardDailyQuest11StartedTagDel,HardDailyQuest12StartedTagDel,HardDailyQuest13StartedTagDel,HardDailyQuest14StartedTagDel,HardDailyQuest15StartedTagDel,HardDailyQuest16StartedTagDel,HardDailyQuest17StartedTagDel,HardDailyQuest18StartedTagDel,HardDailyQuest19StartedTagDel,HardDailyQuest20StartedTagDel,HardDailyQuest21StartedTagDel,HardDailyQuest22StartedTagDel,HardDailyQuest23StartedTagDel,HardDailyQuest24StartedTagDel,HardDailyQuest25StartedTagDel,HardDailyQuest26StartedTagDel,HardDailyQuest27StartedTagDel,HardDailyQuest28StartedTagDel,HardDailyQuest29StartedTagDel,HardDailyQuest30StartedTagDel,HardDailyQuest31StartedTagDel,HardDailyQuest32StartedTagDel,HardDailyQuest33StartedTagDel,HardDailyQuest34StartedTagDel,HardDailyQuest35StartedTagDel,HardDailyQuest36StartedTagDel,HardDailyQuest37StartedTagDel,HardDailyQuest38StartedTagDel, HardDailyQuest39StartedTagDel,HardDailyQuest40StartedTagDel"
+
+  
+  
+# Easy Daily Quest List
+  EasyDailyQuest1: "folder EasyDailyQuestNotify1,EasyDailyQuest1StartedTagAdd"
+  EasyDailyQuestNotify1: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Dębowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:oak_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest1TakeItem: "take OAK_LOG:64"
+  EasyDailyQuest1StartedTagAdd: "tag add DailyQuestStartedEasy1"
+  EasyDailyQuest1StartedTagDel: "tag del DailyQuestStartedEasy1"
+  
+  EasyDailyQuest2: "folder EasyDailyQuest2StartedTagAdd,EasyDailyQuestNotify2"
+  EasyDailyQuestNotify2: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Świerkowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:spruce_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest2TakeItem: "take SPRUCE_LOG:64"
+  EasyDailyQuest2StartedTagAdd: "tag add DailyQuestStartedEasy2"
+  EasyDailyQuest2StartedTagDel: "tag del DailyQuestStartedEasy2"
+
+  EasyDailyQuest3: "folder EasyDailyQuestNotify3,EasyDailyQuest3StartedTagAdd"
+  EasyDailyQuestNotify3: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Brzozowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:birch_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest3TakeItem: "take BIRCH_LOG:64"
+  EasyDailyQuest3StartedTagAdd: "tag add DailyQuestStartedEasy3"
+  EasyDailyQuest3StartedTagDel: "tag del DailyQuestStartedEasy3"
+
+  EasyDailyQuest4: "folder EasyDailyQuestNotify4,EasyDailyQuest4StartedTagAdd"
+  EasyDailyQuestNotify4: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Tropikalny pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:jungle_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest4TakeItem: "take JUNGLE_LOG:64"
+  EasyDailyQuest4StartedTagAdd: "tag add DailyQuestStartedEasy4"
+  EasyDailyQuest4StartedTagDel: "tag del DailyQuestStartedEasy4"
+
+  EasyDailyQuest5: "folder EasyDailyQuestNotify5,EasyDailyQuest5StartedTagAdd"
+  EasyDailyQuestNotify5: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Akacjowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:acacia_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest5TakeItem: "take ACACIA_LOG:64"
+  EasyDailyQuest5StartedTagAdd: "tag add DailyQuestStartedEasy5"
+  EasyDailyQuest5StartedTagDel: "tag del DailyQuestStartedEasy5"
+
+  EasyDailyQuest6: "folder EasyDailyQuestNotify6,EasyDailyQuest6StartedTagAdd"
+  EasyDailyQuestNotify6: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Ciemnodębowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dark_oak_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest6TakeItem: "take DARK_OAK_LOG:64"
+  EasyDailyQuest6StartedTagAdd: "tag add DailyQuestStartedEasy6"
+  EasyDailyQuest6StartedTagDel: "tag del DailyQuestStartedEasy6"
+
+  EasyDailyQuest7: "folder EasyDailyQuestNotify7,EasyDailyQuest7StartedTagAdd"
+  EasyDailyQuestNotify7: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Wiśniowy pień","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cherry_log"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest7TakeItem: "take CHERRY_LOG:64"
+  EasyDailyQuest7StartedTagAdd: "tag add DailyQuestStartedEasy7"
+  EasyDailyQuest7StartedTagDel: "tag del DailyQuestStartedEasy7"
+
+  EasyDailyQuest8: "folder EasyDailyQuestNotify8,EasyDailyQuest8StartedTagAdd"
+  EasyDailyQuestNotify8: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Bruk","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobblestone"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest8TakeItem: "take COBBLESTONE:320" 
+  EasyDailyQuest8StartedTagAdd: "tag add DailyQuestStartedEasy8"
+  EasyDailyQuest8StartedTagDel: "tag del DailyQuestStartedEasy8"
+
+  EasyDailyQuest9: "folder EasyDailyQuestNotify9,EasyDailyQuest9StartedTagAdd"
+  EasyDailyQuestNotify9: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Mlecz","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dandelion"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest9TakeItem: "take DANDELION:32"
+  EasyDailyQuest9StartedTagAdd: "tag add DailyQuestStartedEasy9"
+  EasyDailyQuest9StartedTagDel: "tag del DailyQuestStartedEasy9"
+
+  EasyDailyQuest10: "folder EasyDailyQuestNotify10,EasyDailyQuest10StartedTagAdd"
+  EasyDailyQuestNotify10: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Mak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:poppy"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest10TakeItem: "take POPPY:32"
+  EasyDailyQuest10StartedTagAdd: "tag add DailyQuestStartedEasy10"
+  EasyDailyQuest10StartedTagDel: "tag del DailyQuestStartedEasy10"
+
+  EasyDailyQuest11: "folder EasyDailyQuestNotify11,EasyDailyQuest11StartedTagAdd"
+  EasyDailyQuestNotify11: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Czerwony tulipan","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:red_tulip"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest11TakeItem: "take RED_TULIP:16"
+  EasyDailyQuest11StartedTagAdd: "tag add DailyQuestStartedEasy11"
+  EasyDailyQuest11StartedTagDel: "tag del DailyQuestStartedEasy11"
+  
+  EasyDailyQuest12: "folder EasyDailyQuestNotify12,EasyDailyQuest12StartedTagAdd"
+  EasyDailyQuestNotify12: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Pomarańczowy tulipan","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:orange_tulip"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest12TakeItem: "take ORANGE_TULIP:16"
+  EasyDailyQuest12StartedTagAdd: "tag add DailyQuestStartedEasy12"
+  EasyDailyQuest12StartedTagDel: "tag del DailyQuestStartedEasy12"
+
+  EasyDailyQuest13: "folder EasyDailyQuestNotify13,EasyDailyQuest13StartedTagAdd"
+  EasyDailyQuestNotify13: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Biały tulipan","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:white_tulip"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest13TakeItem: "take WHITE_TULIP:16"
+  EasyDailyQuest13StartedTagAdd: "tag add DailyQuestStartedEasy13"
+  EasyDailyQuest13StartedTagDel: "tag del DailyQuestStartedEasy13"
+
+  EasyDailyQuest14: "folder EasyDailyQuestNotify14,EasyDailyQuest14StartedTagAdd"
+  EasyDailyQuestNotify14: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Różowy tulipan","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pink_tulip"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest14TakeItem: "take PINK_TULIP:16"
+  EasyDailyQuest14StartedTagAdd: "tag add DailyQuestStartedEasy14"
+  EasyDailyQuest14StartedTagDel: "tag del DailyQuestStartedEasy14"
+
+  EasyDailyQuest15: "folder EasyDailyQuestNotify15,EasyDailyQuest15StartedTagAdd"
+  EasyDailyQuestNotify15: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Bez","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:lilac"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest15TakeItem: "take LILAC:16"
+  EasyDailyQuest15StartedTagAdd: "tag add DailyQuestStartedEasy15"
+  EasyDailyQuest15StartedTagDel: "tag del DailyQuestStartedEasy15"
+
+  EasyDailyQuest16: "folder EasyDailyQuestNotify16,EasyDailyQuest16StartedTagAdd"
+  EasyDailyQuestNotify16: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Krzew róży","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:rose_bush"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest16TakeItem: "take ROSE_BUSH:16"
+  EasyDailyQuest16StartedTagAdd: "tag add DailyQuestStartedEasy16"
+  EasyDailyQuest16StartedTagDel: "tag del DailyQuestStartedEasy16"
+
+  EasyDailyQuest17: "folder EasyDailyQuestNotify17,EasyDailyQuest17StartedTagAdd"
+  EasyDailyQuestNotify17: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Słonecznik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sunflower"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest17TakeItem: "take SUNFLOWER:16"
+  EasyDailyQuest17StartedTagAdd: "tag add DailyQuestStartedEasy17"
+  EasyDailyQuest17StartedTagDel: "tag del DailyQuestStartedEasy17"
+
+  EasyDailyQuest18: "folder EasyDailyQuestNotify18,EasyDailyQuest18StartedTagAdd"
+  EasyDailyQuestNotify18: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Piasek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sand"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest18TakeItem: "take SAND:320"
+  EasyDailyQuest18StartedTagAdd: "tag add DailyQuestStartedEasy18"
+  EasyDailyQuest18StartedTagDel: "tag del DailyQuestStartedEasy18"
+
+  EasyDailyQuest19: "folder EasyDailyQuestNotify19,EasyDailyQuest19StartedTagAdd"
+  EasyDailyQuestNotify19: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Żwir","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:gravel"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest19TakeItem: "take GRAVEL:32"
+  EasyDailyQuest19StartedTagAdd: "tag add DailyQuestStartedEasy19"
+  EasyDailyQuest19StartedTagDel: "tag del DailyQuestStartedEasy19"
+
+  EasyDailyQuest20: "folder EasyDailyQuestNotify20,EasyDailyQuest20StartedTagAdd"
+  EasyDailyQuestNotify20: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Węgiel","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:coal"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest20TakeItem: "take COAL:64"
+  EasyDailyQuest20StartedTagAdd: "tag add DailyQuestStartedEasy20"
+  EasyDailyQuest20StartedTagDel: "tag del DailyQuestStartedEasy20"
+
+  EasyDailyQuest21: "folder EasyDailyQuestNotify21,EasyDailyQuest21StartedTagAdd"
+  EasyDailyQuestNotify21: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Ruda żelaza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:raw_iron"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest21TakeItem: "take RAW_IRON:16"
+  EasyDailyQuest21StartedTagAdd: "tag add DailyQuestStartedEasy21"
+  EasyDailyQuest21StartedTagDel: "tag del DailyQuestStartedEasy21"
+
+  EasyDailyQuest22: "folder EasyDailyQuestNotify22,EasyDailyQuest22StartedTagAdd"
+  EasyDailyQuestNotify22: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Węgiel drzewny","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:charcoal"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest22TakeItem: "take CHARCOAL:32"
+  EasyDailyQuest22StartedTagAdd: "tag add DailyQuestStartedEasy22"
+  EasyDailyQuest22StartedTagDel: "tag del DailyQuestStartedEasy22"
+
+  EasyDailyQuest23: "folder EasyDailyQuestNotify23,EasyDailyQuest23StartedTagAdd"
+  EasyDailyQuestNotify23: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 8x Torbiel z atramentem","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:ink_sac"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest23TakeItem: "take INK_SAC:8"
+  EasyDailyQuest23StartedTagAdd: "tag add DailyQuestStartedEasy23"
+  EasyDailyQuest23StartedTagDel: "tag del DailyQuestStartedEasy23"
+
+  EasyDailyQuest24: "folder EasyDailyQuestNotify24,EasyDailyQuest24StartedTagAdd"
+  EasyDailyQuestNotify24: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Trzcina cukrowa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sugar_cane"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest24TakeItem: "take SUGAR_CANE:16"
+  EasyDailyQuest24StartedTagAdd: "tag add DailyQuestStartedEasy24"
+  EasyDailyQuest24StartedTagDel: "tag del DailyQuestStartedEasy24"
+
+  EasyDailyQuest25: "folder EasyDailyQuestNotify25,EasyDailyQuest25StartedTagAdd"
+  EasyDailyQuestNotify25: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Sproszkowany redstone","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:redstone"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest25TakeItem: "take REDSTONE:32"
+  EasyDailyQuest25StartedTagAdd: "tag add DailyQuestStartedEasy25"
+  EasyDailyQuest25StartedTagDel: "tag del DailyQuestStartedEasy25"
+
+  EasyDailyQuest26: "folder EasyDailyQuestNotify26,EasyDailyQuest26StartedTagAdd"
+  EasyDailyQuestNotify26: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Ziemia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dirt"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest26TakeItem: "take DIRT:320"
+  EasyDailyQuest26StartedTagAdd: "tag add DailyQuestStartedEasy26"
+  EasyDailyQuest26StartedTagDel: "tag del DailyQuestStartedEasy26"
+
+  EasyDailyQuest27: "folder EasyDailyQuestNotify27,EasyDailyQuest27StartedTagAdd"
+  EasyDailyQuestNotify27: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Kulka gliny","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:clay_ball"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest27TakeItem: "take CLAY_BALL:32"
+  EasyDailyQuest27StartedTagAdd: "tag add DailyQuestStartedEasy27"
+  EasyDailyQuest27StartedTagDel: "tag del DailyQuestStartedEasy27"
+
+  EasyDailyQuest28: "folder EasyDailyQuestNotify28,EasyDailyQuest28StartedTagAdd"
+  EasyDailyQuestNotify28: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Ziemniak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:potato"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest28TakeItem: "take POTATO:16"
+  EasyDailyQuest28StartedTagAdd: "tag add DailyQuestStartedEasy28"
+  EasyDailyQuest28StartedTagDel: "tag del DailyQuestStartedEasy28"
+
+  EasyDailyQuest29: "folder EasyDailyQuestNotify29,EasyDailyQuest29StartedTagAdd"
+  EasyDailyQuestNotify29: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Marchewka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:carrot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest29TakeItem: "take CARROT:16"
+  EasyDailyQuest29StartedTagAdd: "tag add DailyQuestStartedEasy29"
+  EasyDailyQuest29StartedTagDel: "tag del DailyQuestStartedEasy29"
+
+  EasyDailyQuest30: "folder EasyDailyQuestNotify30,EasyDailyQuest30StartedTagAdd"
+  EasyDailyQuestNotify30: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Burak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:beetroot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest30TakeItem: "take BEETROOT:16"
+  EasyDailyQuest30StartedTagAdd: "tag add DailyQuestStartedEasy30"
+  EasyDailyQuest30StartedTagDel: "tag del DailyQuestStartedEasy30"
+
+  EasyDailyQuest31: "folder EasyDailyQuestNotify31,EasyDailyQuest31StartedTagAdd"
+  EasyDailyQuestNotify31: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Ruda miedzi","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:raw_copper"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest31TakeItem: "take RAW_COPPER:64"
+  EasyDailyQuest31StartedTagAdd: "tag add DailyQuestStartedEasy31"
+  EasyDailyQuest31StartedTagDel: "tag del DailyQuestStartedEasy31"
+
+  EasyDailyQuest32: "folder EasyDailyQuestNotify32,EasyDailyQuest32StartedTagAdd"
+  EasyDailyQuestNotify32: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Skóra","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:leather"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest32TakeItem: "take LEATHER:16"
+  EasyDailyQuest32StartedTagAdd: "tag add DailyQuestStartedEasy32"
+  EasyDailyQuest32StartedTagDel: "tag del DailyQuestStartedEasy32"
+  
+  EasyDailyQuest33: "folder EasyDailyQuestNotify33,EasyDailyQuest33StartedTagAdd"
+  EasyDailyQuestNotify33: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Surowa wołowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:beef"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest33TakeItem: "take BEEF:16"
+  EasyDailyQuest33StartedTagAdd: "tag add DailyQuestStartedEasy33"
+  EasyDailyQuest33StartedTagDel: "tag del DailyQuestStartedEasy33"
+
+  EasyDailyQuest34: "folder EasyDailyQuestNotify34,EasyDailyQuest34StartedTagAdd"
+  EasyDailyQuestNotify34: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Surowy kurczak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:chicken"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest34TakeItem: "take CHICKEN:16"
+  EasyDailyQuest34StartedTagAdd: "tag add DailyQuestStartedEasy34"
+  EasyDailyQuest34StartedTagDel: "tag del DailyQuestStartedEasy34"
+
+  EasyDailyQuest35: "folder EasyDailyQuestNotify35,EasyDailyQuest35StartedTagAdd"
+  EasyDailyQuestNotify35: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Surowa wieprzowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:porkchop"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest35TakeItem: "take PORKCHOP:16"
+  EasyDailyQuest35StartedTagAdd: "tag add DailyQuestStartedEasy35"
+  EasyDailyQuest35StartedTagDel: "tag del DailyQuestStartedEasy35"
+
+  EasyDailyQuest36: "folder EasyDailyQuestNotify36,EasyDailyQuest36StartedTagAdd"
+  EasyDailyQuestNotify36: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Surowa baranina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:mutton"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest36TakeItem: "take MUTTON:16"
+  EasyDailyQuest36StartedTagAdd: "tag add DailyQuestStartedEasy36"
+  EasyDailyQuest36StartedTagDel: "tag del DailyQuestStartedEasy36"
+
+  EasyDailyQuest37: "folder EasyDailyQuestNotify37,EasyDailyQuest37StartedTagAdd"
+  EasyDailyQuestNotify37: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Nasiona pszenicy","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:wheat_seeds"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest37TakeItem: "take WHEAT_SEEDS:64"
+  EasyDailyQuest37StartedTagAdd: "tag add DailyQuestStartedEasy37"
+  EasyDailyQuest37StartedTagDel: "tag del DailyQuestStartedEasy37"
+
+  EasyDailyQuest38: "folder EasyDailyQuestNotify38,EasyDailyQuest39StartedTagAdd"
+  EasyDailyQuestNotify38: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Nasiona buraka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:beetroot_seeds"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest38TakeItem: "take BEETROOT_SEEDS:16"
+  EasyDailyQuest38StartedTagAdd: "tag add DailyQuestStartedEasy38"
+  EasyDailyQuest38StartedTagDel: "tag del DailyQuestStartedEasy38"
+
+  EasyDailyQuest39: "folder EasyDailyQuestNotify39,EasyDailyQuest39StartedTagAdd"
+  EasyDailyQuestNotify39: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Pszenica","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:wheat"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest39TakeItem: "take WHEAT:32"
+  EasyDailyQuest39StartedTagAdd: "tag add DailyQuestStartedEasy39"
+  EasyDailyQuest39StartedTagDel: "tag del DailyQuestStartedEasy39"
+
+  EasyDailyQuest40: "folder EasyDailyQuestNotify40,EasyDailyQuest40StartedTagAdd"
+  EasyDailyQuestNotify40: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 1x Ciato","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cake"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest40TakeItem: "take CAKE:1"
+  EasyDailyQuest40StartedTagAdd: "tag add DailyQuestStartedEasy40"
+  EasyDailyQuest40StartedTagDel: "tag del DailyQuestStartedEasy40"
+  
+  EasyDailyQuest41: "folder EasyDailyQuestNotify41,EasyDailyQuest41StartedTagAdd"
+  EasyDailyQuestNotify41: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Tuf","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:tuff"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest41TakeItem: "take TUFF:64"
+  EasyDailyQuest41StartedTagAdd: "tag add DailyQuestStartedEasy41"
+  EasyDailyQuest41StartedTagDel: "tag del DailyQuestStartedEasy41"
+
+  EasyDailyQuest42: "folder EasyDailyQuestNotify42,EasyDailyQuest42StartedTagAdd"
+  EasyDailyQuestNotify42: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Cegła","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:brick"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest42TakeItem: "take BRICK:32"
+  EasyDailyQuest42StartedTagAdd: "tag add DailyQuestStartedEasy42"
+  EasyDailyQuest42StartedTagDel: "tag del DailyQuestStartedEasy42"
+
+  EasyDailyQuest43: "folder EasyDailyQuestRun43,EasyDailyQuestNotify43,EasyDailyQuest43StartedTagAdd"
+  EasyDailyQuestRun43: "run ^objective start EasyDailyQuest43"
+  EasyDailyQuestNotify43: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Chleb","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:bread"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove43: "run ^objective delete EasyDailyQuest43"
+  EasyDailyQuest43StartedTagAdd: "tag add DailyQuestStartedEasy43"
+  EasyDailyQuest43StartedTagDel: "tag del DailyQuestStartedEasy43"
+
+  EasyDailyQuest44: "folder EasyDailyQuestRun44,EasyDailyQuestNotify44,EasyDailyQuest44StartedTagAdd"
+  EasyDailyQuestRun44: "run ^objective start EasyDailyQuest44"
+  EasyDailyQuestNotify44: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Pieczony kurczak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_chicken"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove44: "run ^objective delete EasyDailyQuest44"
+  EasyDailyQuest44StartedTagAdd: "tag add DailyQuestStartedEasy44"
+  EasyDailyQuest44StartedTagDel: "tag del DailyQuestStartedEasy44"
+
+  EasyDailyQuest45: "folder EasyDailyQuestRun45,EasyDailyQuestNotify45,EasyDailyQuest45StartedTagAdd"
+  EasyDailyQuestRun45: "run ^objective start EasyDailyQuest45"
+  EasyDailyQuestNotify45: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Pieczona wołowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_beef"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove45: "run ^objective delete EasyDailyQuest45"
+  EasyDailyQuest45StartedTagAdd: "tag add DailyQuestStartedEasy45"
+  EasyDailyQuest45StartedTagDel: "tag del DailyQuestStartedEasy45"
+
+  EasyDailyQuest46: "folder EasyDailyQuestRun46,EasyDailyQuestNotify46,EasyDailyQuest46StartedTagAdd"
+  EasyDailyQuestRun46: "run ^objective start EasyDailyQuest46"
+  EasyDailyQuestNotify46: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Pieczony ziemniak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:baked_potato"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove46: "run ^objective delete EasyDailyQuest46"
+  EasyDailyQuest46StartedTagAdd: "tag add DailyQuestStartedEasy46"
+  EasyDailyQuest46StartedTagDel: "tag del DailyQuestStartedEasy46"
+
+  EasyDailyQuest47: "folder EasyDailyQuestRun47,EasyDailyQuestNotify47,EasyDailyQuest47StartedTagAdd"
+  EasyDailyQuestRun47: "run ^objective start EasyDailyQuest47"
+  EasyDailyQuestNotify47: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Marchewka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:carrot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove47: "run ^objective delete EasyDailyQuest47"
+  EasyDailyQuest47StartedTagAdd: "tag add DailyQuestStartedEasy47"
+  EasyDailyQuest47StartedTagDel: "tag del DailyQuestStartedEasy47"
+
+  EasyDailyQuest48: "folder EasyDailyQuestRun48,EasyDailyQuestNotify48,EasyDailyQuest48StartedTagAdd"
+  EasyDailyQuestRun48: "run ^objective start EasyDailyQuest48"
+  EasyDailyQuestNotify48: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Pieczona wiepszowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_porkchop"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove48: "run ^objective delete EasyDailyQuest48"
+  EasyDailyQuest48StartedTagAdd: "tag add DailyQuestStartedEasy48"
+  EasyDailyQuest48StartedTagDel: "tag del DailyQuestStartedEasy48"
+
+  EasyDailyQuest49: "folder EasyDailyQuestRun49,EasyDailyQuestNotify49,EasyDailyQuest49StartedTagAdd"
+  EasyDailyQuestRun49: "run ^objective start EasyDailyQuest49"
+  EasyDailyQuestNotify49: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Ciastko","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cookie"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove49: "run ^objective delete EasyDailyQuest49"
+  EasyDailyQuest49StartedTagAdd: "tag add DailyQuestStartedEasy49"
+  EasyDailyQuest49StartedTagDel: "tag del DailyQuestStartedEasy49"
+  
+  EasyDailyQuest50: "folder EasyDailyQuestRun50,EasyDailyQuestNotify50,EasyDailyQuest50StartedTagAdd"
+  EasyDailyQuestRun50: "run ^objective start EasyDailyQuest50"
+  EasyDailyQuestNotify50: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Ostrzysz:","color":"#3CB371"},{"text":" 16x Owca","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sheep"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove50: "run ^objective delete EasyDailyQuest50"
+  EasyDailyQuest50StartedTagAdd: "tag add DailyQuestStartedEasy50"
+  EasyDailyQuest50StartedTagDel: "tag del DailyQuestStartedEasy50"
+
+  EasyDailyQuest51: "folder EasyDailyQuestRun51,EasyDailyQuestNotify51,EasyDailyQuest51StartedTagAdd"
+  EasyDailyQuestRun51: "run ^objective start EasyDailyQuest51"
+  EasyDailyQuestNotify51: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 32x Sztabka żelaza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_ingot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove51: "run ^objective delete EasyDailyQuest51"
+  EasyDailyQuest51StartedTagAdd: "tag add DailyQuestStartedEasy51"
+  EasyDailyQuest51StartedTagDel: "tag del DailyQuestStartedEasy51"
+
+  EasyDailyQuest52: "folder EasyDailyQuestRun52,EasyDailyQuestNotify52,EasyDailyQuest52StartedTagAdd"
+  EasyDailyQuestRun52: "run ^objective start EasyDailyQuest52"
+  EasyDailyQuestNotify52: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 32x Sztabka złota","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:gold_ingot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove52: "run ^objective delete EasyDailyQuest52"
+  EasyDailyQuest52StartedTagAdd: "tag add DailyQuestStartedEasy52"
+  EasyDailyQuest52StartedTagDel: "tag del DailyQuestStartedEasy52"
+
+  EasyDailyQuest53: "folder EasyDailyQuestRun53,EasyDailyQuestNotify53,EasyDailyQuest53StartedTagAdd"
+  EasyDailyQuestRun53: "run ^objective start EasyDailyQuest53"
+  EasyDailyQuestNotify53: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 16x Pieczona baranina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_mutton"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove53: "run ^objective delete EasyDailyQuest53"
+  EasyDailyQuest53StartedTagAdd: "tag add DailyQuestStartedEasy53"
+  EasyDailyQuest53StartedTagDel: "tag del DailyQuestStartedEasy53"
+
+  EasyDailyQuest54: "folder EasyDailyQuestRun54,EasyDailyQuestNotify54,EasyDailyQuest54StartedTagAdd"
+  EasyDailyQuestRun54: "run ^objective start EasyDailyQuest54"
+  EasyDailyQuestNotify54: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 16x Pieczona wołowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_beef"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove54: "run ^objective delete EasyDailyQuest54"
+  EasyDailyQuest54StartedTagAdd: "tag add DailyQuestStartedEasy54"
+  EasyDailyQuest54StartedTagDel: "tag del DailyQuestStartedEasy54"
+
+  EasyDailyQuest55: "folder EasyDailyQuestRun55,EasyDailyQuestNotify55,EasyDailyQuest55StartedTagAdd"
+  EasyDailyQuestRun55: "run ^objective start EasyDailyQuest55"
+  EasyDailyQuestNotify55: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 16x Pieczona wieprzowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_porkchop"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove55: "run ^objective delete EasyDailyQuest55"
+  EasyDailyQuest55StartedTagAdd: "tag add DailyQuestStartedEasy55"
+  EasyDailyQuest55StartedTagDel: "tag del DailyQuestStartedEasy55"
+
+  EasyDailyQuest56: "folder EasyDailyQuestRun56,EasyDailyQuestNotify56,EasyDailyQuest56StartedTagAdd"
+  EasyDailyQuestRun56: "run ^objective start EasyDailyQuest56"
+  EasyDailyQuestNotify56: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Sztabka miedzi","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:copper_ingot"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove56: "run ^objective delete EasyDailyQuest56"
+  EasyDailyQuest56StartedTagAdd: "tag add DailyQuestStartedEasy56"
+  EasyDailyQuest56StartedTagDel: "tag del DailyQuestStartedEasy56"
+
+  EasyDailyQuest57: "folder EasyDailyQuestRun57,EasyDailyQuestNotify57,EasyDailyQuest57StartedTagAdd"
+  EasyDailyQuestRun57: "run ^objective start EasyDailyQuest57"
+  EasyDailyQuestNotify57: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 16x Węgiel drzewny","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:charcoal"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove57: "run ^objective delete EasyDailyQuest57"
+  EasyDailyQuest57StartedTagAdd: "tag add DailyQuestStartedEasy57"
+  EasyDailyQuest57StartedTagDel: "tag del DailyQuestStartedEasy57"
+
+  EasyDailyQuest58: "folder EasyDailyQuestRun58,EasyDailyQuestNotify58,EasyDailyQuest58StartedTagAdd"
+  EasyDailyQuestRun58: "run ^objective start EasyDailyQuest58"
+  EasyDailyQuestNotify58: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 16x Pieczony kurczak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_chicken"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove58: "run ^objective delete EasyDailyQuest58"
+  EasyDailyQuest58StartedTagAdd: "tag add DailyQuestStartedEasy58"
+  EasyDailyQuest58StartedTagDel: "tag del DailyQuestStartedEasy58"
+
+  EasyDailyQuest59: "folder EasyDailyQuestRun59,EasyDailyQuestNotify59,EasyDailyQuest59StartedTagAdd"
+  EasyDailyQuestRun59: "run ^objective start EasyDailyQuest59"
+  EasyDailyQuestNotify59: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 64x Lód","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:ice"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove59: "run ^objective delete EasyDailyQuest59"
+  EasyDailyQuest59StartedTagAdd: "tag add DailyQuestStartedEasy59"
+  EasyDailyQuest59StartedTagDel: "tag del DailyQuestStartedEasy59"
+
+  EasyDailyQuest60: "folder EasyDailyQuestRun60,EasyDailyQuestNotify60,EasyDailyQuest60StartedTagAdd"
+  EasyDailyQuestRun60: "run ^objective start EasyDailyQuest60"
+  EasyDailyQuestNotify60: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 320x Bruk","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobblestone"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove60: "run ^objective delete EasyDailyQuest60"
+  EasyDailyQuest60StartedTagAdd: "tag add DailyQuestStartedEasy60"
+  EasyDailyQuest60StartedTagDel: "tag del DailyQuestStartedEasy60"
+
+  EasyDailyQuest61: "folder EasyDailyQuestRun61,EasyDailyQuestNotify61,EasyDailyQuest61StartedTagAdd"
+  EasyDailyQuestRun61: "run ^objective start EasyDailyQuest61"
+  EasyDailyQuestNotify61: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 16x Owca","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sheep"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove61: "run ^objective delete EasyDailyQuest61"
+  EasyDailyQuest61StartedTagAdd: "tag add DailyQuestStartedEasy61"
+  EasyDailyQuest61StartedTagDel: "tag del DailyQuestStartedEasy61"
+
+  EasyDailyQuest62: "folder EasyDailyQuestRun62,EasyDailyQuestNotify62,EasyDailyQuest62StartedTagAdd"
+  EasyDailyQuestRun62: "run ^objective start EasyDailyQuest62"
+  EasyDailyQuestNotify62: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 16x Krowa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cow"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove62: "run ^objective delete EasyDailyQuest62"
+  EasyDailyQuest62StartedTagAdd: "tag add DailyQuestStartedEasy62"
+  EasyDailyQuest62StartedTagDel: "tag del DailyQuestStartedEasy62"
+
+  EasyDailyQuest63: "folder EasyDailyQuestRun63,EasyDailyQuestNotify63,EasyDailyQuest63StartedTagAdd"
+  EasyDailyQuestRun63: "run ^objective start EasyDailyQuest63"
+  EasyDailyQuestNotify63: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 16x Świnia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pig"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove63: "run ^objective delete EasyDailyQuest63"
+  EasyDailyQuest63StartedTagAdd: "tag add DailyQuestStartedEasy63"
+  EasyDailyQuest63StartedTagDel: "tag del DailyQuestStartedEasy63"
+
+  EasyDailyQuest64: "folder EasyDailyQuestRun64,EasyDailyQuestNotify64,EasyDailyQuest64StartedTagAdd"
+  EasyDailyQuestRun64: "run ^objective start EasyDailyQuest64"
+  EasyDailyQuestNotify64: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 16x Kura","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:chicken"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove64: "run ^objective delete EasyDailyQuest64"
+  EasyDailyQuest64StartedTagAdd: "tag add DailyQuestStartedEasy64"
+  EasyDailyQuest64StartedTagDel: "tag del DailyQuestStartedEasy64"
+  
+  EasyDailyQuest65: "folder EasyDailyQuestRun65,EasyDailyQuestNotify65,EasyDailyQuest65StartedTagAdd"
+  EasyDailyQuestRun65: "run ^objective start EasyDailyQuest65"
+  EasyDailyQuestNotify65: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Żelazny miecz","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_sword"}},{"text":",","color":"#3CB371"},{"text":" 1x Żelazny kilof","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_pickaxe"}},{"text":",","color":"#3CB371"},{"text":" 1x Żelazna motyka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_hoe"}},{"text":",","color":"#3CB371"},{"text":" 1x Żelazna siekiera","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_axe"}},{"text":" lub","color":"#3CB371"},{"text":" 1x Żelazna łopata","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_shovel"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove65: "run ^objective delete EasyDailyQuest65"
+  EasyDailyQuest65StartedTagAdd: "tag add DailyQuestStartedEasy65"
+  EasyDailyQuest65StartedTagDel: "tag del DailyQuestStartedEasy65"
+
+  EasyDailyQuest66: "folder EasyDailyQuestRun66,EasyDailyQuestNotify66,EasyDailyQuest66StartedTagAdd"
+  EasyDailyQuestRun66: "run ^objective start EasyDailyQuest66"
+  EasyDailyQuestNotify66: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Żelazny hełm","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_helmet"}},{"text":" lub","color":"#3CB371"},{"text":" 1x Żelazne nogawice","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_leggings"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove66: "run ^objective delete EasyDailyQuest66"
+  EasyDailyQuest66StartedTagAdd: "tag add DailyQuestStartedEasy66"
+  EasyDailyQuest66StartedTagDel: "tag del DailyQuestStartedEasy66"
+
+  EasyDailyQuest67: "folder EasyDailyQuestRun67,EasyDailyQuestNotify67,EasyDailyQuest67StartedTagAdd"
+  EasyDailyQuestRun67: "run ^objective start EasyDailyQuest67"
+  EasyDailyQuestNotify67: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Żelazne buty","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_boots"}},{"text":" lub","color":"#3CB371"},{"text":" 1x Żelazny napierśnik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_chestplate"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove67: "run ^objective delete EasyDailyQuest67"
+  EasyDailyQuest67StartedTagAdd: "tag add DailyQuestStartedEasy67"
+  EasyDailyQuest67StartedTagDel: "tag del DailyQuestStartedEasy67"
+
+  EasyDailyQuest68: "folder EasyDailyQuestRun68,EasyDailyQuestNotify68,EasyDailyQuest68StartedTagAdd"
+  EasyDailyQuestRun68: "run ^objective start EasyDailyQuest68"
+  EasyDailyQuestNotify68: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Pochodnia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:torch"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove68: "run ^objective delete EasyDailyQuest68"
+  EasyDailyQuest68StartedTagAdd: "tag add DailyQuestStartedEasy68"
+  EasyDailyQuest68StartedTagDel: "tag del DailyQuestStartedEasy68"
+
+  EasyDailyQuest69: "folder EasyDailyQuestRun69,EasyDailyQuestNotify69,EasyDailyQuest69StartedTagAdd"
+  EasyDailyQuestRun69: "run ^objective start EasyDailyQuest69"
+  EasyDailyQuestNotify69: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniany przycisk","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_button"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove69: "run ^objective delete EasyDailyQuest69"
+  EasyDailyQuest69StartedTagAdd: "tag add DailyQuestStartedEasy69"
+  EasyDailyQuest69StartedTagDel: "tag del DailyQuestStartedEasy69"
+
+  EasyDailyQuest70: "folder EasyDailyQuestRun70,EasyDailyQuestNotify70,EasyDailyQuest70StartedTagAdd"
+  EasyDailyQuestRun70: "run ^objective start EasyDailyQuest70"
+  EasyDailyQuestNotify70: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniany płot","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_fence"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove70: "run ^objective delete EasyDailyQuest70"
+  EasyDailyQuest70StartedTagAdd: "tag add DailyQuestStartedEasy70"
+  EasyDailyQuest70StartedTagDel: "tag del DailyQuestStartedEasy70"
+
+  EasyDailyQuest71: "folder EasyDailyQuestRun71,EasyDailyQuestNotify71,EasyDailyQuest71StartedTagAdd"
+  EasyDailyQuestRun71: "run ^objective start EasyDailyQuest71"
+  EasyDailyQuestNotify71: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniana furtka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_fence_gate"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove71: "run ^objective delete EasyDailyQuest71"
+  EasyDailyQuest71StartedTagAdd: "tag add DailyQuestStartedEasy71"
+  EasyDailyQuest71StartedTagDel: "tag del DailyQuestStartedEasy71"
+
+  EasyDailyQuest72: "folder EasyDailyQuestRun72,EasyDailyQuestNotify72,EasyDailyQuest72StartedTagAdd"
+  EasyDailyQuestRun72: "run ^objective start EasyDailyQuest72"
+  EasyDailyQuestNotify72: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniane schody","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_stairs"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove72: "run ^objective delete EasyDailyQuest72"
+  EasyDailyQuest72StartedTagAdd: "tag add DailyQuestStartedEasy72"
+  EasyDailyQuest72StartedTagDel: "tag del DailyQuestStartedEasy72"
+
+  EasyDailyQuest73: "folder EasyDailyQuestRun73,EasyDailyQuestNotify73,EasyDailyQuest73StartedTagAdd"
+  EasyDailyQuestRun73: "run ^objective start EasyDailyQuest73"
+  EasyDailyQuestNotify73: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniana płyta","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_slab"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove73: "run ^objective delete EasyDailyQuest73"
+  EasyDailyQuest73StartedTagAdd: "tag add DailyQuestStartedEasy73"
+  EasyDailyQuest73StartedTagDel: "tag del DailyQuestStartedEasy73"
+
+  EasyDailyQuest74: "folder EasyDailyQuestRun74,EasyDailyQuestNotify74,EasyDailyQuest74StartedTagAdd"
+  EasyDailyQuestRun74: "run ^objective start EasyDailyQuest74"
+  EasyDailyQuestNotify74: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniane drzwi","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_door"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove74: "run ^objective delete EasyDailyQuest74"
+  EasyDailyQuest74StartedTagAdd: "tag add DailyQuestStartedEasy74"
+  EasyDailyQuest74StartedTagDel: "tag del DailyQuestStartedEasy74"
+
+  EasyDailyQuest75: "folder EasyDailyQuestRun75,EasyDailyQuestNotify75,EasyDailyQuest75StartedTagAdd"
+  EasyDailyQuestRun75: "run ^objective start EasyDailyQuest75"
+  EasyDailyQuestNotify75: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniana klapa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_trapdoor"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove75: "run ^objective delete EasyDailyQuest75"
+  EasyDailyQuest75StartedTagAdd: "tag add DailyQuestStartedEasy75"
+  EasyDailyQuest75StartedTagDel: "tag del DailyQuestStartedEasy75"
+
+  EasyDailyQuest76: "folder EasyDailyQuestRun76,EasyDailyQuestNotify76,EasyDailyQuest76StartedTagAdd"
+  EasyDailyQuestRun76: "run ^objective start EasyDailyQuest76"
+  EasyDailyQuestNotify76: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniana płyta naciskowa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_pressure_plate"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove76: "run ^objective delete EasyDailyQuest76"
+  EasyDailyQuest76StartedTagAdd: "tag add DailyQuestStartedEasy76"
+  EasyDailyQuest76StartedTagDel: "tag del DailyQuestStartedEasy76"
+
+  EasyDailyQuest77: "folder EasyDailyQuestRun77,EasyDailyQuestNotify77,EasyDailyQuest77StartedTagAdd"
+  EasyDailyQuestRun77: "run ^objective start EasyDailyQuest77"
+  EasyDailyQuestNotify77: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 8x drewniana łódka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_boat"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove77: "run ^objective delete EasyDailyQuest77"
+  EasyDailyQuest77StartedTagAdd: "tag add DailyQuestStartedEasy77"
+  EasyDailyQuest77StartedTagDel: "tag del DailyQuestStartedEasy77"
+
+  EasyDailyQuest78: "folder EasyDailyQuestRun78,EasyDailyQuestNotify78,EasyDailyQuest78StartedTagAdd"
+  EasyDailyQuestRun78: "run ^objective start EasyDailyQuest78"
+  EasyDailyQuestNotify78: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x drewniana tabliczka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:any_wooden_sign"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove78: "run ^objective delete EasyDailyQuest78"
+  EasyDailyQuest78StartedTagAdd: "tag add DailyQuestStartedEasy78"
+  EasyDailyQuest78StartedTagDel: "tag del DailyQuestStartedEasy78"
+
+  EasyDailyQuest79: "folder EasyDailyQuestRun79,EasyDailyQuestNotify79,EasyDailyQuest79StartedTagAdd"
+  EasyDailyQuestRun79: "run ^objective start EasyDailyQuest79"
+  EasyDailyQuestNotify79: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Brukowe schody","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobblestone_stairs"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove79: "run ^objective delete EasyDailyQuest79"
+  EasyDailyQuest79StartedTagAdd: "tag add DailyQuestStartedEasy79"
+  EasyDailyQuest79StartedTagDel: "tag del DailyQuestStartedEasy79"
+
+  EasyDailyQuest80: "folder EasyDailyQuestRun80,EasyDailyQuestNotify80,EasyDailyQuest80StartedTagAdd"
+  EasyDailyQuestRun80: "run ^objective start EasyDailyQuest80"
+  EasyDailyQuestNotify80: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Brukowa płyta","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobblestone_slab"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove80: "run ^objective delete EasyDailyQuest80"
+  EasyDailyQuest80StartedTagAdd: "tag add DailyQuestStartedEasy80"
+  EasyDailyQuest80StartedTagDel: "tag del DailyQuestStartedEasy80"
+
+  EasyDailyQuest81: "folder EasyDailyQuestRun81,EasyDailyQuestNotify81,EasyDailyQuest81StartedTagAdd"
+  EasyDailyQuestRun81: "run ^objective start EasyDailyQuest81"
+  EasyDailyQuestNotify81: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Brukowy murek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobblestone_wall"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove81: "run ^objective delete EasyDailyQuest81"
+  EasyDailyQuest81StartedTagAdd: "tag add DailyQuestStartedEasy81"
+  EasyDailyQuest81StartedTagDel: "tag del DailyQuestStartedEasy81"
+
+  EasyDailyQuest82: "folder EasyDailyQuestRun82,EasyDailyQuestNotify82,EasyDailyQuest82StartedTagAdd"
+  EasyDailyQuestRun82: "run ^objective start EasyDailyQuest82"
+  EasyDailyQuestNotify82: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Łupkowe brukowe schody","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobbled_deepslate_stairs"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove82: "run ^objective delete EasyDailyQuest82"
+  EasyDailyQuest82StartedTagAdd: "tag add DailyQuestStartedEasy82"
+  EasyDailyQuest82StartedTagDel: "tag del DailyQuestStartedEasy82"
+
+  EasyDailyQuest83: "folder EasyDailyQuestRun83,EasyDailyQuestNotify83,EasyDailyQuest83StartedTagAdd"
+  EasyDailyQuestRun83: "run ^objective start EasyDailyQuest83"
+  EasyDailyQuestNotify83: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Łupkowa brukowa płyta","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobbled_deepslate_slab"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove83: "run ^objective delete EasyDailyQuest83"
+  EasyDailyQuest83StartedTagAdd: "tag add DailyQuestStartedEasy83"
+  EasyDailyQuest83StartedTagDel: "tag del DailyQuestStartedEasy83"
+
+  EasyDailyQuest84: "folder EasyDailyQuestRun84,EasyDailyQuestNotify84,EasyDailyQuest84StartedTagAdd"
+  EasyDailyQuestRun84: "run ^objective start EasyDailyQuest84"
+  EasyDailyQuestNotify84: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Łupkowy brukowy murek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobbled_deepslate_wall"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove84: "run ^objective delete EasyDailyQuest84"
+  EasyDailyQuest84StartedTagAdd: "tag add DailyQuestStartedEasy84"
+  EasyDailyQuest84StartedTagDel: "tag del DailyQuestStartedEasy84"
+
+  EasyDailyQuest85: "folder EasyDailyQuestRun85,EasyDailyQuestNotify85,EasyDailyQuest85StartedTagAdd"
+  EasyDailyQuestRun85: "run ^objective start EasyDailyQuest85"
+  EasyDailyQuestNotify85: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Ceglane schody","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:brick_stairs"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove85: "run ^objective delete EasyDailyQuest85"
+  EasyDailyQuest85StartedTagAdd: "tag add DailyQuestStartedEasy85"
+  EasyDailyQuest85StartedTagDel: "tag del DailyQuestStartedEasy85"
+
+  EasyDailyQuest86: "folder EasyDailyQuestRun86,EasyDailyQuestNotify86,EasyDailyQuest86StartedTagAdd"
+  EasyDailyQuestRun86: "run ^objective start EasyDailyQuest86"
+  EasyDailyQuestNotify86: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Ceglana płyta","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:brick_slab"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove86: "run ^objective delete EasyDailyQuest86"
+  EasyDailyQuest86StartedTagAdd: "tag add DailyQuestStartedEasy86"
+  EasyDailyQuest86StartedTagDel: "tag del DailyQuestStartedEasy86"
+
+  EasyDailyQuest87: "folder EasyDailyQuestRun87,EasyDailyQuestNotify87,EasyDailyQuest87StartedTagAdd"
+  EasyDailyQuestRun87: "run ^objective start EasyDailyQuest87"
+  EasyDailyQuestNotify87: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Ceglany murek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:brick_wall"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove87: "run ^objective delete EasyDailyQuest87"
+  EasyDailyQuest87StartedTagAdd: "tag add DailyQuestStartedEasy87"
+  EasyDailyQuest87StartedTagDel: "tag del DailyQuestStartedEasy87"
+
+  EasyDailyQuest88: "folder EasyDailyQuestRun88,EasyDailyQuestNotify88,EasyDailyQuest88StartedTagAdd"
+  EasyDailyQuestRun88: "run ^objective start EasyDailyQuest88"
+  EasyDailyQuestNotify88: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 8x Dzwon","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:bell"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove88: "run ^objective delete EasyDailyQuest88"
+  EasyDailyQuest88StartedTagAdd: "tag add DailyQuestStartedEasy88"
+  EasyDailyQuest88StartedTagDel: "tag del DailyQuestStartedEasy88"
+
+  EasyDailyQuest89: "folder EasyDailyQuestRun89,EasyDailyQuestNotify89,EasyDailyQuest89StartedTagAdd"
+  EasyDailyQuestRun89: "run ^objective start EasyDailyQuest89"
+  EasyDailyQuestNotify89: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Tłok","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:piston"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove89: "run ^objective delete EasyDailyQuest89"
+  EasyDailyQuest89StartedTagAdd: "tag add DailyQuestStartedEasy89"
+  EasyDailyQuest89StartedTagDel: "tag del DailyQuestStartedEasy89"
+
+  EasyDailyQuest90: "folder EasyDailyQuestRun90,EasyDailyQuestNotify90,EasyDailyQuest90StartedTagAdd"
+  EasyDailyQuestRun90: "run ^objective start EasyDailyQuest90"
+  EasyDailyQuestNotify90: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Stół do zaklinania","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:enchanting_table"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove90: "run ^objective delete EasyDailyQuest90"
+  EasyDailyQuest90StartedTagAdd: "tag add DailyQuestStartedEasy90"
+  EasyDailyQuest90StartedTagDel: "tag del DailyQuestStartedEasy90"
+  
+  EasyDailyQuest91: "folder EasyDailyQuestNotify91,EasyDailyQuest91StartedTagAdd"
+  EasyDailyQuestNotify91: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Śnieżka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:snowball"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuest91TakeItem: "take SNOWBALL:64"
+  EasyDailyQuest91StartedTagAdd: "tag add DailyQuestStartedEasy91"
+  EasyDailyQuest91StartedTagDel: "tag del DailyQuestStartedEasy91"
+
+  EasyDailyQuest92: "folder EasyDailyQuestRun92,EasyDailyQuestNotify92,EasyDailyQuest92StartedTagAdd"
+  EasyDailyQuestRun92: "run ^objective start EasyDailyQuest92"
+  EasyDailyQuestNotify92: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Stół rzemieślniczy","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:crafting_table"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove92: "run ^objective delete EasyDailyQuest92"
+  EasyDailyQuest92StartedTagAdd: "tag add DailyQuestStartedEasy92"
+  EasyDailyQuest92StartedTagDel: "tag del DailyQuestStartedEasy92"
+
+  EasyDailyQuest93: "folder EasyDailyQuestRun93,EasyDailyQuestNotify93,EasyDailyQuest93StartedTagAdd"
+  EasyDailyQuestRun93: "run ^objective start EasyDailyQuest93"
+  EasyDailyQuestNotify93: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x  Skrzynia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:chest"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove93: "run ^objective delete EasyDailyQuest93"
+  EasyDailyQuest93StartedTagAdd: "tag add DailyQuestStartedEasy93"
+  EasyDailyQuest93StartedTagDel: "tag del DailyQuestStartedEasy93"
+
+  EasyDailyQuest94: "folder EasyDailyQuestRun94,EasyDailyQuestNotify94,EasyDailyQuest94StartedTagAdd"
+  EasyDailyQuestRun94: "run ^objective start EasyDailyQuest94"
+  EasyDailyQuestNotify94: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Blok dźwiękowy","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:note_block"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove94: "run ^objective delete EasyDailyQuest94"
+  EasyDailyQuest94StartedTagAdd: "tag add DailyQuestStartedEasy94"
+  EasyDailyQuest94StartedTagDel: "tag del DailyQuestStartedEasy94"
+
+  EasyDailyQuest95: "folder EasyDailyQuestRun95,EasyDailyQuestNotify95,EasyDailyQuest95StartedTagAdd"
+  EasyDailyQuestRun95: "run ^objective start EasyDailyQuest95"
+  EasyDailyQuestNotify95: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Kompostownik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:composter"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove95: "run ^objective delete EasyDailyQuest95"
+  EasyDailyQuest95StartedTagAdd: "tag add DailyQuestStartedEasy95"
+  EasyDailyQuest95StartedTagDel: "tag del DailyQuestStartedEasy95"
+
+  EasyDailyQuest96: "folder EasyDailyQuestRun96,EasyDailyQuestNotify96,EasyDailyQuest96StartedTagAdd"
+  EasyDailyQuestRun96: "run ^objective start EasyDailyQuest96"
+  EasyDailyQuestNotify96: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 256x Niska Trawa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:short_grass"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove96: "run ^objective delete EasyDailyQuest96"
+  EasyDailyQuest96StartedTagAdd: "tag add DailyQuestStartedEasy96"
+  EasyDailyQuest96StartedTagDel: "tag del DailyQuestStartedEasy96"
+
+  EasyDailyQuest97: "folder EasyDailyQuestRun97,EasyDailyQuestNotify97,EasyDailyQuest97StartedTagAdd"
+  EasyDailyQuestRun97: "run ^objective start EasyDailyQuest97"
+  EasyDailyQuestNotify97: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 64x Trawa morska","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:seagrass"}},{"text":"]","color":"gray","bold":true}]'
+  EasyDailyQuestObjRemove97: "run ^objective delete EasyDailyQuest97"
+  EasyDailyQuest97StartedTagAdd: "tag add DailyQuestStartedEasy97"
+  EasyDailyQuest97StartedTagDel: "tag del DailyQuestStartedEasy97"
+  
+  
+# Medium Daily Quest List
+  MediumDailyQuest1: "folder MediumDailyQuestNotify1,MediumDailyQuest1StartedTagAdd"
+  MediumDailyQuestNotify1: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 640x Piasek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sand"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest1TakeItem: "take SAND:640"
+  MediumDailyQuest1StartedTagAdd: "tag add DailyQuestStartedMedium1"
+  MediumDailyQuest1StartedTagDel: "tag del DailyQuestStartedMedium1"
+
+  MediumDailyQuest2: "folder MediumDailyQuestNotify2,MediumDailyQuest2StartedTagAdd"
+  MediumDailyQuestNotify2: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Łupek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:deepslate"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest2TakeItem: "take DEEPSLATE:320"
+  MediumDailyQuest2StartedTagAdd: "tag add DailyQuestStartedMedium2"
+  MediumDailyQuest2StartedTagDel: "tag del DailyQuestStartedMedium2"
+
+  MediumDailyQuest3: "folder MediumDailyQuestNotify3,MediumDailyQuest3StartedTagAdd"
+  MediumDailyQuestNotify3: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Pnącza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:vine"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest3TakeItem: "take VINE:64"
+  MediumDailyQuest3StartedTagAdd: "tag add DailyQuestStartedMedium3"
+  MediumDailyQuest3StartedTagDel: "tag del DailyQuestStartedMedium3"
+
+  MediumDailyQuest4: "folder MediumDailyQuestNotify4,MediumDailyQuest4StartedTagAdd"
+  MediumDailyQuestNotify4: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Ziarna kakaowe","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cocoa_beans"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest4TakeItem: "take COCOA_BEANS:32"
+  MediumDailyQuest4StartedTagAdd: "tag add DailyQuestStartedMedium4"
+  MediumDailyQuest4StartedTagDel: "tag del DailyQuestStartedMedium4"
+
+  MediumDailyQuest5: "folder MediumDailyQuestNotify5,MediumDailyQuest5StartedTagAdd"
+  MediumDailyQuestNotify5: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Kawałek arbuza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:melon_slice"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest5TakeItem: "take MELON_SLICE:64"
+  MediumDailyQuest5StartedTagAdd: "tag add DailyQuestStartedMedium5"
+  MediumDailyQuest5StartedTagDel: "tag del DailyQuestStartedMedium5"
+
+  MediumDailyQuest6: "folder MediumDailyQuestNotify6,MediumDailyQuest6StartedTagAdd"
+  MediumDailyQuestNotify6: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Dynia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pumpkin"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest6TakeItem: "take PUMPKIN:16"
+  MediumDailyQuest6StartedTagAdd: "tag add DailyQuestStartedMedium6"
+  MediumDailyQuest6StartedTagDel: "tag del DailyQuestStartedMedium6"
+
+  MediumDailyQuest7: "folder MediumDailyQuestNotify7,MediumDailyQuest7StartedTagAdd"
+  MediumDailyQuestNotify7: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Ziemniak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:potato"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest7TakeItem: "take POTATO:64"
+  MediumDailyQuest7StartedTagAdd: "tag add DailyQuestStartedMedium7"
+  MediumDailyQuest7StartedTagDel: "tag del DailyQuestStartedMedium7"
+
+  MediumDailyQuest8: "folder MediumDailyQuestNotify8,MediumDailyQuest8StartedTagAdd"
+  MediumDailyQuestNotify8: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Marchewka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:carrot"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest8TakeItem: "take CARROT:64"
+  MediumDailyQuest8StartedTagAdd: "tag add DailyQuestStartedMedium8"
+  MediumDailyQuest8StartedTagDel: "tag del DailyQuestStartedMedium8"
+
+  MediumDailyQuest9: "folder MediumDailyQuestNotify9,MediumDailyQuest9StartedTagAdd"
+  MediumDailyQuestNotify9: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 8x Surowy królik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:rabbit"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest9TakeItem: "take RABBIT:8"
+  MediumDailyQuest9StartedTagAdd: "tag add DailyQuestStartedMedium9"
+  MediumDailyQuest9StartedTagDel: "tag del DailyQuestStartedMedium9"
+
+  MediumDailyQuest10: "folder MediumDailyQuestNotify10,MediumDailyQuest10StartedTagAdd"
+  MediumDailyQuestNotify10: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Słodkie jagody","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sweet_berries"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest10TakeItem: "take SWEET_BERRIES:64"
+  MediumDailyQuest10StartedTagAdd: "tag add DailyQuestStartedMedium10"
+  MediumDailyQuest10StartedTagDel: "tag del DailyQuestStartedMedium10"
+
+  MediumDailyQuest11: "folder MediumDailyQuestNotify11,MediumDailyQuest11StartedTagAdd"
+  MediumDailyQuestNotify11: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Jabłko","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:apple"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest11TakeItem: "take APPLE:16"
+  MediumDailyQuest11StartedTagAdd: "tag add DailyQuestStartedMedium11"
+  MediumDailyQuest11StartedTagDel: "tag del DailyQuestStartedMedium11"
+
+  MediumDailyQuest12: "folder MediumDailyQuestNotify12,MediumDailyQuest12StartedTagAdd"
+  MediumDailyQuestNotify12: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Nasiona dyni","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pumpkin_seeds"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest12TakeItem: "take PUMPKIN_SEEDS:16"
+  MediumDailyQuest12StartedTagAdd: "tag add DailyQuestStartedMedium12"
+  MediumDailyQuest12StartedTagDel: "tag del DailyQuestStartedMedium12"
+
+  MediumDailyQuest13: "folder MediumDailyQuestNotify13,MediumDailyQuest13StartedTagAdd"
+  MediumDailyQuestNotify13: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Nasiona arbuza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:melon_seeds"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest13TakeItem: "take MELON_SEEDS:64"
+  MediumDailyQuest13StartedTagAdd: "tag add DailyQuestStartedMedium13"
+  MediumDailyQuest13StartedTagDel: "tag del DailyQuestStartedMedium13"
+
+  MediumDailyQuest14: "folder MediumDailyQuestNotify14,MediumDailyQuest14StartedTagAdd"
+  MediumDailyQuestNotify14: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Chleb","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:bread"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest14TakeItem: "take BREAD:64"
+  MediumDailyQuest14StartedTagAdd: "tag add DailyQuestStartedMedium14"
+  MediumDailyQuest14StartedTagDel: "tag del DailyQuestStartedMedium14"
+
+  MediumDailyQuest15: "folder MediumDailyQuestNotify15,MediumDailyQuest15StartedTagAdd"
+  MediumDailyQuestNotify15: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Zamszony bruk","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:mossy_cobblestone"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest15TakeItem: "take MOSSY_COBBLESTONE:64"
+  MediumDailyQuest15StartedTagAdd: "tag add DailyQuestStartedMedium15"
+  MediumDailyQuest15StartedTagDel: "tag del DailyQuestStartedMedium15"
+
+  MediumDailyQuest16: "folder MediumDailyQuestNotify16,MediumDailyQuest16StartedTagAdd"
+  MediumDailyQuestNotify16: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Lilia wodna","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:lily_pad"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest16TakeItem: "take LILY_PAD:16"
+  MediumDailyQuest16StartedTagAdd: "tag add DailyQuestStartedMedium16"
+  MediumDailyQuest16StartedTagDel: "tag del DailyQuestStartedMedium16"
+
+  MediumDailyQuest17: "folder MediumDailyQuestNotify17,MediumDailyQuest17StartedTagAdd"
+  MediumDailyQuestNotify17: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Borowik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:brown_mushroom"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest17TakeItem: "take BROWN_MUSHROOM:16"
+  MediumDailyQuest17StartedTagAdd: "tag add DailyQuestStartedMedium17"
+  MediumDailyQuest17StartedTagDel: "tag del DailyQuestStartedMedium17"
+
+  MediumDailyQuest18: "folder MediumDailyQuestNotify18,MediumDailyQuest18StartedTagAdd"
+  MediumDailyQuestNotify18: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Muchomor","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:red_mushroom"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuest18TakeItem: "take RED_MUSHROOM:16"
+  MediumDailyQuest18StartedTagAdd: "tag add DailyQuestStartedMedium18"
+  MediumDailyQuest18StartedTagDel: "tag del DailyQuestStartedMedium18"
+  
+  MediumDailyQuest19: "folder MediumDailyQuestRun19,MediumDailyQuestNotify19,MediumDailyQuest19StartedTagAdd"
+  MediumDailyQuestRun19: "run ^objective start MediumDailyQuest19"
+  MediumDailyQuestNotify19: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 48x Owca","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:sheep"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove19: "run ^objective delete MediumDailyQuest19"
+  MediumDailyQuest19StartedTagAdd: "tag add DailyQuestStartedMedium19"
+  MediumDailyQuest19StartedTagDel: "tag del DailyQuestStartedMedium19"
+
+  MediumDailyQuest20: "folder MediumDailyQuestRun20,MediumDailyQuestNotify20,MediumDailyQuest20StartedTagAdd"
+  MediumDailyQuestRun20: "run ^objective start MediumDailyQuest20"
+  MediumDailyQuestNotify20: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 48x Krowa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cow"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove20: "run ^objective delete MediumDailyQuest20"
+  MediumDailyQuest20StartedTagAdd: "tag add DailyQuestStartedMedium20"
+  MediumDailyQuest20StartedTagDel: "tag del DailyQuestStartedMedium20"
+
+  MediumDailyQuest21: "folder MediumDailyQuestRun21,MediumDailyQuestNotify21,MediumDailyQuest21StartedTagAdd"
+  MediumDailyQuestRun21: "run ^objective start MediumDailyQuest21"
+  MediumDailyQuestNotify21: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 48x Świnia","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pig"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove21: "run ^objective delete MediumDailyQuest21"
+  MediumDailyQuest21StartedTagAdd: "tag add DailyQuestStartedMedium21"
+  MediumDailyQuest21StartedTagDel: "tag del DailyQuestStartedMedium21"
+
+  MediumDailyQuest22: "folder MediumDailyQuestRun22,MediumDailyQuestNotify22,MediumDailyQuest22StartedTagAdd"
+  MediumDailyQuestRun22: "run ^objective start MediumDailyQuest22"
+  MediumDailyQuestNotify22: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zabij:","color":"#3CB371"},{"text":" 48x Kura","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:chicken"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove22: "run ^objective delete MediumDailyQuest22"
+  MediumDailyQuest22StartedTagAdd: "tag add DailyQuestStartedMedium22"
+  MediumDailyQuest22StartedTagDel: "tag del DailyQuestStartedMedium22"
+  
+  MediumDailyQuest23: "folder MediumDailyQuestRun23,MediumDailyQuestNotify23,MediumDailyQuest23StartedTagAdd"
+  MediumDailyQuestRun23: "run ^objective start MediumDailyQuest23"
+  MediumDailyQuestNotify23: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Pieczona baranina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_mutton"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove23: "run ^objective delete MediumDailyQuest23"
+  MediumDailyQuest23StartedTagAdd: "tag add DailyQuestStartedMedium23"
+  MediumDailyQuest23StartedTagDel: "tag del DailyQuestStartedMedium23"
+
+  MediumDailyQuest24: "folder MediumDailyQuestRun24,MediumDailyQuestNotify24,MediumDailyQuest24StartedTagAdd"
+  MediumDailyQuestRun24: "run ^objective start MediumDailyQuest24"
+  MediumDailyQuestNotify24: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Pieczona wołowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_beef"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove24: "run ^objective delete MediumDailyQuest24"
+  MediumDailyQuest24StartedTagAdd: "tag add DailyQuestStartedMedium24"
+  MediumDailyQuest24StartedTagDel: "tag del DailyQuestStartedMedium24"
+
+  MediumDailyQuest25: "folder MediumDailyQuestRun25,MediumDailyQuestNotify25,MediumDailyQuest25StartedTagAdd"
+  MediumDailyQuestRun25: "run ^objective start MediumDailyQuest25"
+  MediumDailyQuestNotify25: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Pieczona wieprzowina","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_porkchop"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove25: "run ^objective delete MediumDailyQuest25"
+  MediumDailyQuest25StartedTagAdd: "tag add DailyQuestStartedMedium25"
+  MediumDailyQuest25StartedTagDel: "tag del DailyQuestStartedMedium25"
+
+  MediumDailyQuest26: "folder MediumDailyQuestRun26,MediumDailyQuestNotify26,MediumDailyQuest26StartedTagAdd"
+  MediumDailyQuestRun26: "run ^objective start MediumDailyQuest26"
+  MediumDailyQuestNotify26: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Pieczony kurczak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cooked_chicken"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove26: "run ^objective delete MediumDailyQuest26"
+  MediumDailyQuest26StartedTagAdd: "tag add DailyQuestStartedMedium26"
+  MediumDailyQuest26StartedTagDel: "tag del DailyQuestStartedMedium26"
+
+  MediumDailyQuest27: "folder MediumDailyQuestRun27,MediumDailyQuestNotify27,MediumDailyQuest27StartedTagAdd"
+  MediumDailyQuestRun27: "run ^objective start MediumDailyQuest27"
+  MediumDailyQuestNotify27: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przepal:","color":"#3CB371"},{"text":" 64x Suszony wodorost","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dried_kelp"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove27: "run ^objective delete MediumDailyQuest27"
+  MediumDailyQuest27StartedTagAdd: "tag add DailyQuestStartedMedium27"
+  MediumDailyQuest27StartedTagDel: "tag del DailyQuestStartedMedium27"
+  
+  MediumDailyQuest28: "folder MediumDailyQuestRun28,MediumDailyQuestNotify28,MediumDailyQuest28StartedTagAdd"
+  MediumDailyQuestRun28: "run ^objective start MediumDailyQuest28"
+  MediumDailyQuestNotify28: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Złów:","color":"#3CB371"},{"text":" 32x Surowy dorsz","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cod"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove28: "run ^objective delete MediumDailyQuest28"
+  MediumDailyQuest28StartedTagAdd: "tag add DailyQuestStartedMedium28"
+  MediumDailyQuest28StartedTagDel: "tag del DailyQuestStartedMedium28"
+
+  MediumDailyQuest29: "folder MediumDailyQuestRun29,MediumDailyQuestNotify29,MediumDailyQuest29StartedTagAdd"
+  MediumDailyQuestRun29: "run ^objective start MediumDailyQuest29"
+  MediumDailyQuestNotify29: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Złów:","color":"#3CB371"},{"text":" 32x Surowy łosoś","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:salmon"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove29: "run ^objective delete MediumDailyQuest29"
+  MediumDailyQuest29StartedTagAdd: "tag add DailyQuestStartedMedium29"
+  MediumDailyQuest29StartedTagDel: "tag del DailyQuestStartedMedium29"
+
+  MediumDailyQuest30: "folder MediumDailyQuestRun30,MediumDailyQuestNotify30,MediumDailyQuest30StartedTagAdd"
+  MediumDailyQuestRun30: "run ^objective start MediumDailyQuest30"
+  MediumDailyQuestNotify30: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Złów:","color":"#3CB371"},{"text":" 32x Ryba tropikalna","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:tropical_fish"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove30: "run ^objective delete MediumDailyQuest30"
+  MediumDailyQuest30StartedTagAdd: "tag add DailyQuestStartedMedium30"
+  MediumDailyQuest30StartedTagDel: "tag del DailyQuestStartedMedium30"
+
+  MediumDailyQuest31: "folder MediumDailyQuestRun31,MediumDailyQuestNotify31,MediumDailyQuest31StartedTagAdd"
+  MediumDailyQuestRun31: "run ^objective start MediumDailyQuest31"
+  MediumDailyQuestNotify31: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Złów:","color":"#3CB371"},{"text":" 8x Rozdymka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pufferfish"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove31: "run ^objective delete MediumDailyQuest31"
+  MediumDailyQuest31StartedTagAdd: "tag add DailyQuestStartedMedium31"
+  MediumDailyQuest31StartedTagDel: "tag del DailyQuestStartedMedium31"
+  
+  MediumDailyQuest32: "folder MediumDailyQuestRun32,MediumDailyQuestNotify32,MediumDailyQuest32StartedTagAdd"
+  MediumDailyQuestRun32: "run ^objective start MediumDailyQuest32"
+  MediumDailyQuestNotify32: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 64x Obsydian","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:obsidian"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove32: "run ^objective delete MediumDailyQuest32"
+  MediumDailyQuest32StartedTagAdd: "tag add DailyQuestStartedMedium32"
+  MediumDailyQuest32StartedTagDel: "tag del DailyQuestStartedMedium32"
+  
+  MediumDailyQuest33: "folder MediumDailyQuestRun33,MediumDailyQuestNotify33,MediumDailyQuest33StartedTagAdd"
+  MediumDailyQuestRun33: "run ^objective start MediumDailyQuest33"
+  MediumDailyQuestNotify33: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Blok suszonych wodorostów","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dried_kelp_block"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove33: "run ^objective delete MediumDailyQuest33"
+  MediumDailyQuest33StartedTagAdd: "tag add DailyQuestStartedMedium33"
+  MediumDailyQuest33StartedTagDel: "tag del DailyQuestStartedMedium33"
+
+  MediumDailyQuest34: "folder MediumDailyQuestRun34,MediumDailyQuestNotify34,MediumDailyQuest34StartedTagAdd"
+  MediumDailyQuestRun34: "run ^objective start MediumDailyQuest34"
+  MediumDailyQuestNotify34: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Łańcuch","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:chain"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove34: "run ^objective delete MediumDailyQuest34"
+  MediumDailyQuest34StartedTagAdd: "tag add DailyQuestStartedMedium34"
+  MediumDailyQuest34StartedTagDel: "tag del DailyQuestStartedMedium34"
+
+  MediumDailyQuest35: "folder MediumDailyQuestRun35,MediumDailyQuestNotify35,MediumDailyQuest35StartedTagAdd"
+  MediumDailyQuestRun35: "run ^objective start MediumDailyQuest35"
+  MediumDailyQuestNotify35: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Żelazne kraty","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_bars"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove35: "run ^objective delete MediumDailyQuest35"
+  MediumDailyQuest35StartedTagAdd: "tag add DailyQuestStartedMedium35"
+  MediumDailyQuest35StartedTagDel: "tag del DailyQuestStartedMedium35"
+
+  MediumDailyQuest36: "folder MediumDailyQuestRun36,MediumDailyQuestNotify36,MediumDailyQuest36StartedTagAdd"
+  MediumDailyQuestRun36: "run ^objective start MediumDailyQuest36"
+  MediumDailyQuestNotify36: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Tory","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:rail"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove36: "run ^objective delete MediumDailyQuest36"
+  MediumDailyQuest36StartedTagAdd: "tag add DailyQuestStartedMedium36"
+  MediumDailyQuest36StartedTagDel: "tag del DailyQuestStartedMedium36"
+
+  MediumDailyQuest37: "folder MediumDailyQuestRun37,MediumDailyQuestNotify37,MediumDailyQuest37StartedTagAdd"
+  MediumDailyQuestRun37: "run ^objective start MediumDailyQuest37"
+  MediumDailyQuestNotify37: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Zasilane tory","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:powered_rail"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove37: "run ^objective delete MediumDailyQuest37"
+  MediumDailyQuest37StartedTagAdd: "tag add DailyQuestStartedMedium37"
+  MediumDailyQuest37StartedTagDel: "tag del DailyQuestStartedMedium37"
+
+  MediumDailyQuest38: "folder MediumDailyQuestRun38,MediumDailyQuestNotify38,MediumDailyQuest38StartedTagAdd"
+  MediumDailyQuestRun38: "run ^objective start MediumDailyQuest38"
+  MediumDailyQuestNotify38: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 48x Tory z czujnikiem","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:detector_rail"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove38: "run ^objective delete MediumDailyQuest38"
+  MediumDailyQuest38StartedTagAdd: "tag add DailyQuestStartedMedium38"
+  MediumDailyQuest38StartedTagDel: "tag del DailyQuestStartedMedium38"
+
+  MediumDailyQuest39: "folder MediumDailyQuestRun39,MediumDailyQuestNotify39,MediumDailyQuest39StartedTagAdd"
+  MediumDailyQuestRun39: "run ^objective start MediumDailyQuest39"
+  MediumDailyQuestNotify39: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 48x Tory aktywacyjne","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:activator_rail"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove39: "run ^objective delete MediumDailyQuest39"
+  MediumDailyQuest39StartedTagAdd: "tag add DailyQuestStartedMedium39"
+  MediumDailyQuest39StartedTagDel: "tag del DailyQuestStartedMedium39"
+
+  MediumDailyQuest40: "folder MediumDailyQuestRun40,MediumDailyQuestNotify40,MediumDailyQuest40StartedTagAdd"
+  MediumDailyQuestRun40: "run ^objective start MediumDailyQuest40"
+  MediumDailyQuestNotify40: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Papier","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:paper"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove40: "run ^objective delete MediumDailyQuest40"
+  MediumDailyQuest40StartedTagAdd: "tag add DailyQuestStartedMedium40"
+  MediumDailyQuest40StartedTagDel: "tag del DailyQuestStartedMedium40"
+
+  MediumDailyQuest41: "folder MediumDailyQuestRun41,MediumDailyQuestNotify41,MediumDailyQuest41StartedTagAdd"
+  MediumDailyQuestRun41: "run ^objective start MediumDailyQuest41"
+  MediumDailyQuestNotify41: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 64x Ognisko","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:campfire"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove41: "run ^objective delete MediumDailyQuest41"
+  MediumDailyQuest41StartedTagAdd: "tag add DailyQuestStartedMedium41"
+  MediumDailyQuest41StartedTagDel: "tag del DailyQuestStartedMedium41"
+
+  MediumDailyQuest42: "folder MediumDailyQuestRun42,MediumDailyQuestNotify42,MediumDailyQuest42StartedTagAdd"
+  MediumDailyQuestRun42: "run ^objective start MediumDailyQuest42"
+  MediumDailyQuestNotify42: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 16x Placek dyniowy","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:pumpkin_pie"}},{"text":"]","color":"gray","bold":true}]'
+  MediumDailyQuestObjRemove42: "run ^objective delete MediumDailyQuest42"
+  MediumDailyQuest42StartedTagAdd: "tag add DailyQuestStartedMedium42"
+  MediumDailyQuest42StartedTagDel: "tag del DailyQuestStartedMedium42"
+
+
+
+
+# Hard Daily Quest List  
+  HardDailyQuest1: "folder HardDailyQuestNotify1,HardDailyQuest1StartedTagAdd"
+  HardDailyQuestNotify1: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Sztabka żelaza","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_ingot"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest1TakeItem: "take IRON_INGOT:64"
+  HardDailyQuest1StartedTagAdd: "tag add DailyQuestStartedHard1"
+  HardDailyQuest1StartedTagDel: "tag del DailyQuestStartedHard1"
+
+  HardDailyQuest2: "folder HardDailyQuestNotify2,HardDailyQuest2StartedTagAdd"
+  HardDailyQuestNotify2: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Sztabka złota","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:gold_ingot"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest2TakeItem: "take GOLD_INGOT:64"
+  HardDailyQuest2StartedTagAdd: "tag add DailyQuestStartedHard2"
+  HardDailyQuest2StartedTagDel: "tag del DailyQuestStartedHard2"
+
+  HardDailyQuest3: "folder HardDailyQuestNotify3,HardDailyQuest3StartedTagAdd"
+  HardDailyQuestNotify3: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Czerwony piasek","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:red_sand"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest3TakeItem: "take RED_SAND:320"
+  HardDailyQuest3StartedTagAdd: "tag add DailyQuestStartedHard3"
+  HardDailyQuest3StartedTagDel: "tag del DailyQuestStartedHard3"
+  
+  HardDailyQuest4: "folder HardDailyQuestNotify4,HardDailyQuest4StartedTagAdd"
+  HardDailyQuestNotify4: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Mały zarodek ametystu","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:small_amethyst_bud"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest4TakeItem: "take SMALL_AMETHYST_BUD:16"
+  HardDailyQuest4StartedTagAdd: "tag add DailyQuestStartedHard4"
+  HardDailyQuest4StartedTagDel: "tag del DailyQuestStartedHard4"
+  
+  HardDailyQuest5: "folder HardDailyQuestNotify5,HardDailyQuest5StartedTagAdd"
+  HardDailyQuestNotify5: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 1x Blok szlamu","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:slime_block"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest5TakeItem: "take SLIME_BLOCK:1"
+  HardDailyQuest5StartedTagAdd: "tag add DailyQuestStartedHard5"
+  HardDailyQuest5StartedTagDel: "tag del DailyQuestStartedHard5"
+  
+  HardDailyQuest6: "folder HardDailyQuestNotify6,HardDailyQuest6StartedTagAdd"
+  HardDailyQuestNotify6: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 4x Enderperła","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:ender_pearl"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest6TakeItem: "take ENDER_PEARL:4"
+  HardDailyQuest6StartedTagAdd: "tag add DailyQuestStartedHard6"
+  HardDailyQuest6StartedTagDel: "tag del DailyQuestStartedHard6"
+  
+  HardDailyQuest7: "folder HardDailyQuestNotify7,HardDailyQuest7StartedTagAdd"
+  HardDailyQuestNotify7: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 320x Terakota","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:terracotta"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest7TakeItem: "take TERRACOTTA:320"
+  HardDailyQuest7StartedTagAdd: "tag add DailyQuestStartedHard7"
+  HardDailyQuest7StartedTagDel: "tag del DailyQuestStartedHard7"
+  
+  HardDailyQuest8: "folder HardDailyQuestNotify8,HardDailyQuest8StartedTagAdd"
+  HardDailyQuestNotify8: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Zgniłe mięso","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:rotten_flesh"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest8TakeItem: "take ROTTEN_FLESH:64"
+  HardDailyQuest8StartedTagAdd: "tag add DailyQuestStartedHard8"
+  HardDailyQuest8StartedTagDel: "tag del DailyQuestStartedHard8"
+  
+  HardDailyQuest9: "folder HardDailyQuestNotify9,HardDailyQuest9StartedTagAdd"
+  HardDailyQuestNotify9: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Nić","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:string"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest9TakeItem: "take STRING:64"
+  HardDailyQuest9StartedTagAdd: "tag add DailyQuestStartedHard9"
+  HardDailyQuest9StartedTagDel: "tag del DailyQuestStartedHard9"
+  
+  HardDailyQuest10: "folder HardDailyQuestNotify10,HardDailyQuest10StartedTagAdd"
+  HardDailyQuestNotify10: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Kość","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:bone"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest10TakeItem: "take BONE:64"
+  HardDailyQuest10StartedTagAdd: "tag add DailyQuestStartedHard10"
+  HardDailyQuest10StartedTagDel: "tag del DailyQuestStartedHard10"
+  
+  HardDailyQuest11: "folder HardDailyQuestNotify11,HardDailyQuest11StartedTagAdd"
+  HardDailyQuestNotify11: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 48x Oko pająka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:spider_eye"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest11TakeItem: "take SPIDER_EYE:48"
+  HardDailyQuest11StartedTagAdd: "tag add DailyQuestStartedHard11"
+  HardDailyQuest11StartedTagDel: "tag del DailyQuestStartedHard11"
+
+  HardDailyQuest12: "folder HardDailyQuestNotify12,HardDailyQuest12StartedTagAdd"
+  HardDailyQuestNotify12: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 16x Proch","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:gunpowder"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest12TakeItem: "take GUNPOWDER:16"
+  HardDailyQuest12StartedTagAdd: "tag add DailyQuestStartedHard12"
+  HardDailyQuest12StartedTagDel: "tag del DailyQuestStartedHard12"
+  
+  HardDailyQuest13: "folder HardDailyQuestNotify13,HardDailyQuest13StartedTagAdd"
+  HardDailyQuestNotify13: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 8x Trujący ziemniak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:poisonous_potato"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest13TakeItem: "take POISONOUS_POTATO:8"
+  HardDailyQuest13StartedTagAdd: "tag add DailyQuestStartedHard13"
+  HardDailyQuest13StartedTagDel: "tag del DailyQuestStartedHard13"
+  
+  HardDailyQuest14: "folder HardDailyQuestNotify14,HardDailyQuest14StartedTagAdd"
+  HardDailyQuestNotify14: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 128x Złota marchewka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:golden_carrot"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest14TakeItem: "take GOLDEN_CARROT:128"
+  HardDailyQuest14StartedTagAdd: "tag add DailyQuestStartedHard14"
+  HardDailyQuest14StartedTagDel: "tag del DailyQuestStartedHard14"
+  
+  HardDailyQuest15: "folder HardDailyQuestNotify15,HardDailyQuest15StartedTagAdd"
+  HardDailyQuestNotify15: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Plaster miodu","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:honeycomb"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest15TakeItem: "take HONEYCOMB:32"
+  HardDailyQuest15StartedTagAdd: "tag add DailyQuestStartedHard15"
+  HardDailyQuest15StartedTagDel: "tag del DailyQuestStartedHard15"
+
+  HardDailyQuest16: "folder HardDailyQuestNotify16,HardDailyQuest16StartedTagAdd"
+  HardDailyQuestNotify16: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Butelka miodu","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:honey_bottle"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest16TakeItem: "take HONEY_BOTTLE:32"
+  HardDailyQuest16StartedTagAdd: "tag add DailyQuestStartedHard16"
+  HardDailyQuest16StartedTagDel: "tag del DailyQuestStartedHard16"
+  
+  HardDailyQuest17: "folder HardDailyQuestNotify17,HardDailyQuest17StartedTagAdd"
+  HardDailyQuestNotify17: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Torbiel ze świecącym atramentem","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:glow_ink_sac"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest17TakeItem: "take GLOW_INK_SAC:32"
+  HardDailyQuest17StartedTagAdd: "tag add DailyQuestStartedHard17"
+  HardDailyQuest17StartedTagDel: "tag del DailyQuestStartedHard17"
+  
+  HardDailyQuest18: "folder HardDailyQuestNotify18,HardDailyQuest18StartedTagAdd"
+  HardDailyQuestNotify18: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Obsydian","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:obsidian"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest18TakeItem: "take OBSIDIAN:64"
+  HardDailyQuest18StartedTagAdd: "tag add DailyQuestStartedHard18"
+  HardDailyQuest18StartedTagDel: "tag del DailyQuestStartedHard18"
+  
+  HardDailyQuest19: "folder HardDailyQuestNotify19,HardDailyQuest19StartedTagAdd"
+  HardDailyQuestNotify19: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 1x Kozi róg","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:goat_horn"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest19TakeItem: "take GOAT_HORN:1"
+  HardDailyQuest19StartedTagAdd: "tag add DailyQuestStartedHard19"
+  HardDailyQuest19StartedTagDel: "tag del DailyQuestStartedHard19"
+  
+  HardDailyQuest20: "folder HardDailyQuestNotify20,HardDailyQuest20StartedTagAdd"
+  HardDailyQuestNotify20: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 64x Kalcyt","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:calcite"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest20TakeItem: "take CALCITE:64"
+  HardDailyQuest20StartedTagAdd: "tag add DailyQuestStartedHard20"
+  HardDailyQuest20StartedTagDel: "tag del DailyQuestStartedHard20"
+
+  HardDailyQuest21: "folder HardDailyQuestNotify21,HardDailyQuest21StartedTagAdd"
+  HardDailyQuestNotify21: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Przynieś:","color":"#3CB371"},{"text":" 32x Pajęczyna","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:cobweb"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuest21TakeItem: "take COBWEB:32"
+  HardDailyQuest21StartedTagAdd: "tag add DailyQuestStartedHard21"
+  HardDailyQuest21StartedTagDel: "tag del DailyQuestStartedHard21"
+  
+  HardDailyQuest22: "folder HardDailyQuestRun22,HardDailyQuestNotify22,HardDailyQuest22StartedTagAdd"
+  HardDailyQuestRun22: "run ^objective start HardDailyQuest22"
+  HardDailyQuestNotify22: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 4x Złote jabłko","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:golden_apple"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove22: "run ^objective delete HardDailyQuest22"
+  HardDailyQuest22StartedTagAdd: "tag add DailyQuestStartedHard22"
+  HardDailyQuest22StartedTagDel: "tag del DailyQuestStartedHard22"
+
+  HardDailyQuest23: "folder HardDailyQuestRun23,HardDailyQuestNotify23,HardDailyQuest23StartedTagAdd"
+  HardDailyQuestRun23: "run ^objective start HardDailyQuest23"
+  HardDailyQuestNotify23: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 48x Zombie","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:zombie"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove23: "run ^objective delete HardDailyQuest23"
+  HardDailyQuest23StartedTagAdd: "tag add DailyQuestStartedHard23"
+  HardDailyQuest23StartedTagDel: "tag del DailyQuestStartedHard23"
+
+  HardDailyQuest24: "folder HardDailyQuestRun24,HardDailyQuestNotify24,HardDailyQuest24StartedTagAdd"
+  HardDailyQuestRun24: "run ^objective start HardDailyQuest24"
+  HardDailyQuestNotify24: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 48x Szkielet","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:skeleton"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove24: "run ^objective delete HardDailyQuest24"
+  HardDailyQuest24StartedTagAdd: "tag add DailyQuestStartedHard24"
+  HardDailyQuest24StartedTagDel: "tag del DailyQuestStartedHard24"
+
+  HardDailyQuest25: "folder HardDailyQuestRun25,HardDailyQuestNotify25,HardDailyQuest25StartedTagAdd"
+  HardDailyQuestRun25: "run ^objective start HardDailyQuest25"
+  HardDailyQuestNotify25: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 48x Pająk","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:spider"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove25: "run ^objective delete HardDailyQuest25"
+  HardDailyQuest25StartedTagAdd: "tag add DailyQuestStartedHard25"
+  HardDailyQuest25StartedTagDel: "tag del DailyQuestStartedHard25"
+
+  HardDailyQuest26: "folder HardDailyQuestRun26,HardDailyQuestNotify26,HardDailyQuest26StartedTagAdd"
+  HardDailyQuestRun26: "run ^objective start HardDailyQuest26"
+  HardDailyQuestNotify26: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 16x Creeper","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:creeper"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove26: "run ^objective delete HardDailyQuest26"
+  HardDailyQuest26StartedTagAdd: "tag add DailyQuestStartedHard26"
+  HardDailyQuest26StartedTagDel: "tag del DailyQuestStartedHard26"
+
+  HardDailyQuest27: "folder HardDailyQuestRun27,HardDailyQuestNotify27,HardDailyQuest27StartedTagAdd"
+  HardDailyQuestRun27: "run ^objective start HardDailyQuest27"
+  HardDailyQuestNotify27: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 6x Enderman","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:enderman"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove27: "run ^objective delete HardDailyQuest27"
+  HardDailyQuest27StartedTagAdd: "tag add DailyQuestStartedHard27"
+  HardDailyQuest27StartedTagDel: "tag del DailyQuestStartedHard27"
+
+  HardDailyQuest28: "folder HardDailyQuestRun28,HardDailyQuestNotify28,HardDailyQuest28StartedTagAdd"
+  HardDailyQuestRun28: "run ^objective start HardDailyQuest28"
+  HardDailyQuestNotify28: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 1x Nadzorca","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:warden"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove28: "run ^objective delete HardDailyQuest28"
+  HardDailyQuest28StartedTagAdd: "tag add DailyQuestStartedHard28"
+  HardDailyQuest28StartedTagDel: "tag del DailyQuestStartedHard28"
+
+  HardDailyQuest29: "folder HardDailyQuestRun29,HardDailyQuestNotify29,HardDailyQuest29StartedTagAdd"
+  HardDailyQuestRun29: "run ^objective start HardDailyQuest29"
+  HardDailyQuestNotify29: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Żółw","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:turtle"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove29: "run ^objective delete HardDailyQuest29"
+  HardDailyQuest29StartedTagAdd: "tag add DailyQuestStartedHard29"
+  HardDailyQuest29StartedTagDel: "tag del DailyQuestStartedHard29"
+
+  HardDailyQuest30: "folder HardDailyQuestRun30,HardDailyQuestNotify30,HardDailyQuest30StartedTagAdd"
+  HardDailyQuestRun30: "run ^objective start HardDailyQuest30"
+  HardDailyQuestNotify30: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zjedz:","color":"#3CB371"},{"text":" 8x Żaba","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:frog"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove30: "run ^objective delete HardDailyQuest30"
+  HardDailyQuest30StartedTagAdd: "tag add DailyQuestStartedHard30"
+  HardDailyQuest30StartedTagDel: "tag del DailyQuestStartedHard30"
+  
+  HardDailyQuest31: "folder HardDailyQuestRun31,HardDailyQuestNotify31,HardDailyQuest31StartedTagAdd"
+  HardDailyQuestRun31: "run ^objective start HardDailyQuest31"
+  HardDailyQuestNotify31: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 16x Złoże diamentów","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_ore"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove31: "run ^objective delete HardDailyQuest31"
+  HardDailyQuest31StartedTagAdd: "tag add DailyQuestStartedHard31"
+  HardDailyQuest31StartedTagDel: "tag del DailyQuestStartedHard31"
+
+  HardDailyQuest32: "folder HardDailyQuestRun32,HardDailyQuestNotify32,HardDailyQuest32StartedTagAdd"
+  HardDailyQuestRun32: "run ^objective start HardDailyQuest32"
+  HardDailyQuestNotify32: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 4x Złoże szmaragdów","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:emerald_ore"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove32: "run ^objective delete HardDailyQuest32"
+  HardDailyQuest32StartedTagAdd: "tag add DailyQuestStartedHard32"
+  HardDailyQuest32StartedTagDel: "tag del DailyQuestStartedHard32"
+
+  HardDailyQuest33: "folder HardDailyQuestRun33,HardDailyQuestNotify33,HardDailyQuest33StartedTagAdd"
+  HardDailyQuestRun33: "run ^objective start HardDailyQuest33"
+  HardDailyQuestNotify33: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Zniszcz:","color":"#3CB371"},{"text":" 32x Uschnięty krzak","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:dead_bush"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove33: "run ^objective delete HardDailyQuest33"
+  HardDailyQuest33StartedTagAdd: "tag add DailyQuestStartedHard33"
+  HardDailyQuest33StartedTagDel: "tag del DailyQuestStartedHard33"
+  
+  HardDailyQuest34: "folder HardDailyQuestRun34,HardDailyQuestNotify34,HardDailyQuest34StartedTagAdd"
+  HardDailyQuestRun34: "run ^objective start HardDailyQuest34"
+  HardDailyQuestNotify34: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 4x kowadło","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:anvil"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove34: "run ^objective delete HardDailyQuest34"
+  HardDailyQuest34StartedTagAdd: "tag add DailyQuestStartedHard34"
+  HardDailyQuest34StartedTagDel: "tag del DailyQuestStartedHard34"
+
+  HardDailyQuest35: "folder HardDailyQuestRun35,HardDailyQuestNotify35,HardDailyQuest35StartedTagAdd"
+  HardDailyQuestRun35: "run ^objective start HardDailyQuest35"
+  HardDailyQuestNotify35: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 16x Żelazne drzwi","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_door"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove35: "run ^objective delete HardDailyQuest35"
+  HardDailyQuest35StartedTagAdd: "tag add DailyQuestStartedHard35"
+  HardDailyQuest35StartedTagDel: "tag del DailyQuestStartedHard35"
+
+  HardDailyQuest36: "folder HardDailyQuestRun36,HardDailyQuestNotify36,HardDailyQuest36StartedTagAdd"
+  HardDailyQuestRun36: "run ^objective start HardDailyQuest36"
+  HardDailyQuestNotify36: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 24x Żelazna klapa","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:iron_trapdoor"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove36: "run ^objective delete HardDailyQuest36"
+  HardDailyQuest36StartedTagAdd: "tag add DailyQuestStartedHard36"
+  HardDailyQuest36StartedTagDel: "tag del DailyQuestStartedHard36"
+
+  HardDailyQuest37: "folder HardDailyQuestRun37,HardDailyQuestNotify37,HardDailyQuest37StartedTagAdd"
+  HardDailyQuestRun37: "run ^objective start HardDailyQuest37"
+  HardDailyQuestNotify37: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Diamentowy miecz","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_sword"}},{"text":",","color":"#3CB371"},{"text":" 1x Diamentowy kilof","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_pickaxe"}},{"text":",","color":"#3CB371"},{"text":" 1x Diamentowa motyka","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_hoe"}},{"text":",","color":"#3CB371"},{"text":" 1x Diamentowa siekiera","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_axe"}},{"text":" lub","color":"#3CB371"},{"text":" 1x Diamentowa łopata","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_shovel"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove37: "run ^objective delete HardDailyQuest37"
+  HardDailyQuest37StartedTagAdd: "tag add DailyQuestStartedHard37"
+  HardDailyQuest37StartedTagDel: "tag del DailyQuestStartedHard37"
+
+  HardDailyQuest38: "folder HardDailyQuestRun38,HardDailyQuestNotify38,HardDailyQuest38StartedTagAdd"
+  HardDailyQuestRun38: "run ^objective start HardDailyQuest38"
+  HardDailyQuestNotify38: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 8x Potrawka z królika","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:rabbit_stew"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove38: "run ^objective delete HardDailyQuest38"
+  HardDailyQuest38StartedTagAdd: "tag add DailyQuestStartedHard38"
+  HardDailyQuest38StartedTagDel: "tag del DailyQuestStartedHard38"
+
+  HardDailyQuest39: "folder HardDailyQuestRun39,HardDailyQuestNotify39,HardDailyQuest39StartedTagAdd"
+  HardDailyQuestRun39: "run ^objective start HardDailyQuest39"
+  HardDailyQuestNotify39: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 1x Diamentowy hełm","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_helmet"}},{"text":",","color":"#3CB371"},{"text":" 1x Diamentowy napierśnik","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_chestplate"}},{"text":",","color":"#3CB371"},{"text":" 1x Diamentowe nogawice","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_leggings"}},{"text":" lub","color":"#3CB371"},{"text":" 1x Diamentowe buty","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:diamond_boots"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove39: "run ^objective delete HardDailyQuest39"
+  HardDailyQuest39StartedTagAdd: "tag add DailyQuestStartedHard39"
+  HardDailyQuest39StartedTagDel: "tag del DailyQuestStartedHard39"
+
+  HardDailyQuest40: "folder HardDailyQuestRun40,HardDailyQuestNotify40,HardDailyQuest40StartedTagAdd"
+  HardDailyQuestRun40: "run ^objective start HardDailyQuest40"
+  HardDailyQuestNotify40: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Scraftuj:","color":"#3CB371"},{"text":" 32x Książka z piórem","color":"yellow","hoverEvent":{"action":"show_text","contents":"minecraft:writable_book"}},{"text":"]","color":"gray","bold":true}]'
+  HardDailyQuestObjRemove40: "run ^objective delete HardDailyQuest40"
+  HardDailyQuest40StartedTagAdd: "tag add DailyQuestStartedHard40"
+  HardDailyQuest40StartedTagDel: "tag del DailyQuestStartedHard40"
+# usuwanie tagow i objective
+
+
+
+

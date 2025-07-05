@@ -1,0 +1,35 @@
+conversations:
+  Adam:
+    NPC_options:
+      q3-Adam-1:
+        text: "Witaj przybyszu. Nie pochodzisz stąd, prawda?"
+        conditions: "con_tag_3Adam_clue"
+        pointer: q3-player-1a, q3-player-1b
+        
+      q3-Adam-2:
+        text: "W takim razie o czym chcesz mówić podróżniku."
+        pointer: q3-player-2a, q3-player-2b
+        
+      q3-Adam-3:
+        text: "Tak, widziałem podejrzanego mężczyznę udającego się w kierunku Portu Północno-Wschodniego. Niestety nic nie słyszałem."
+        pointer: q3-player-3
+        
+    player_options: 
+      q3-player-1a:
+        text: "Nie… Ale nie przyszedłem by o tym z Tobą rozmawiać."
+        pointer: q3-Adam-2
+      q3-player-1b:
+        text: "Nie powinno cię to interesować…"
+        
+      q3-player-2a:
+        text: "Słyszałem podejrzane dźwięki z pokoju numer 2. Przyszedłem to zbadać. Czy słyszałeś lub widziałeś coś nietypowego w przeciągu ostatnich godzin?"
+        pointer: q3-Adam-3
+      q3-player-2b:
+        text: "O niczym."
+        
+      q3-player-3:
+        text: "Dziękuję! Nawet nie wiesz jak bardzo mi pomogłeś. Bywaj!"
+        events: "del_tag_3Adam_clue,add_tag3Wes_clue,go_to_north_harbor"
+        
+        
+        

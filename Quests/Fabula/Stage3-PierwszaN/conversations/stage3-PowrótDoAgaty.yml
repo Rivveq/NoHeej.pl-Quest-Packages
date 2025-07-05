@@ -1,0 +1,116 @@
+conversations:
+  Agata:
+    NPC_options:
+      
+      # 1.
+      q3-agata-1-Powrót:
+        condition: Tracking.Quest-2-Done, con_tag_3Agata_RoomChecked, !con_tag_3AgataPowrótDone+Lewis
+        text: "Witaj z powrotem! Co cię do mnie sprowadza %player%?"
+        pointer: q3-player-1-Powrót
+      
+      # 2.
+      q3-agata-2-Powrót:
+        text: "Hm… W jakim pokoju miało to miejsce?"
+        pointer: q3-player-2a-Powrót, q3-player-2b-Powrót
+      
+      # 3.
+      q3-agata-3-Powrót:
+        text: "Według moich notatek nie powinno tam nikogo być… Przestań zmyślać i nie zawracaj mi głowy!"
+        pointer: q3-player-1-Powrót-O2, q3-player-3a-Powrót-O1, q3-player-3b-Powrót-O1
+        
+      q3-agata-4-Powrót-O1:
+        text: "Ostatni czas był dla ciebie ciężki, więc pewnie ci się coś przywidziało…"
+        pointer: q3-player-4a-Powrót-O1, q3-player-4b-Powrót-O1
+        
+      q3-agata-5-Powrót-O1:
+        text: "Nie mam zamiaru cię słuchać, jeśli tak cię świerzbi by opuszczać swoją izbę mam dla ciebie zajęcie!"
+        pointer: q3-player-5a-Powrót-O1, q3-player-5b-Powrót-O1
+        
+      q3-agata-6-Powrót-O1:
+        text: "Słyszałam od Chrisa, że jesteś skuteczny… Proszę cię, abyś udał się do naszego miejscowego złotnika i dowiedział się kiedy przyjeżdża ważna osobistość."
+        pointer: q3-player-6-Powrót-O1
+        
+  # OPCJA 2
+      q3-agata-1-Powrót-O2:
+        text: "Posłuchaj mnie, nie mamy tu żadnych niebezpiecznych osób, to porządny pensjonat!"
+        pointer: q3-player-2a-Powrót-O2, q3-player-2b-Powrót-O2
+      q3-agata-2-Powrót-O2:
+        text: "Znam to miejsce jak własną kieszeń, nikt tu nie wejdzie bez mojej wiedzy!"
+        pointer: q3-player-3a-Powrót-O2, q3-player-3b-Powrót-O2
+      q3-agata-3-Powrót-O2:
+        text: "Nic się nie stanie, ani tobie, ani nikomu innemu. Obiecuję, że dopilnuje tego osobiście"  
+        pointer: q3-player-4a-Powrót-O2, q3-player-4b-Powrót-O2 
+      q3-agata-4-Powrót-O2:
+        text: "Ech, tak długo jak zapewni ci to spokój, rób co uważasz. Bylebyś nie przeszkadzał innym gościom."  
+        pointer: q3-player-5-Powrót-O2
+        
+      q3-agata-5-Powrót-O2Narr:
+        text: "&7[Czujesz, że powinieneś ponownie zbadać pokój numer 2, w końcu, gdy znajdziesz jakieś poszlaki recepcjonistka będzie zmuszona, żeby ci uwierzyć! Musisz się pośpieszyć, jeśli pokój zostanie sprzątnięty nie będziesz w stanie udowodnić swojej racji.]"
+        pointer: q3-player-6-Powrót-O2
+    player_options:
+      
+      # 1.
+      q3-player-1-Powrót:
+        text: "Egh… W moim pokoju było słychać jakieś podejrzane dźwięki. Poszedłem do sąsiedniego pokoju by to sprawdzić…  był tam jakiś podejrzany mężczyzna w ciemnej szacie!"
+        pointer: q3-agata-2-Powrót
+      
+      # 2. 
+      q3-player-2a-Powrót:
+        text: "To był pokój numer 2, tuż obok mojego!"
+        pointer: q3-agata-3-Powrót
+      q3-player-2b-Powrót:
+        text: "Nie interesuj się!"
+      
+      # 3.
+      q3-player-3a-Powrót-O1:
+        text: "To czysta prawda, musisz mi uwierzyć!"
+        pointer: q3-agata-4-Powrót-O1
+      q3-player-3b-Powrót-O1:
+        text: "Głupstw?! Jeszcze mnie popamiętasz!"
+        
+      q3-player-4a-Powrót-O1:
+        text: "Mówię jak było, więc mnie wysłuchaj!"
+        pointer: q3-agata-5-Powrót-O1
+      q3-player-4b-Powrót-O1:
+        text: "Nie obrażaj mnie, bo popamiętasz!"
+        
+      q3-player-5a-Powrót-O1:
+        text: "W takim razie co mogę dla ciebie zrobić?"
+        pointer: q3-agata-6-Powrót-O1
+      q3-player-5b-Powrót-O1:
+        text: "Mam ci pomóc po tym wszystkim co powiedziałaś?!"
+        
+      q3-player-6-Powrót-O1:
+        text: "Dobrze, już wyruszam!"
+        events: "add_tag_3AgataPowrótDone+Lewis,GoToLevisNotify,del_tag_3Agata_RoomChecked"
+        
+        
+  # OPCJA 2
+      q3-player-1-Powrót-O2:
+        text: "On naprawdę tam był! To poważna sprawa, inaczej  bym tu nie przychodził!"
+        pointer: q3-agata-1-Powrót-O2
+        
+      q3-player-2a-Powrót-O2:
+        text: "Może ktoś się przemknął kiedy nie patrzyłaś?"
+        pointer: q3-agata-2-Powrót-O2
+      q3-player-2b-Powrót-O2:
+        text: "Nie ma tu niebezpiecznych osób, he? Jeszcze się przekonasz…"
+        
+      q3-player-3a-Powrót-O2:
+        text: "Ugh, niech ci będzie. Nie musisz mi wierzyć, ale jak coś się stanie, to ja ostrzegałem."
+        pointer: q3-agata-3-Powrót-O2
+      q3-player-3b-Powrót-O2:
+        text: "Może nie znasz go tak dobrze jak ci się zdaje..."
+        
+      q3-player-4a-Powrót-O2:
+        text: "Wciąż, mi tu coś nie pasuje. Jeżeli  mam tu zostać, chcę zbadać sprawę."
+        pointer: q3-agata-4-Powrót-O2
+      q3-player-4b-Powrót-O2:
+        text: "Jakaś recepcjonistka ma się mną zajmować? Nigdy!"
+        
+      q3-player-5-Powrót-O2:
+        text: "W takim razie idę sprawdzić ten pokój jeszcze raz…"
+        pointer: q3-agata-5-Powrót-O2Narr
+      q3-player-6-Powrót-O2:
+        text: "&7..."
+        events: "CheckRoomFolder,del_tag_3Agata_RoomChecked"

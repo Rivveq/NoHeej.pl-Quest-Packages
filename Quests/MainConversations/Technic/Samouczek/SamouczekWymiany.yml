@@ -1,0 +1,29 @@
+conversations:
+  SamouczekWymiany:
+    quester: Samouczek "Wymiany"
+    first: 1r-samwym
+
+    # Wejscie na samouczek farby
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-samwym:
+        text: "Witaj %player%, oto jak wymieniać się z innymi graczami. \n \nAby zacząć wymianę należy wpisać komendę &e&l/handel {Nazwa Gracza}&r. Następnie dany gracz może &lprzyjąć&r lub &lodrzucić wymianę&r."
+        pointer: 1o-samwym-a, 1o-samwym-b
+      1r-samwym2:
+        text: "Po zaakceptowaniu otworzy się okno w którym gracze mogą wystawiać swoje przedmioty. Można wymieniać się za walutę serwerową albo przedmioty. Wymiana zakończy się sukcesem, gdy obie strony się ją zaakceptuja, chyba że jedna ze stron ją przerwie."
+        pointer: 1o-samwym-b
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor tematu
+
+      1o-samwym-a:
+        text: "&F..."
+        pointer: 1r-samwym2
+      1o-samwym-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."

@@ -1,0 +1,65 @@
+conversations:
+  Chris:
+    NPC_options:
+      q3-Chris-O2-1:
+        text: "Słyszałem, że coś się stało, o co chodzi?"
+        pointer: q3-player-O2-1a, q3-player-O2-1b
+        conditions: con_tag_3Chris_O2
+        
+      q3-Chris-O2-2:
+        text: "Nic dziwnego, że cię wyrzucił po tym jak wtargnąłeś mu do pokoju…"
+        pointer: q3-player-O2-2a, q3-player-O2-2b
+        
+      q3-Chris-O2-3:
+        text: "To faktycznie dziwne, ale powinniśmy zachować spokój."
+        pointer: q3-player-O2-3a, q3-player-O2-3b
+        
+      q3-Chris-O2-4:
+        text: "Miecz…? Jak to!?"
+        pointer: q3-player-O2-4a, q3-player-O2-4b
+        
+      q3-Chris-O2-5:
+        text: "Dobrze daj mi go, oddam go w ręce strażników."
+        pointer: q3-player-O2-5a, q3-player-O2-5b
+        
+      q3-Chris-O2-6:
+        text: "To dobry pomysł, mógłbyś się tym zająć? Sowicie cię wynagrodzę, jeśli go odnajdziesz."
+        pointer: q3-player-O2-6
+        
+      
+    player_options:
+      q3-player-O2-1a:
+        text: "Wczoraj usłyszałem jakieś niepokojące odgłosy w twoim pensjonacie. Postanowiłem zobaczyć co się dzieje, a gdy wszedłem do pokoju znajdował się w nim tajemniczy mężczyzna, który mnie z niego wyrzucił."
+        pointer: q3-Chris-O2-2
+      q3-player-O2-1b:
+        text: "Powinieneś bardziej się interesować swoim biznesem…"
+        
+      q3-player-O2-2a:
+        text: "To nie tak, posłuchaj dalej! Poszedłem zgłosić całą sytuację Agacie, która powiedziała, że nikogo nie powinno tam być! Postanowiłem więc wrócić, a jego już nie było…"
+        pointer: q3-Chris-O2-3
+      q3-player-O2-2b:
+        text: "Chyba nie rozumiesz... Nic tu po mnie, żegnaj."
+        
+      q3-player-O2-3a:
+        text: "Tu nie ma mowy o spokoju, w jego rzeczach znalazłem miecz…"
+        pointer: q3-Chris-O2-4
+      q3-player-O2-3b:
+        text: "Chyba ze mnie kpisz?!"
+        
+      q3-player-O2-4a:
+        text: "Tak miecz, Agata mówiła abym ci go przekazał, żeby uniknąć kłopotów."
+        pointer: q3-Chris-O2-5
+      q3-player-O2-4b:
+        text: "Nie interesuj się…"
+        
+      q3-player-O2-5a:
+        text: "Proszę oto on. Myślisz, że powinniśmy zbadać tę sprawę?"
+        pointer: q3-Chris-O2-6
+        events: "ChrisTakeSwordFolder" # oddaj miecz i info
+      q3-player-O2-5b:
+        text: "Nie ma opcji bym ci go oddał!"
+        
+      q3-player-O2-6:
+        text: "Dobrze, zrobię co w mojej mocy!"
+        events: "del_tag_3Chris_O2,add_tag_3Barbara_clue,add_tag_3Adam_clue,find_clue_notify"
+        

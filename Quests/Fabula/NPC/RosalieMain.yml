@@ -5,4 +5,4 @@ conversations:
 
     NPC_options:
       default:
-        text: "placeholder"
+        text: "Przepraszam, jestem zajęta, wróć do mnie później."

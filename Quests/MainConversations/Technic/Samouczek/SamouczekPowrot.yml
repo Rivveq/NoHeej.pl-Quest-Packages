@@ -1,0 +1,26 @@
+conversations:
+  SamouczekPowrot:
+    quester: Samouczek "Powrot"
+    first: 1r-sampow
+
+    # Powrot na spawn z samouczka
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-sampow: 
+        text: "Witaj %player%, chcesz wrocic do miasta?"
+        pointer: 1o-sampow-a, 1o-sampow-b
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor czy chcesz sie tp na spawn
+
+      1o-sampow-a:
+        text: "&x&E&F&6&E&F&FTak, poproszę!"
+        event: "SamouczekPowrot"
+      1o-sampow-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."

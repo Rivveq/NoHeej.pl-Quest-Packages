@@ -1,0 +1,1468 @@
+menus:
+  OdnawialneMenu:
+    height: 3
+    title: "Questy Odnawialne"
+    command: "/quests-odnawialne"
+    slots:
+      '10': dailyEasy1, dailyEasy2, dailyEasy3, dailyEasy4, dailyEasy5, dailyEasy6, dailyEasy7, dailyEasy8, dailyEasy9, dailyEasy10, dailyEasy11, dailyEasy12, dailyEasy13, dailyEasy14, dailyEasy15, dailyEasy16, dailyEasy17, dailyEasy18, dailyEasy19, dailyEasy20, dailyEasy21, dailyEasy22, dailyEasy23, dailyEasy24, dailyEasy25, dailyEasy26, dailyEasy27, dailyEasy28, dailyEasy29, dailyEasy30, dailyEasy31, dailyEasy32, dailyEasy33, dailyEasy34, dailyEasy35, dailyEasy36, dailyEasy37, dailyEasy38, dailyEasy39, dailyEasy40, dailyEasy41, dailyEasy42, dailyEasy43, dailyEasy44, dailyEasy45, dailyEasy46, dailyEasy47, dailyEasy48, dailyEasy49, dailyEasy50, dailyEasy51, dailyEasy52, dailyEasy53, dailyEasy54, dailyEasy55, dailyEasy56, dailyEasy57, dailyEasy58, dailyEasy59, dailyEasy60, dailyEasy61, dailyEasy62, dailyEasy63, dailyEasy64, dailyEasy65, dailyEasy66, dailyEasy67, dailyEasy68, dailyEasy69, dailyEasy70, dailyEasy71, dailyEasy72, dailyEasy73, dailyEasy74, dailyEasy75, dailyEasy76, dailyEasy77, dailyEasy78, dailyEasy79, dailyEasy80, dailyEasy81, dailyEasy82, dailyEasy83, dailyEasy84, dailyEasy85, dailyEasy86, dailyEasy87, dailyEasy88, dailyEasy89, dailyEasy90, dailyEasy91, dailyEasy92, dailyEasy93, dailyEasy94, dailyEasy95, dailyEasy96, dailyEasy97, dailyMedium1, dailyMedium2, dailyMedium3, dailyMedium4, dailyMedium5, dailyMedium6, dailyMedium7, dailyMedium8, dailyMedium9, dailyMedium10, dailyMedium11, dailyMedium12, dailyMedium13, dailyMedium14, dailyMedium15, dailyMedium16, dailyMedium17, dailyMedium18, dailyMedium19, dailyMedium20, dailyMedium21, dailyMedium22, dailyMedium23, dailyMedium24, dailyMedium25, dailyMedium26, dailyMedium27, dailyMedium28, dailyMedium29, dailyMedium30, dailyMedium31, dailyMedium32, dailyMedium33, dailyMedium34, dailyMedium35, dailyMedium36, dailyMedium37, dailyMedium38, dailyMedium39, dailyMedium40, dailyMedium41, dailyMedium42, dailyHard1, dailyHard2, dailyHard3, dailyHard4, dailyHard5, dailyHard6, dailyHard7, dailyHard8, dailyHard9, dailyHard10, dailyHard11, dailyHard12, dailyHard13, dailyHard14, dailyHard15, dailyHard16, dailyHard17, dailyHard18, dailyHard19, dailyHard20, dailyHard21, dailyHard22, dailyHard23, dailyHard24, dailyHard25, dailyHard26, dailyHard27, dailyHard28, dailyHard29, dailyHard30, dailyHard31, dailyHard32, dailyHard33, dailyHard34, dailyHard35, dailyHard36, dailyHard37, dailyHard38, dailyHard39, dailyHard40, dailyMainDone, dailyMainToDo
+      '13': weeklyMain
+      '16': monthlyMain
+      
+    items:
+    # Daily
+      dailyMainDone:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &aReset: &e9:00"
+          - " &l&7» &aStatus: &7[&dUkończone&7]"
+        condition: "Quests-Odnawialne.DailyTaskCompleted"
+      dailyMainToDo:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &aReset: &e9:00"
+          - " &l&7» &aStatus: &7[&7Nierozpoczęte]"
+      dailyEasy1:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Dębowych pńi [Oak log]"
+          
+        conditions: "Quests-Odnawialne.EasyDailyQuest1Started"
+      dailyEasy2:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Świerkowych pńi [Spruce log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest2Started"
+
+      dailyEasy3:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Brzozowych pńi [Birch log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest3Started"
+
+      dailyEasy4:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Tropikalnych pńi [Jungle log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest4Started"
+
+      dailyEasy5:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Akacjowych pńi [Acacia log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest5Started"
+
+      dailyEasy6:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Ciemnodębowych pńi [Dark oak log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest6Started"
+
+      dailyEasy7:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Wiśniowych pńi [Cherry log]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest7Started"
+
+      dailyEasy8:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 320 Bruku [Cobblestone]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest8Started"
+
+      dailyEasy9:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Mleczy [Dandelion]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest9Started"
+
+      dailyEasy10:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Maków [Poppy]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest10Started"
+
+      dailyEasy11:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Czerownych tulipanów [Red tulip]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest11Started"
+
+      dailyEasy12:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Pomarańczowych tulipanów [Orange tulip]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest12Started"
+
+      dailyEasy13:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Białych tulipanów [White tulip]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest13Started"
+
+      dailyEasy14:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Różowych tulipanów [Pink tulip]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest14Started"
+
+      dailyEasy15:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Bzu [Lilac]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest15Started"
+
+      dailyEasy16:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Krzewów róży [Rose Bush]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest16Started"
+
+      dailyEasy17:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Słoneczników [Sunflower]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest17Started"
+
+      dailyEasy18:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 320 Piasku [Sand]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest18Started"
+
+      dailyEasy19:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Żwiru [Gravel]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest19Started"
+
+      dailyEasy20:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Węgla [Coal]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest20Started"
+
+      dailyEasy21:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Rudy żelaza [Raw Iron]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest21Started"
+
+      dailyEasy22:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Węgla drzewnego [Char Coal]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest22Started"
+
+      dailyEasy23:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 8 Torbieli z atramentem [Ink Sac]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest23Started"
+
+      dailyEasy24:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Trzciny cukrowej [Sugar Cane]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest24Started"
+
+      dailyEasy25:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Czerwonego piasku [Redstone Dust]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest25Started"
+
+      dailyEasy26:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 320 Ziemi [Dirt]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest26Started"
+
+      dailyEasy27:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Kulek gliny [Clay Ball]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest27Started"
+
+      dailyEasy28:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Ziemniaków [Potato]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest28Started"
+
+      dailyEasy29:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Marchewek [Carrot]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest29Started"
+
+      dailyEasy30:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Buraków [Beetroot]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest30Started"
+
+      dailyEasy31:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Rudy miedzi [Copper Ore]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest31Started"
+
+      dailyEasy32:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Skóry [Leather]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest32Started"
+
+      dailyEasy33:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Surowej wołowiny [Beef]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest33Started"
+
+      dailyEasy34:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Surowego kurczaka [Chicken]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest34Started"
+
+      dailyEasy35:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Surowej wieprzowiny [Porkchop]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest35Started"
+
+      dailyEasy36:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Surowej baraniny [Mutton]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest36Started"
+
+      dailyEasy37:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Nasion przenicy [Wheat Seeds]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest37Started"
+
+      dailyEasy38:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 16 Nasion buraka [Beetrod Seeds]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest38Started"
+
+      dailyEasy39:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Pszenicy [Wheat]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest39Started"
+
+      dailyEasy40:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 1 Ciasto [Cake]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest40Started"
+
+      dailyEasy41:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Tufu [Tuff]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest41Started"
+
+      dailyEasy42:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 32 Cegieł [Brick]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest42Started"
+
+      dailyEasy43:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Chlebów [Bread]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest43Started"
+
+      dailyEasy44:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Pieczonych kurczaków [Cooked Chicken]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest44Started"
+
+      dailyEasy45:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Pieczonej wołowiny [Cooked Beef]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest45Started"
+
+      dailyEasy46:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Pieczonych ziemniaków [Baked potato]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest46Started"
+
+      dailyEasy47:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Marchwi [Carrot]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest47Started"
+
+      dailyEasy48:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Pieczonej wieprzowiny [Cooked Porkchop]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest48Started"
+
+      dailyEasy49:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZjedz 8 Ciastek [Cookie]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest49Started"
+
+      dailyEasy50:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eOstrzysz 16 owiec [Sheep]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest50Started"
+
+      dailyEasy51:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 32 Żelaza [Iron]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest51Started"
+
+      dailyEasy52:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 32 Złota [Gold]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest52Started"
+
+      dailyEasy53:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 16 Mięsa z owcy [Mutton]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest53Started"
+
+      dailyEasy54:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 16 Mięsa z krowy [Beef]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest54Started"
+
+      dailyEasy55:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 16 Mięsa ze świni"
+        conditions: "Quests-Odnawialne.EasyDailyQuest55Started"
+
+      dailyEasy56:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 64 Miedzi [Copper]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest56Started"
+
+      dailyEasy57:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 16 Pńi albo Drewna [Log, Wood]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest57Started"
+
+      dailyEasy58:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzepal 16 Mięsa z kur [Chicken]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest58Started"
+
+      dailyEasy59:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZniszcz 64 Lodu [Ice]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest59Started"
+
+      dailyEasy60:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZniszcz 320 Bruku [Cobblestone]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest60Started"
+
+      dailyEasy61:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZabij 16 Owiec [Sheep]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest61Started"
+
+      dailyEasy62:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZabij 16 Krów [Cow]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest62Started"
+
+      dailyEasy63:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZabij 16 Świn [Pig]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest63Started"
+
+      dailyEasy64:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eZabij 16 Kur [Chicken]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest64Started"
+
+      dailyEasy65:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazny miecz [Iron Sword]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest65Started"
+
+      dailyEasy66:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazny kilof [Iron Pickaxe]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest66Started"
+
+      dailyEasy67:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazną motykę [Iron Hoe]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest67Started"
+
+      dailyEasy68:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazną siekierę [Iron Axe]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest68Started"
+
+      dailyEasy69:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazną Łopatę [Iron Shovel]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest69Started"
+
+      dailyEasy70:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazny hełm [Iron Helmet]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest70Started"
+
+      dailyEasy71:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazne nogawice [Iron Leggings]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest71Started"
+
+      dailyEasy72:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazny napierśnik [Iron Chestplate]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest72Started"
+
+      dailyEasy73:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj Żelazne buty [Iron Boots]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest73Started"
+
+      dailyEasy74:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Pochodnie [Torch]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest74Started"
+
+      dailyEasy75:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Przyciski [Button]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest75Started"
+
+      dailyEasy76:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Płoty [Fence]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest76Started"
+
+      dailyEasy77:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Furtki [Fence Gate]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest77Started"
+
+      dailyEasy78:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Schody [Stairs]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest78Started"
+
+      dailyEasy79:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Płyty [Slab]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest79Started"
+
+      dailyEasy80:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Drzwi [Door]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest80Started"
+
+      dailyEasy81:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Klapy [Trapdoor]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest81Started"
+
+      dailyEasy82:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Płytki naciskowe [Pressure Plate]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest82Started"
+
+      dailyEasy83:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 8 Łódki [Boat]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest83Started"
+
+      dailyEasy84:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Tabliczki [Sign]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest84Started"
+
+      dailyEasy85:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Brukowe Schody [Cobblestone Stairs]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest85Started"
+
+      dailyEasy86:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Brukowe płyty [Cobblestone Slab]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest86Started"
+
+      dailyEasy87:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Brukowe Murki [Cobblestone Wall]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest87Started"
+
+      dailyEasy88:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Łupkowe brukowe schody [Cobbled Deepslate Stairs]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest88Started"
+
+      dailyEasy89:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Łupkowe brukowe płyty [Cobbled Deepslate Slab]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest89Started"
+
+      dailyEasy90:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 64 Łupkowe brukowe murki[Cobbled Deepslate Wall]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest90Started"
+
+      dailyEasy91:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 32 Ceglane schody [Brick Stairs]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest91Started"
+
+      dailyEasy92:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 32 Ceglane płyty [Brick Slab]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest92Started"
+
+      dailyEasy93:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 32 Ceglane murki [Brick Wall]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest93Started"
+
+      dailyEasy94:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 8 Dzwonów [Bell]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest94Started"
+
+      dailyEasy95:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 32 Tłoki [Piston]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest95Started"
+
+      dailyEasy96:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &eScraftuj 1 Stół do zaklinania [Enchanting Table]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest96Started"
+
+      dailyEasy97:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &aEasy"
+          - " &l&7» &aCel: &ePrzynieś 64 Śnieżka [Snowball]"
+        conditions: "Quests-Odnawialne.EasyDailyQuest97Started"
+      dailyMedium1:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 640 Piasku [Sand]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest1Started"
+
+      dailyMedium2:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 320 Łupkowego bruku [Deepslate]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest2Started"
+
+      dailyMedium3:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Pnączy [Vines]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest3Started"
+
+      dailyMedium4:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 32 Kakao [Cocoa Beans]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest4Started"
+
+      dailyMedium5:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Kawałki arbuza [Melon Slice]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest5Started"
+
+      dailyMedium6:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Dyń [Pumpkin]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest6Started"
+
+      dailyMedium7:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Ziemniaków [Potato]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest7Started"
+
+      dailyMedium8:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Marchwi [Carrot]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest8Started"
+
+      dailyMedium9:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 8 Surowych królików [Rabbit]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest9Started"
+
+      dailyMedium10:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Słodkie jagody [Sweet Berries]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest10Started"
+
+      dailyMedium11:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Jabłek [Apple]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest11Started"
+
+      dailyMedium12:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Nasion dyni [Pumpkin Seeds]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest12Started"
+
+      dailyMedium13:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Nasion arbuza [Melon Seeds]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest13Started"
+
+      dailyMedium14:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Chleby [Bread]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest14Started"
+
+      dailyMedium15:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 64 Zamszonych bruków [Mossy Cobblestone]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest15Started"
+
+      dailyMedium16:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Lili wodnych [Lily Pad]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest16Started"
+
+      dailyMedium17:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Borowików [Brown Mushroom]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest17Started"
+
+      dailyMedium18:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzynieś 16 Muchomorów [Red Mushroom]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest18Started"
+
+      dailyMedium19:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZabij 48 Owiec [Sheep]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest19Started"
+
+      dailyMedium20:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZabij 48 Krów [Cow]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest20Started"
+
+      dailyMedium21:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZabij 48 Świń [Pig]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest21Started"
+
+      dailyMedium22:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZabij 48 Kur [Chicken]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest22Started"
+
+      dailyMedium23:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzepal 64 Mięsa z owcy [Mutton]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest23Started"
+
+      dailyMedium24:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzepal 64 Mięsa z krowy [Beef]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest24Started"
+
+      dailyMedium25:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzepal 64 Mięsa ze świni [Porkchop]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest25Started"
+
+      dailyMedium26:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzepal 64 Mięsa z kurczaka [Chicken]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest26Started"
+
+      dailyMedium27:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &ePrzepal 64 Wodorostów [Kelp]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest27Started"
+
+      dailyMedium28:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZłów 32 Surowe dorsze [Raw Cod]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest28Started"
+
+      dailyMedium29:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZłów 32 Surowe łososie [Raw Salmon]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest29Started"
+
+      dailyMedium30:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZłów 32 Ryby tropikalne [Tropical Fish]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest30Started"
+
+      dailyMedium31:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eZłów 8 Rozdymek [Pufferfish]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest31Started"
+
+      dailyMedium32:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eWykop 64 Obsydianu [Obsidian]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest32Started"
+
+      dailyMedium33:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 32 Bloki suszonych wodorostów [Dried Kelp Block]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest33Started"
+
+      dailyMedium34:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Łańcuchów [Chain]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest34Started"
+
+      dailyMedium35:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Żelazne kraty [Iron Bars]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest35Started"
+
+      dailyMedium36:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Tory [Rail]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest36Started"
+
+      dailyMedium37:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Tory z napędem [Powered Rail]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest37Started"
+
+      dailyMedium38:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 48 Torów detekcyjnych [Detector Rail]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest38Started"
+
+      dailyMedium39:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 48 Torów aktywacyjnych [Activator Rail]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest39Started"
+
+      dailyMedium40:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Papieru [Paper]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest40Started"
+
+      dailyMedium41:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 64 Ognisk [Campfire]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest41Started"
+
+      dailyMedium42:
+            item: "daily"
+            text: 
+              - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+              - " &l&7» &cPoziom Trudności: &6Medium"
+              - " &l&7» &aCel: &eScraftuj 16 Ciast dyniowych [Pumpkin Pie]"
+            conditions: "Quests-Odnawialne.MediumDailyQuest42Started"
+      dailyHard1:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Sztabek żelaza [Iron Ingot]"
+        conditions: "Quests-Odnawialne.HardDailyQuest1Started"
+
+      dailyHard2:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Sztabek złota [Gold Ingot]"
+        conditions: "Quests-Odnawialne.HardDailyQuest2Started"
+
+      dailyHard3:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 320 Czerwonego piasku [Red Sand]"
+        conditions: "Quests-Odnawialne.HardDailyQuest3Started"
+
+      dailyHard4:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 16 Małych pąków ametystu [Small Amethyst Bud]"
+        conditions: "Quests-Odnawialne.HardDailyQuest4Started"
+
+      dailyHard5:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś Blok szlamu [Slime Block]"
+        conditions: "Quests-Odnawialne.HardDailyQuest5Started"
+
+      dailyHard6:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 4 Perły Kresu [Ender Pearl]"
+        conditions: "Quests-Odnawialne.HardDailyQuest6Started"
+
+      dailyHard7:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 320 Terakoty [Terracotta]"
+        conditions: "Quests-Odnawialne.HardDailyQuest7Started"
+
+      dailyHard8:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Zgniłego mięsa [Rotten Flesh]"
+        conditions: "Quests-Odnawialne.HardDailyQuest8Started"
+
+      dailyHard9:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Nici [String]"
+        conditions: "Quests-Odnawialne.HardDailyQuest9Started"
+
+      dailyHard10:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Kości [Bone]"
+        conditions: "Quests-Odnawialne.HardDailyQuest10Started"
+
+      dailyHard11:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 48 Oczu pająka [Spider Eye]"
+        conditions: "Quests-Odnawialne.HardDailyQuest11Started"
+
+      dailyHard12:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 16 Prochu [Gunpowder]"
+        conditions: "Quests-Odnawialne.HardDailyQuest12Started"
+
+      dailyHard13:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 8 Trujących ziemniaków [Poisonous Potato]"
+        conditions: "Quests-Odnawialne.HardDailyQuest13Started"
+
+      dailyHard14:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 128 Złotych marchewek [Golden Carrot]"
+        conditions: "Quests-Odnawialne.HardDailyQuest14Started"
+
+      dailyHard15:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 32 Plastry miodu [Honeycomb]"
+        conditions: "Quests-Odnawialne.HardDailyQuest15Started"
+
+      dailyHard16:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 32 Butelki miodu [Honey Bottle]"
+        conditions: "Quests-Odnawialne.HardDailyQuest16Started"
+
+      dailyHard17:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 32 Sakwy świetlnego atramentu [Glow Ink Sac]"
+        conditions: "Quests-Odnawialne.HardDailyQuest17Started"
+
+      dailyHard18:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Obsydianu [Obsidian]"
+        conditions: "Quests-Odnawialne.HardDailyQuest18Started"
+
+      dailyHard19:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 1 Róg kozy [Goat Horn]"
+        conditions: "Quests-Odnawialne.HardDailyQuest19Started"
+
+      dailyHard20:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 64 Kalcytu [Calcite]"
+        conditions: "Quests-Odnawialne.HardDailyQuest20Started"
+
+      dailyHard21:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &ePrzynieś 32 Pajęczyny [Cobweb]"
+        conditions: "Quests-Odnawialne.HardDailyQuest21Started"
+
+      dailyHard22:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZjedz 4 Złote jabłka [Golden Apple]"
+        conditions: "Quests-Odnawialne.HardDailyQuest22Started"
+
+      dailyHard23:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 48 Zombie [Zombie]"
+        conditions: "Quests-Odnawialne.HardDailyQuest23Started"
+
+      dailyHard24:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 48 Szkieletów [Skeleton]"
+        conditions: "Quests-Odnawialne.HardDailyQuest24Started"
+
+      dailyHard25:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 48 Pająków [Spider]"
+        conditions: "Quests-Odnawialne.HardDailyQuest25Started"
+
+      dailyHard26:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 16 Creeperów [Creeper]"
+        conditions: "Quests-Odnawialne.HardDailyQuest26Started"
+
+      dailyHard27:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 6 Endermanów [Enderman]"
+        conditions: "Quests-Odnawialne.HardDailyQuest27Started"
+
+      dailyHard28:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 1 Wardena [Warden]"
+        conditions: "Quests-Odnawialne.HardDailyQuest28Started"
+
+      dailyHard29:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 8 Żółwi [Turtle]"
+        conditions: "Quests-Odnawialne.HardDailyQuest29Started"
+
+      dailyHard30:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZabij 8 Żab [Frog]"
+        conditions: "Quests-Odnawialne.HardDailyQuest30Started"
+
+      dailyHard31:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eWykop 16 Rud diamentów [Diamond Ore]"
+        conditions: "Quests-Odnawialne.HardDailyQuest31Started"
+
+      dailyHard32:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eWykop 4 Rudy szmaragdów [Emerald Ore]"
+        conditions: "Quests-Odnawialne.HardDailyQuest32Started"
+
+      dailyHard33:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eZniszcz 32 Uschnięte krzewy [Dead Bush]"
+        conditions: "Quests-Odnawialne.HardDailyQuest33Started"
+
+      dailyHard34:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj 4 Kowadła [Anvil]"
+        conditions: "Quests-Odnawialne.HardDailyQuest34Started"
+
+      dailyHard35:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj 16 Żelaznych drzwi [Iron Door]"
+        conditions: "Quests-Odnawialne.HardDailyQuest35Started"
+
+      dailyHard36:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj 24 Żelazne klapy [Iron Trapdoor]"
+        conditions: "Quests-Odnawialne.HardDailyQuest36Started"
+
+      dailyHard37:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj Diamentowy miecz, Diamentowy kilof, Diamentową motykę, Diamentową siekierę, Diamentową łopatę [Diamond Tools]"
+        conditions: "Quests-Odnawialne.HardDailyQuest37Started"
+
+      dailyHard38:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj 8 Gulaszów z królika [Rabbit Stew]"
+        conditions: "Quests-Odnawialne.HardDailyQuest38Started"
+
+      dailyHard39:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj Cały diamentowy set [Diamond Armor Set]"
+        conditions: "Quests-Odnawialne.HardDailyQuest39Started"
+
+      dailyHard40:
+        item: "daily"
+        text: 
+          - "&7&l[&x&7&C&A&3&F&3&lZadanie Dzienne&7&l]"
+          - " &l&7» &cPoziom Trudności: &4Hard"
+          - " &l&7» &aCel: &eScraftuj 32 Książki z piórem [Book and Quill]"
+        conditions: "Quests-Odnawialne.HardDailyQuest40Started"
+    # Weekly   
+      weeklyMain:
+        item: "weekly"
+        text: "&7&l[&x&7&C&A&3&F&3&lZadanie Tygodniowe&7&l]"
+    # Monthly   
+      monthlyMain:
+        item: "monthly"
+        text: "&7&l[&x&7&C&A&3&F&3&lZadanie Miesięczne&7&l]"
+conditions:
+events:
+items:
+  daily: PAPER custom-model-data:6012
+  weekly: PAPER custom-model-data:6013
+  monthly: PAPER custom-model-data:6014

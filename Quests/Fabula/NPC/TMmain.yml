@@ -1,0 +1,7 @@
+conversations:
+  TM:
+    quester: "Tajemniczy mężczyzna"
+    first: tm-1, default
+
+    NPC_options:
+      default: "Nie ma mnie tutaj, nie widzisz mnie"

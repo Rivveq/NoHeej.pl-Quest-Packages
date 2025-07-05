@@ -1,0 +1,35 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka4;1:
+        text: "*BERP* Młody, chodź, mam dla Ciebie robotę!"
+        pointer: "ZabijakaGracz4;1, ZabijakaGracz4;2"
+        condition: "Zabijaka3TagDone,!Zabijaka4TagStarted,!Zabijaka4TagDone"
+        
+      Zabijaka4;2:
+        text: "Potrzebujemy Twojej pomocy! Te szkodniki są wszędzie. Już nie wiem, jak się ich pozbyć. Zaczęło się od kilku jajek. Kupcy postanowili je sprzedać jako “Egzotyczny przysmak”. Następnego dnia ulice były pełne małych, szarych potworków. Oczywiście, wynagrodzę Cię za Twój wysiłek."
+        pointer: "ZabijakaGracz4;3, ZabijakaGracz4;4,ZabijakaGracz4;5"
+        
+      Zabijaka4;4:
+        text: "Dobra robota %player%! Jakbym nie wiedział, że to Twoja zasługa, pomyślałbym, że miasto opłaciło deratyzatora! Haha! Trzymaj, zdrowia."
+        condition: "Zabijaka4TagMobKilled,!Zabijaka4TagDone"
+        pointer: "ZabijakaGracz4;6"
+        
+    player_options:
+      ZabijakaGracz4;1:
+        text: "&x&F&8&F&F&A&1Cześć, Sigmundzie, co tam u Ciebie."
+        pointer: "Zabijaka4;2"
+      ZabijakaGracz4;2:
+        text: "&x&f&f&6&9&6&1Wybacz, nie mogę teraz..."
+      ZabijakaGracz4;3:
+        text: "&x&F&8&F&F&A&1Szkodniki? Nienawidzę Szkodników!!!"
+        events: "Zabijaka4TagStartedEvent,Zabijaka4QuestInfo,Zabijaka4RunMob"
+      ZabijakaGracz4;4:
+        text: "&x&F&8&F&F&A&1Spokojnie, wybiję je."
+        events: "Zabijaka4TagStartedEvent,Zabijaka4QuestInfo,Zabijaka4RunMob"
+      ZabijakaGracz4;5:
+        text: "&x&f&f&6&9&6&1Wybacz, nie jestem łowcą szczurów."
+      ZabijakaGracz4;6:
+        text: "&x&F&8&F&F&A&1Było łatwiej niż sądzisz *hah*!"
+        event: "Zabijaka4TagDone,Zabijaka4RewardFolder"

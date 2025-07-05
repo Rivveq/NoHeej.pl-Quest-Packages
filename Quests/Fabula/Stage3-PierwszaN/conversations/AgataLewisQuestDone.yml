@@ -1,0 +1,36 @@
+conversations:
+  Agata:
+    NPC_options:
+      
+      # 1.Recepcja
+      q3-agata-1-LewisQuest:
+        condition: con_tag_3LewisDone
+        text: "O wróciłeś, kiedy przyjeżdża ta osobistość?"
+        pointer: q3-player-1a-LewisQuest, q3-player-1b-LewisQuest, q3-player-1c-LewisQuest, q3-player-1d-LewisQuest
+      
+      # 2.Prosba o klucz
+      q3-agata-2-LewisQuest:
+        text: "Dobrze, dziękuje ci za informacje! A tak przy okazji… Chris mówił, że chciałby się z Tobą jutro widzieć."
+        pointer: q3-player-2-LewisQuest
+      
+    
+    player_options:
+      
+      # 1.
+      q3-player-1a-LewisQuest:
+        text: "Według Lewisa 22.06."
+        pointer: q3-agata-2-LewisQuest
+      q3-player-1b-LewisQuest:
+        text: "Powiedział mi, że 19.07."
+        pointer: q3-agata-2-LewisQuest
+      q3-player-1c-LewisQuest:
+        text: "Z jego notatek wynika, że jest to 09.11."
+        pointer: q3-agata-2-LewisQuest
+      q3-player-1d-LewisQuest:
+        text: "Jakoś 30.06…"
+        pointer: q3-agata-2-LewisQuest
+        
+      q3-player-2-LewisQuest:
+        text: "Dobrze, prześpię się i rano do niego pójdę!"
+        events: "del_tag_3LewisDone,GoSleepNotify,GoSleepObjective,add_tag_3Chris_O1"
+      

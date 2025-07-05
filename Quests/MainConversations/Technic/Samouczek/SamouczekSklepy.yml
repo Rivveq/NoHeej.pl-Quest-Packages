@@ -1,0 +1,64 @@
+conversations:
+  SamouczekSklepy:
+    quester: Samouczek "Sklepy"
+    first: 1r-samskl
+
+    NPC_options:
+    
+    # 1 Poruszanie
+    
+      1r-samskl:
+        text: "Cześć, %player%. Przypomnę Ci jak u nas działa handel."
+        pointer: 1o-samskl-a, 1o-samskl-b, 1o-samskl-c, 2o-samskl-b
+        
+    # 2 Powtorka
+        
+      2r-samskl-a:
+        text: "W sklepie dostępne jest &l14&r przedmiotów przedmiotów każdy o swojej cenie i rzadkośći. W ofercie danego sklepikarza znajduje się &r&l7 przedmiotów pospolitych&r, najtańszych, ale również najgorszych w grze. &e&l4 przedmioty niepospolite&r, &e&l2 rzadkie&r oraz &e&l1 legendarny&r, czyli najdroższy, lecz najlepszy w całej okolicy."
+        pointer: 1o-samskl-a2
+        
+      2r-samskl-a2:
+        text: "Może zdażyć się sytuacja w której sklepikarz nie będzie miał konkretnego przedmiotu w swojej ofercie i przykładowo w danym momencie nie będzie możliwości kupna przedmiotów legendarnych."
+        pointer: 2o-samskl-a
+        
+      2r-samskl-b:
+        text: "Nasi handlarze posiadają najlepsze konie i wozy transportowe dzięki czemu potrafią szybko wymieniać swoje towary, aż 4 razy dziennie. Żeby być dokładnym to co 6 godzin."
+        pointer: 2o-samskl-a
+        
+      2r-samskl-c:
+        text: "Każdy kupiec zna zasady handlu i wie, że klient ma zawsze rację, dzięki czemu dopuszcza opcję obniżenia swoich cen. Możesz próbować targowania się z nimi, i obniżyć cenę towarów aż o 10 procent. Masz na to  3 szanse, ale uważaj gdyż interes musi się kręcić i bardzo łatwo ich zdenerwać."
+        pointer: 1o-samskl-c2
+        
+      2r-samskl-c2:
+        text: "Każda nieudana próba zwiększa ryzyko niepowodzenia kolejnej, 3 nieudana próba skutkuje zablokowaniem się możliwośći handlu na 5 minut, a targowania 15 minut."
+        pointer: 2o-samskl-a
+        
+    # Odpowiedzi
+
+    player_options: 
+    
+    # 1 Odpowiedz
+    
+      1o-samskl-a:
+        text: "&fIlość i jakość przedmiotów."
+        pointer: 2r-samskl-a
+      1o-samskl-a2:
+        text: "&f..."
+        pointer: 2r-samskl-a2
+      1o-samskl-b:
+        text: "&fReset sklepu."
+        pointer: 2r-samskl-b
+      1o-samskl-c:
+        text: "&fTargowanie."
+        pointer: 2r-samskl-c
+      1o-samskl-c2:
+        text: "&f..."
+        pointer: 2r-samskl-c2
+        
+      # 2 Odpowiedz
+        
+      2o-samskl-a:
+        text: "&fRozumiem, dziekuję."
+        pointer: 1r-samskl
+      2o-samskl-b:
+        text: "&x&f&f&6&9&6&1Dobrze, dziekuję."

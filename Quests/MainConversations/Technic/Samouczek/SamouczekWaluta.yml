@@ -1,0 +1,44 @@
+conversations:
+  SamouczekWaluta:
+    quester: Samouczek "Waluta"
+    first: 1r-samwal
+
+    # Wejscie na samouczek farby
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-samwal: 
+        text: "Witaj %player%, oto jak działa waluta serwerowa!"
+        pointer: 1o-samwal-a, 1o-samwal-b, 1o-samwal-c, 1o-samwal-d
+      2r-samwal-a:
+        text: "Zwykła waluta używana jest w np. handlu oraz wymianach. Można ją dostać za &lukończenie zadań&r lub &lsprzedaż przedmiotów&r."
+        pointer: 1o-samwal-e
+      2r-samwal-b:
+        text: "&lWalutę premium&r otrzymuje się poprzez jej zakup na &e&lnoheej.pl&r. Za walutę premium kupowane są przykładowo &lSkrzynie z Farbami&r, &lrangi (Vip oraz Svip)&r oraz &lklasy premium&r."
+        pointer: 1o-samwal-e
+      2r-samwal-c:
+        text: "Eventowa zaś dostępna jest podczas różnych wydarzeń serwerowych i wymieniana jest na unikalne nagrody."
+        pointer: 1o-samwal-e
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor tematu
+
+      1o-samwal-a:
+        text: "&7Zwykła"
+        pointer: 2r-samwal-a
+      1o-samwal-b:
+        text: "&6Premium"
+        pointer: 2r-samwal-b
+      1o-samwal-c:
+        text: "&5Eventowa"
+        pointer: 2r-samwal-c
+      1o-samwal-d:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."
+      1o-samwal-e:
+        text: "&fRozumiem."
+        pointer: 1r-samwal

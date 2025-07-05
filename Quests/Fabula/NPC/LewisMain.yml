@@ -1,0 +1,8 @@
+conversations:
+  Lewis:
+    quester: Lewis
+    first: q3-Lewis-1, default
+
+    NPC_options:
+      default:
+        text: "Szukasz czegoś? Posiadam kryształy, złoto i drogie zegarki, daj znać jak coś cie zainteresuje!"

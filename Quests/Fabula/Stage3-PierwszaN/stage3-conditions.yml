@@ -1,1 +1,13 @@
 conditions:
+  con_tag_3Agata_Done: "tag 3Agata_Done"
+  con_tag_3Agata_RoomChecked: "tag 3Agata_RoomChecked"
+  con_tag_3TM_hidden: "tag 3TM_hidden"
+  con_tag_3AgataPowrótDone+Lewis: "tag 3AgataPowrótDone+Lewis"
+  con_tag_3LewisDone: "tag 3LewisDone"
+  con_tag_TM_item_found: "tag TM_item_found"
+  con_tag_3Chris_O1: "tag 3Chris_O1"
+  con_tag_3Chris_O2: "tag 3Chris_O2"
+  con_tag_3Barbara_clue: "tag 3Barbara_clue"
+  con_tag_3Adam_clue: "tag 3Adam_clue"
+  con_tag3Wes_clue: "tag 3Wes_clue"
+  con_tag3Show_TM: "tag 3Show_TM"

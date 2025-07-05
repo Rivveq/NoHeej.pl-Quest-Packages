@@ -1,0 +1,32 @@
+conversations:
+  SamouczekWejscie:
+    quester: Emily
+    first: 1r-sam
+
+    # Wejscie na samouczek u recepcionistyki na spawnie
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-sam: 
+        text: "Witaj %player%, wybierz gdzie chcesz się udać lub co chcesz wiedzieć"
+        pointer: 1o-sam-a, 1o-sam-c, 1o-samlink, 1o-sam-b
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor czy chcesz sie tp na samouczek
+
+      1o-sam-a:
+        text: "&x&E&F&6&E&F&FPrzenieś mnie na &f&lSamouczek"
+        event: "SamouczekTP"
+      1o-sam-c:
+        text: "&x&E&F&6&E&F&FPrzenieś mnie na &a&lTargowisko"
+        event: "TargowiskoTP"
+      1o-samlink:
+        text: "&fLinki do Social Mediów"
+        event: "SamouczekNotifyStrona, SamouczekNotifyDiscord, SamouczekNotifyInstagram, SamouczekNotifyYoutube, SamouczekNotifyTiktok"
+      1o-sam-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."

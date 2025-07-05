@@ -1,0 +1,38 @@
+conversations:
+  Sigmund:
+    
+    NPC_options:
+      Zabijaka10;1:
+        text: "Młody, sprawa się komplikuje! Ostatnio to jednak nie było twoje ostatnie zlecenie. Po twoim ostatnim starciu, zaczęliśmy kopać głębiej… i natrafiliśmy na coś większego. Dużo większego. Potrzebuję Cię znowu."
+        pointer: "ZabijakaGracz10;1, ZabijakaGracz10;2, ZabijakaGracz10;3"
+        condition: "Zabijaka9TagDone,!Zabijaka10TagStarted,!Zabijaka10TagDone"
+        
+      Zabijaka10;2:
+        text: "Mamy potwierdzenie, że w okolicznych bagnach i ruinach pojawiła się cała armia martwiaków. Szkielety, jakieś porzucone psy – zwą je Strayami – i coś, co miejscowi nazywają „Bagniakami”. Są pokryci błotem, ale to nie są zwykli topielcy. To coś gorszego. I więcej ich z każdą nocą."
+        pointer: "ZabijakaGracz10;4, ZabijakaGracz10;5"
+        
+        
+      Zabijaka10;3:
+        text: "Hah! I znowu żyjesz. Masz talent do przeżywania, to trzeba Ci oddać. A teraz, zgodnie z obietnicą... twoja nagroda!"
+        condition: "Zabijaka10TagMobKilled,!Zabijaka10TagDone"
+        pointer: "ZabijakaGracz10;6"
+        
+    player_options:
+      ZabijakaGracz10;1:
+        text: "&x&F&8&F&F&A&1Ostatnie? Znowu kłopoty? Dawaj, co tym razem."
+        pointer: "Zabijaka10;2"
+      ZabijakaGracz10;2:
+        text: "&x&F&8&F&F&A&1Mam przeczucie, że tym razem będzie gorzej, co?"
+        pointer: "Zabijaka10;2"
+      ZabijakaGracz10;3:
+        text: "&x&f&f&6&9&6&1Nie licz na mnie, mam już dość."
+        
+      ZabijakaGracz10;4:
+        text: "&x&F&8&F&F&A&1Brzmi jak robota dla mnie! Coś czuje, że będzie się działo!"
+        events: "Zabijaka10TagStartedEvent,Zabijaka10QuestInfo,Zabijaka10RunMob"
+      ZabijakaGracz10;5:
+        text: "&x&f&f&6&9&6&1To ponad moje siły."
+        
+      ZabijakaGracz10;6:
+        text: "&x&F&8&F&F&A&1Po prostu ta robota to moje życie, hah! Jak będą kolejne kłopoty to daj znać!"
+        event: "Zabijaka10TagDone,Zabijaka10RewardFolder"

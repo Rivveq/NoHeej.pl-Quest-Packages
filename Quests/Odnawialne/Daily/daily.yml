@@ -1,0 +1,941 @@
+conversations:
+  Daily:
+    quester: 'Daily'
+    first: "EasyDailyReward, MediumDailyReward, HardDailyReward, DailyBringItemEasyQuest1, DailyBringItemEasyQuest2, DailyBringItemEasyQuest3, DailyBringItemEasyQuest4, DailyBringItemEasyQuest5, DailyBringItemEasyQuest6, DailyBringItemEasyQuest7, DailyBringItemEasyQuest8, DailyBringItemEasyQuest9, DailyBringItemEasyQuest10, DailyBringItemEasyQuest11, DailyBringItemEasyQuest12, DailyBringItemEasyQuest13, DailyBringItemEasyQuest14, DailyBringItemEasyQuest15, DailyBringItemEasyQuest16, DailyBringItemEasyQuest17, DailyBringItemEasyQuest18, DailyBringItemEasyQuest19, DailyBringItemEasyQuest20, DailyBringItemEasyQuest21, DailyBringItemEasyQuest22, DailyBringItemEasyQuest23, DailyBringItemEasyQuest24, DailyBringItemEasyQuest25, DailyBringItemEasyQuest26, DailyBringItemEasyQuest27, DailyBringItemEasyQuest28, DailyBringItemEasyQuest29, DailyBringItemEasyQuest30, DailyBringItemEasyQuest31, DailyBringItemEasyQuest32, DailyBringItemEasyQuest33, DailyBringItemEasyQuest34, DailyBringItemEasyQuest35, DailyBringItemEasyQuest36, DailyBringItemEasyQuest37, DailyBringItemEasyQuest38, DailyBringItemEasyQuest39, DailyBringItemEasyQuest40, DailyBringItemEasyQuest41, DailyBringItemEasyQuest42, DailyBringItemEasyQuest91, DailyBringItemMediumQuest1, DailyBringItemMediumQuest2, DailyBringItemMediumQuest3, DailyBringItemMediumQuest4, DailyBringItemMediumQuest5, DailyBringItemMediumQuest6, DailyBringItemMediumQuest7, DailyBringItemMediumQuest8, DailyBringItemMediumQuest9, DailyBringItemMediumQuest10, DailyBringItemMediumQuest11, DailyBringItemMediumQuest12, DailyBringItemMediumQuest13, DailyBringItemMediumQuest14, DailyBringItemMediumQuest15, DailyBringItemMediumQuest16, DailyBringItemMediumQuest17, DailyBringItemMediumQuest18, DailyBringItemHardQuest1, DailyBringItemHardQuest2, DailyBringItemHardQuest3, DailyBringItemHardQuest4, DailyBringItemHardQuest5, DailyBringItemHardQuest6, DailyBringItemHardQuest7, DailyBringItemHardQuest8, DailyBringItemHardQuest9, DailyBringItemHardQuest10, DailyBringItemHardQuest11, DailyBringItemHardQuest12, DailyBringItemHardQuest13, DailyBringItemHardQuest14, DailyBringItemHardQuest15, DailyBringItemHardQuest16, DailyBringItemHardQuest17, DailyBringItemHardQuest18, DailyBringItemHardQuest19, DailyBringItemHardQuest20, DailyBringItemHardQuest21, EasyDaily, MediumDaily, HardDaily, RarityRandomPick, Default"
+    
+    NPC_options:
+      Default:
+        text: "Piękny dziś dzień, nie sądzisz?"
+      RarityRandomPick:
+        text: "Witaj %player%, chcesz otrzymać dzienne zadanie?"
+        pointer: "PlayerAcceptDailyQuest, PlayerRejectDailyQuest"
+        conditions: "!EasyQuestTag, !MediumQuestTag, !HardQuestTag, !EasyQuestStartedTag, !MediumQuestStartedTag, !HardQuestStartedTag, !EasyQuestDone, !MediumQuestDone, !HardQuestDone, !DailyTaskCompleted"
+      EasyDaily:
+        text: "Trafiłeś dziś quest na poziomie *easy*, naciśnij akceptuj aby potwierdzić"
+        condition: "EasyQuestTag, !EasyQuestStartedTag, !DailyTaskCompleted"
+        pointer: "PlayerConfrimDailyEasyQuest"
+      MediumDaily:
+        text: "Trafiłeś dziś quest na poziomie *medium*, naciśnij akceptuj aby potwierdzić"
+        condition: "MediumQuestTag, !MediumQuestStartedTag, !DailyTaskCompleted"
+        pointer: "PlayerConfrimDailyMediumQuest"
+      HardDaily:
+        text: "Trafiłeś dziś quest na poziomie *hard*, naciśnij akceptuj aby potwierdzić"
+        condition: "HardQuestTag, !HardQuestStartedTag, !DailyTaskCompleted"
+        pointer: "PlayerConfrimDailyHardQuest"
+        
+        
+   # Przynoszenie itemów  easy
+      DailyBringItemEasyQuest1:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest1"
+        # Tutaj wpisuje się condition jakie gracz ma itemy przynieść
+        condition: "EasyDailyQuest1CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest1Started"
+        
+      DailyBringItemEasyQuest2:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest2"
+        condition: "EasyDailyQuest2CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest2Started"
+
+      DailyBringItemEasyQuest3:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest3"
+        condition: "EasyDailyQuest3CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest3Started"
+
+      DailyBringItemEasyQuest4:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest4"
+        condition: "EasyDailyQuest4CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest4Started"
+
+      DailyBringItemEasyQuest5:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest5"
+        condition: "EasyDailyQuest5CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest5Started"
+
+      DailyBringItemEasyQuest6:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest6"
+        condition: "EasyDailyQuest6CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest6Started"
+
+      DailyBringItemEasyQuest7:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest7"
+        condition: "EasyDailyQuest7CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest7Started"
+
+      DailyBringItemEasyQuest8:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest8"
+        condition: "EasyDailyQuest8CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest8Started"
+
+      DailyBringItemEasyQuest9:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest9"
+        condition: "EasyDailyQuest9CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest9Started"
+
+      DailyBringItemEasyQuest10:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest10"
+        condition: "EasyDailyQuest10CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest10Started"
+
+      DailyBringItemEasyQuest11:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest11"
+        condition: "EasyDailyQuest11CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest11Started"
+
+      DailyBringItemEasyQuest12:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest12"
+        condition: "EasyDailyQuest12CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest12Started"
+
+      DailyBringItemEasyQuest13:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest13"
+        condition: "EasyDailyQuest13CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest13Started"
+
+      DailyBringItemEasyQuest14:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest14"
+        condition: "EasyDailyQuest14CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest14Started"
+
+      DailyBringItemEasyQuest15:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest15"
+        condition: "EasyDailyQuest15CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest15Started"
+
+      DailyBringItemEasyQuest16:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest16"
+        condition: "EasyDailyQuest16CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest16Started"
+
+      DailyBringItemEasyQuest17:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest17"
+        condition: "EasyDailyQuest17CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest17Started"
+
+      DailyBringItemEasyQuest18:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest18"
+        condition: "EasyDailyQuest18CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest18Started"
+
+      DailyBringItemEasyQuest19:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest19"
+        condition: "EasyDailyQuest19CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest19Started"
+
+      DailyBringItemEasyQuest20:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest20"
+        condition: "EasyDailyQuest20CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest20Started"
+
+      DailyBringItemEasyQuest21:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest21"
+        condition: "EasyDailyQuest21CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest21Started"
+
+      DailyBringItemEasyQuest22:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest22"
+        condition: "EasyDailyQuest22CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest22Started"
+
+      DailyBringItemEasyQuest23:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest23"
+        condition: "EasyDailyQuest23CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest23Started"
+
+      DailyBringItemEasyQuest24:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest24"
+        condition: "EasyDailyQuest24CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest24Started"
+
+      DailyBringItemEasyQuest25:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest25"
+        condition: "EasyDailyQuest25CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest25Started"
+
+      DailyBringItemEasyQuest26:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest26"
+        condition: "EasyDailyQuest26CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest26Started"
+
+      DailyBringItemEasyQuest27:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest27"
+        condition: "EasyDailyQuest27CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest27Started"
+
+      DailyBringItemEasyQuest28:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest28"
+        condition: "EasyDailyQuest28CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest28Started"
+
+      DailyBringItemEasyQuest29:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest29"
+        condition: "EasyDailyQuest29CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest29Started"
+
+      DailyBringItemEasyQuest30:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest30"
+        condition: "EasyDailyQuest30CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest30Started"
+
+      DailyBringItemEasyQuest31:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest31"
+        condition: "EasyDailyQuest31CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest31Started"
+
+      DailyBringItemEasyQuest32:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest32"
+        condition: "EasyDailyQuest32CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest32Started"
+
+      DailyBringItemEasyQuest33:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest33"
+        condition: "EasyDailyQuest33CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest33Started"
+
+      DailyBringItemEasyQuest34:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest34"
+        condition: "EasyDailyQuest34CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest34Started"
+
+      DailyBringItemEasyQuest35:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest35"
+        condition: "EasyDailyQuest35CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest35Started"
+
+      DailyBringItemEasyQuest36:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest36"
+        condition: "EasyDailyQuest36CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest36Started"
+
+      DailyBringItemEasyQuest37:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest37"
+        condition: "EasyDailyQuest37CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest37Started"
+
+      DailyBringItemEasyQuest38:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest38"
+        condition: "EasyDailyQuest38CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest38Started"
+
+      DailyBringItemEasyQuest39:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest39"
+        condition: "EasyDailyQuest39CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest39Started"
+
+      DailyBringItemEasyQuest40:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest40"
+        condition: "EasyDailyQuest40CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest40Started"
+
+      DailyBringItemEasyQuest41:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest41"
+        condition: "EasyDailyQuest41CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest41Started"
+
+      DailyBringItemEasyQuest42:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest42"
+        condition: "EasyDailyQuest42CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest42Started"
+
+      DailyBringItemEasyQuest91:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsEasyQuest91"
+        condition: "EasyDailyQuest91CheckItem, !EasyQuestDone, EasyQuestStartedTag, !DailyTaskCompleted, EasyDailyQuest91Started"
+
+      DailyBringItemMediumQuest1:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest1"
+        condition: "MediumDailyQuest1CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest1Started"
+
+      DailyBringItemMediumQuest2:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest2"
+        condition: "MediumDailyQuest2CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest2Started"
+
+      DailyBringItemMediumQuest3:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest3"
+        condition: "MediumDailyQuest3CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest3Started"
+
+      DailyBringItemMediumQuest4:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest4"
+        condition: "MediumDailyQuest4CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest4Started"
+
+      DailyBringItemMediumQuest5:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest5"
+        condition: "MediumDailyQuest5CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest5Started"
+
+      DailyBringItemMediumQuest6:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest6"
+        condition: "MediumDailyQuest6CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest6Started"
+
+      DailyBringItemMediumQuest7:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest7"
+        condition: "MediumDailyQuest7CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest7Started"
+
+      DailyBringItemMediumQuest8:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest8"
+        condition: "MediumDailyQuest8CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest8Started"
+
+      DailyBringItemMediumQuest9:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest9"
+        condition: "MediumDailyQuest9CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest9Started"
+
+      DailyBringItemMediumQuest10:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest10"
+        condition: "MediumDailyQuest10CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest10Started"
+
+      DailyBringItemMediumQuest11:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest11"
+        condition: "MediumDailyQuest11CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest11Started"
+
+      DailyBringItemMediumQuest12:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest12"
+        condition: "MediumDailyQuest12CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest12Started"
+
+      DailyBringItemMediumQuest13:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest13"
+        condition: "MediumDailyQuest13CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest13Started"
+
+      DailyBringItemMediumQuest14:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest14"
+        condition: "MediumDailyQuest14CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest14Started"
+
+      DailyBringItemMediumQuest15:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest15"
+        condition: "MediumDailyQuest15CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest15Started"
+
+      DailyBringItemMediumQuest16:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest16"
+        condition: "MediumDailyQuest16CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest16Started"
+
+      DailyBringItemMediumQuest17:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest17"
+        condition: "MediumDailyQuest17CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest17Started"
+
+      DailyBringItemMediumQuest18:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsMediumQuest18"
+        condition: "MediumDailyQuest18CheckItem, !MediumQuestDone, MediumQuestStartedTag, !DailyTaskCompleted, MediumDailyQuest18Started"
+
+      DailyBringItemHardQuest1:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest1"
+        condition: "HardDailyQuest1CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest1Started"
+
+      DailyBringItemHardQuest2:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest2"
+        condition: "HardDailyQuest2CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest2Started"
+
+      DailyBringItemHardQuest3:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest3"
+        condition: "HardDailyQuest3CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest3Started"
+
+      DailyBringItemHardQuest4:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest4"
+        condition: "HardDailyQuest4CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest4Started"
+
+      DailyBringItemHardQuest5:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest5"
+        condition: "HardDailyQuest5CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest5Started"
+
+      DailyBringItemHardQuest6:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest6"
+        condition: "HardDailyQuest6CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest6Started"
+
+      DailyBringItemHardQuest7:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest7"
+        condition: "HardDailyQuest7CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest7Started"
+
+      DailyBringItemHardQuest8:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest8"
+        condition: "HardDailyQuest8CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest8Started"
+
+      DailyBringItemHardQuest9:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest9"
+        condition: "HardDailyQuest9CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest9Started"
+
+      DailyBringItemHardQuest10:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest10"
+        condition: "HardDailyQuest10CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest10Started"
+
+      DailyBringItemHardQuest11:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest11"
+        condition: "HardDailyQuest11CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest11Started"
+
+      DailyBringItemHardQuest12:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest12"
+        condition: "HardDailyQuest12CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest12Started"
+
+      DailyBringItemHardQuest13:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest13"
+        condition: "HardDailyQuest13CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest13Started"
+
+      DailyBringItemHardQuest14:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest14"
+        condition: "HardDailyQuest14CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest14Started"
+
+      DailyBringItemHardQuest15:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest15"
+        condition: "HardDailyQuest15CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest15Started"
+
+      DailyBringItemHardQuest16:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest16"
+        condition: "HardDailyQuest16CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest16Started"
+
+      DailyBringItemHardQuest17:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest17"
+        condition: "HardDailyQuest17CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest17Started"
+
+      DailyBringItemHardQuest18:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest18"
+        condition: "HardDailyQuest18CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest18Started"
+
+      DailyBringItemHardQuest19:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest19"
+        condition: "HardDailyQuest19CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest19Started"
+
+      DailyBringItemHardQuest20:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest20"
+        condition: "HardDailyQuest20CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest20Started"
+
+      DailyBringItemHardQuest21:
+        text: "Widzę, że przyniosłeś wymagane itemy do questa!"
+        pointer: "PlayerBringItemsHardQuest21"
+        condition: "HardDailyQuest21CheckItem, !HardQuestDone, HardQuestStartedTag, !DailyTaskCompleted, HardDailyQuest21Started"
+      
+        
+      EasyDailyReward:
+        text: "Udało ci sie ukonczyc zadanie!"
+        pointer: "PlayerCollectRewardEasy"
+        condition: "EasyQuestDone, !DailyTaskCompleted"
+      MediumDailyReward:
+        text: "Udało ci sie ukonczyc zadanie!"
+        pointer: "PlayerCollectRewardMedium"
+        condition: "MediumQuestDone, !DailyTaskCompleted"
+      HardDailyReward:
+        text: "Udało ci sie ukonczyc zadanie!"
+        pointer: "PlayerCollectRewardHard"
+        condition: "HardQuestDone, !DailyTaskCompleted"
+        
+    player_options:
+      PlayerAcceptDailyQuest:
+        text: "&x&7&C&A&3&F&3Z chęcią przyjmę i wykonam zadanie!"
+        events: "PickRandomDailyRarity"
+        pointer: "EasyDaily,MediumDaily,HardDaily"
+      PlayerRejectDailyQuest:
+        text: "&x&f&f&6&9&6&1Może innym razem..."
+      PlayerConfrimDailyEasyQuest:
+        text: "&x&7&C&A&3&F&3Potwierdzam!"
+        events: "EasyRandomDailyQuest, EasyQuestStartedTagAdd, EasyQuestTagDel"
+      PlayerConfrimDailyMediumQuest:
+        text: "&x&7&C&A&3&F&3Potwierdzam!"
+        events: "MediumRandomDailyQuest, MediumQuestStartedTagAdd, MediumQuestTagDel"
+      PlayerConfrimDailyHardQuest:
+        text: "&x&7&C&A&3&F&3Potwierdzam!"
+        events: "HardRandomDailyQuest, HardQuestStartedTagAdd, HardQuestTagDel"
+        
+    # Easy
+      PlayerBringItemsEasyQuest1:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest1TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsEasyQuest2:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest2TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest3:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest3TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest4:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest4TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest5:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest5TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest6:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest6TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest7:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest7TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest8:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest8TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest9:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest9TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest10:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest10TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest11:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest11TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest12:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest12TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest13:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest13TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest14:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest14TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest15:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest15TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest16:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest16TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest17:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest17TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest18:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest18TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest19:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest19TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest20:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest20TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest21:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest21TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest22:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest22TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest23:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest23TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest24:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest24TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest25:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest25TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest26:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest26TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest27:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest27TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest28:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest28TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest29:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest29TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest30:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest30TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest31:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest31TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest32:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest32TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest33:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest33TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest34:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest34TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest35:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest35TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest36:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest36TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest37:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest37TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest38:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest38TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest39:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest39TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest40:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest40TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest41:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest41TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest42:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest42TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+
+      PlayerBringItemsEasyQuest91:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "EasyDailyReward"
+        events: "EasyDailyQuest91TakeItem, EasyQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+        
+     # Medium
+      PlayerBringItemsMediumQuest1:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest1TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest2:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest2TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest3:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest3TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest4:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest1TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest4:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest4TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest5:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest5TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest6:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest6TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest7:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest7TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest8:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest8TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest9:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest9TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest10:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest10TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest11:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest11TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest12:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest12TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest13:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest13TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest14:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest14TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest15:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest15TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest16:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest16TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest17:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest17TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+        
+      PlayerBringItemsMediumQuest18:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "MediumDailyReward"
+        events: "MediumDailyQuest18TakeItem, MediumQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+     # Hard
+      PlayerBringItemsHardQuest1:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest1TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest2:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest2TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest3:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest3TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest4:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest4TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest5:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest5TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest6:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest6TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest7:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest7TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest8:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest8TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest9:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest9TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest10:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest10TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest11:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest11TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest12:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest12TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest13:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest13TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest14:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest14TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest15:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest15TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest16:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest16TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest17:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest17TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest18:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest18TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest19:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest19TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest20:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest20TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+
+      PlayerBringItemsHardQuest21:
+        text: "&x&7&C&A&3&F&3Ukończ Zadanie!"
+        pointer: "HardDailyReward"
+        events: "HardDailyQuest21TakeItem, HardQuestDone, QuestStartedTagRemove, ResetDailyStartedTags"
+       
+        
+      PlayerCollectRewardEasy:
+        text: "&x&7&C&A&3&F&3Odbierz Nagrode"
+        events: "EasyQuestRewardFolder,DailyTaskCompletedAdd, ResetDailyStartedTags"
+      PlayerCollectRewardMedium:
+        text: "&x&7&C&A&3&F&3Odbierz Nagrode"
+        events: "MediumQuestRewardFolder,DailyTaskCompletedAdd, ResetDailyStartedTags"
+      PlayerCollectRewardHard:
+        text: "&x&7&C&A&3&F&3Odbierz Nagrode"
+        events: "HardQuestRewardFolder,DailyTaskCompletedAdd, ResetDailyStartedTags"
+      
+      
+      

@@ -1,2 +1,14 @@
 objectives:
-  SprawdzPokoj-3: "location 360;72;24;world 2 entry events:notifDziwneDzwieki" # XYZ DO ZMIANY !!!!!!!!!!!
+  SprawdzPokoj3: "location -82;72;57;spawnSeed 2 entry events:conv_room3_entry"
+  SprawdzPokojDzwieki: "location -85;73;61;spawnSeed 1 exit events:conv_roomDzwieki_entry,add_tag_3Agata_RoomChecked"
+  SprawdzPracownieLewisa: "location -71;72;109;spawnSeed 3 entry events:conv_pracownia_narr"
+  
+  CheckRoom_TM: "location -85;73;61;spawnSeed 1 entry events:conv_roomcheck_narr"
+  
+  search_room: "action right BARREL -82;75;61;spawnSeed cancel events:handle_search_clickBarrel range:3"
+  
+  Sleep: "action right RED_WOOL -82;72;58spawnSeed cancel events:SleepingFolder range:2"
+  
+  Mysterious_Key: "location -85;73;62;spawnSeed 1 entry events:conv_mysterious_key_narr"
+  
+  north_port_wes: "location 64;65;-51;spawnSeed 5 entry events:conv_port_wes_narr range:7"

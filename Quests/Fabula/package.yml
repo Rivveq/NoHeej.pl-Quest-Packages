@@ -6,6 +6,14 @@ npcs:
   '50': Tony
   '51': Bella
   '70': Agata
+  '72': TM
+  '52': Lewis
+  '73': Adam
+  '74': Barbara
+  '264': TM_2
+hide_npcs:
+  '72': con_tag_3TM_hidden
+  '264': "!con_tag3Show_TM"
 
 items:
   steak: COOKED_BEEF #Stek, quest-1 Wes
@@ -36,3 +44,7 @@ items:
   pieczony_kurczak: COOKED_CHICKEN
   pieczony_schab: COOKED_PORKCHOP
   pieczony_krolik: COOKED_RABBIT
+  
+  miecz_TM: IRON_SWORD lore:&2Quest_Item
+  mysterious_key: NAME_TAG name:&l&eTajemniczy_Klucz lore:&aKlucz,_który_otwiera_tajemniczą_skrzynkę_z_łupem!;&2Quest_Item
+  secret_letter: PAPER name:&lDziwna_Kartka lore:&7SPOTKAJ_SIĘ_ZE_MNĄ_W_PORCIE_PÓŁNOCNO-ZACHODNIM;&2Quest_Item

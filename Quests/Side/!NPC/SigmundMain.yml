@@ -1,0 +1,11 @@
+conversations:
+  Sigmund:
+    quester: 'Sigmund'
+    first: "Zabijaka12;3, Zabijaka12;1, Zabijaka11;3, Zabijaka11;1, Zabijaka10;3, Zabijaka10;1, Zabijaka9;4, Zabijaka9;1, Zabijaka8;4, Zabijaka8;1, Zabijaka7;4, Zabijaka7;1, Zabijaka6;4, Zabijaka6;1, Zabijaka5;3, Zabijaka5;1, Zabijaka4;4, Zabijaka4;1, Zabijaka3;4, Zabijaka3;1, Zabijaka2;4, Zabijaka2;1, Zabijaka1;5, Zabijaka1;1, NotKilledMob, default"
+    
+    NPC_options:
+      default:
+        text: "Nie lubie nieznajomych, więc lepiej się odsuń!"
+      NotKilledMob:
+        text: "Na co czekasz? Do roboty młokosie! Potwory same się nie wybiją!"
+        condition: "!ZabijakaQuestNotMobKilled"

@@ -1,0 +1,45 @@
+conversations:
+  Wes:
+    NPC_options:
+      q3-Wes-1:
+        text: "Dawno nie rozmawialiśmy. Zadomowiłeś się już w naszym mieście %player%?"
+        conditions: "con_tag3Wes_clue"
+        pointer: q3-player-1a, q3-player-1b
+      q3-Wes-2:
+        text: "Rozumiem, to faktycznie nie brzmi najlepiej… Czy mógłbym coś dla ciebie zrobić?"
+        pointer: q3-player-2a, q3-player-2b
+      q3-Wes-3:
+        text: "Jakiś podejrzany chłop przechodził tym mostem i dał mi ten zwitek, powiedział, że mam go dać pierwszej osobie, która się do mnie odezwie... Czy to możliwe, że chodziło mu o ciebie?"
+        pointer: q3-player-3
+        
+      q3-Wes-4:
+        text: "Oczywiście przyjacielu proszę bardzo."
+        pointer: q3-player-4
+        
+    player_options:
+      q3-player-1a:
+        text: "Dobrze cię znowu widzieć Wes. Miasto wydaje się świetne, natomiast mieszkańcy… Widziałem nikczemnego mężczyznę w pokoju w którym nie powinno być nikogo. Co prawda wyszedłem z tej sytuacji z zaledwie kilkoma zadrapaniami… Jednak od tamtej pory mam się na baczności. Muszę odnaleźć tego łotra i dowiedzieć się kim jest."
+        pointer: q3-Wes-2
+        
+      q3-player-1b:
+        text: "Nie mam czasu by rozmawiać z chłopcem na posyłki."
+        
+      q3-player-2a:
+        text: "Nie widziałeś niczego niecodziennego w okolicy przyjacielu? Jakichś obcych?"
+        pointer: q3-Wes-3
+        
+      q3-player-2b:
+        text: "Chyba tym razem nie będziesz w stanie mi pomóc."
+        
+      q3-player-3:
+        text: "Rozumiem, mógłbyś dać mi tę kartkę?"
+        pointer: q3-Wes-4
+        
+      q3-player-4:
+        text: "Bardzo ci dziękuje! Może dzięki temu uda nam się rozwiązać tą sprawę!"
+        events: "del_tag3Wes_clue,Give_secret_letter,add_tag3Show_TM"
+        
+        
+        
+        
+        

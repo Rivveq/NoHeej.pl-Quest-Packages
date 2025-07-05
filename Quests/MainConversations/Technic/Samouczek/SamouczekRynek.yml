@@ -1,0 +1,44 @@
+conversations: 
+  SamouczekRynek: 
+    quester: Samouczek "Rynek" 
+    first: 1r-samryn 
+
+    # Wejscie na samouczek farby 
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem 
+
+      1r-samryn: 
+        text: "No heej, chcę ci powiedzieć o mechanice marketu, na którym możesz wystawić swoje przedmioty, a inni gracze mogą je kupić. Nasz serwer posiada dwa rodzaje marketów - *Rynek* oraz *Czarny Rynek* - mają one własne cechy."
+        pointer: 1o-samryn-a, 1o-samryn-b, 1o-samryn-c, 1o-samryn-d
+      2r-samryn-a:
+        text: "Zwykły rynek możesz znaleźć w mieście Laxstad, możesz na nim kupować oraz wystawiać przedmioty, lecz musisz wiedzieć, że wystawienie przedmiotów jest objęte 10% podatkiem od ceny."
+        pointer: 1o-samryn-e
+      2r-samryn-b:
+        text: "Czarny Rynek możesz znaleźć w mieście Hulder, również możesz na nim kupować oraz wystawiać przedmioty, lecz wystawienie przedmiotów nie jest objęte podatkiem."
+        pointer: 1o-samryn-e
+      2r-samryn-c:
+        text: "Rynki posiadają limity, jako gracz możesz wystawić 7 ofert, jako vip 14, a jako svip 21. Warto wspomnieć, że czas trwania aktywnej oferty wynosi 7 dni."
+        pointer: 1o-samryn-e
+
+    # odpowiedzi gracza 
+
+    player_options:
+
+    # wybor tematu 
+
+      1o-samryn-a: 
+        text: "&fRynek" 
+        pointer: 2r-samryn-a 
+      1o-samryn-b: 
+        text: "&fCzarny Rynek" 
+        pointer: 2r-samryn-b 
+      1o-samryn-c: 
+        text: "&fLimity" 
+        pointer: 2r-samryn-c 
+      1o-samryn-d: 
+        text: "&x&f&f&6&9&6&1Nie dziękuję." 
+      1o-samryn-e: 
+        text: "&fRozumiem." 
+        pointer: 1r-samryn

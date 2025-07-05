@@ -1,13 +1,140 @@
 events:
+  # Tag events add 
+  add_tag_3Agata_Done: "tag add 3Agata_Done" # dodaje sie po rozmowie z agata o pokoju <klucz>
+  add_tag_3Agata_RoomChecked: "tag add 3Agata_RoomChecked"
+  add_tag_3TM_hide: "tag add 3TM_hidden" # chowa TM
+  add_tag_3AgataPowrótDone+Lewis: "tag add 3AgataPowrótDone+Lewis" # Quest dodatkowy u Lewisa
+  add_tag_3LewisDone: "tag add 3LewisDone" # Quest u lewisa skonczony
+  add_tag_TM_item_found: "tag add TM_item_found" # Znaleziony miecz po przeszukaniu pokoju
+  add_tag_3Chris_O1: "tag add 3Chris_O1"
+  add_tag_3Chris_O2: "tag add 3Chris_O2"
+  add_tag_3Barbara_clue: "tag add 3Barbara_clue"
+  add_tag_3Adam_clue: "tag add 3Adam_clue"
+  add_tag3Wes_clue: "tag add 3Wes_clue"
+  add_tag3Show_TM: "tag add 3Show_TM"
+  
+  # Tag events del
+  del_tag_3Agata_Done: "tag del 3Agata_Done"
+  del_tag_3Agata_RoomChecked: "tag del 3Agata_RoomChecked"
+  del_tag_3AgataPowrótDone+Lewis: "tag del 3AgataPowrótDone+Lewis"
+  del_tag_3LewisDone: "tag del 3LewisDone"
+  del_tag_TM_item_found: "tag del TM_item_found"
+  del_tag_3Chris_O1: "tag del 3Chris_O1"
+  del_tag_3Chris_O2: "tag del 3Chris_O2"
+  del_tag_3Barbara_clue: "tag del 3Barbara_clue"
+  del_tag_3Adam_clue: "tag del 3Adam_clue"
+  del_tag3Wes_clue: "tag del 3Wes_clue"
+  del_tag3Show_TM: "tag del 3Show_TM"
+
   # Objective events
-  addObjectiveSprawdzPokoj-3: "objective add SprawdzPokoj-3"
+  addObjectiveSprawdzPokoj3: "objective add SprawdzPokoj3"
+  addObjectiveSprawdzPokojDzwieki: "objective add SprawdzPokojDzwieki"
+  
+  addObjectiveSprawdzPracownieLewisa: "objective add SprawdzPracownieLewisa"
 
+  # Conversation events
+  conv_cancel: "cancelconversation"
+  
+  conv_room3_entry: "conversation Narrator_room3"
+  conv_roomDzwieki_entry: "conversation Narrator_roomDzwieki"
+  conv_tm: "conversation TM"
+  conv_tm_gone: "conversation Narrator_TM_gone"
+  conv_pracownia_narr: "conversation Narrator_Lewis_Pracownia"
+  conv_roomcheck_narr: "conversation Narrator_Room_Check"
+  conv_mysterious_key_narr: "conversation Narrator_mysterious_key"
+  conv_port_wes_narr: "conversation Narrator_port_wes"
+  
 
-  # Agata Events
+  # Agata events
   takeKluczDoPokoju: "take klucz_do_pokoju"
   
-  # Tajemniczy Mezczyzna Events
-  notifDziwneDzwieki: "folder soundDziwneDzwieki1,soundDziwneDzwieki2,soundDziwneDzwieki1,soundDziwneDzwieki2,notifDziwneDzwiekiChat period:10 ticks"
+  # Dziwne dzwieki events
+  notifDziwneDzwieki: "folder soundDziwneDzwieki1,soundDziwneDzwieki2,soundDziwneDzwieki1,soundDziwneDzwieki2 period:10 ticks"
   soundDziwneDzwieki1: "notify io:sound sound:entity.zombie.attack_wooden_door soundpitch:0 soundvolume:0.5"
   soundDziwneDzwieki2: "notify io:sound sound:entity.zombie.attack_iron_door soundpitch:1 soundvolume:0.5"
-  notifDziwneDzwiekiChat: "notify &eCoś dziwnego dzieje się w pokoju obok... Lepiej to sprawdzę."
+  
+  # TM events
+  folderTMhit: "folder add_tag_3TM_hide,notif_Hit,damage_tm_hit,tp_skycage,eff_blindness,eff_invisibility,notif_Hit_sound,folderTMtpback" #event na narr dialog po powrocie
+  notif_Hit: "notify &f&l[Czujesz gwałtowny ból w okolicy głowy. Robi Ci się ciemno przed oczami.] io:chat"
+  notif_Hit_sound: "notify io:sound sound:entity.player.hurt"
+  damage_tm_hit: "damage 4"
+  tp_skycage: "teleport -85;196;61;spawnSeed"
+  eff_blindness: "effect BLINDNESS 10 255 hidden noicon"
+  eff_invisibility: "effect INVISIBILITY 10 255 hidden noicon"
+  eff_slowness: "effect SLOWNESS 10 255 hidden noicon"
+  
+  folderTMtpback: "folder tp_TMback,conv_tm_gone delay:9"
+  tp_TMback: "teleport -86;73;59;spawnSeed"
+
+  # Levis notify
+  GoToLevisNotify: "notify &7&l-> [&aUdaj się do złotnika &eLewisa&7&l]"
+  FindInformationLewis: "notify &7&l-> [&aZnajdź informacje na temat zamówienia &eMadam Cressedie&7&l]"
+  
+  
+  # Sprawdz pokoj
+  CheckRoomFolder: "folder CheckRoomNumber2Notify,SearchObjectiveAdd,ObjectiveNarrRoom"
+  CheckRoomNumber2Notify: "notify &7&l-> [&aWejdź do pokoju numer 2 i go przeszukaj w celu znalezienia dowodów.&7&l]"
+  
+  HowToSearchNotify: "notify &7&l-> [&aAby przeszukać dany obiekt kliknij na niego prawym przyciskiem myszy.&7&l]"
+  
+  
+  # Przeszukanie
+  SearchObjectiveAdd: "objective start search_room"
+  ObjectiveNarrRoom: "objective start CheckRoom_TM"
+  # To zdarzenie jest wyzwalane przy każdym kliknięciu bloku przeszukiwania.
+  handle_search_clickBarrel:  "folder check_search_stage"
+    # Zwiększa punkt 'search_progress' o 1 i wyzwala zdarzenie 'check_search_stage'.
+
+  # To zdarzenie sprawdza aktualny etap przeszukiwania i wyzwala odpowiednie akcje.
+  check_search_stage: "folder send_message_1Folder,send_message_2Folder,send_message_3Folder,send_message_4Folder"
+
+  send_message_1Folder:  "folder send_message_1 delay:1 seconds"
+  send_message_1:  "notify &7Przeszukiwanie... io:title"  # Wyzwala się, gdy punkt 'search_progress' wynosi 1.
+  
+  send_message_2Folder:  "folder send_message_2 delay:3 seconds"
+  send_message_2: "notify &cPrzes&7zukiwanie... io:title"
+  
+  send_message_3Folder:  "folder send_message_3 delay:5 seconds"
+  send_message_3: "notify &6Przeszuki&7wanie... io:title"
+  
+  send_message_4Folder: "folder send_message_4,give_search_item,search_item_notify,add_tag_TM_item_found delay:6 seconds"
+  send_message_4: "notify &aPrzeszukiwanie... io:title"
+
+  give_search_item: "give miecz_TM" 
+  search_item_notify: "notify &7&l-> [&aZnalazłeś tajemniczy miecz! Możliwe, że należy do tego mężczyzny. Udaj się do &eAgaty&7&l]"
+  
+  
+  # agata sword etap
+  GoSleepObjective: "objective start Sleep"
+  GoSleepNotify: "notify &7&l-> [&aUdaj się do swojego pokoju, aby się przespać!&7&l]"
+  # ---- > Spanie
+  SleepingFolder: "folder eff_invisibility,eff_blindness,eff_slowness,Wake_up_folder,tp_to_bed"
+  Wake_up_folder: "folder Wake_up_notify delay:11 seconds"
+  Wake_up_notify: "notify &7&l-> [&aObudziłeś się! Udaj się do &eChrisa&7&l]"
+  tp_to_bed: "teleport -82;73;59;spawnSeed"
+  
+  # 3 CHRIS ODDAJ MIECZ
+  ChrisTakeSwordFolder: "folder ChrisTakeSword,ChrisTakeSwordNotify"
+  ChrisTakeSword: "take miecz_TM"
+  ChrisTakeSwordNotify: "notify &7&l-> [&aOddałeś tajemniczy miecz Chrisowi.&7&l]"
+  
+  # Notify o poszlakach
+  find_clue_notify: "notify &7&l-> [&aUdaj się do pensjonatu i porozmawiaj z gośćmi z innych pokojów.&7&l]"
+  
+  go_to_north_harbor: "notify &7&l-> [&aWyrusz do portu południowo-wschodniego, aby rozejrzeć się za tajemniczą osobistością!&7&l]"
+   
+ # Objective mysterious key na podlodze :)
+  Give_mysterious_key: "give mysterious_key"
+  add_obj_mysterious_key: "objective add Mysterious_Key"
+  del_obj_mysterious_key: "objective remove Mysterious_Key"
+  
+  # tajemnicza kartka
+  Give_secret_letter: "give secret_letter"
+  
+  # Gracz dostaje w leb w porcie
+  
+  folderTM_2hit: "folder notif_Hit,damage_tm_hit,tp_skycage,eff_blindness,eff_invisibility,notif_Hit_sound,tp_TMback_2"
+  folderTMtpback_2: "folder tp_TMback_2 delay:9"
+  tp_TMback_2: "teleport -82;65;-29;spawnSeed"
+ 
+ 

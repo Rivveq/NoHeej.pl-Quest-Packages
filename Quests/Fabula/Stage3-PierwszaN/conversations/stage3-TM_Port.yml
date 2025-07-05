@@ -1,0 +1,73 @@
+conversations:
+  TM_2:
+    NPC_options:
+      q3-TM_2-Main:
+        text: "Czekałem na ciebie, chciałbym abyś mnie wysłuchał."
+        pointer: q3-player-1-O1, q3-player-1-O2, q3-player-1-O3
+        
+     # OPCJA 1
+      q3-TM_2-1_O1:
+        text: "..."
+     # OPCJA 2
+      q3-TM_2-1_O2:
+        text: "Przepraszam za moje poprzednie  zachowanie… Jestem tu, ponieważ poszukuję czegoś, co może uratować ten świat przed złem, które nadchodzi."
+        pointer: q3-player-2a-O2, q3-player-2b-O2
+      q3-TM_2-2_O2:
+        text: "Nie mogę w tym momencie nic powiedzieć, ale za to ty przed sobą masz wielką przyszłość!  Zapewne w tym momencie sam nie wiesz kim jesteś."
+        pointer: q3-player-3a-O2, q3-player-3b-O2 
+      q3-TM_2-3_O2:
+        text: "&7[Mężczyzna wyszczerza się spod kaptura.]&r  Mam nadzieję, że kiedyś się jeszcze spotkamy."
+        pointer: q3-player-4a-O2, q3-player-4b-O2 
+      q3-TM_2-4_O2:
+        text: "Jak już wspomniałem, nie mogę ci nic więcej powiedzieć. Za chwilę odpływam, więc do zobaczenia!"
+        pointer: q3-player-5a-O2, q3-player-5b-O2  
+      q3-TM_2-5_O2:
+        text: "Dziś ofiaruję ci moją sakiewkę, a ty wyczekuj mojego następnego przybycia!"
+        pointer: q3-player-6a-O2, q3-player-6b-O2   
+     # OPCJA 3
+      q3-TM_2-1_O3:
+        text: "..."
+        
+    player_options:
+    # OPCJA 1
+      q3-player-1-O1:
+        text: "Nie wiem, kim jesteś i co planujesz. Zaprowadzę cię do straży, gdzie będziesz musiał odpowiedzieć za swoje czyny!"
+    # OPCJA 2
+      q3-player-1-O2:
+        text: "Zanim podejmę jakiekolwiek decyzje, chcę usłyszeć, co masz do powiedzenia. Dlaczego tutaj przybyłeś?"
+        pointer: q3-TM_2-1_O2
+        
+      q3-player-2a-O2:
+        text: "Rozumiem, że masz swoje motywacje, ale jakie są twoje prawdziwe zamiary? Jakie ryzyko stwarzasz dla miasteczka?"
+        pointer: q3-TM_2-2_O2
+      q3-player-2b-O2:
+        text: "Ani trochę ci nie ufam. Bywaj!"
+        
+      q3-player-3a-O2:
+        text: "O czym ty mówisz?!"
+        pointer: q3-TM_2-3_O2
+      q3-player-3b-O2:
+        text: "Nie będziesz mieszał mi w głowie... Żegnaj"
+        
+      q3-player-4a-O2:
+        text: "Co masz na myśli? Jak to kiedyś, chyba nie sądzisz, że pozwolę ci tak odejść!?"
+        pointer: q3-TM_2-4_O2
+      q3-player-4b-O2:
+        text: "Nie zamierzam już nigdy więcej oglądać twojej parszywej gęby!"
+        
+      q3-player-5a-O2:
+        text: "Nie ma opcji, że cię puszczę od tak!"
+        pointer: q3-TM_2-5_O2
+      q3-player-5b-O2:
+        text: "Liczę na to, że już nigdy cię nie spotkam…"
+        
+      q3-player-6a-O2:
+        text: "Dobrze… Puszczę cię tym razem, jednak, gdy znowu się spotkamy nie będzie tak łatwo!"
+        events: # daj golda, usun tag zeby zniknal
+      q3-player-6b-O2:
+        text: "Nie ma opcji, że cię puszczę!"
+        events: # daj w leb, usun tag zeby zniknal
+    # OPCJA 3
+      q3-player-1-O3:
+        text: "Nie obchodzi mnie kim jesteś. Znalazłem klucz należący do ciebie, lepiej mi powiedz co ukrywasz!"
+        

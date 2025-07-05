@@ -1,0 +1,50 @@
+conversations:
+  SamouczekTeleporty:
+    quester: Samouczek "Teleporty"
+    first: 1r-samtel
+
+     #Samouczek Teleporty
+
+    NPC_options:
+
+
+      1r-samtel:
+        text: "Hej, chcesz się dowiedzieć czegoś o teleportach?"
+        pointer: 1o-samtel-a, 1o-samtel-b, 1o-samtel-end
+      2r-samtel-a:
+        text: "Aby teleportować się do innej osady należy podejść w dowolnym mieście do przewodnika i wybrać cel podróży. Odznaczają się oni &5&lfioletową barwą&r zarówno nad ich głowami oraz okolicy. Dostępny jest transport konny jak i wodny."
+        pointer: 2o-samtel-a
+      2r-samtel-a2:
+        text: "Transport jest &lpłatny X waluty serwerowej&r. Wyjątkiem jest Laxtad, do którego można się dostać wpisując /spawn. Można traktować to miasto jako swoisty drogowskaz do innych lokalizacji."
+        pointer: 2o-samtel-c
+
+      2r-samtel-b:
+        text: "Teleportacje między graczami działają w następujący sposób. Jeden gracz wysyła do drugiego, zapytanie pod komenda &e&l/tpa [Nazwa gracza]&r, a drugi może ją przyjąć klikając &e&lzieloną fajkę&r lub wpisując &e&l/tpaacept&r, albo odrzucić klikając &e&lx&r lub wpisując &e&l/tpadeny&r."
+        pointer: 2o-samtel-b
+      2r-samtel-b2:
+        text: "Po przyjęciu teleportacji zacznie się 15 sekundowa animacja, po której  gracz zostanie przeniesiony. Nie da się w ten sposób teleportować do innych miast oraz ich okolic."
+        pointer: 2o-samtel-c
+
+
+
+    player_options:
+
+
+
+      1o-samtel-a:
+        text: "&FMiedzy Miastami"
+        pointer: 2r-samtel-a
+      1o-samtel-b:
+        text: "&FMiedzy Graczami"
+        pointer: 2r-samtel-b
+      2o-samtel-a:
+        text: "&F..."
+        pointer: 2r-samtel-a2
+      2o-samtel-b:
+        text: "&F..."
+        pointer: 2r-samtel-b2
+      2o-samtel-c:
+        text: "&FRozumiem"
+        pointer: 1r-samtel
+      1o-samtel-end:
+        text: "&x&f&f&6&9&6&1Nie dziękuję."

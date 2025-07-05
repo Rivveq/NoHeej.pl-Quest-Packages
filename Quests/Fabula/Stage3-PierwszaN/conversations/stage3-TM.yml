@@ -1,0 +1,26 @@
+conversations:
+  TM:
+    NPC_options:
+      tm-1:
+        #condition: !skonczono gadac z tm w tej czesci questa 
+        text: "Kim ty jesteś, odejdź stąd natychmiast, bo nie ręczę za siebie!"
+        pointer: player-1
+      tm-2:
+        text: "Wynoś się!"
+        pointer: player-2
+      tm-3:
+        text: "Jeśli Ci życie miłe, idź precz!"
+        pointer: player-3
+    
+    player_options:
+      player-1:
+        text: "A kim Ty jesteś? Nie chcę kłopotów…"
+        pointer: tm-2
+      
+      player-2:
+        text: "Ej, ej, spokojnie… Słyszałem dziwne dźwięki, czy wszystko okej?"
+        pointer: tm-3
+      
+      player-3:
+        text: "&f..."
+        events: folderTMhit #!!!
