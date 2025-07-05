@@ -1,0 +1,38 @@
+conversations: 
+  SamouczekAukcje: 
+    quester: Samouczek "Aukcje" 
+    first: 1r-samauk 
+
+    # Wejscie na samouczek farby 
+
+    NPC_options: 
+
+    # pierwsze dialogi z wyborem 
+
+      1r-samauk: 
+        text: "No Heej, na serwerze powstały również aukcje, które są organizowane przez administrację w wyznaczonym czasie. Na aukcjach możesz zakupić rzadkie przedmioty, które można określić mianem wyjątkowych. Jednakże musisz się strzec, bo w aukcji udział może wziąć każdy i przebić twoją ofertę!"
+        pointer: 1o-samauk-a, 1o-samauk-b, 1o-samauk-d
+      2r-samauk-a:
+        text: "Dobrze, że pytasz! Jeśli chcesz wziąć udział w aukcji musisz udać się do Laxstad, wejść na teren domu aukcyjnego i licytować ofertę za walutę, używając komendy /podbij <cena>. Musisz pamiętać o tym, że wygrywa ten kto da więcej!"
+        pointer: 1o-samauk-c
+      2r-samauk-b:
+        text: "Aukcje nie mają wyznaczonego stałego terminu, to administracja decyduje kiedy i jaka aukcja będzie miała miejsce. Warto wiedzieć, że informacja o przyszłej aukcji jest podawana na discordzie z wyprzedzeniem!"
+        pointer: 1o-samauk-c
+
+    # odpowiedzi gracza 
+
+    player_options: 
+
+    # wybor tematu 
+
+      1o-samauk-a: 
+        text: "&fJak wziąć udział w aukcji?" 
+        pointer: 2r-samauk-a 
+      1o-samauk-b: 
+        text: "&fJak często odbywają się aukcje?" 
+        pointer: 2r-samauk-b 
+      1o-samauk-c: 
+        text: "&fRozumiem." 
+        pointer: 1r-samauk
+      1o-samauk-d: 
+        text: "&x&f&f&6&9&6&1Nie, dziękuję." 

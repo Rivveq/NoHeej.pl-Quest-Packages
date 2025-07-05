@@ -37,7 +37,7 @@ events:
   del_tag_2Rosalie_Done: "tag del 2Rosalie_Done"
   del_tag_2Wes_Done: "tag del 2Wes_Done"
 
-  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Paulina_quest_default.addTagNextQuestReady,del_tag_2Bella_Done,del_tag_2Rosalie_Done,del_tag_2Wes_Done"
+  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,Quests-MainConversations.addTagNextQuestReady,del_tag_2Bella_Done,del_tag_2Rosalie_Done,del_tag_2Wes_Done"
 
   # Skrik events
   add_obj_proximity_skrik: "objective add obj_proximity_skrik"
@@ -96,12 +96,3 @@ events:
 
   giveQuestCompleteCiastka: "give ciastko:3"
   hungerPlayerMax: "hunger set 20"
-
-  # Next Location Notifs
-  
-  notifNextLocation-Rosalia: "notify &x&3&C&B&3&7&1Spotkaj się z &eRosalią &x&3&C&B&3&7&1w ratuszu."
-  notifNextLocation-Skrik: "notify &x&3&C&B&3&7&1Spotkaj się z &eSkrikiem &x&3&C&B&3&7&1w szpitalu."
-  notifNextLocation-Chris: "notify &x&3&C&B&3&7&1Spotkaj się z &eChrisem &x&3&C&B&3&7&1w karczmie."
-  notifNextLocation-Tony: "notify &x&3&C&B&3&7&1Spotkaj się z &eTonym &x&3&C&B&3&7&1w jego domu na &epółnocy &x&3&C&B&3&7&1miasta."
-  notifNextLocation-Bella: "notify &x&3&C&B&3&7&1Spotkaj się z &eBellą &x&3&C&B&3&7&1w karczmie."
-  notifNextLocation-Agata: "notify &x&3&C&B&3&7&1Spotkaj się z &eAgatą &x&3&C&B&3&7&1w gospodzie."

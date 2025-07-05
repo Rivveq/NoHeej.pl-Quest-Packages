@@ -1,0 +1,14 @@
+  events:
+  #kasyno
+    SamouczekTP: "teleport -1.50;-40.00;37.50;spawnSeed;240;0"
+    SamouczekPowrot: "teleport 0.5;70;-5.5;spawnSeed;180;0"
+    TargowiskoTP: "teleport 25;65;106;spawnSeed;240;0"
+
+    # linki
+
+    SamouczekNotifyStrona: 'command tellraw %player% ["",{"text":"-> [","bold":true,"color":"gray"},{"text":"Strona","bold":true,"color":"#f2e9f1","clickEvent":{"action":"open_url","value":"https://noheej.pl"}},{"text":"]","bold":true,"color":"gray"}]'
+    SamouczekNotifyDiscord: 'command tellraw %player% ["",{"text":"-> [","bold":true,"color":"gray"},{"text":"Discord","bold":true,"color":"#5865F2","clickEvent":{"action":"open_url","value":"https://discord.com/invite/SSJMqV7Ykh"}},{"text":"]","bold":true,"color":"gray"}]'
+    SamouczekNotifyInstagram: 'command tellraw %player% ["",{"text":"-> [","bold":true,"color":"gray"},{"text":"Instagram","bold":true,"color":"#f56040","clickEvent":{"action":"open_url","value":"https://www.instagram.com/noheejpl/?hl=pl"}},{"text":"]","bold":true,"color":"gray"}]'
+    SamouczekNotifyYoutube: 'command tellraw %player% ["",{"text":"-> [","bold":true,"color":"gray"},{"text":"YouTube","bold":true,"color":"#CD201F","clickEvent":{"action":"open_url","value":"https://www.youtube.com/@noheej"}},{"text":"]","bold":true,"color":"gray"}]'
+    SamouczekNotifyTiktok: 'command tellraw %player% ["",{"text":"-> [","bold":true,"color":"gray"},{"text":"TikTok","bold":true,"color":"#00f2ea","clickEvent":{"action":"open_url","value":"https://www.tiktok.com/@noheejpl"}},{"text":"]","bold":true,"color":"gray"}]'
+    

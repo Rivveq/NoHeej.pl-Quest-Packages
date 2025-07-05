@@ -50,10 +50,10 @@ conversations:
       
       # Narr. Gracz przychodzi do biura
       q2-player-narr1:
-        text: "..."
+        text: "&f..."
         pointer: q2-rosalie-narr2
       q2-player-narr2:
-        text: "..."
+        text: "&f..."
         pointer: q2-rosalie-1
 
       # 1.Przywitanie sie z Rozalia
@@ -69,10 +69,10 @@ conversations:
       
       # 2.Sub-Quest wyprawa do medyka
       q2-player-2-narr1:
-        text: "..."
+        text: "&f..."
         pointer: q2-rosalie-narr4
       q2-player-2-narr2:
-        text: "..."
+        text: "&f..."
         pointer: q2-rosalie-2
 
       q2-player-2a:

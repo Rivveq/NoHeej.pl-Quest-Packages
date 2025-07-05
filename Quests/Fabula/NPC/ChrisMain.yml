@@ -1,8 +1,8 @@
 conversations:
   Chris:
     quester: 'Chris'
-    first: q2-chris-1, q2-chris-2b, q2-chris-5, q2-chris-6c, q2-chris-8b, default
+    first: q3-Chris-O1-1, q3-Chris-O2-1, q2-chris-1, q2-chris-2b, q2-chris-5, q2-chris-6c, q2-chris-8b, default
 
     NPC_options:
       default:
-        text: "placeholder"
+        text: "Yyy, co ty tutaj robisz? Nie było przed wejściem tabliczki z terenem prywatnym? Nie mam teraz czasu na rozmowy."

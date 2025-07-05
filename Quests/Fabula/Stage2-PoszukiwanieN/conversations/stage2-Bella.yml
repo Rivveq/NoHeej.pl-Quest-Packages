@@ -48,7 +48,7 @@ conversations:
     player_options:
       # 1.Przywitanie
       q1-player-1-narr:
-        text: "..."
+        text: "&f..."
         pointer: q1-bella-1
       
       q1-player-1a:
@@ -76,7 +76,7 @@ conversations:
       
       # 4,5.Skompletowana Lista
       q1-player-4a-narr:
-        text: "..."
+        text: "&f..."
         pointer: q1-bella-4a
       
       q1-player-4a:

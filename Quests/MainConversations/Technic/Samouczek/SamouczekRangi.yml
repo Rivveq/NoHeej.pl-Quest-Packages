@@ -1,0 +1,145 @@
+conversations:
+  SamouczekRangi:
+    quester: Samouczek "Rangi"
+    first: 1r-samran-a
+
+    # Wejscie na samouczek u recepcionistyki na spawnie
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-samran-a: 
+        text: "Witaj %player%, przybliże Ci tak zwane “rangi”.  &e&l(więcej pod /rangi)"
+        pointer: 1o-samran-a, 1o-samran-b, 1o-samran-c, 3o-samran-b
+      1r-samran-b: 
+        text: "Rangę Vip zakupuje się za pomocą waluty premium w Sklepie Premium [Kordynaty x:11 y:69 z:-7]. Aby zakupić tą walutę należy udać się na stronę.\nBonusy vip: \n - Pisanie na kolorowo \n - 6 klas rpg poziomu I \n - Cuboidy premium \n - Promowanie 1 oferty w markecie \n - +7 do limity ofert w markecie \n - 20% zniżki na szybką podróż"
+        pointer:  3o-samran-a
+      1r-samran-c: 
+        text: "Rangę Svip zakupuje się za pomocą waluty premium u np []. Aby zakupić tą walutę należy udać się na stronę.\nRanga svip ma te same bonusy co ranga Vip oraz: \n - Tworzenie warpów \n - 6 klas rpg poziomu II \n - Cuboidów premium \n - 30% zniżki na szybką podróż \n - /napraw co 10 godzin
+"
+        pointer:  3o-samran-a
+
+      2r-samran-a: 
+        text: "Wiecej informacji o klasach.  (więcej pod /rangi)"
+        pointer: 2o-samran-a, 2o-samran-b, 2o-samran-c, 2o-samran-d, 2o-samran-e, 2o-samran-f, 3o-samran-a,
+
+      2r-samran-b: 
+        text: "Drwale to lud wytrwały i pracowity, oddany lasowi całym sercem. Siekiera stała się dla nich czymś więcej niż narzędziem — to przedłużenie ich własnych rąk, niemal część ciała. Przez lata pracy nauczyli się ścinać drzewa jednym potężnym zamachem, jakby drzewa same ustępowały przed ich wolą."
+        pointer: 2o-samran-a2 
+      2r-samran-b2: 
+        text: "Dzięki niezwykłej wprawie potrafią dostrzec w pniach rzeczy, których inni by nie zauważyli: jaja lisów, emeraldowe bloki, a nawet złote zaklęte jabłka ukryte w rdzeniu pradawnych dębów."
+        pointer: 3o-samran-a2 
+
+      2r-samran-c: 
+        text: "Górnicy od zawsze czuli zew głębin. Fascynuje ich blask rud, echo kroków w nowo odkrytych tunelach i tajemnicza więź, jaka łączy ich z ziemią. Nie znają słowa „poddanie”. Twardzi – tak jak kamień, który codziennie kruszą – idą naprzód z podniesioną głową, nie zważając na niebezpieczeństwa."
+        pointer: 2o-samran-b2
+      2r-samran-c2: 
+        text: "Czyhające w ciemności potwory, zapadnięte szyby czy toksyczne opary?  To tylko kolejne przeszkody do pokonania. Ich doświadczenie pozwala im wydobywać rudy tak czysto, że nie trzeba ich nawet przepalać – jakby surowiec sam chciał oddać im swoją wartość."
+        pointer: 3o-samran-a2 
+
+      2r-samran-d: 
+        text: "Łowcy to wyspecjalizowani tropiciele i mistrzowie polowania. Niewiele stworzeń potrafi umknąć ich czujnym zmysłom — wyczuwają ofiarę z odległości wielu kilometrów, jakby ziemia sama szeptała im, gdzie iść. Zauważą nawet najdrobniejszy ślad łapy, ugięty listek czy źdźbło trawy poruszone w nie ten sposób."
+        pointer: 2o-samran-c2 
+      2r-samran-d2: 
+        text: "Ich oczy dostrzegają to, co dla innych niewidzialne, a umysł analizuje każdy szczegół z zimną precyzją. Poruszają się cicho, szybko i celnie — tak szybko, że ich ruchy wydają się wręcz ogniste. Nic dziwnego, że mięso upolowanej zwierzyny często jest już upieczona."
+        pointer: 3o-samran-a2 
+
+      2r-samran-e: 
+        text: "Rybacy znani są ze swojej cierpliwości, szczerości i otwartego serca. Zawsze żądni przygód, przemierzają bezkresne oceany w poszukiwaniu nieznanych gatunków ryb i zatopionych skarbów."
+        pointer: 2o-samran-d2
+      2r-samran-e2: 
+        text: "Nikt nie dorównuje im w sztuce łowienia — mówią, że potrafią złowić nawet najbardziej natrętną rybę dwa razy szybciej niż ktokolwiek inny. Ich sieci nie raz wydobywały z głębin nie tylko ryby, ale i rzadkie skarby: lśniące skorupy pradawnych żółwi, ich legendarne jaj a, a nawet Trójzęby - zwane również jako morskie widelce."
+        pointer: 3o-samran-a2 
+
+      2r-samran-f: 
+        text: "Farmerzy od pokoleń zapewniają krainie jedzenie, zaspokajając głód zarówno zwykłych mieszkańców, jak i możnych lordów. W innych miastach nazywa się ich władcami pól – z szacunku, podziwu... i lekkiej zazdrości. Warzywa i owoce wyhodowane z ich rąk zachwycają smakiem i rozmiarem – marchewki jak miecze, dynie jak tarcze."
+        pointer: 2o-samran-e2
+      2r-samran-f2: 
+        text: "Nikt nie potrafi dorównać ich wiedzy o glebie, pogodzie i tajemnych nawozach. Tak doskonale opanowali sztukę rolnictwa, że potrafią automatycznie siać zebrane plony – jakby sama ziemia współpracowała z nimi w milczącej umowie."
+        pointer: 2o-samran-e3
+      2r-samran-f3: 
+        text: "Zdarza się, że podczas orki odnajdują cuda zakopane przez los – jajko sniffera, jajo grzybowej krowy, a nawet butelki z doświadczeniem, które błyszczą pod warstwą ziemi niczym zaklęte skarby."
+        pointer: 3o-samran-a2 
+
+      2r-samran-g: 
+        text: "Nomadzi to samotnicy, którzy nie uznają żadnej władzy prócz własnej woli. Nie słuchają rozkazów, nie poddają się autorytetom — podążają wyłącznie ścieżkami, które sami wybiorą. Krążą o nich opowieści szeptane przy ogniskach i legendy przekazywane z pokolenia na pokolenie."
+        pointer: 2o-samran-f2 
+      2r-samran-g2: 
+        text: "To oni odkryli sekretną sztukę tworzenia zwojów teleportacyjnych — potężnych pergaminów, które pozwalają przenieść się w wybrane miejsce. Inni potrafią je tylko zużyć — Nomadzi jako jedyni potrafią je napisać, zabiera to jednak bardzo dużo energii przez co mogą zrobić tylko raz na dzień."
+        pointer: 2o-samran-f3 
+      2r-samran-g3: 
+        text: "Zahartowani tygodniami wędrówek, nauczyli się jednej ważnej rzeczy: bez jedzenia nie ma podróży. Dlatego zawsze noszą przy sobie specjalne worki z pożywieniem, które otwierają co dwie godziny — starannie odmierzony rytuał przetrwania.
+"
+        pointer: 3o-samran-a2  
+        
+        
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor czy chcesz sie tp na samouczek
+
+      1o-samran-a:
+        text: "&fVIP"
+        pointer: 1r-samran-b
+      1o-samran-b:
+        text: "&fSVIP"
+        pointer: 1r-samran-c
+      1o-samran-c:
+        text: "&fKlasy"
+        pointer: 2r-samran-a
+
+      # klasy
+
+      2o-samran-a:
+        text: "&fDrwal"
+        pointer: 2r-samran-b
+      2o-samran-a2:
+        text: "&f..."
+        pointer: 2r-samran-b2
+      2o-samran-b:
+        text: "&fGórnik"
+        pointer: 2r-samran-c
+      2o-samran-b2:
+        text: "&f..."
+        pointer: 2r-samran-c2
+      2o-samran-c:
+        text: "&fŁowca"
+        pointer: 2r-samran-d
+      2o-samran-c2:
+        text: "&f..."
+        pointer: 2r-samran-d2
+      2o-samran-d:
+        text: "&fRybak"
+        pointer: 2r-samran-e
+      2o-samran-d2:
+        text: "&f..."
+        pointer: 2r-samran-e2
+      2o-samran-e:
+        text: "&fFarmer"
+        pointer: 2r-samran-f
+      2o-samran-e2:
+        text: "&f..."
+        pointer: 2r-samran-f2
+      2o-samran-e3:
+        text: "&f..."
+        pointer: 2r-samran-f3
+      2o-samran-f:
+        text: "&fNomad"
+        pointer: 2r-samran-g
+      2o-samran-f2:
+        text: "&f..."
+        pointer: 2r-samran-g2
+      2o-samran-f3:
+        text: "&f..."
+        pointer: 2r-samran-g3
+
+      3o-samran-a:
+        text: "&fRozumiem, dziekuję."
+        pointer: 1r-samran-a
+      3o-samran-a2:
+        text: "&fRozumiem, dziekuję."
+        pointer: 2r-samran-a
+      3o-samran-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."

@@ -1,0 +1,29 @@
+conversations:
+  SamouczekWalka:
+    quester: Samouczek "Walka"
+    first: 1r-sampvp
+
+    # Wejscie na samouczek farby
+
+    NPC_options:
+
+    # pierwsze dialogi z wyborem
+
+      1r-sampvp:
+        text: "Po otrzymaniu obrażeń od innego gracza zostaje nałożony na Ciebie &l30 sekundowy cooldown&r. Jeżeli wyjdziesz z gry zanim licznik skończy odliczać czas, umrzesz a Twoje przedmioty rozsypią się po okolicy."
+        pointer: 1o-sampvp-a, 1o-sampvp-b
+      1r-sampvp2:
+        text: "Ważne miejsca oznaczone są linią(zazwyczaj czerwoną) i są tak zwanymi bezpiecznymi strefami, gdzie nie obowiązuje pvp. Podczas walki nie da się przekroczyć tej linii, gdyż w jej miejscu pojawia się blokada."
+        pointer: 1o-sampvp-b
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # wybor tematu
+
+      1o-sampvp-a:
+        text: "&F..."
+        pointer: 1r-sampvp2
+      1o-sampvp-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuję."

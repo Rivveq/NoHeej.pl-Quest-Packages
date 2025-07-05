@@ -1,0 +1,30 @@
+conversations:
+  Agata:
+    NPC_options:
+      q3-agata-1-sword:
+        text: "Oh, wróciłeś. Skąd masz ten miecz? tylko straż może nosić takie uzbrojenie!"
+        condition: "con_tag_TM_item_found"
+        pointer: q3-player-1-sword
+      q3-agata-2-sword:
+        text: "Może faktycznie masz racje… Co teraz zrobimy?"
+        condition: "con_tag_TM_item_found"
+        pointer: q3-player-2a-sword, q3-player-2b-sword
+      q3-agata-3-sword:
+        text: "Słusznie, a przy okazji zostaw mu ten miecz, On będzie wiedział jak oddać go bez dalszych kłopotów."
+        condition: "con_tag_TM_item_found"
+        pointer: q3-player-3-sword
+        
+    player_options:
+      q3-player-1-sword: 
+        text: "Leżał ukryty w tamtym pokoju. Mówiłem ci, że coś tu nie gra!"
+        pointer: q3-agata-2-sword
+        
+      q3-player-2a-sword: 
+        text: "Myślę, że Chris powinien się o tym dowiedzieć."
+        pointer: q3-agata-3-sword   
+      q3-player-2b-sword: 
+        text: "Mi się przyda bardziej! Nie oddam go."
+        
+      q3-player-3-sword: 
+        text: "Prześpię się i ruszę do niego."   
+        events: "GoSleepNotify,GoSleepObjective,del_tag_TM_item_found,add_tag_3Chris_O2"

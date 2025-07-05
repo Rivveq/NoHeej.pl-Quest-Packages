@@ -1,0 +1,8 @@
+conditions:
+#Barmani
+ MaPieniadze: "money 100"
+ MaPieniadzeAmbrozja: "money 130"
+ MaPieniadzeNapitek: "money 110"
+ MaPieniadzePiwo: "money 139"
+ MaPieniadzePlynneZloto: "money 250"
+ 

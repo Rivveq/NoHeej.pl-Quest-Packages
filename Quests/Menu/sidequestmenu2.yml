@@ -1,0 +1,59 @@
+menus:
+  questMenuSide2:
+    height: 6
+    title: '&6&lSide Quests'
+    command: /sidequestmenu2
+    slots:
+      '0': sidequestarrowZwierzatka
+      '1': Zwierzatka1QuestDone, Zwierzatka1QuestStarted, sidequest?
+    items:
+    
+    # Main Config
+      mainquestmenu:
+        item: mainquestmenu
+        text: 
+            - "&7&l[&dQuests&7&l]"
+            - "&7&l-> [&aNaciśnij lewym przyciskiem, aby się przenieść&7&l]"
+        click:
+          left: "mainquestmenu"
+      page3:
+        item: page3
+        text: 
+            - "&7&l[&dStrona 3&7&l]"
+            - "&7&l-> [&aNaciśnij lewym przyciskiem, aby się przenieść&7&l]"
+        click:
+          left: "page2"
+      sidequest?:
+        item: sidequest?
+        text: 
+            - "&7&l[&8Quest Nieodkryty&7&l]"
+
+# Menu config
+      sidequestarrowZwierzatka:
+        text: "&7&l-> [&x&F&8&F&F&A&1Seria Questów: Zaginione Zwierzątka&7&l]"
+        item: sidequestarrow
+      Zwierzatka1QuestStarted:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zaginione Zwierzątka 1"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Victor&l&7]"
+            - "  &l&7» &cPostęp: &eZłapane Małpki: %point.Quests-Side.Malpy.amount%/6 "
+        item: sidequestarrow
+        condition: "Quests-Side.ZwierzatkaQuest1StartedCon"
+      Zwierzatka1QuestDone:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zaginione Zwierzatka 1"
+            - "&l&7» [&aZlecający: &3Victor&l&7]"
+        item: sidequestarrow
+        condition: "Quests-Side.ZwierzatkaQuest1DoneCon"
+
+            
+
+
+        
+        
+conditions:
+events:
+  page3: "sudo questsmenu3"
+items:
+  page3: ARROW custom-model-data:9

@@ -1,0 +1,500 @@
+menus:
+  questMenu:
+    height: 6
+    title: '&6&lSide Quests'
+    command: /sidequestmenu1
+    slots:
+      '0': sidequestarrowZabijaka
+      '9': sidequestarrowZabijaka
+      '1': SidequestarrowZabijaka1Done, SidequestarrowZabijaka1Started, sidequest?
+      '2': SidequestarrowZabijaka2Done, SidequestarrowZabijaka2Started, sidequest?
+      '3': SidequestarrowZabijaka3Done, SidequestarrowZabijaka3Started, sidequest?
+      '4': SidequestarrowZabijaka4Done, SidequestarrowZabijaka4Started, sidequest?
+      '5': SidequestarrowZabijaka5Done, SidequestarrowZabijaka5Started, sidequest?
+      '6': SidequestarrowZabijaka6Done, SidequestarrowZabijaka6Started, sidequest?
+      '7': SidequestarrowZabijaka7Done, SidequestarrowZabijaka7Started, sidequest?
+      '8': SidequestarrowZabijaka8Done, SidequestarrowZabijaka8Started, sidequest?
+      '10': SidequestarrowZabijaka9Done, SidequestarrowZabijaka9Started, sidequest?
+      '11': SidequestarrowZabijaka10Done, SidequestarrowZabijaka10Started, sidequest?
+      '12': SidequestarrowZabijaka11Done, SidequestarrowZabijaka11Started, sidequest?
+      '13': SidequestarrowZabijaka12Done, SidequestarrowZabijaka12Started, sidequest?
+      '18': sidequestarrowPrzyneta
+      '19': SidequestarrowPrzyneta1Done, SidequestarrowPrzyneta1Started, sidequest?
+      '20': SidequestarrowPrzyneta2Done, SidequestarrowPrzyneta2Started,  sidequest?
+      '21': SidequestarrowPrzyneta3Done, SidequestarrowPrzyneta3Started,  sidequest?
+      '22': SidequestarrowPrzyneta4Done, SidequestarrowPrzyneta4Started,  sidequest?
+      '27': sidequestarrowQuiz
+      '28': SidequestarrowQuiz1Done, SidequestarrowQuiz1Started, sidequest?
+      '29': SidequestarrowQuiz2Done, SidequestarrowQuiz2Started, sidequest?
+      '30': SidequestarrowQuiz3Done, SidequestarrowQuiz3Started, sidequest?
+      '31': SidequestarrowQuiz4Done, SidequestarrowQuiz4Started, sidequest?
+      '32': SidequestarrowQuiz5Done, SidequestarrowQuiz5Started, sidequest?
+      '36': sidequestarrowExperience
+      '37': SidequestarrowArchanim1Done, sidequest?
+      '38': SidequestarrowArchanim2Done, sidequest?
+      '39': SidequestarrowArchanim3Done, sidequest?
+      '40': SidequestarrowArchanim4Done, sidequest?
+      '41': SidequestarrowArchanim5Done, sidequest?
+      '49': mainquestmenu
+      '52': page2 
+    items:
+      mainquestmenu:
+        item: mainquestmenu
+        text: 
+            - "&7&l[&dQuests&7&l]"
+            - "&7&l-> [&aNaciśnij lewym przyciskiem, aby się przenieść&7&l]"
+        click:
+          left: "mainquestmenu"
+      page2:
+        item: page2
+        text: 
+            - "&7&l[&dStrona 2&7&l]"
+            - "&7&l-> [&aNaciśnij lewym przyciskiem, aby się przenieść&7&l]"
+        click:
+          left: "page2"
+      sidequest?:
+        item: sidequest?
+        text: 
+            - "&7&l[&8Quest Nieodkryty&7&l]"
+# Arrow Quests            
+      sidequestarrowZabijaka:
+        text: "&7&l-> [&x&F&8&F&F&A&1Seria Questów Zabijaka&7&l]"
+        item: sidequestarrow
+      sidequestarrowPrzyneta:
+        text: "&7&l-> [&x&F&8&F&F&A&1Seria Questów Przyneta&7&l]"
+        item: sidequestarrow
+      sidequestarrowQuiz:
+        text: "&7&l-> [&x&F&8&F&F&A&1Seria Questów Quiz&7&l]"
+        item: sidequestarrow
+      sidequestarrowExperience:
+        text: "&7&l-> [&x&F&8&F&F&A&1Seria Questów Archanim&7&l]"
+        item: sidequestarrow
+# Zabijaka 1 
+      SidequestarrowZabijaka1Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 1"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka1MobKill.left%&ax &eZombie"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka1TagStarted"
+      SidequestarrowZabijaka1Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 1"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka1TagDone"
+        
+# Zabijaka 2 
+      SidequestarrowZabijaka2Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 2"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka2MobKill.left%&ax &eSzkieletów"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka2TagStarted"
+      SidequestarrowZabijaka2Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 2"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka2TagDone"
+        
+# Zabijaka 3 
+      SidequestarrowZabijaka3Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 3"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka3MobKill.left%&ax &ePająków"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka3TagStarted"
+      SidequestarrowZabijaka3Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 3"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka3TagDone"
+
+# Zabijaka 4 
+      SidequestarrowZabijaka4Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 4"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka4MobKill.left%&ax &eSilverfishy"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka4TagStarted"
+      SidequestarrowZabijaka4Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 4"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka4TagDone"
+
+# Zabijaka 5 
+      SidequestarrowZabijaka5Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 5"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka5MobKill.left%&ax &eCreeperów"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka5TagStarted"
+      SidequestarrowZabijaka5Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 5"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka5TagDone"
+
+# Zabijaka 6 
+      SidequestarrowZabijaka6Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 6"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka6MobKill.left%&ax &eEndermanów"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka6TagStarted"
+      SidequestarrowZabijaka6Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 6"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka6TagDone"
+
+# Zabijaka 7 
+      SidequestarrowZabijaka7Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 7"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillSpider.left%&ax &ePająków"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillCave.left%&ax &ePająków jaskiniowych"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillZombie.left%&ax &eZombie"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillDrowned.left%&ax &eUtopców"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillHusk.left%&ax &ePosłuchów"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillSkeleton.left%&ax &eSzkieletów"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillStray.left%&ax &eTułaczy"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka7MobKillBogged.left%&ax &eBagniaków"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka7TagStarted"
+      SidequestarrowZabijaka7Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 7"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka7TagDone"
+
+# Zabijaka 8 
+      SidequestarrowZabijaka8Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 8"
+            - "&6Opis Zadania"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka8MobKill.left%&ax &eWiedźm"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka8TagStarted"
+      SidequestarrowZabijaka8Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 8"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka8TagDone"
+
+# Zabijaka 9 
+      SidequestarrowZabijaka9Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 9"
+            - "&6Opis Zadania"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka9MobKillBogged.left%&ax &eBagniaków"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka9MobKillSlime.left%&ax &eSlime"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka9TagStarted"
+      SidequestarrowZabijaka9Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 9"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka9TagDone"
+        
+# Zabijaka 10 
+      SidequestarrowZabijaka10Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 10"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka10MobKillSkeleton.left%&ax &eSzkieletów"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka10MobKillStray.left%&ax &eTułaczy"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka10MobKillBogged.left%&ax &eBagniaków"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka10TagStarted"
+      SidequestarrowZabijaka10Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 10"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka10TagDone"
+        
+# Zabijaka 11
+      SidequestarrowZabijaka11Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 11"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka11MobKillSpider.left%&ax &ePająków"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka11MobKillCave.left%&ax &ePająków jaskiniowych"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka11MobKillSilver.left%&ax &eSilverfishy"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka11MobKillBat.left%&ax &eNietoperzy"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka11TagStarted"
+      SidequestarrowZabijaka11Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 11"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka11TagDone"
+# Zabijaka 12
+      SidequestarrowZabijaka12Started:
+        text: 
+            - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Zabijaka 12"
+            - "&6Opis Zadania"
+            - "  &l&7» [&aZlecający: &3Sigmund&l&7]"
+            - "  &l&7» &cPostęp: Do zabicia pozostało:"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka12MobKillSpider.left%&ax &ePająków"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka12MobKillZombie.left%&ax &eZombie"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka12MobKillSkeleton.left%&ax &eSzkieletów"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka12MobKillCreeper.left%&ax &eCreeperów"
+            - "    &l&7» &e%objective.Quests-Side.Zabijaka12MobKillWitch.left%&ax &eWiedźm"
+        item: sidequestZabijaka
+        condition: "Quests-Side.Zabijaka12TagStarted"
+      SidequestarrowZabijaka12Done:
+        text: 
+            - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Zabijaka 12"
+            - "&l&7» [&aZlecający: &3Sigmund&l&7]"
+        item: sidequestZabijakaDone
+        condition: "Quests-Side.Zabijaka12TagDone"
+      # Przyneta 1
+      SidequestarrowPrzyneta1Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Przyneta 1"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Anna&l&7]"
+          - "  &l&7» [&aCel: &ePrzynieś 32x melon seeds, 32x pumpkin seeds, 64x wheat seeds&l&7]"
+        item: sidequestPrzyneta
+        condition: "Quests-Side.QuestPrzyneta1TagStarted"
+
+      SidequestarrowPrzyneta1Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Przyneta 1"
+          - "&l&7» [&aZlecający: &3Anna&l&7]"
+        item: sidequestPrzynetaDone
+        condition: "Quests-Side.QuestPrzyneta1Done"
+
+      # Przyneta 2
+      SidequestarrowPrzyneta2Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Przyneta 2"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Anna&l&7]"
+          - "  &l&7» [&aCel: &ePrzynieś 32x bread&l&7]"
+        item: sidequestPrzyneta
+        condition: "Quests-Side.QuestPrzyneta2TagStarted"
+
+      SidequestarrowPrzyneta2Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Przyneta 2"
+          - "&l&7» [&aZlecający: &3Anna&l&7]"
+        item: sidequestPrzynetaDone
+        condition: "Quests-Side.QuestPrzyneta2Done"
+
+      # Przyneta 3
+      SidequestarrowPrzyneta3Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Przyneta 3"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Anna&l&7]"
+          - "  &l&7» [&aCel: &ePrzynieś 64x cocoa beans&l&7]"
+        item: sidequestPrzyneta
+        condition: "Quests-Side.QuestPrzyneta3TagStarted"
+
+      SidequestarrowPrzyneta3Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Przyneta 3"
+          - "&l&7» [&aZlecający: &3Anna&l&7]"
+        item: sidequestPrzynetaDone
+        condition: "Quests-Side.QuestPrzyneta3Done"
+
+      # Przyneta 4
+      SidequestarrowPrzyneta4Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Przyneta 4"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Anna&l&7]"
+          - "  &l&7» [&aCel: &ePrzynieś 32x honeycomb&l&7]"
+        item: sidequestPrzyneta
+        condition: "Quests-Side.QuestPrzyneta4TagStarted"
+
+      SidequestarrowPrzyneta4Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Przyneta 4"
+          - "&l&7» [&aZlecający: &3Anna&l&7]"
+        item: sidequestPrzynetaDone
+        condition: "Quests-Side.QuestPrzyneta4Done"
+        
+      # Quiz 1
+      SidequestarrowQuiz1Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Quiz 1"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Derfel&l&7]"
+          - "  &l&7» [&aCel: &eWeź udział w quizie.&l&7]"
+        item: sidequestQuiz
+        condition: "Quests-Side.QuizStartedTagCondition1"
+
+      SidequestarrowQuiz1Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Quiz 1"
+          - "&l&7» [&aZlecający: &3Derfel&l&7]"
+        item: sidequestQuizDone
+        condition: "Quests-Side.QuizDoneTagCondition1"
+
+      # Quiz 2
+      SidequestarrowQuiz2Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Quiz 2"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Derfel&l&7]"
+          - "  &l&7» [&aCel: &eWeź udział w quizie.&l&7]"
+        item: sidequestQuiz
+        condition: "Quests-Side.QuizStartedTagCondition2"
+
+      SidequestarrowQuiz2Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Quiz 2"
+          - "&l&7» [&aZlecający: &3Derfel&l&7]"
+        item: sidequestQuizDone
+        condition: "Quests-Side.QuizDoneTagCondition2"
+
+      # Quiz 3
+      SidequestarrowQuiz3Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Quiz 3"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Derfel&l&7]"
+          - "  &l&7» [&aCel: &eWeź udział w quizie.&l&7]"
+        item: sidequestQuiz
+        condition: "Quests-Side.QuizStartedTagCondition3"
+
+      SidequestarrowQuiz3Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Quiz 3"
+          - "&l&7» [&aZlecający: &3Derfel&l&7]"
+        item: sidequestQuizDone
+        condition: "Quests-Side.QuizDoneTagCondition3"
+
+      # Quiz 4
+      SidequestarrowQuiz4Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Quiz 4"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Derfel&l&7]"
+          - "  &l&7» [&aCel: &eWeź udział w quizie.&l&7]"
+        item: sidequestQuiz
+        condition: "Quests-Side.QuizStartedTagCondition4"
+
+      SidequestarrowQuiz4Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Quiz 4"
+          - "&l&7» [&aZlecający: &3Derfel&l&7]"
+        item: sidequestQuizDone
+        condition: "Quests-Side.QuizDoneTagCondition4"
+
+      # Quiz 5
+      SidequestarrowQuiz5Started:
+        text: 
+          - "&l&7[&2&lRozpoczęty&l&7] &x&F&8&F&F&A&1Quest Quiz 5"
+          - "&6Opis Zadania"
+          - "  &l&7» [&aZlecający: &3Derfel&l&7]"
+          - "  &l&7» [&aCel: &eWeź udział w quizie.&l&7]"
+        item: sidequestQuiz
+        condition: "Quests-Side.QuizStartedTagCondition5"
+
+      SidequestarrowQuiz5Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Quiz 5"
+          - "&l&7» [&aZlecający: &3Derfel&l&7]"
+        item: sidequestQuizDone
+        condition: "Quests-Side.QuizDoneTagCondition5"
+
+      # Archanim 1
+      SidequestarrowArchanim1Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Archanim 1"
+          - "&l&7» [&aZlecający: &3Cedric&l&7]"
+        item: sideXpQuestDone
+        condition: "Quests-Side.Level30TagDoneC"
+
+      # Archanim 2
+      SidequestarrowArchanim2Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Archanim 2"
+          - "&l&7» [&aZlecający: &3Cedric&l&7]"
+        item: sideXpQuestDone
+        condition: "Quests-Side.Level60TagDoneC"
+
+      # Archanim 3
+      SidequestarrowArchanim3Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Archanim 3"
+          - "&l&7» [&aZlecający: &3Cedric&l&7]"
+        item: sideXpQuestDone
+        condition: "Quests-Side.Level90TagDoneC"
+
+      # Archanim 4
+      SidequestarrowArchanim4Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Archanim 4"
+          - "&l&7» [&aZlecający: &3Cedric&l&7]"
+        item: sideXpQuestDone
+        condition: "Quests-Side.Level120TagDoneC"
+
+      # Archanim 5
+      SidequestarrowArchanim5Done:
+        text: 
+          - "&l&7[&d&lUkończony&l&7] &x&F&8&F&F&A&1Quest Archanim 5"
+          - "&l&7» [&aZlecający: &3Cedric&l&7]"
+        item: sideXpQuestDone
+        condition: "Quests-Side.Level150TagDoneC"
+
+
+        
+        
+conditions:
+events:
+  page2: "sudo sidequestmenu2"
+  mainquestmenu: "sudo quests"
+items:
+  sidequest?: GOLD_NUGGET custom-model-data:6
+  sidequestarrow: PAPER custom-model-data:6016
+  sidequestZabijaka: PAPER custom-model-data:6000
+  sidequestZabijakaDone: PAPER custom-model-data:6001
+  sidequestPrzyneta: PAPER custom-model-data:6006
+  sidequestPrzynetaDone: PAPER custom-model-data:6007
+  sidequestQuiz: PAPER custom-model-data:6008
+  sidequestQuizDone: PAPER custom-model-data:6009
+  sideXpQuestDone: PAPER custom-model-data:6011
+  mainquestmenu: BARRIER custom-model-data:77
+  page2: ARROW custom-model-data:9

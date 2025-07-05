@@ -1,0 +1,19 @@
+events:
+# Next Location Notifs
+  notifNextLocation-Rosalia: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Rosalią","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:9 y:78 z:-5"}},{"text":" w ratuszu","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Rosalia: "notify &x&3&C&B&3&7&1Spotkaj się z &eRosalią &x&3&C&B&3&7&1w ratuszu."
+  
+  notifNextLocation-Skrik: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Skrikiem","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:61 y:66 z:-7"}},{"text":" w szpitalu","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Skrik: "notify &x&3&C&B&3&7&1Spotkaj się z &eSkrikiem &x&3&C&B&3&7&1w szpitalu."
+  
+  notifNextLocation-Chris: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Chrisem","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-16 y:84 z:-56"}},{"text":" w karczmie","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Chris: "notify &x&3&C&B&3&7&1Spotkaj się z &eChrisem &x&3&C&B&3&7&1w karczmie."
+  
+  notifNextLocation-Tony: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Tonym","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:30 y:64 z:-46"}},{"text":" w jego domu na północy","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Tony: "notify &x&3&C&B&3&7&1Spotkaj się z &eTonym &x&3&C&B&3&7&1w jego domu na &epółnocy &x&3&C&B&3&7&1miasta."
+  
+  notifNextLocation-Bella: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Bellą","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-12 y:77 z:-56"}},{"text":" w karczmie","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Bella: "notify &x&3&C&B&3&7&1Spotkaj się z &eBellą &x&3&C&B&3&7&1w karczmie."
+  
+  notifNextLocation-Agata: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Agatą","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-85 y:66 z:62"}},{"text":" w gospodzie","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
+  #OldnotifNextLocation-Agata: "notify &x&3&C&B&3&7&1Spotkaj się z &eAgatą &x&3&C&B&3&7&1w gospodzie."

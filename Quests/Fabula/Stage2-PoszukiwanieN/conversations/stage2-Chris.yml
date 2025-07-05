@@ -86,7 +86,7 @@ conversations:
       
       # 2.Kwestia noclegu
       q2-player-2-narr:
-        text: "..."
+        text: "&f..."
         pointer: q2-chris-2-narr
 
       q2-player-2a: 

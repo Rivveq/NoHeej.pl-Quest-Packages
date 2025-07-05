@@ -1,0 +1,8 @@
+conversations:
+  Barbara:
+    quester: Barbara
+    first: q3-Barbara-1, default
+
+    NPC_options:
+      default:
+        text: "Jakim prawem wszedłeś do pokoju damy bez pukania?! PROSTAK!"

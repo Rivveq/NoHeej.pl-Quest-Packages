@@ -1,0 +1,12 @@
+events:
+#Barmani
+  OplataZaTrunek: "money -100 notify"
+  OplataZaAmbrozje: "money -130 notify"
+  OplataZaNapitek: "money -110 notify"
+  OplataZaPiwo: "money -139 notify"
+  OplataZaPlynneZloto: "money -250 notify"
+  DajTrunek: "give Trunek"
+  DajAmbrozja: "give Trunek"
+  DajNapitek: "give Trunek"
+  DajPiwo: "give Trunek"
+  DajPlynneZloto: "give Trunek"

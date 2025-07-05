@@ -1,0 +1,31 @@
+conversations:
+  KasynoSkogmork:
+    quester: KasynoSkogmork
+    first: 1r-kassko
+    
+    # npc dialogi
+
+    NPC_options:
+    
+    # 1 Powitanie
+    
+      1r-kassko: 
+        text: "Witaj %player%, chcesz się przenieść do mojego kasyna w Skogmork?"
+        pointer: "1o-kassko-a,1o-kassko-b"
+      
+      
+      2r-kassko:
+        text: "Zapraszam nastepnym razem!"
+        
+     # Odpowiedzi gracza  
+        
+    player_options:
+    
+    # 1 Wybór tp
+    
+      1o-kassko-a:
+        text: "&x&E&F&6&E&F&FTak, przenieś mnie!"
+        event: "DoKasynaSkogmork"
+      1o-kassko-b:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."
+        pointer: 2r-kassko

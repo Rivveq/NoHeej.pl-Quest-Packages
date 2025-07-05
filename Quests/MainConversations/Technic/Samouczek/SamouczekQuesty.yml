@@ -1,0 +1,41 @@
+conversations:
+  SamouczekQuesty:
+    quester: Samouczek "Zadania"
+    first: 1r-samzad
+
+    # Samouczek Zadania
+
+    NPC_options:
+
+      # pierwsze dialogi z wyborem
+      1r-samzad:
+        text: "Cześć, opowiem Ci jak działają zadania!"
+        pointer: 1o-samzad-a, 1o-samzad-b, 1o-samzad-c, 1o-samzad-d # Dodajemy d, żeby było "Nie dziękuję"
+      2r-samzad-a:
+        text: "Postęp w realizacji zadań można sprawdzić za pomocą komendy &e&l/quests&r. Po jej wpisaniu wyświetli się status każdej kategorii: &lfabularnej, odnawialnej, specjalnej, pobocznej oraz wyzwań&r."
+        pointer: 1o-samzad-e # Pointer do "Rozumiem"
+      2r-samzad-b:
+        text: "Zadania można pozyskiwać rozmawiając z napotkanymi mieszkańcami miast. Będa mieli nad sobą &lznaki zapytania&r. Wystarczy wtedy z nimi porozmawiać, aby zacząć zadanie."
+        pointer: 1o-samzad-e # Pointer do "Rozumiem"
+      2r-samzad-c:
+        text: "Aby zakończyć zadanie należy spełnić warunki w nim podane. Następnie należy wrócić do osoby dającej zadanie, lub osoby która zostanie wybrana do zakonczenia. Wtedy zadanie się zakończy, a Ty otrzymasz nagrody."
+        pointer: 1o-samzad-e # Pointer do "Rozumiem"
+
+    # odpowiedzi gracza
+    player_options:
+
+      # wybor tematu
+      1o-samzad-a:
+        text: "&FJak sprawdzić status zadania?"
+        pointer: 2r-samzad-a
+      1o-samzad-b:
+        text: "&FJak odebrać zadanie?"
+        pointer: 2r-samzad-b
+      1o-samzad-c:
+        text: "&FJak ukończyć zadanie?"
+        pointer: 2r-samzad-c
+      1o-samzad-d:
+        text: "&x&f&f&6&9&6&1Nie dziękuję."
+      1o-samzad-e:
+        text: "&fRozumiem."
+        pointer: 1r-samzad # Wraca do głównego menu, aby gracz mógł zadać kolejne pytanie lub zakończyć.

@@ -1,0 +1,8 @@
+conversations:
+  Adam:
+    quester: Adam
+    first:  q3-Adam-1, default
+
+    NPC_options:
+      default:
+        text: "Usypiam, więc proszę opuść mój pokój, a jak chcesz zostać to możesz spać na podłodze!"

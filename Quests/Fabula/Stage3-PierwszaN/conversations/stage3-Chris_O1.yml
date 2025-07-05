@@ -1,0 +1,44 @@
+conversations: ### LEWIS 
+  Chris: 
+    NPC_options:
+      q3-Chris-O1-1:
+        text: "Dobrze, że jesteś, oczekiwałem twojego przyjścia."
+        conditions: con_tag_3Chris_O1
+        pointer: q3-player-O1-1a, q3-player-O1-1b
+        
+      q3-Chris-O1-2:
+        text: "Co o co chodzi? Agata mówiła mi, że sprawiasz problemy…"
+        pointer: q3-player-O1-2a, q3-player-O1-2b
+        
+      q3-Chris-O1-3:
+        text: "Myśle, że ci się przesłyszało. Nie przejmuj się tym i nie zawracaj Agacie głowy!"
+        pointer: q3-player-O1-3a, q3-player-O1-3b
+        
+      q3-Chris-O1-4:
+        text: "Nie ma mowy! Nie możemy nadużywać ich pomocy. Z resztą wciąż mogło ci się wydawać. Lepiej to zostawić!"
+        pointer: q3-player-O1-4a, q3-player-O1-4b
+        
+    player_options:    
+      q3-player-O1-1a:
+        text: "O co chodzi?"
+        pointer: q3-Chris-O1-2
+      q3-player-O1-1b:
+        text: "Nie przyszedłem z Tobą rozmawiać"
+        
+      q3-player-O1-2a:
+        text: "Zapewne chodzi o wydarzenia  wczorajszej nocy… Usłyszałem jakieś dziwne dźwięki, postanowiłem, że ją zawiadomię, lecz nie chciała mnie słuchać…"
+        pointer: q3-Chris-O1-3
+      q3-player-O1-2b:
+        text: "Zostaw mnie, nic nie zrobiłem…"
+        
+      q3-player-O1-3a:
+        text: "Nie, nie… Ja naprawdę coś słyszałem, przysięgam! Trzeba to sprawdzić! Takich odgłosów nie powinno się lekceważyć. Może…hm… wezwiemy strażników?"
+        pointer: q3-Chris-O1-4
+      q3-player-O1-3b:
+        text: "Przesłyszało?! Jesteś jeszcze gorszy niż twoi pracownicy." 
+        
+      q3-player-O1-4a:
+        text: "Rozumiem… W takim razie zajmę się tym sam i dojdę do prawdy!"
+        events: "del_tag_3Chris_O1,add_tag_3Barbara_clue,add_tag_3Adam_clue,find_clue_notify"
+      q3-player-O1-4b:
+        text: "Nie ma takiej opcji! Nie zamierzam ryzykować"

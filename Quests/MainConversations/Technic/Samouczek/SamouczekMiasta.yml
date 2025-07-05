@@ -1,0 +1,80 @@
+conversations:
+  SamouczekMiasta:
+    quester: Samouczek "Miasta"
+    first: 1r-sammia
+
+    #Informacje o miastach
+
+    NPC_options:
+
+    # Miasta Glowne Laxstad/Hulder
+
+      1r-sammia: 
+        text: "&fWitaj %player%, wybierz miasto o którym mam ci opowiedzieć."
+        pointer: 1o-sammia-a, 1o-sammia-b, 1o-sammia-c, 2o-sammia-f
+        
+        
+        
+      1r-sammia-lax:
+         text: "Laxtad to miasto handlowe, w którym znajduje się targ. W owym miejscu można kupić i sprzedać praktycznie każdy przedmiot. Można tu również znaleźć market, w którym gracze mogą wystawiać swoje własne oferty. Transport tutaj nic nie kosztuje w odróżnieniu do innych miast."
+         pointer: 1o-sammia-d
+         
+      1r-sammia-hul:
+         text: "Hulder jest pogrążony w ruinie i bezprawiu.  W całym mieście obowiązuje PvP. Jedynym wyjątkiem jest zamek, w którym obowiązują takie same prawa jak w innych miastach. Znajduje się tu również czarny rynek, w którym nie ma podatku."
+         pointer: 1o-sammia-d
+        
+     # Miasta Poboczne Skogmork/Flindor/Berg/Rosett
+        
+      2r-sammia:
+         text: "&fO którym mieście chcesz uzyskać informacje?"
+         pointer: 2o-sammia-a, 2o-sammia-b, 2o-sammia-c, 2o-sammia-d, 2o-sammia-f
+         
+         
+         
+      2r-sammia-sko:
+         text: "Skogmork to niewielka osada drwali, ukryta głęboko w cienistym świerkowym lesie. Można się tu dostać za opłatą: drogą morską lub konno."
+         pointer: 1o-sammia-d
+      2r-sammia-brak:
+         text: "&kaktualnie nie ma tych miast ale jest to spoiler ze beda jeszcze 3 nowe miasta."
+         pointer: 2o-sammia-e
+      
+
+    # odpowiedzi gracza
+
+    player_options:
+
+    # Wybor pierwszych miast Laxstad/Hulder
+
+      1o-sammia-a:
+        text: "&bLaxstad."
+        pointer: 1r-sammia-lax
+      1o-sammia-b:
+        text: "&5Hulder."
+        pointer: 1r-sammia-hul
+      1o-sammia-c:
+        text: "&fMiasta Poboczne."
+        pointer: 2r-sammia
+      1o-sammia-d:
+        text: "&fOkay, wiem wszystko na temat tego miasta."
+        pointer: 1r-sammia
+          
+     # Wybor drugich miast Skogmork/Flindor/Berg/Rosett
+     
+     
+      2o-sammia-a:
+        text: "&aSkogmork."
+        pointer: 2r-sammia-sko
+      2o-sammia-b:
+        text: "&e&kFlindor."
+        pointer: 2r-sammia-brak
+      2o-sammia-c:
+        text: "&7&kBerg."
+        pointer: 2r-sammia-brak
+      2o-sammia-d:
+        text: "&c&kRosett."
+        pointer: 2r-sammia-brak
+      2o-sammia-e:
+        text: "&f&kgit git dzieki."
+        pointer: 1r-sammia
+      2o-sammia-f:
+        text: "&x&f&f&6&9&6&1Wiem wszystko, pójde już."

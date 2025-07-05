@@ -1,2 +1,8 @@
 npcs:
   '58': "BetaTester"
+  '59': test
+  
+# --- package.yml ---
+# (lub main.yml, w zależności od Twojej konfiguracji)
+
+

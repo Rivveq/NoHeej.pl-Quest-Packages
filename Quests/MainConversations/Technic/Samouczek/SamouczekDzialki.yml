@@ -1,0 +1,40 @@
+conversations:
+  SamouczekDzialki:
+    quester: Samouczek "Działki"
+    first: 1r-samdz # Początkowy dialog NPC
+
+    NPC_options:
+      1r-samdz:
+        text: "Hej, oto jak działają działki!"
+        pointer: 1o-samdz-a, 1o-samdz-b, 1o-samdz-c, 1o-samdz-d, 1o-samdz-end # Opcje wyboru dla gracza
+      2r-samdz-a:
+        text: "Działka jest to teren, na którym położony został cuboid. Jest on &lchroniony&r oraz zajęty przez danego gracza. Do działki można dodawać oraz usuwać innych graczy. W swojej działce to Ty decydujesz czy chcesz mieć &lwłączone PvP&r czy &lnie&r. Cuboid może być stosowany również jako skarbiec, gdzie schowasz swoją walutę."
+        pointer: 1o-samdz-e # Powrót do głównych opcji
+      2r-samdz-b:
+        text: "Działkę można stworzyć w stole rzemieślniczym poprzez ułożenie rzeźbionych kamiennych cegieł wokół sztabki żelaza&r. Analogicznie działkę &lpremium, z różnicą zamiany sztabki &lżelaza&r na &lzłota&r."
+        pointer: 1o-samdz-e # Powrót do głównych opcji
+      2r-samdz-c:
+        text: "Istnieje 6 poziomów działek, które ulepsza się za pomocą waluty serwerowej. Każde ulepszenie zwiększa maksymalną liczbę dodanych graczy oraz wielkość działki, a także odblokowuje nowe możliwości."
+        pointer: 1o-samdz-e # Powrót do głównych opcji
+      2r-samdz-d:
+        text: "Są 3 rodzaje cuboidów: &lzwykły&r, &lpremium&r oraz &lnetherowy&r. Zwykły jest dostępny dla każdego z graczy. Premium dla Vipów oraz Svipów. Odznacza się np.: teleportem dla właściciela i zastępcy /cubtp czy tworzeniem warpów na jego terenie/cubsetwarp. Netherowy zaś jest dostępny wyłącznie i jako jedyny w netherze."
+        pointer: 1o-samdz-e # Powrót do głównych opcji
+
+    player_options:
+      1o-samdz-a:
+        text: "&fCzym jest działka?"
+        pointer: 2r-samdz-a # Przeniesienie do dialogu o tym czym jest działka
+      1o-samdz-b:
+        text: "&fJak stworzyć działkę?"
+        pointer: 2r-samdz-b # Przeniesienie do dialogu o tworzeniu działki
+      1o-samdz-c:
+        text: "&fPoziomy działek"
+        pointer: 2r-samdz-c # Przeniesienie do dialogu o poziomach działek
+      1o-samdz-d:
+        text: "&fRodzaje działek"
+        pointer: 2r-samdz-d # Przeniesienie do dialogu o rodzajach działek
+      1o-samdz-e:
+        text: "&fRozumiem."
+        pointer: 1r-samdz # Powrót do głównego pytania
+      1o-samdz-end:
+        text: "&x&f&f&6&9&6&1Nie dziękuje."

@@ -1,9 +1,9 @@
 conversations:
   Wes:
     quester: 'Wes'
-    first: q2-wes-1, q1-wes-6a, q1-wes-1, default
+    first: q3-Wes-1, q2-wes-1, q1-wes-6a, q1-wes-1, default
 
     NPC_options:
       default:
-        text: "placeholder"
+        text: "Przepraszam, jestem zajęty roznoszeniem listów od burmistrzyni."
    

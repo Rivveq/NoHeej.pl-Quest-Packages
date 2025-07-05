@@ -72,7 +72,7 @@ conversations:
         text: "&x&f&f&6&9&6&1Zostaw mnie..."
       
       q1-player-narr1:
-        text: "..."
+        text: "&f..."
         pointer: "q1-wes-2a"
 
       # 2.Rozmowa
@@ -83,10 +83,10 @@ conversations:
         text: "&x&f&f&6&9&6&1Sam sobie poradzę! Odejdź ode mnie…"
       
       q1-player-narr2a:
-        text: "..."
+        text: "&f..."
         pointer: q1-wes-narr2
       q1-player-narr2b:
-        text: "..."
+        text: "&f..."
         pointer: q1-wes-2b
       
       # 3.Rozmowa
@@ -104,7 +104,7 @@ conversations:
         text: "&x&f&f&6&9&6&1Nie zamierzam o tym z Tobą rozmawiać."
       
       q1-player-narr4:
-        text: "..."
+        text: "&f..."
         pointer: q1-wes-narr4
       
       # 5.Odpowiedz na pytanie o jedzenie

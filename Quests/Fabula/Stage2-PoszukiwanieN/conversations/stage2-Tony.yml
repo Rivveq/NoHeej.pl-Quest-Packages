@@ -95,7 +95,7 @@ conversations:
       
       # 1.Pierwsze spotkanie z Tonym
       q2-player-1-narr:
-        text: "..."
+        text: "&f..."
         pointer: q2-tony-1
       
       q2-player-1a:
@@ -152,7 +152,7 @@ conversations:
       
       # 6.Droga-2 Rezultat gry
       q2-player-6-wygrana-narr:
-        text: "..."
+        text: "&f..."
         pointer: "q2-tony-6-wygrana"
       q2-player-6-wygrana:
         text: "&x&9&3&d&3&8&eHah, to była łatwa wygrana! Mam nadzieję, że jeszcze kiedyś zagramy!"

@@ -1,0 +1,103 @@
+conversations:
+  Narrator_room3:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Rozglądasz się po swojej izdebce, nie jest zbyt duża ale za to nie była też tania. Uśmiechasz się pod nosem.]"
+        pointer: player-1
+      narr-2:
+        text: "&7[Zza ściany dobiegają Cię dziwne odgłosy, a włos jeży Ci się na karku. Powinieneś to sprawdzić.]"
+        events: notifDziwneDzwieki,addObjectiveSprawdzPokojDzwieki
+
+    player_options:
+      player-1:
+        text: "..."
+        pointer: narr-2
+  
+  Narrator_roomDzwieki:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Ledwo otwierasz drzwi sąsiedniego pokoju, kiedy wyskakuje do Ciebie podejrzanie wyglądający mężczyzna. Wyczuwasz, że nie jest pozytywnie nastawiony. Zaczynasz żałować swojej decyzji o wejściu do tego pomieszczenia.]"
+        pointer: player-1
+      
+    player_options:
+      player-1:
+        events: conv_cancel, conv_tm
+        text: "&f..."
+  Narrator_TM_gone:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Straciłeś przytomność… Kiedy już wracasz do siebie ponownie znajdujesz się na korytarzu tawerny. Musisz czym prędzej coś zjeść i udać się do recepcjonistki Agaty, może Ci udzieli informacji na temat agresywnego jegomościa.]"
+        pointer: player-1
+    
+    player_options:
+      player-1:
+        text: "&f..."
+        events: notifNextLocation-Agata
+        
+        
+  Narrator_Lewis_Pracownia:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Podchodzisz do podstarzałego biurka złotnika… Leży na nim wiele zakurzonych rupieci, na ich tle widać wyróżniający się świeżością notatnik. Sięgasz po niego i zaczynasz wertować strony. Jest tu wiele informacji, ale ciebie powinna interesować tylko ta konkretna. Skup się…]"
+        pointer: player-1
+    
+    player_options:
+      player-1:
+        text: "&f..."
+        
+  Narrator_Room_Check:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Wchodzisz do pokoju tajemniczego mężczyzny, rozglądasz się i widzisz w rogu pokoju tajemniczą beczkę, decydujesz się to sprawdzić!]"
+        pointer: player-1
+    
+    player_options:
+      player-1:
+        text: "&f..."
+        events: "HowToSearchNotify"
+        
+  Narrator_mysterious_key:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Wchodzisz ponownie do pokoju tajemniczego mężczyzny, spoglądasz na jego wnętrznę, a na podłodze dostrzegasz tajemniczy klucz.]"
+        pointer: player-1, player-2
+    
+    player_options:
+      player-1:
+        text: "[Podnieś klucz]"
+        events: Give_mysterious_key
+      player-2:
+        text: "[Zostaw klucz]"
+        
+  Narrator_port_wes:
+    quester: Narrator
+    first: narr-1
+
+    NPC_options:
+      narr-1:
+        text: "&7[Jesteś w porcie, o którym mówił Adam, w oddali widzisz chodzącego po moście Wesa, twoja intuicja podpowiada ci abyś do niego podszedł...]"
+        pointer: player-1
+    
+    player_options:
+      player-1:
+        text: "&7[...]"
+        
+        

@@ -1,8 +1,8 @@
 conversations:
   Agata:
     quester: Agata
-    first: q3-agata-1, default
+    first: q3-agata-1-sword, q3-agata-1-LewisQuest, q3-agata-1-Powrót, q3-agata-1, default
 
     NPC_options:
       default:
-        text: "placeholder"
+        text: "Przykro mi, niestety wszystkie pokoje u nas są zarezerwowane, zapraszamy ponownie później."

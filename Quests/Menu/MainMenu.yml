@@ -1,0 +1,52 @@
+menus:
+  questMenu1:
+    height: 4
+    title: "<shift:-8><glyph:guiquest>"
+    command: "/quests"
+    slots:
+      1: "side"
+      13: "fabula"
+      7: "hard"
+      20: "odnawialne"
+      24: "specjalne"
+
+
+    items:
+      fabula:
+        item: "fabula"
+        text: "&7&l[&x&9&3&d&3&8&e&lFabuła&7&l]"
+        click:
+          left: "fabula"
+      side:
+        item: "side"
+        text: "&7&l[&x&F&8&F&F&A&1&lQuesty Poboczne&7&l]"
+        click:
+          left: "side"
+      hard:
+        item: "hard"
+        text: "&7&l[&x&E&7&9&3&5&5&lWyzwania&7&l]"
+        click:
+          left: "hard"
+      odnawialne:
+        item: "odnawialne"
+        text: "&7&l[&x&7&C&A&3&F&3&lOdnawialne&7&l]"
+        click:
+          left: "odnawialne"
+      specjalne:
+        item: "specjalne"
+        text: "&7&l[&x&B&3&7&4&B&B&lSpecjalne&7&l]"
+        click:
+          left: "specjalne"
+conditions:
+events:
+  fabula: "sudo fabula"
+  side: "sudo sidequestmenu1"
+  odnawialne: "sudo quests-odnawialne"
+  hard: "sudo sidequestmenu1"
+  specjalne: "sudo sidequestmenu1"
+items:
+  fabula: PAPER custom-model-data:6017
+  side: PAPER custom-model-data:6019
+  odnawialne: PAPER custom-model-data:6018
+  hard: PAPER custom-model-data:6020
+  specjalne: PAPER custom-model-data:6021
