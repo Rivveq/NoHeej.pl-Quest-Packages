@@ -1,7 +1,7 @@
 npcs:
  '257': Daily
- '257': Weekly
- '257': Monthly
+ '261': Weekly
+ '262': Monthly
 
 items:
   OAK_LOG: OAK_LOG

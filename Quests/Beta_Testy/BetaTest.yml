@@ -1,16 +1,38 @@
 conversations:
   BetaTester:
     quester: "BetaTester"
-    first: npc
+    first: wybor
+    
     NPC_options:
-      test:
-        text: "test"
+      wybor:
+        text: 'Wybierz opcje:'
+        pointers: opcja1, opcja2
       npc:
         text: 'Wyczyścić ci dane dotyczące zadań/objectivów czy innych danych dotyczacych &cBetonQuesta'
         pointers: player1, player2
+      fabula:
+        text: 'Do którego questa głównego chciałbyś wrócić?'
+        pointers: quest2, quest3
+
     player_options:
+      opcja1:
+        text: 'Wyczyść progress &cBetonQuesta'
+        pointer: npc
+      opcja2:
+        text: 'Ustaw progress fabuły'
+        pointer: fabula
+
+      # Purge progress
       player1:
         text: 'Usuń moje dane dotyczące questów'
         events: 'BQPurge'
       player2:
         text: 'Zostaw to tak jak jest'
+      
+      # Fabula progress
+      quest2:
+        text: 'Ustaw progress na quest fabularny 2'
+        events: 'BQPurge, Tracking.AddTagQuest-1-Done, Fabula.notifNextLocation-Rosalia, Fabula.add_tag_2Wes_Done'
+      quest3:
+        text: 'Ustaw progress na quest fabularny 3'
+        events: 'BQPurge, Tracking.AddTagQuest-1-Done, Tracking.AddTagQuest-2-Done, notifNextLocation-Agata, Fabula.giveNagrodaZaQuest2, Fabula.notifNextLocation-Agata'
