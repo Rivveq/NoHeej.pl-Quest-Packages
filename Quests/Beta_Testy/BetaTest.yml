@@ -32,7 +32,7 @@ conversations:
       # Fabula progress
       quest2:
         text: 'Ustaw progress na quest fabularny 2'
-        events: 'BQPurge, Tracking.AddTagQuest-1-Done, Fabula.notifNextLocation-Rosalia, Fabula.add_tag_2Wes_Done'
+        events: 'BQPurge, Tracking.AddTagQuest-1-Done, _-Fabula.notifNextLocation-Rosalia, _-Fabula.add_tag_2Wes_Done'
       quest3:
         text: 'Ustaw progress na quest fabularny 3'
-        events: 'BQPurge, Tracking.AddTagQuest-1-Done, Tracking.AddTagQuest-2-Done, notifNextLocation-Agata, Fabula.giveNagrodaZaQuest2, Fabula.notifNextLocation-Agata'
+        events: 'BQPurge, Tracking.AddTagQuest-1-Done, Tracking.AddTagQuest-2-Done, _-Fabula.notifNextLocation-Agata, _-Fabula.giveNagrodaZaQuest2'

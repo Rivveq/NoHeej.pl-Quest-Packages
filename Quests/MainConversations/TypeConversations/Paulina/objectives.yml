@@ -1,4 +1,0 @@
-objectives:
-  has5MinPassed: "delay 5 events:addTagTimeHasPassed"
-
-  QuestCooldown: "delay 120 events:addTagNextQuestReady"
