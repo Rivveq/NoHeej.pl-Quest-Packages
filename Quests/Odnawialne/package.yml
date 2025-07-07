@@ -3,6 +3,8 @@ npcs:
  '261': Weekly
  '262': Monthly
 
+ '76': Paulina
+
 items:
   OAK_LOG: OAK_LOG
   BREAD: BREAD
@@ -145,3 +147,43 @@ items:
   DRIED_KELP: DRIED_KELP
   IRON_BARS: IRON_BARS
   PUMPKIN_PIE: PUMPKIN_PIE
+
+
+  # Paulina
+  lista_produktow_rybenka: WRITTEN_BOOK
+    title:Lista_produktów_na_Rybeńkę
+    author:Bella
+    text:&2&lLista_produktów&r\n2x_cukier\n1x_surowy_łosoś\n4x_marchew\n1x_butelka_wody
+    lore:&2Quest_Item
+  lista_produktow_zupa_ogorkowa: WRITTEN_BOOK
+    title:Lista_produktów_na_Zupę_Ogórkową
+    author:Bella
+    text:&2&lLista_produktów&r\n5x_morski_ogór\n2x_butelka_wody\n3x_burak\n1x_miska
+    lore:&2Quest_Item
+  lista_produktow_miodowe: WRITTEN_BOOK
+    title:Lista_produktów_na_Miodowe
+    author:Bella
+    text:&2&lLista_produktów&r\n2x_butelka_miodu\n3x_cukier\n1x_butelka\n1x_kakao
+    lore:&2Quest_Item
+  lista_produktow_chleb_marchewkowy: WRITTEN_BOOK
+    title:Lista_produktów_na_Chlebek
+    author:Bella
+    text:&2&lLista_produktów&r\n10x_marchew\n1x_cukier\n12x_pszenica
+    lore:&2Quest_Item
+  
+  surowy_losos: SALMON
+  marchew: CARROT
+  cukier: SUGAR
+  butelka_wody: POTION
+  morski_ogor: SEA_PICKLE
+  burak: BEETROOT
+  miska: BOWL
+  butelka_miodu: HONEY_BOTTLE
+  butelka: GLASS_BOTTLE
+  kakao: COCOA_BEANS
+  pszenica: WHEAT
+
+  rybenka: SWEET_BERRIES name:&lRybeńka lore:Łosoś_tak_soczysty,_że_aż_ślinka_cieknie!
+  zupa_ogorkowa: SWEET_BERRIES name:&lZupa_Ogórkowa lore:Nic_dodać,_nic_ująć.
+  miodowe: SWEET_BERRIES name:&lMiodowe_co_nie_co lore:Nie_zabieraj_tego_przedmiotu_do_lasu;wysokie_prawdopodobieństwo_ataku_niedźwiedzia!
+  chlebek_marchewkowy: SWEET_BERRIES name:&lChlebek_Marchewkowy lore:Dalej_ciepły!
