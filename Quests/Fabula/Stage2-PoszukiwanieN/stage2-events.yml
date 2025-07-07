@@ -37,7 +37,7 @@ events:
   del_tag_2Rosalie_Done: "tag del 2Rosalie_Done"
   del_tag_2Wes_Done: "tag del 2Wes_Done"
 
-  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,Quests-MainConversations.addTagNextQuestReady,del_tag_2Bella_Done,del_tag_2Rosalie_Done,del_tag_2Wes_Done"
+  Quest-2-Done: "folder Tracking.AddTagQuest-2-Done,giveNagrodaZaQuest2,_-Odnawialne.addTagNextQuestReady,del_tag_2Bella_Done,del_tag_2Rosalie_Done,del_tag_2Wes_Done"
 
   # Skrik events
   add_obj_proximity_skrik: "objective add obj_proximity_skrik"

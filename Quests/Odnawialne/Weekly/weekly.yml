@@ -1,3 +1,7 @@
 conversations:
   Weekly:
     quester: 'Weekly'
+    first: default
+
+    NPC_options:
+      default: "test"
