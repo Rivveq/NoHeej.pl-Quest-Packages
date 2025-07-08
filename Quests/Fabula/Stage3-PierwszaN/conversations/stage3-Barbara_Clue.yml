@@ -2,7 +2,7 @@ conversations:
   Barbara:
     NPC_options:
       q3-Barbara-1:
-        text: "Co robisz w moim  pokoju? Odejdź czym prędzej!"
+        text: "Co robisz w moim pokoju? Odejdź czym prędzej!"
         conditions: con_tag_3Barbara_clue
         pointer: q3-player-1a, q3-player-1b
         
@@ -22,7 +22,7 @@ conversations:
         text: "Już wychodzę."
         
       q3-player-2a:
-        text: "Już mówię! Wchodziłem właśnie do swojego pokoju, gdy usłyszałem podejrzane dźwięki dobiegające z sąsiadującego pomieszczenia. Postanowiłem je odwiedzić, a w środku był jakiś dziwny mężczyzna! Może widziałaś coś niespotykanego tego dnia? Kogoś kto wywołał u ciebie podejrzenia? Potrzebuję twojej pomocy, żeby rozwiązać tę zagadkę!"
+        text: "Już mówię! Usłyszałem podejrzane dźwięki dobiegające z sąsiedniego pomieszczenia. Postanowiłem je odwiedzić, a w środku był jakiś dziwny mężczyzna! Może widziałaś kogoś podejrzanego? Potrzebuję twojej pomocy, żeby rozwiązać tę zagadkę!"
         pointer: q3-Barbara-3
       q3-player-2b:
         text: "Odechciało mi się tłumaczeń. Żegnaj."

@@ -5,6 +5,9 @@ conversations:
         text: "Dawno nie rozmawialiśmy. Zadomowiłeś się już w naszym mieście %player%?"
         conditions: "con_tag3Wes_clue"
         pointer: q3-player-1a, q3-player-1b
+      q3-Wes-1-a:
+        text: "Cieszę się, że ci się podoba!"
+        pointer: q3-player-1a-2
       q3-Wes-2:
         text: "Rozumiem, to faktycznie nie brzmi najlepiej… Czy mógłbym coś dla ciebie zrobić?"
         pointer: q3-player-2a, q3-player-2b
@@ -18,7 +21,11 @@ conversations:
         
     player_options:
       q3-player-1a:
-        text: "Dobrze cię znowu widzieć Wes. Miasto wydaje się świetne, natomiast mieszkańcy… Widziałem nikczemnego mężczyznę w pokoju w którym nie powinno być nikogo. Co prawda wyszedłem z tej sytuacji z zaledwie kilkoma zadrapaniami… Jednak od tamtej pory mam się na baczności. Muszę odnaleźć tego łotra i dowiedzieć się kim jest."
+        text: "Dobrze cię znowu widzieć Wes. Miasto wydaje się świetne."
+        pointer: q3-Wes-1-a
+      
+      q3-player-1a-2:
+        text: "Natomiast mieszkańcy… Widziałem nikczemnego mężczyznę w pokoju w którym nie powinno być nikogo. Co prawda wyszedłem z tej sytuacji z zaledwie kilkoma zadrapaniami… Jednak od tamtej pory mam się na baczności. Muszę odnaleźć tego łotra i dowiedzieć się kim jest."
         pointer: q3-Wes-2
         
       q3-player-1b:

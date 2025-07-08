@@ -128,7 +128,7 @@ events:
   # Notify o poszlakach
   find_clue_notify: "notify &7&l-> [&aUdaj się do pensjonatu i porozmawiaj z gośćmi z innych pokojów.&7&l]"
   
-  go_to_north_harbor: "notify &7&l-> [&aWyrusz do portu południowo-wschodniego, aby rozejrzeć się za tajemniczą osobistością!&7&l]"
+  go_to_north_harbor: "notify &7&l-> [&aWyrusz do portu północno-wschodniego, aby rozejrzeć się za tajemniczą osobistością!&7&l]"
    
  # Objective mysterious key na podlodze :)
   Give_mysterious_key: "give mysterious_key"
