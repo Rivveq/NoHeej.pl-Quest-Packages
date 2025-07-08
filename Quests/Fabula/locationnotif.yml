@@ -17,3 +17,5 @@ events:
   
   notifNextLocation-Agata: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Agatą","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-85 y:66 z:62"}},{"text":" w gospodzie","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'
   #OldnotifNextLocation-Agata: "notify &x&3&C&B&3&7&1Spotkaj się z &eAgatą &x&3&C&B&3&7&1w gospodzie."
+
+  notifNextLocation-Lewis: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Spotkaj się z","color":"#3CB371"},{"text":" Lewisem","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-73 y:67 z:112"}},{"text":" w jego domu na południu","color":"#3CB371"},{"text":"]","color":"gray","bold":true}]'

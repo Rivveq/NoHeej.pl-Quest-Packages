@@ -82,7 +82,7 @@ conversations:
         
       q3-player-6-Powrót-O1:
         text: "Dobrze, już wyruszam!"
-        events: "add_tag_3AgataPowrótDone+Lewis,GoToLevisNotify,del_tag_3Agata_RoomChecked"
+        events: "add_tag_3AgataPowrótDone+Lewis,notifNextLocation-Lewis,del_tag_3Agata_RoomChecked"
         
         
   # OPCJA 2

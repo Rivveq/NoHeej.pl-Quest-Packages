@@ -67,7 +67,6 @@ events:
   tp_TMback: "teleport -86;73;59;spawnSeed"
 
   # Levis notify
-  GoToLevisNotify: "notify &7&l-> [&aUdaj się do złotnika &eLewisa&7&l]"
   FindInformationLewis: "notify &7&l-> [&aZnajdź informacje na temat zamówienia &eMadam Cressedie&7&l]"
   
   
@@ -108,11 +107,19 @@ events:
   GoSleepObjective: "objective start Sleep"
   GoSleepNotify: "notify &7&l-> [&aUdaj się do swojego pokoju, aby się przespać!&7&l]"
   # ---- > Spanie
-  SleepingFolder: "folder eff_invisibility,eff_blindness,eff_slowness,Wake_up_folder,tp_to_bed"
-  Wake_up_folder: "folder Wake_up_notify delay:11 seconds"
-  Wake_up_notify: "notify &7&l-> [&aObudziłeś się! Udaj się do &eChrisa&7&l]"
+  SleepingFolder: "folder eff_invisibility, eff_blindness, eff_slowness, sleep_progress_bar_folder, Wake_up_folder, tp_to_bed"
+  Wake_up_folder: "folder Wake_up_notify delay:8 seconds"
+  Wake_up_notify: 'command tellraw %player% ["",{"text":"-> [","color":"gray","bold":true},{"text":"Obudziłeś się! Udaj się do","color":"#3CB371"},{"text":" Chrisa","color":"yellow","hoverEvent":{"action":"show_text","contents":"Koordynaty: x:-16 y:84 z:-56"}},{"text":"]","color":"gray","bold":true}]'
   tp_to_bed: "teleport -82;73;59;spawnSeed"
   
+  # Spanie progress bar
+  sleep_progress_bar_folder: "folder sleep_message_1, sleep_message_2, sleep_message_3, sleep_message_4 period:2 seconds"
+
+  sleep_message_1: "notify &7Spanie... io:title"
+  sleep_message_2: "notify &cSp&7anie... io:title"
+  sleep_message_3: "notify &6Span&7ie... io:title"
+  sleep_message_4: "notify &aSpanie... io:title"
+
   # 3 CHRIS ODDAJ MIECZ
   ChrisTakeSwordFolder: "folder ChrisTakeSword,ChrisTakeSwordNotify"
   ChrisTakeSword: "take miecz_TM"
